@@ -1,0 +1,406 @@
+{
+  "series_info": {
+    "realtime_start": "2025-09-06",
+    "realtime_end": "2025-09-06",
+    "seriess": [
+      {
+        "id": "CEU9091000001",
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "title": "All Employees, Federal",
+        "observation_start": "1939-01-01",
+        "observation_end": "2025-08-01",
+        "frequency": "Monthly",
+        "frequency_short": "M",
+        "units": "Thousands of Persons",
+        "units_short": "Thous. of Persons",
+        "seasonal_adjustment": "Not Seasonally Adjusted",
+        "seasonal_adjustment_short": "NSA",
+        "last_updated": "2025-09-05 07:52:05-05",
+        "popularity": 30,
+        "notes": "The series comes from the 'Current Employment Statistics (Establishment Survey).'\n\nThe source code is: CEU9091000001"
+      }
+    ]
+  },
+  "observations": {
+    "realtime_start": "2025-09-06",
+    "realtime_end": "2025-09-06",
+    "observation_start": "2020-09-07",
+    "observation_end": "2025-09-06",
+    "units": "lin",
+    "output_type": 1,
+    "file_type": "json",
+    "order_by": "observation_date",
+    "sort_order": "asc",
+    "count": 60,
+    "offset": 0,
+    "limit": 100000,
+    "observations": [
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2020-09-01",
+        "value": "3124"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2020-10-01",
+        "value": "2982"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2020-11-01",
+        "value": "2899"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2020-12-01",
+        "value": "2909"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2021-01-01",
+        "value": "2866"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2021-02-01",
+        "value": "2867"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2021-03-01",
+        "value": "2867"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2021-04-01",
+        "value": "2888"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2021-05-01",
+        "value": "2888"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2021-06-01",
+        "value": "2892"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2021-07-01",
+        "value": "2901"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2021-08-01",
+        "value": "2894"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2021-09-01",
+        "value": "2895"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2021-10-01",
+        "value": "2882"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2021-11-01",
+        "value": "2895"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2021-12-01",
+        "value": "2894"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2022-01-01",
+        "value": "2864"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2022-02-01",
+        "value": "2860"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2022-03-01",
+        "value": "2853"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2022-04-01",
+        "value": "2860"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2022-05-01",
+        "value": "2864"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2022-06-01",
+        "value": "2856"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2022-07-01",
+        "value": "2876"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2022-08-01",
+        "value": "2865"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2022-09-01",
+        "value": "2872"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2022-10-01",
+        "value": "2874"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2022-11-01",
+        "value": "2880"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2022-12-01",
+        "value": "2885"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2023-01-01",
+        "value": "2868"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2023-02-01",
+        "value": "2880"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2023-03-01",
+        "value": "2884"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2023-04-01",
+        "value": "2900"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2023-05-01",
+        "value": "2915"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2023-06-01",
+        "value": "2925"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2023-07-01",
+        "value": "2942"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2023-08-01",
+        "value": "2948"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2023-09-01",
+        "value": "2957"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2023-10-01",
+        "value": "2959"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2023-11-01",
+        "value": "2968"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2023-12-01",
+        "value": "2975"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2024-01-01",
+        "value": "2963"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2024-02-01",
+        "value": "2975"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2024-03-01",
+        "value": "2986"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2024-04-01",
+        "value": "2991"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2024-05-01",
+        "value": "2998"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2024-06-01",
+        "value": "3001"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2024-07-01",
+        "value": "3015"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2024-08-01",
+        "value": "3010"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2024-09-01",
+        "value": "3009"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2024-10-01",
+        "value": "3014"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2024-11-01",
+        "value": "3014"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2024-12-01",
+        "value": "3020"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2025-01-01",
+        "value": "3002"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2025-02-01",
+        "value": "2992"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2025-03-01",
+        "value": "2990"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2025-04-01",
+        "value": "2977"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2025-05-01",
+        "value": "2947"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2025-06-01",
+        "value": "2938"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2025-07-01",
+        "value": "2939"
+      },
+      {
+        "realtime_start": "2025-09-06",
+        "realtime_end": "2025-09-06",
+        "date": "2025-08-01",
+        "value": "2916"
+      }
+    ]
+  },
+  "fetch_timestamp": "2025-09-06T11:05:48.263991",
+  "date_range": {
+    "start": "2020-09-07",
+    "end": "2025-09-06"
+  }
+}

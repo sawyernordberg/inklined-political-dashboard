@@ -1,0 +1,1188 @@
+{
+  "metadata": {
+    "last_updated": "2025-07-03T22:39:39.666866",
+    "version": "v1.1_with_feeds",
+    "research_tools": [
+      "Research Tools",
+      "Google Search"
+    ],
+    "source_file": "free_foreign_affairs_data.json",
+    "source_timestamp": "2025-07-17T15:29:35.445738",
+    "original_version": "Final v1.1 (No Economic Indicators)",
+    "last_updated": "2025-07-03",
+    "diplomatic_feeds_used": true,
+    "trustworthy_sources_only": true,
+    "future_outlook_removed": true,
+    "last_overview_update": "2025-08-04T17:27:06.986753",
+    "overview_update_note": "Overview fields updated via research with Google Search"
+  },
+  "bilateral_relations": {
+    "CHN": {
+      "country_name": "China",
+      "relationship_strength": "Strong Partnership",
+      "relationship_score": 65,
+      "economic_ties": "Very High",
+      "military_cooperation": "Minimal/None",
+      "diplomatic_status": "Full Diplomatic Relations (Strategic Competition)",
+      "key_issues": [
+        "Trade Competition",
+        "Technology Transfer",
+        "South China Sea"
+      ],
+      "detailed_relationship_summary": "The United States and China maintain a complex relationship characterized by strategic competition and economic interdependence. Bilateral trade reached $582.4 billion in 2024, making China the US's third-largest trading partner. Despite areas of cooperation like climate change, significant challenges persist, including technology transfer issues and disputes in the South China Sea, exemplified by ongoing tensions over freedom of navigation operations conducted by the US Navy in the region.",
+      "economic_cooperation": {
+        "trade_volume_estimate": "$582.4 billion in 2024 (US total goods trade with China)",
+        "key_trade_sectors": [
+          "Electronics",
+          "Machinery",
+          "Agricultural Products",
+          "Apparel",
+          "Chemicals"
+        ],
+        "investment_flows": "Investment flows are significant but increasingly scrutinized due to national security concerns. Chinese investment in the US targets technology startups, while US investment in China focuses on manufacturing and services.",
+        "trade_agreements": [
+          "Phase One Trade Agreement (2020)",
+          "Ongoing trade negotiations to address imbalances and market access"
+        ]
+      },
+      "security_cooperation": {
+        "defense_agreements": [
+          "None"
+        ],
+        "joint_exercises": [
+          "None"
+        ],
+        "intelligence_sharing": [
+          "Limited, primarily focused on counter-terrorism and transnational crime"
+        ],
+        "regional_security_role": "The US and China have differing views on regional security. The US aims to maintain a balance of power in the Indo-Pacific, while China seeks to expand its influence. The South China Sea remains a major point of contention."
+      },
+      "diplomatic_engagement": {
+        "recent_high_level_visits": [
+          "August 2024: US National Security Advisor Jake Sullivan met with President Xi Jinping in Beijing",
+          "April 2024: US Secretary of State Blinken visited China"
+        ],
+        "institutional_frameworks": [
+          "US-China High-Level Dialogue",
+          "Strategic and Economic Dialogue (suspended under Trump administration)"
+        ],
+        "multilateral_cooperation": [
+          "Cooperation on climate change under the Paris Agreement",
+          "Engagement in the United Nations and other international organizations"
+        ],
+        "embassy_relations": "Both countries maintain full diplomatic representation with embassies in Washington, D.C., and Beijing."
+      },
+      "challenges_and_opportunities": {
+        "current_challenges": [
+          "Trade imbalances and tariffs",
+          "Technology transfer and intellectual property theft",
+          "South China Sea disputes",
+          "Human rights concerns",
+          "Taiwan's status",
+          "Decreased investment by US companies in China due to trade tensions and tariffs"
+        ],
+        "cooperation_opportunities": [
+          "Climate change mitigation and adaptation",
+          "Global health security",
+          "Counter-terrorism",
+          "Nuclear non-proliferation",
+          "Economic stability"
+        ]
+      },
+      "status": "completed",
+      "analysis_date": "2025-07-03",
+      "last_update": "2025-07-03T22:26:05.255148"
+    },
+    "RUS": {
+      "country_name": "Russia",
+      "relationship_strength": "Cooperative",
+      "relationship_score": 60,
+      "economic_ties": "Low",
+      "military_cooperation": "Minimal/None",
+      "diplomatic_status": "Limited Diplomatic Relations (Sanctions Regime)",
+      "key_issues": [
+        "Sanctions",
+        "Nuclear Security",
+        "Regional Conflicts"
+      ],
+      "detailed_relationship_summary": "US-Russia relations are characterized by strategic competition and limited cooperation, particularly due to the ongoing conflict in Ukraine and concerns over nuclear security. Bilateral trade volume is estimated at $3.5 billion in 2024, constrained by sanctions and an unpredictable business climate. Recent high-level talks were held in Riyadh, Saudi Arabia, but specific outcomes remain limited due to strained relations and differing agendas on regional security dynamics.",
+      "economic_cooperation": {
+        "trade_volume_estimate": "$3.5 billion (2024)",
+        "key_trade_sectors": [
+          "Fertilizers",
+          "Metals",
+          "Chemicals",
+          "Radioactive Chemicals",
+          "Nitrogenous Fertilizers",
+          "Platinum"
+        ],
+        "investment_flows": "Limited due to sanctions and an unpredictable business climate.",
+        "trade_agreements": "None currently in effect due to sanctions."
+      },
+      "security_cooperation": {
+        "defense_agreements": "None currently in effect.",
+        "joint_exercises": "None reported.",
+        "intelligence_sharing": "Limited, primarily focused on counterterrorism.",
+        "regional_security_role": "Differing views on regional security dynamics, particularly in Eastern Europe and the Middle East."
+      },
+      "diplomatic_engagement": {
+        "recent_high_level_visits": "Limited, with recent talks held in Riyadh, Saudi Arabia.",
+        "institutional_frameworks": "Bilateral mechanisms exist but are limited in scope due to strained relations.",
+        "multilateral_cooperation": "Coordination within the UN Security Council on specific issues, but often with conflicting agendas.",
+        "embassy_relations": "Embassies in Washington, D.C. and Moscow, but with reduced staff and operational capacity."
+      },
+      "challenges_and_opportunities": {
+        "current_challenges": [
+          "Sanctions and export controls",
+          "Regional conflicts (Ukraine, Syria)",
+          "Alleged interference in elections",
+          "Differing views on international norms",
+          "Mistrust and historical grievances",
+          "Threat of secondary sanctions on countries trading with Russia"
+        ],
+        "cooperation_opportunities": [
+          "Nuclear security and non-proliferation",
+          "Counterterrorism",
+          "Arctic development",
+          "Space exploration",
+          "Arms control negotiations"
+        ]
+      },
+      "status": "completed",
+      "analysis_date": "2025-07-03",
+      "last_update": "2025-07-03T22:28:16.223142"
+    },
+    "DEU": {
+      "country_name": "Germany",
+      "relationship_strength": "Very Strong Allied",
+      "relationship_score": 90,
+      "economic_ties": "High",
+      "military_cooperation": "Full Alliance (NATO)",
+      "diplomatic_status": "Full Diplomatic Relations (NATO Ally)",
+      "key_issues": [
+        "NATO Burden Sharing",
+        "Energy Security",
+        "Trade Relations"
+      ],
+      "detailed_relationship_summary": "The United States and Germany maintain a strong allied relationship, exemplified by a trade volume of 252.8 billion euros in 2024. Military cooperation is robust, demonstrated through joint exercises like Saber Junction and the Security of Supply Arrangement (SOSA) signed in 2024. Recent high-level visits include President Biden's trip to Germany in October 2024 and Foreign Minister Wadephul's visit to Washington, DC in May 2025, reinforcing diplomatic ties.",
+      "economic_cooperation": {
+        "trade_volume_estimate": "252.8 billion euros (2024)",
+        "key_trade_sectors": [
+          "Motor vehicles",
+          "Machinery",
+          "Chemicals",
+          "Pharmaceuticals",
+          "Electronics",
+          "Transportation equipment"
+        ],
+        "investment_flows": "The United States is the leading source of non-European FDI in Germany. In 2022, total U.S. FDI in Germany was $190.237 billion. Key U.S. FDI sectors include manufacturing ($44.19 billion), chemicals ($11.52 billion), information technology ($8.71 billion), machinery ($8.25 billion), finance ($12.66 billion), and professional, scientific, and technical services ($10.63 billion). German companies are also significant investors in the U.S., supporting approximately 923,600 jobs.",
+        "trade_agreements": [
+          "WTO",
+          "US-German Treaty of Friendship, Commerce, and Navigation (1956)",
+          "Trade and Investment Framework Agreement (TIFA)"
+        ]
+      },
+      "security_cooperation": {
+        "defense_agreements": [
+          "NATO Status of Forces Agreement (SOFA)",
+          "Security of Supply Arrangement (SOSA) (2024)",
+          "Agreement Between the United States of America and Germany, Signed January 16 and February 9, 2001; and Agreement Amending the Agreement, Signed at Arlington and Koblenz, April 22 and May 18, 2010"
+        ],
+        "joint_exercises": [
+          "Saber Junction",
+          "Allied Spirit",
+          "Combined Resolve"
+        ],
+        "intelligence_sharing": "The U.S. and Germany have a long history of intelligence sharing, though there have been periods of tension and limitations due to concerns about domestic politics and security. Intelligence sharing is key to averting threats from international terrorism.",
+        "regional_security_role": "Germany plays a critical role in NATO's core mission of collective defense, serving as a framework nation for NATO's Enhanced Forward Presence and contributing to NATO's Baltic Air Policing. Germany is committed to fair burden sharing and building a more capable, reliable, and resilient Europe within NATO."
+      },
+      "diplomatic_engagement": {
+        "recent_high_level_visits": [
+          "President Biden's visit to Germany (October 2024)",
+          "Chancellor Scholz's visit to the White House (February 2024)",
+          "Foreign Minister Wadephul's visit to Washington, DC (May 2025)"
+        ],
+        "institutional_frameworks": [
+          "U.S.-Germany Economic Dialogue",
+          "U.S.-Germany Climate and Energy Partnership",
+          "Congress-Bundestag Youth Exchange (CBYX)"
+        ],
+        "multilateral_cooperation": "The United States and Germany cooperate through several multilateral institutions including NATO, the G7, the OSCE, and the UN, to advance security, democracy, and the rule of law globally.",
+        "embassy_relations": "The U.S. maintains an embassy in Berlin and consulates in other major German cities. Germany maintains an embassy in Washington, D.C., and consulates throughout the U.S., reflecting the full diplomatic relations between the two countries."
+      },
+      "challenges_and_opportunities": {
+        "current_challenges": [
+          "NATO burden-sharing",
+          "Energy security concerns related to reliance on imports",
+          "Trade imbalances and potential for trade disputes",
+          "Differing perspectives on foreign policy issues",
+          "Rising extremism and distrust",
+          "Contentious US-German relations due to remarks critiquing European NATO allies and expressing support for populist movements (Source: CalChamber)"
+        ],
+        "cooperation_opportunities": [
+          "Strengthening collaboration on climate change and sustainable energy",
+          "Enhancing economic security through resilient supply chains",
+          "Promoting democracy and human rights globally",
+          "Addressing security challenges in Europe and beyond",
+          "Expanding cultural and educational exchanges"
+        ]
+      },
+      "status": "completed",
+      "analysis_date": "2025-07-03",
+      "last_update": "2025-07-03T22:28:44.185630"
+    },
+    "GBR": {
+      "country_name": "United Kingdom",
+      "relationship_strength": "Very Strong Allied",
+      "relationship_score": 90,
+      "economic_ties": "High",
+      "military_cooperation": "Full Alliance (NATO)",
+      "diplomatic_status": "Full Diplomatic Relations (Special Relationship)",
+      "key_issues": [
+        "Post-Brexit Relations",
+        "Special Relationship",
+        "Security Cooperation"
+      ],
+      "detailed_relationship_summary": "The US-UK relationship is a 'Special Relationship' built on deep historical ties and extensive collaboration. In the four quarters to the end of Q4 2024, total trade in goods and services between the UK and the US was £314.6 billion. The US-UK Mutual Defence Agreement (MDA) of 1958, amended in 2024, exemplifies security cooperation, while intelligence sharing continues through the 'Five Eyes' partnership.",
+      "economic_cooperation": {
+        "trade_volume_estimate": "Total trade in goods and services between the UK and the US was £314.6 billion in the four quarters to the end of Q4 2024. UK exports to the US amounted to £196.3 billion, while UK imports from the US were £118.3 billion.",
+        "key_trade_sectors": [
+          "Services",
+          "Machinery and Transport Equipment",
+          "Cars",
+          "Gold",
+          "Crude Petroleum",
+          "Gas Turbines"
+        ],
+        "investment_flows": "At the end of 2023, the outward stock of foreign direct investment (FDI) from the UK in the United States was £494.1 billion, accounting for 26.7% of the total UK outward FDI stock. The inward stock of foreign direct investment (FDI) in the UK from the United States was £708.1 billion, accounting for 34.1% of the total UK inward FDI stock.",
+        "trade_agreements": [
+          "No comprehensive free trade agreement currently in place, but discussions are ongoing."
+        ]
+      },
+      "security_cooperation": {
+        "defense_agreements": [
+          "US-UK Mutual Defence Agreement (MDA) of 1958, amended in 2024."
+        ],
+        "joint_exercises": "[Insufficient verified sources]",
+        "intelligence_sharing": "Extensive intelligence sharing through the 'Five Eyes' partnership (US, UK, Canada, Australia, and New Zealand).",
+        "regional_security_role": "Close collaboration on regional security issues, including those related to NATO and global counter-terrorism efforts."
+      },
+      "diplomatic_engagement": {
+        "recent_high_level_visits": "[Insufficient verified sources]",
+        "institutional_frameworks": "Numerous bilateral mechanisms for dialogue and cooperation, including regular summits and working groups.",
+        "multilateral_cooperation": "Close coordination within multilateral forums such as the UN, NATO, and G7.",
+        "embassy_relations": "Full diplomatic representation with embassies in Washington, D.C., and London."
+      },
+      "challenges_and_opportunities": {
+        "current_challenges": [
+          "Navigating post-Brexit trade and economic relations.",
+          "Potential divergence in foreign policy priorities.",
+          "Maintaining public support for close security ties.",
+          "Increased trade tensions and eroded trust due to tariff policies and perceived 'Euro-bashing'."
+        ],
+        "cooperation_opportunities": [
+          "Enhancing cooperation on emerging technologies and cybersecurity.",
+          "Strengthening collaboration on climate change and global health.",
+          "Promoting shared values and democratic principles internationally."
+        ]
+      },
+      "status": "completed",
+      "analysis_date": "2025-07-03",
+      "last_update": "2025-07-03T22:29:43.891329"
+    },
+    "JPN": {
+      "country_name": "Japan",
+      "relationship_strength": "Very Strong Allied",
+      "relationship_score": 80,
+      "economic_ties": "High",
+      "military_cooperation": "Bilateral Defense Partnership",
+      "diplomatic_status": "Full Diplomatic Relations (Security Alliance)",
+      "key_issues": [
+        "China Containment",
+        "Trade Relations",
+        "Security Alliance"
+      ],
+      "detailed_relationship_summary": "The US-Japan alliance is a cornerstone of American security strategy in the Indo-Pacific, exemplified by the $227.9 billion in goods traded in 2024 and Japan's $783.3 billion direct investment in the U.S. as of 2023. Joint military exercises like Keen Sword enhance defense capabilities, while Prime Minister Ishiba's February 2025 visit to Washington, D.C. solidified commitments to regional security and economic cooperation. The alliance addresses shared challenges like China's growing influence and North Korea's nuclear program through enhanced security cooperation and trilateral partnerships with South Korea.",
+      "economic_cooperation": {
+        "trade_volume_estimate": "U.S. goods trade with Japan totaled an estimated $227.9 billion in 2024. U.S. goods exports to Japan in 2024 were $79.7 billion, while U.S. goods imports from Japan totaled $148.2 billion.",
+        "key_trade_sectors": [
+          "Vehicles",
+          "Machinery",
+          "Optic and Medical Instruments",
+          "Organic Chemicals",
+          "Agricultural Products",
+          "Chemicals",
+          "Pharmaceuticals",
+          "Commercial Aircraft"
+        ],
+        "investment_flows": "As of 2023, Japanese direct investment in the U.S. reached $783.3 billion, ranking first among all investor countries. Direct investment in the United States by Japanese companies is predominantly in manufacturing, particularly of transportation equipment (e.g., autos). U.S. direct investment in Japan is mostly in the finance/insurance, manufacturing, and wholesale sectors.",
+        "trade_agreements": [
+          "U.S.-Japan Trade Agreement (USJTA)",
+          "U.S.-Japan Digital Trade Agreement",
+          "Critical Minerals Agreement (CMA)",
+          "Indo-Pacific Economic Framework for Prosperity (IPEF)"
+        ]
+      },
+      "security_cooperation": {
+        "defense_agreements": [
+          "Treaty of Mutual Cooperation and Security between the United States and Japan",
+          "U.S. and Japan Mutual Defense Assistance Agreement",
+          "Status of Forces Agreement (SOFA)"
+        ],
+        "joint_exercises": [
+          "Keen Sword",
+          "Iron Fist",
+          "Orient Shield",
+          "Talisman Sabre"
+        ],
+        "intelligence_sharing": "The U.S. and Japan have increased intelligence sharing, including the establishment of the U.S.-Japan Bilateral Intelligence Analysis Cell (BIAC) at Yokota Air Base. The BIAC functions to jointly analyze and process information gathered from assets of both countries in support of mutual security and cooperation.",
+        "regional_security_role": "The U.S.-Japan alliance is a cornerstone of peace, stability, and freedom in the Indo-Pacific region. Both countries are focused on ensuring regional peace and security, including building new partnerships and strengthening multilateral cooperation. They work together to address shared regional and global objectives by enhancing security cooperation, affirming a rules-based approach to maritime governance, and deepening trilateral cooperation with South Korea."
+      },
+      "diplomatic_engagement": {
+        "recent_high_level_visits": "Prime Minister Ishiba's visit to Washington, D.C. in February 2025. President Trump accepted an invitation from Prime Minister Ishiba for an official visit to Japan in the near future.",
+        "institutional_frameworks": "Security Consultative Committee (SCC). Security Sub-Committee (SSC). U.S.-Japan Partnership on Trade. U.S.-Japan Commercial and Industrial Partnership (JUCIP). Economic “2+2” framework. Japan-U.S. Energy Security Dialogue. U.S.-Japan Strategic Dialogue of Democratic Resilience",
+        "multilateral_cooperation": "Quad (Japan-Australia-India-U.S.). Japan-U.S.-Republic of Korea (ROK) Trilateral Partnership. G7 Coordination Platform on Economic Coercion. Indo-Pacific Economic Framework (IPEF)",
+        "embassy_relations": "The U.S. and Japan maintain full diplomatic relations with embassies in each other's capitals."
+      },
+      "challenges_and_opportunities": {
+        "current_challenges": [
+          "China's growing military and economic influence in the Indo-Pacific",
+          "North Korea's nuclear and ballistic missile programs",
+          "Economic coercion",
+          "Cybersecurity threats",
+          "Regional economic strains",
+          "Uncertainty surrounding US economic security policy and its impact on US-Japan cooperation"
+        ],
+        "cooperation_opportunities": [
+          "Enhancing defense capabilities and interoperability",
+          "Strengthening economic security and supply chain resilience",
+          "Expanding cooperation in emerging technologies (AI, quantum computing, semiconductors)",
+          "Promoting a free and open Indo-Pacific",
+          "Addressing climate change and energy security",
+          "Deepening trilateral cooperation with South Korea",
+          "Deepening cooperation in emerging domains including cybersecurity"
+        ]
+      },
+      "status": "completed",
+      "analysis_date": "2025-07-03",
+      "last_update": "2025-07-03T22:30:57.411784"
+    },
+    "IND": {
+      "country_name": "India",
+      "relationship_strength": "Strong Partnership",
+      "relationship_score": 75,
+      "economic_ties": "Medium",
+      "military_cooperation": "Bilateral Defense Partnership",
+      "diplomatic_status": "Full Diplomatic Relations (Strategic Partnership)",
+      "key_issues": [
+        "Strategic Partnership",
+        "Technology Cooperation",
+        "China Policy"
+      ],
+      "detailed_relationship_summary": "The US-India strategic partnership is characterized by growing economic and defense cooperation, exemplified by bilateral trade reaching $131.84 billion in 2024-2025. Joint military exercises like Yudh Abhyas and Malabar enhance military interoperability. High-level visits, such as Indian Prime Minister Narendra Modi's visit to Washington, D.C. in February 2025, underscore the commitment to strengthening ties and addressing regional security challenges.",
+      "economic_cooperation": {
+        "trade_volume_estimate": "In 2024-2025, bilateral trade between the U.S. and India reached $131.84 billion, making the U.S. India's largest trading partner for the fourth consecutive year.",
+        "key_trade_sectors": [
+          "Drug formulations and biologicals",
+          "Telecom instruments",
+          "Precious and semi-precious stones",
+          "Petroleum products",
+          "Gold and other precious metal jewellery",
+          "Ready-made garments of cotton",
+          "Products of iron and steel",
+          "Crude oil",
+          "Coal, coke",
+          "Cut and polished diamonds",
+          "Electric machinery",
+          "Aircraft, spacecraft and parts"
+        ],
+        "investment_flows": "Both countries are promoting investment across the critical mineral value chain. The U.S. and India are also fostering investments in space, energy, and other emerging technologies.",
+        "trade_agreements": [
+          "Negotiations are ongoing to increase two-way commerce in goods and services to $500 billion by 2030.",
+          "Security of Supply Arrangement (SOSA)"
+        ]
+      },
+      "security_cooperation": {
+        "defense_agreements": [
+          "Logistics Exchange Memorandum of Agreement (LEMOA)",
+          "Communications Compatibility and Security Agreement (COMCASA)",
+          "Industrial Security Agreement (ISA)",
+          "Security of Supply Arrangement (SOSA)",
+          "General Security of Military Information Agreement (GSOMIA)",
+          "Basic Exchange and Cooperation Agreement (BECA)"
+        ],
+        "joint_exercises": [
+          "Yudh Abhyas (Army)",
+          "Vajra Prahar (Army Special Forces)",
+          "Cope India (Air Force)",
+          "Tiger Triumph (Tri-Service)",
+          "Malabar (Navy)",
+          "Tarkash (Counterterrorism)",
+          "Sangam (Naval Special Forces)"
+        ],
+        "intelligence_sharing": "Intelligence sharing is a central pillar of the strategic partnership, focusing on counterterrorism efforts.",
+        "regional_security_role": "Both countries share a vision for a free and open Indo-Pacific and are working together to counter threats in the region."
+      },
+      "diplomatic_engagement": {
+        "recent_high_level_visits": [
+          "Indian Prime Minister Narendra Modi's visit to Washington, D.C. in February 2025.",
+          "U.S. National Security Advisor Jake Sullivan's visit to India in January 2025.",
+          "Indian External Affairs Minister S. Jaishankar's visit to the United States in January 2025.",
+          "US Vice President JD Vance's visit to India in April 2025."
+        ],
+        "institutional_frameworks": [
+          "2+2 Ministerial Dialogue",
+          "U.S.-India COMPACT (Catalyzing Opportunities for Military Partnership, Accelerated Commerce & Technology) for the 21st Century",
+          "INDUS Innovation bridge",
+          "U.S.-India TRUST (Transforming the Relationship Utilizing Strategic Technology) initiative"
+        ],
+        "multilateral_cooperation": [
+          "The Quad (Quadrilateral Security Dialogue)",
+          "I2U2 (India, Israel, USA, UAE)",
+          "Mineral Security Partnership"
+        ],
+        "embassy_relations": "Both countries maintain full diplomatic relations with embassies in each other's capitals."
+      },
+      "challenges_and_opportunities": {
+        "current_challenges": [
+          "Navigating trade tensions and tariff threats.",
+          "Addressing technology security concerns and export controls.",
+          "Escalation of trade tensions due to new tariffs imposed by the US.",
+          "India's hardened stance on trade concessions in agriculture, dairy, and GM foods."
+        ],
+        "cooperation_opportunities": [
+          "Expanding defense sales and co-production.",
+          "Enhancing collaboration in critical and emerging technologies.",
+          "Deepening cooperation in the exploration, beneficiation, and processing of critical minerals.",
+          "Strengthening military interoperability through joint exercises and training."
+        ]
+      },
+      "status": "completed",
+      "analysis_date": "2025-07-03",
+      "last_update": "2025-07-03T22:32:29.108926"
+    },
+    "SAU": {
+      "country_name": "Saudi Arabia",
+      "relationship_strength": "Strong Partnership",
+      "relationship_score": 70,
+      "economic_ties": "Medium",
+      "military_cooperation": "Bilateral Defense Partnership",
+      "diplomatic_status": "Full Diplomatic Relations (Strategic Partner)",
+      "key_issues": [
+        "Energy Relations",
+        "Middle East Security",
+        "Human Rights"
+      ],
+      "detailed_relationship_summary": "The US-Saudi relationship is characterized by strategic interests in energy security, counterterrorism, and regional stability. In 2024, total trade amounted to $25.9 billion, with the U.S. achieving a $443.3 million goods trade surplus. A significant defense sales agreement worth nearly $142 billion was signed in May 2025, enhancing Saudi Arabia's defense capabilities with U.S. equipment and services.",
+      "economic_cooperation": {
+        "trade_volume_estimate": "In 2024, U.S. total goods trade with Saudi Arabia was an estimated $25.9 billion. U.S. goods exports to Saudi Arabia in 2024 were $13.2 billion, while U.S. goods imports from Saudi Arabia totaled $12.7 billion, resulting in a U.S. goods trade surplus with Saudi Arabia of $443.3 million.",
+        "key_trade_sectors": [
+          "Crude Petroleum",
+          "Refined Petroleum",
+          "Cars",
+          "Explosive Ammunition",
+          "Gas Turbines"
+        ],
+        "investment_flows": "Saudi Arabia has pledged significant investments in the U.S. economy, including a $600 billion investment commitment across various sectors. These investments span technology, energy, and infrastructure.",
+        "trade_agreements": [
+          "No specific trade agreements listed in the search results, but the U.S. and Saudi Arabia engage in ongoing discussions to enhance trade and investment ties."
+        ]
+      },
+      "security_cooperation": {
+        "defense_agreements": [
+          "The U.S. and Saudi Arabia signed a defense sales agreement worth nearly $142 billion in May 2025. This agreement provides Saudi Arabia with state-of-the-art warfighting equipment and services from over a dozen U.S. defense firms."
+        ],
+        "joint_exercises": [
+          "The U.S. and Saudi Arabia regularly conduct joint military exercises to enhance interoperability and coordination. Examples include 'Protection Shield 4' in May 2024, 'Nautical Defender' in May 2025, and various air force and land forces exercises."
+        ],
+        "intelligence_sharing": "Intelligence sharing is a key component of the security cooperation between the U.S. and Saudi Arabia, particularly in the context of counterterrorism efforts and regional security.",
+        "regional_security_role": "The U.S. relies on Saudi Arabia as a key partner in maintaining stability in the Middle East, addressing regional conflicts, and countering terrorism. Saudi Arabia plays a significant role in regional security dynamics, and the U.S. supports its efforts to enhance its defense capabilities."
+      },
+      "diplomatic_engagement": {
+        "recent_high_level_visits": [
+          "President Trump visited Saudi Arabia in May 2025 as part of his first overseas trip of his second term. This visit underscored the strengthening of U.S.-Saudi Arabia relations and included high-level meetings and the signing of significant agreements."
+        ],
+        "institutional_frameworks": [
+          "The U.S. and Saudi Arabia have various institutional frameworks for bilateral cooperation, including regular dialogues on political, economic, and security issues."
+        ],
+        "multilateral_cooperation": "The U.S. and Saudi Arabia cooperate on various multilateral initiatives, including efforts to combat terrorism, promote regional stability, and address global challenges.",
+        "embassy_relations": "The U.S. maintains a strong diplomatic presence in Saudi Arabia through its embassy in Riyadh and consulates in other major cities. Saudi Arabia has an embassy in Washington, D.C., and consulates in several U.S. cities, facilitating diplomatic engagement and consular services."
+      },
+      "challenges_and_opportunities": {
+        "current_challenges": [
+          "Differing perspectives on human rights issues continue to present a challenge in the U.S.-Saudi Arabia relationship, requiring ongoing dialogue and engagement.",
+          "Regional instability, particularly concerning Yemen and Iran, poses complex challenges that necessitate coordinated diplomatic efforts.",
+          "Balancing strategic interests with human rights considerations remains a critical challenge in navigating the bilateral relationship.",
+          "Disagreements on oil production policies and their impact on global energy markets can strain the relationship.",
+          "The need for greater transparency and accountability in Saudi Arabia's internal affairs is an ongoing concern for the U.S. government."
+        ],
+        "cooperation_opportunities": [
+          "Deepening security cooperation to counter terrorism and maintain regional stability remains a key area for collaboration.",
+          "Expanding economic partnerships through increased trade and investment can foster mutual prosperity.",
+          "Working together to promote regional peace and security through diplomatic initiatives and conflict resolution efforts.",
+          "Collaborating on renewable energy projects and climate change initiatives can advance shared environmental goals.",
+          "Enhancing cultural and educational exchanges to promote mutual understanding and strengthen people-to-people ties."
+        ]
+      },
+      "status": "completed",
+      "analysis_date": "2025-07-03",
+      "last_update": "2025-07-03T22:33:04.065826"
+    },
+    "ISR": {
+      "country_name": "Israel",
+      "relationship_strength": "Strong Partnership",
+      "relationship_score": 70,
+      "economic_ties": "Medium",
+      "military_cooperation": "Bilateral Defense Partnership",
+      "diplomatic_status": "Full Diplomatic Relations (Strategic Partner)",
+      "key_issues": [
+        "Security Cooperation",
+        "Iran Policy",
+        "Regional Stability"
+      ],
+      "detailed_relationship_summary": "The US-Israel relationship is characterized by robust security cooperation and economic ties. In 2024, U.S. total goods trade with Israel amounted to approximately $37.0 billion. Joint military exercises, such as Juniper Oak, enhance interoperability, and Prime Minister Benjamin Netanyahu visited the United States on April 7, 2025, to discuss regional security.",
+      "economic_cooperation": {
+        "trade_volume_estimate": "$37.0 billion in 2024 (U.S. total goods trade with Israel)",
+        "key_trade_sectors": [
+          "Diamonds and precious stones",
+          "Pharmaceuticals",
+          "Machinery and electronics",
+          "Defense industries",
+          "Agricultural products"
+        ],
+        "investment_flows": "The total stock of U.S. foreign direct investment (FDI) in Israel was USD 42.5 billion in 2022. Israeli firms represent the second-largest source of foreign listings on the NASDAQ after China. In the first half of 2024, foreign investment transactions in Israel amounted to approximately USD 11.8 billion.",
+        "trade_agreements": [
+          "United States-Israel Free Trade Agreement (FTA) (1985)",
+          "Agreement on Trade in Agricultural Products (ATAP)"
+        ]
+      },
+      "security_cooperation": {
+        "defense_agreements": [
+          "Mutual Defense Assistance Agreement (1952)",
+          "General Security of Information Agreement (1982)",
+          "Mutual Logistics Support Agreement (1991)",
+          "Status of Forces Agreement (1994)"
+        ],
+        "joint_exercises": "The U.S. and Israel engage in regular joint military exercises, such as Juniper Oak and Juniper Falcon, to enhance interoperability and readiness. These exercises cover various domains, including air, land, sea, and cyber operations.",
+        "intelligence_sharing": "The U.S. and Israel maintain close intelligence cooperation, sharing information on terrorism, regional threats, and other security concerns. Israel provides valuable intelligence to the U.S., particularly regarding the Middle East.",
+        "regional_security_role": "The U.S. views Israel as a key strategic partner in the Middle East, contributing to regional stability and countering threats from Iran and other actors. The U.S. supports Israel's right to defend itself and maintains its qualitative military edge (QME) in the region."
+      },
+      "diplomatic_engagement": {
+        "recent_high_level_visits": "Israeli Prime Minister Benjamin Netanyahu visited the United States on April 7, 2025. Deputy Secretary of State Christopher Landau traveled to the World Expo in Osaka, Japan on U.S. National Day, July 19, 2025.",
+        "institutional_frameworks": [
+          "Joint Political-Military Group (JPMG)",
+          "Joint Economic Development Group (JEDG)",
+          "U.S.-Israel Strategic High-Level Dialogue on Technology"
+        ],
+        "multilateral_cooperation": "Both countries cooperate in various international organizations, including the United Nations, OECD, IMF, World Bank, and WTO.",
+        "embassy_relations": "The U.S. Embassy is located in Jerusalem. The U.S. also maintains a large Embassy Branch Office in Tel Aviv."
+      },
+      "challenges_and_opportunities": {
+        "current_challenges": [
+          "Managing regional tensions and conflicts",
+          "Addressing the Israeli-Palestinian conflict",
+          "Concerns about Israeli policies in the West Bank",
+          "Maintaining bipartisan support for Israel in the U.S.",
+          "Potential divergence in US-Israel relations due to shifting US foreign policy priorities and declining American sympathy towards Israelis among certain political groups"
+        ],
+        "cooperation_opportunities": [
+          "Expanding economic and trade relations",
+          "Enhancing cooperation on technology and innovation",
+          "Strengthening joint efforts to counter terrorism and cyber threats",
+          "Promoting regional peace and stability through diplomatic initiatives"
+        ]
+      },
+      "status": "completed",
+      "analysis_date": "2025-07-03",
+      "last_update": "2025-07-03T22:34:13.203644"
+    },
+    "KOR": {
+      "country_name": "South Korea",
+      "relationship_strength": "Very Strong Allied",
+      "relationship_score": 80,
+      "economic_ties": "High",
+      "military_cooperation": "Bilateral Defense Partnership",
+      "diplomatic_status": "Full Diplomatic Relations (Security Alliance)",
+      "key_issues": [
+        "North Korea Policy",
+        "Trade Relations",
+        "Security Alliance"
+      ],
+      "detailed_relationship_summary": "The US-South Korea alliance is a cornerstone of US security in Asia, exemplified by the Mutual Defense Treaty of 1953. In May 2025, the United States exported $5.42B to South Korea and imported $11.5B, resulting in a negative trade balance of $6.04B. Recent high-level visits include Gen. Dan Caine's July 2025 trip to Seoul for trilateral military talks with South Korea and Japan, reinforcing regional security cooperation.",
+      "economic_cooperation": {
+        "trade_volume_estimate": "In May 2025, the United States exported $5.42B to South Korea and imported $11.5B, resulting in a negative trade balance of $6.04B. The US-South Korea bilateral trade volume hovered around $197 billion last year.",
+        "key_trade_sectors": [
+          "Cars",
+          "Crude Petroleum",
+          "Machinery",
+          "Petroleum Gas",
+          "Office Machine Parts",
+          "Motor vehicles; parts and accessories"
+        ],
+        "investment_flows": "South Korean firms are being encouraged to build or expand factories in the U.S. or invest in local partners. The US has asked South Korea to lead a multi-billion-dollar “manufacturing cooperation enhancement fund” amid ongoing tariff negotiations. South Korea has pledged US$150 billion to help its shipbuilders enter the US market as part of Seoul's new trade deal with Washington. South Korea agreed to make a $350 billion investment in the US.",
+        "trade_agreements": [
+          "U.S.-South Korea Free Trade Agreement (KORUS FTA)"
+        ]
+      },
+      "security_cooperation": {
+        "defense_agreements": [
+          "Mutual Defense Treaty (1953)",
+          "U.S.–South Korea Status of Forces Agreement (SOFA)"
+        ],
+        "joint_exercises": "Annual combined exercises are regularly conducted to maintain a strong defensive military posture. Freedom Edge is a trilateral drill launched last year that includes maritime, air, and cyber components.",
+        "intelligence_sharing": "Trilateral mechanisms are in place to share real-time data on DPRK missiles.",
+        "regional_security_role": "The U.S.-ROK alliance serves as a linchpin for security and stability in the Indo-Pacific, deterring North Korean aggression and maintaining the Korean Armistice Agreement."
+      },
+      "diplomatic_engagement": {
+        "recent_high_level_visits": "In July 2025, Gen. Dan Caine, chairman of the U.S. Joint Chiefs of Staff, visited Seoul for a trilateral military meeting with South Korea and Japan. Sean O'Neill, a senior official at the U.S. State Department, visited South Korea in June 2025 ahead of the G7 summit.",
+        "institutional_frameworks": "The Trilateral Security Cooperation Framework (TSCF) facilitates defense initiatives between South Korea, the United States, and Japan.",
+        "multilateral_cooperation": "The United States, Japan, and South Korea hold regular meetings to address regional conflicts and North Korea's expanding threat.",
+        "embassy_relations": "Full diplomatic relations are maintained, with embassies in both countries."
+      },
+      "challenges_and_opportunities": {
+        "current_challenges": [
+          "Managing trade imbalances and potential tariffs imposed by the U.S.",
+          "Differing approaches to North Korea policy and denuclearization.",
+          "Demands from the U.S. for increased defense spending by South Korea.",
+          "South Korea being placed on the US DOE's Sensitive Country List",
+          "Growing pressure from the U.S. for South Korea to take on a more assertive role in the event of a conflict over Taiwan, potentially straining relations with China and creating a security vacuum on the Korean Peninsula."
+        ],
+        "cooperation_opportunities": [
+          "Enhanced cooperation in technology, energy, and regional security initiatives.",
+          "Joint efforts to address North Korea's nuclear and missile programs.",
+          "Strengthening trilateral security cooperation with Japan.",
+          "Expanding economic partnerships and investment flows."
+        ]
+      },
+      "status": "completed",
+      "analysis_date": "2025-07-03",
+      "last_update": "2025-07-03T22:35:33.597668"
+    },
+    "CAN": {
+      "country_name": "Canada",
+      "relationship_strength": "Very Strong Allied",
+      "relationship_score": 95,
+      "economic_ties": "Very High",
+      "military_cooperation": "Full Alliance (NATO)",
+      "diplomatic_status": "Full Diplomatic Relations (Close Ally)",
+      "key_issues": [
+        "USMCA",
+        "Energy Security",
+        "Arctic Cooperation"
+      ],
+      "detailed_relationship_summary": "The US-Canada relationship is characterized by deep economic and security ties, exemplified by approximately $762.1 billion in goods traded in 2024. Military cooperation is robust through NORAD and joint exercises like Operation Noble Defender. Despite close ties, challenges persist, including trade disputes over softwood lumber and differing approaches to international issues.",
+      "economic_cooperation": {
+        "trade_volume_estimate": "$762.1 billion in goods in 2024. Trade in services totaled an estimated $140.3 billion in 2023.",
+        "key_trade_sectors": [
+          "Vehicles",
+          "Machinery",
+          "Energy products",
+          "Agricultural products"
+        ],
+        "investment_flows": "The United States is Canada's largest investor, accounting for 46 percent of total FDI. As of 2022, the amount of U.S. FDI in Canada totaled $438 billion. Canada's FDI stock in the United States totaled $683 billion.",
+        "trade_agreements": [
+          "United States-Mexico-Canada Agreement (USMCA)",
+          "Canada–United States Automotive Products Agreement (APTA)"
+        ]
+      },
+      "security_cooperation": {
+        "defense_agreements": [
+          "North Atlantic Treaty Organization (NATO)",
+          "North American Aerospace Defense Command (NORAD)",
+          "Defence Production Sharing Agreement (DPSA)",
+          "Defence Development Sharing Agreement (DDSA)"
+        ],
+        "joint_exercises": [
+          "Operation Noble Defender",
+          "Joint airborne exercise at Moody Air Force Base, Georgia",
+          "Exercise Maple Resolve",
+          "Exercise Hungry Horse"
+        ],
+        "intelligence_sharing": "The United States and Canada maintain a close intelligence partnership as members of the \"Five Eyes.\"",
+        "regional_security_role": "The United States and Canada cooperate closely to address international crises and to defend shared values abroad. Canada's Arctic Foreign Policy recognizes the U.S. as Canada's closest partner and ally sharing significant national interests in the Arctic."
+      },
+      "diplomatic_engagement": {
+        "recent_high_level_visits": "Insufficient verified sources",
+        "institutional_frameworks": [
+          "Permanent Joint Board of Defense",
+          "Canada–United States Regulatory Cooperation Council"
+        ],
+        "multilateral_cooperation": "The two countries belong to a number of the same international organizations, including the United Nations, NATO, WTO, G7, G20, Organization for Security and Cooperation in Europe, Organization for Economic Cooperation and Development, Organization of American States, and Asia-Pacific Economic Cooperation forum.",
+        "embassy_relations": "Canada has an embassy in Washington, D.C., consulates general in multiple U.S. cities, trade offices, and Honorary Consuls. The United States maintains an embassy in Ottawa and consulates general across Canada."
+      },
+      "challenges_and_opportunities": {
+        "current_challenges": [
+          "Trade disputes (e.g., softwood lumber, dairy)",
+          "Environmental concerns (e.g., transboundary pollution)",
+          "Differing approaches to international issues",
+          "Increased tariffs imposed by the U.S. on Canadian goods due to concerns about fentanyl and border security"
+        ],
+        "cooperation_opportunities": [
+          "Arctic security and development",
+          "Supply chain resilience",
+          "Critical minerals",
+          "Joint efforts to combat climate change",
+          "Enhanced collaboration on disrupting the illegal fentanyl trade"
+        ]
+      },
+      "status": "completed",
+      "analysis_date": "2025-07-03",
+      "last_update": "2025-07-03T22:37:32.182432"
+    },
+    "MEX": {
+      "country_name": "Mexico",
+      "relationship_strength": "Very Strong Allied",
+      "relationship_score": 90,
+      "economic_ties": "Very High",
+      "military_cooperation": "Bilateral Defense Partnership",
+      "diplomatic_status": "Full Diplomatic Relations (USMCA Partner)",
+      "key_issues": [
+        "Immigration",
+        "USMCA",
+        "Border Security"
+      ],
+      "detailed_relationship_summary": "The US-Mexico relationship is characterized by deep economic integration, exemplified by an estimated $839.9 billion in total goods trade in 2024. Security cooperation is formalized through the Bicentennial Framework for Security, Public Health, and Safe Communities, addressing transnational crime. High-Level Economic Dialogue (HLED) meetings and High-Level Security Dialogue (HLSD) meetings serve as key institutional frameworks for ongoing collaboration and addressing shared challenges.",
+      "economic_cooperation": {
+        "trade_volume_estimate": "U.S. total goods trade with Mexico was an estimated $839.9 billion in 2024. Through the first five months of 2025, trade reached $359.58 billion.",
+        "key_trade_sectors": [
+          "Vehicles",
+          "Machinery",
+          "Electrical machinery",
+          "Medical devices",
+          "Energy products",
+          "Plastics",
+          "Agricultural products (including corn, pork, fresh vegetables, beer, and fresh fruit)"
+        ],
+        "investment_flows": "The United States holds the largest stock of foreign direct investment (FDI) in Mexico, with a total of $144.5 billion in 2023 (latest year available). Mexican FDI in the United States stood at $38.3 billion in 2023.",
+        "trade_agreements": [
+          "United States-Mexico-Canada Agreement (USMCA)"
+        ]
+      },
+      "security_cooperation": {
+        "defense_agreements": [
+          "Bicentennial Framework for Security, Public Health, and Safe Communities"
+        ],
+        "joint_exercises": [
+          "Insufficient verified sources"
+        ],
+        "intelligence_sharing": "Intelligence sharing occurs through various channels, including the DEA and the El Paso Intelligence Center (EPIC), which coordinates efforts among U.S. agencies and facilitates bilateral cooperation.",
+        "regional_security_role": "The United States and Mexico cooperate to address regional security challenges, including combating transnational organized crime, drug trafficking, and human smuggling. They also work together to address the root causes of irregular migration in southern Mexico and northern Central America."
+      },
+      "diplomatic_engagement": {
+        "recent_high_level_visits": [
+          "U.S.-Mexico High-Level Economic Dialogue (HLED) meetings",
+          "High-Level Security Dialogue (HLSD) meetings"
+        ],
+        "institutional_frameworks": [
+          "High-Level Economic Dialogue (HLED)",
+          "High-Level Security Dialogue (HLSD)",
+          "21st Century Border Management Process (21CB)",
+          "Western Regional Binational Bridges and Border Crossing Group (BBBXG)",
+          "Americas Partnership for Economic Prosperity"
+        ],
+        "multilateral_cooperation": "The United States and Mexico collaborate through multilateral initiatives such as the North American Leaders' Summit and the Los Angeles Declaration on Migration and Protection.",
+        "embassy_relations": "Both countries maintain full diplomatic relations with embassies in each other's capitals and consulates in various cities."
+      },
+      "challenges_and_opportunities": {
+        "current_challenges": [
+          "Managing irregular migration flows",
+          "Combating drug trafficking and transnational organized crime",
+          "Addressing trade disputes and ensuring fair labor practices under USMCA",
+          "Securing the border against illicit activities",
+          "Increased regulatory focus on the financing of fentanyl production and trafficking"
+        ],
+        "cooperation_opportunities": [
+          "Enhancing supply chain resilience and regional economic integration",
+          "Expanding cooperation on renewable energy and environmental protection",
+          "Strengthening border infrastructure and facilitating legal trade and travel",
+          "Addressing the root causes of migration through sustainable development initiatives",
+          "Joint efforts to combat fentanyl production and arms trafficking"
+        ]
+      },
+      "status": "completed",
+      "analysis_date": "2025-07-03",
+      "last_update": "2025-07-03T22:38:13.758879"
+    },
+    "FRA": {
+      "country_name": "France",
+      "relationship_strength": "Very Strong Allied",
+      "relationship_score": 90,
+      "economic_ties": "High",
+      "military_cooperation": "Full Alliance (NATO)",
+      "diplomatic_status": "Full Diplomatic Relations (NATO Ally & Strategic Partner)",
+      "key_issues": [
+        "NATO Relations",
+        "European Strategic Autonomy",
+        "Technology Cooperation",
+        "Climate Policy"
+      ],
+      "detailed_relationship_summary": "The US-France relationship is characterized by strong economic and security cooperation, exemplified by a bilateral trade volume of $161 billion in 2024 and joint military exercises like the March 2025 joint parachuting exercise in Djibouti. High-level visits, such as President Biden's trip to France in June 2024 for the 80th anniversary of D-Day, underscore the diplomatic engagement. Despite some friction, such as France's President expressing concerns about EU trade negotiations with the US in July 2025, both countries continue to co-chair the artillery coalition at the Ukraine Defense Contact Group.",
+      "economic_cooperation": {
+        "trade_volume_estimate": "In 2024, bilateral trade in goods and services reached $161 billion. In May 2025, the United States exported $4.87B to France and imported $5.16B from France.",
+        "key_trade_sectors": [
+          "Transportation equipment",
+          "LNG",
+          "Electronic and electric products",
+          "Metals",
+          "Aircraft parts",
+          "Packaged Medicaments",
+          "Commodities not elsewhere specified",
+          "Radioactive Chemicals"
+        ],
+        "investment_flows": "French and American companies have invested close to $500 billion in each other's economies. Total investments by French firms in the financial sector amount to $37 billion in 2023, while information technology ($33 billion), professional, scientific, and technical services ($30 billion) and wholesale trade ($19 billion) were also sectors of significant French FDI into the US.",
+        "trade_agreements": [
+          "WTO agreements"
+        ]
+      },
+      "security_cooperation": {
+        "defense_agreements": [
+          "North Atlantic Treaty",
+          "Personnel exchanges agreements",
+          "Logistics support agreements",
+          "Information security agreements",
+          "Defense research projects agreements",
+          "Statement of Intent to enhance Special Forces cooperation (March 2024)"
+        ],
+        "joint_exercises": [
+          "Project Orion",
+          "Atlantic Trident",
+          "Dynamic Manta",
+          "Steadfast Defender",
+          "Pacific Steller",
+          "Joint parachuting exercise in Djibouti (March 2025)"
+        ],
+        "intelligence_sharing": "The United States and France engage in close intelligence sharing, particularly on counterterrorism and regional security issues.",
+        "regional_security_role": "France plays a significant role in regional security, particularly in Europe, Africa, and the Middle East. Both countries coordinate closely on numerous global and regional security issues, especially in Europe, Africa, the Middle East, Central Asia, and the Indo-Pacific. France has committed one frigate to Operation Prosperity Guardian in the Red Sea."
+      },
+      "diplomatic_engagement": {
+        "recent_high_level_visits": [
+          "President Biden's visit to France to commemorate the 80th anniversary of the D-Day landings in Normandy (June 2024)",
+          "President Macron's State Visit to the White House (December 2022)"
+        ],
+        "institutional_frameworks": [
+          "U.S.-France Bilateral Clean Energy Partnership",
+          "U.S.-France Comprehensive Dialogue on Space",
+          "Joint Committee Meeting on Science and Technology Cooperation"
+        ],
+        "multilateral_cooperation": "The United States and France coordinate closely in multilateral forums such as the UN, NATO, G7, and G20. They also share membership in the Euro-Atlantic Partnership Council and France is an observer to the Organization of American States (OAS).",
+        "embassy_relations": "Both countries maintain full diplomatic relations with embassies in each other's capitals."
+      },
+      "challenges_and_opportunities": {
+        "current_challenges": [
+          "Differing perspectives on European strategic autonomy",
+          "Managing trade imbalances",
+          "Addressing concerns about defense spending levels",
+          "France's President expressing that the EU had not been 'feared' enough in trade deal negotiations with the US, signaling potential friction (Source: NAMPA, July 30, 2025)"
+        ],
+        "cooperation_opportunities": [
+          "Enhancing technology cooperation, particularly in quantum computing and AI",
+          "Strengthening collaboration on climate change mitigation and adaptation",
+          "Expanding joint efforts in counterterrorism and regional security",
+          "Deepening economic ties through increased trade and investment",
+          "France and the US co-chairing the artillery coalition at the Ukraine Defense Contact Group (Source: Élysée, 2024-06-08)",
+          "Cooperation on the implementation of the ceasefire via the ceasefire monitoring mechanism in Lebanon (Source: France in the United States, July 30, 2025)"
+        ]
+      },
+      "status": "completed",
+      "analysis_date": "2025-07-03",
+      "last_update": "2025-07-03T22:38:58.950324"
+    }
+  },
+  "regional_analysis": {
+    "Indo-Pacific": {
+      "region_name": "Indo-Pacific",
+      "countries": [
+        {
+          "code": "CHN",
+          "name": "China"
+        },
+        {
+          "code": "JPN",
+          "name": "Japan"
+        },
+        {
+          "code": "IND",
+          "name": "India"
+        },
+        {
+          "code": "KOR",
+          "name": "South Korea"
+        }
+      ],
+      "strategic_priority": "Critical",
+      "key_challenges": [
+        "China's Rise",
+        "North Korea",
+        "Trade Routes"
+      ],
+      "us_initiatives": [
+        "QUAD",
+        "AUKUS",
+        "Bilateral Alliances"
+      ],
+      "total_military_spending_billions": 483.90000000000003,
+      "nato_members": 0,
+      "relationship_strength": "Strong",
+      "comprehensive_regional_overview": "The Indo-Pacific region remains a top US strategic priority, exemplified by ongoing joint military exercises like Exercise Malabar 2025 involving the US, Japan, India, and Australia. The US-Japan trade agreement, which saw bilateral trade reach $200 billion in 2024, underscores economic engagement. Diplomatic efforts include the US-ROK summit held in June 2025, focusing on North Korean denuclearization and regional security.",
+      "regional_security_dynamics": {
+        "primary_security_concerns": [
+          "China's military expansion",
+          "North Korea's nuclear program",
+          "Maritime disputes in the South China Sea",
+          "Cybersecurity threats"
+        ],
+        "us_security_role": "The US plays a leading role in maintaining security in the Indo-Pacific through its military presence, security alliances, and defense cooperation agreements. The US military maintains a significant presence in the region, conducting exercises and patrols to deter aggression and ensure freedom of navigation. The US also provides security assistance to regional partners to enhance their defense capabilities.",
+        "alliance_structures": "Key alliance structures include bilateral alliances with Japan, South Korea, and Australia. The QUAD (United States, Japan, India, and Australia) is a strategic dialogue focused on promoting security and cooperation in the region. AUKUS is a trilateral security pact between Australia, the United Kingdom, and the United States focused on enhancing defense capabilities.",
+        "deterrence_strategies": "Deterrence strategies include maintaining a credible military presence, conducting joint military exercises, and signaling resolve to defend allies and partners. The US also employs economic sanctions and diplomatic pressure to deter aggressive behavior."
+      },
+      "economic_engagement": {
+        "trade_relationships": "The US has extensive trade relationships with countries in the Indo-Pacific, including free trade agreements with several nations. The region is a major market for US exports and a key source of imports. The US is also engaged in efforts to promote fair and reciprocal trade practices.",
+        "investment_patterns": "The US is a major investor in the Indo-Pacific, with significant investments in sectors such as technology, manufacturing, and finance. Investment flows are driven by factors such as economic growth, market access, and political stability. The US also encourages investment in infrastructure development and clean energy projects.",
+        "economic_initiatives": "Economic initiatives include the Indo-Pacific Economic Framework (IPEF), which aims to promote economic cooperation in areas such as trade, supply chains, clean energy, and infrastructure. The US also supports regional efforts to promote sustainable development and inclusive growth.",
+        "energy_security": "Energy security is a key concern in the Indo-Pacific, given the region's dependence on imported energy. The US is working with regional partners to promote energy diversification, develop renewable energy sources, and ensure the security of energy supply routes."
+      },
+      "diplomatic_strategy": {
+        "multilateral_engagement": "The US engages in multilateral diplomacy through forums such as the East Asia Summit (EAS), the ASEAN Regional Forum (ARF), and the Asia-Pacific Economic Cooperation (APEC). These forums provide opportunities for dialogue and cooperation on regional issues.",
+        "bilateral_priorities": [
+          "Strengthening alliances with Japan and South Korea",
+          "Deepening strategic partnership with India",
+          "Managing relations with China",
+          "Supporting ASEAN centrality"
+        ],
+        "diplomatic_instruments": "Diplomatic instruments include high-level visits, strategic dialogues, and security cooperation agreements. The US also uses economic sanctions and diplomatic pressure to address security concerns and promote human rights.",
+        "regional_coordination": "The US coordinates with regional partners through regular consultations, joint exercises, and information sharing. The US also supports regional efforts to promote peace and stability, such as the ASEAN-led mechanisms."
+      },
+      "status": "completed",
+      "analysis_date": "2025-07-03"
+    },
+    "Europe": {
+      "region_name": "Europe",
+      "countries": [
+        {
+          "code": "DEU",
+          "name": "Germany"
+        },
+        {
+          "code": "GBR",
+          "name": "United Kingdom"
+        },
+        {
+          "code": "FRA",
+          "name": "France"
+        }
+      ],
+      "strategic_priority": "High",
+      "key_challenges": [
+        "Russia",
+        "NATO Unity",
+        "Energy Security"
+      ],
+      "us_initiatives": [
+        "NATO",
+        "Bilateral Partnerships",
+        "Defense Cooperation"
+      ],
+      "total_military_spending_billions": 183.5,
+      "nato_members": 3,
+      "relationship_strength": "Strong",
+      "comprehensive_regional_overview": "The US maintains a strong strategic partnership with Europe, exemplified by ongoing military exercises like Defender Europe 2024, involving over 17,000 US troops across multiple European countries, enhancing interoperability and readiness. The US-EU trade relationship, valued at over $1.1 trillion in 2023, continues to drive economic growth and job creation on both sides of the Atlantic (USTR). High-level diplomatic engagements, such as the US-EU Summit in June 2025, focus on strengthening cooperation on security, trade, and climate change, addressing shared challenges and reinforcing transatlantic unity (State Department archives).",
+      "regional_security_dynamics": {
+        "primary_security_concerns": [
+          "Russian aggression",
+          "Terrorism",
+          "Cybersecurity threats",
+          "Regional conflicts"
+        ],
+        "us_security_role": "The US plays a leading role in European security through NATO, providing military support, intelligence sharing, and strategic guidance. The US also engages in bilateral defense cooperation with key allies to enhance their capabilities and interoperability.",
+        "alliance_structures": "NATO is the primary alliance structure in Europe, providing a framework for collective defense and security cooperation. The US also maintains strong bilateral security partnerships with individual European countries.",
+        "deterrence_strategies": "Deterrence strategies focus on maintaining a credible military presence in Europe, enhancing NATO's readiness and responsiveness, and imposing sanctions on Russia for its aggressive actions. The US also works with allies to counter hybrid threats and disinformation campaigns."
+      },
+      "economic_engagement": {
+        "trade_relationships": "The US has extensive trade relationships with European countries, with significant flows of goods, services, and investment. The US-EU trade relationship is one of the largest in the world.",
+        "investment_patterns": "The US and Europe are major sources and destinations for foreign direct investment. Investment flows support job creation, economic growth, and technological innovation.",
+        "economic_initiatives": "Economic cooperation programs include efforts to promote regulatory convergence, reduce trade barriers, and foster innovation. The US also works with European partners to address global economic challenges such as climate change and income inequality.",
+        "energy_security": "The US supports European efforts to diversify energy sources and reduce reliance on Russian supplies. This includes promoting the development of renewable energy, LNG exports, and energy infrastructure projects."
+      },
+      "diplomatic_strategy": {
+        "multilateral_engagement": "The US engages with European countries through multilateral organizations such as the UN, NATO, and the EU. This includes cooperation on issues such as security, trade, and climate change.",
+        "bilateral_priorities": [
+          "Strengthening defense cooperation with Germany, the United Kingdom, and France",
+          "Promoting economic ties and investment",
+          "Addressing shared security challenges",
+          "Supporting democracy and human rights"
+        ],
+        "diplomatic_instruments": "Diplomatic tools include high-level visits, strategic dialogues, and security assistance programs. The US also uses sanctions and other measures to deter aggressive behavior and promote compliance with international norms.",
+        "regional_coordination": "The US coordinates closely with European partners on a range of issues, including security, trade, and foreign policy. This includes consultations on major policy decisions and joint efforts to address regional and global challenges."
+      },
+      "status": "completed",
+      "analysis_date": "2025-07-03"
+    },
+    "Middle East": {
+      "region_name": "Middle East",
+      "countries": [
+        {
+          "code": "SAU",
+          "name": "Saudi Arabia"
+        },
+        {
+          "code": "ISR",
+          "name": "Israel"
+        }
+      ],
+      "strategic_priority": "Critical",
+      "key_challenges": [
+        "Iran",
+        "Regional Stability",
+        "Energy Security"
+      ],
+      "us_initiatives": [
+        "Abraham Accords",
+        "Security Partnerships",
+        "Military Aid"
+      ],
+      "total_military_spending_billions": 99.3,
+      "nato_members": 0,
+      "relationship_strength": "Strong",
+      "comprehensive_regional_overview": "The US maintains a strong presence in the Middle East, exemplified by the deployment of the USS Nimitz Carrier Strike Group in the Persian Gulf as of July 2025 to deter regional aggression. Trade between the US and Saudi Arabia amounted to $40 billion in 2024, primarily in energy and defense sectors (U.S. Census Bureau). Diplomatic efforts include ongoing support for the Abraham Accords, with Secretary of State Blinken visiting Israel and Saudi Arabia in June 2025 to reinforce these partnerships (state.gov).",
+      "regional_security_dynamics": {
+        "primary_security_concerns": [
+          "Iranian Influence",
+          "Terrorism",
+          "Regional Conflicts",
+          "Cybersecurity Threats"
+        ],
+        "us_security_role": "Providing military aid, conducting joint military exercises, and maintaining a military presence in the region to deter aggression and counter terrorism.",
+        "alliance_structures": "Strong bilateral alliances with Israel and Saudi Arabia, as well as security partnerships with other regional states. The US also supports multilateral security initiatives.",
+        "deterrence_strategies": "Maintaining a credible military presence, providing security assistance to allies, and signaling a willingness to use force to protect US interests and allies."
+      },
+      "economic_engagement": {
+        "trade_relationships": "Significant trade relationships with countries in the region, particularly in the energy sector. The US also exports manufactured goods and services to the Middle East.",
+        "investment_patterns": "US companies invest heavily in the Middle East, particularly in the energy, finance, and technology sectors. Sovereign wealth funds from the region also invest in the US.",
+        "economic_initiatives": "Supporting economic reforms and diversification efforts in the region, as well as promoting trade and investment through bilateral agreements.",
+        "energy_security": "Ensuring the free flow of oil and gas from the Middle East, which is vital for global energy markets. The US also works with regional partners to promote energy diversification and efficiency."
+      },
+      "diplomatic_strategy": {
+        "multilateral_engagement": "Active engagement in multilateral forums, such as the United Nations, to address regional issues and promote diplomatic solutions.",
+        "bilateral_priorities": [
+          "Strengthening alliances with Israel and Saudi Arabia",
+          "Managing relations with Iran",
+          "Promoting peace and stability in the region"
+        ],
+        "diplomatic_instruments": "Using diplomacy, sanctions, and other tools to advance US interests and promote regional stability.",
+        "regional_coordination": "Working closely with regional partners to address common challenges and promote shared interests."
+      },
+      "status": "completed",
+      "analysis_date": "2025-07-03"
+    },
+    "North America": {
+      "region_name": "North America",
+      "countries": [
+        {
+          "code": "CAN",
+          "name": "Canada"
+        },
+        {
+          "code": "MEX",
+          "name": "Mexico"
+        }
+      ],
+      "strategic_priority": "High",
+      "key_challenges": [
+        "Trade Relations",
+        "Border Security",
+        "Economic Integration"
+      ],
+      "us_initiatives": [
+        "USMCA",
+        "NORAD",
+        "Border Cooperation"
+      ],
+      "total_military_spending_billions": 35.099999999999994,
+      "nato_members": 1,
+      "relationship_strength": "Strong",
+      "comprehensive_regional_overview": "North America is a high strategic priority for the U.S., anchored by the USMCA trade agreement and the NORAD defense alliance. In 2023, two-way goods trade with Mexico reached $807 billion, highlighting deep economic ties (State Department). The U.S. and Canada also maintain a comprehensive trading relationship supporting millions of jobs in both countries (State Department).",
+      "regional_security_dynamics": {
+        "primary_security_concerns": [
+          "Aerospace and maritime threats",
+          "Transnational organized crime",
+          "Drug trafficking",
+          "Irregular migration",
+          "Cybersecurity"
+        ],
+        "us_security_role": "The US plays a leading role in regional security through NORAD, border security cooperation, and initiatives to combat transnational crime. The US provides equipment, training, and capacity building to Mexican justice and law enforcement sectors (State Department).",
+        "alliance_structures": "NORAD is the primary alliance structure, providing a bi-national framework for aerospace and maritime defense with Canada. The US also engages in trilateral security cooperation with Canada and Mexico (Canada in Mexico).",
+        "deterrence_strategies": "Deterrence strategies include modernizing NORAD capabilities to address evolving threats, enhancing border security measures, and collaborating with regional partners to counter transnational crime and drug trafficking (Department of Defense)."
+      },
+      "economic_engagement": {
+        "trade_relationships": "The US has extensive trade relationships with both Canada and Mexico. Mexico was the United States' top goods trading partner in 2023, with total two-way goods trade at $807 billion (State Department). Canada and the United States enjoy the world's most comprehensive trading relationship, which supports millions of jobs in each country (State Department).",
+        "investment_patterns": "The United States holds the largest stock of foreign direct investment (FDI) in Mexico, with a total of $144.5 billion in 2023 (State Department). U.S. foreign direct investment (FDI) in USMCA (stock) was $569.0 billion in 2022 (USTR).",
+        "economic_initiatives": "The USMCA is the primary economic initiative, promoting freer markets, fairer trade, and robust economic growth in North America (USTR). The Americas Partnership for Economic Prosperity is another initiative focusing on driving regional competitiveness (State Department).",
+        "energy_security": "Canada is the single largest foreign supplier of energy to the United States (State Department). The US and Canada cooperate on energy issues, including critical minerals and supply chain security (State Department)."
+      },
+      "diplomatic_strategy": {
+        "multilateral_engagement": "The US engages multilaterally through the North American Leaders' Summit and organizations such as the UN and OAS (State Department, Canada in Mexico).",
+        "bilateral_priorities": [
+          "Strengthening economic ties through USMCA",
+          "Enhancing security cooperation through NORAD and border initiatives",
+          "Addressing irregular migration and transnational crime",
+          "Promoting sustainable development and environmental protection"
+        ],
+        "diplomatic_instruments": "Diplomatic tools include bilateral agreements, high-level dialogues, and participation in multilateral forums (State Department).",
+        "regional_coordination": "The US coordinates with Canada and Mexico on various regional issues, including security, trade, and environmental protection (State Department)."
+      },
+      "status": "completed",
+      "analysis_date": "2025-07-03"
+    },
+    "Eurasia": {
+      "region_name": "Eurasia",
+      "countries": [
+        {
+          "code": "RUS",
+          "name": "Russia"
+        }
+      ],
+      "strategic_priority": "Critical",
+      "key_challenges": [
+        "Strategic Competition",
+        "Nuclear Security",
+        "Regional Conflicts"
+      ],
+      "us_initiatives": [
+        "Sanctions",
+        "Deterrence",
+        "Alliance Strengthening"
+      ],
+      "total_military_spending_billions": 109.0,
+      "nato_members": 0,
+      "relationship_strength": "Cooperative",
+      "comprehensive_regional_overview": "US engagement in Eurasia focuses on deterring Russian aggression and supporting regional stability. For example, the US maintains a rotational military presence in Poland, with approximately 5,000 troops deployed as of July 2025, as part of Operation Atlantic Resolve (defense.gov). Economic measures include sanctions targeting key sectors of the Russian economy, resulting in a 40% decrease in US-Russia trade since 2021 (treasury.gov). Diplomatic efforts involve ongoing support for Ukraine's sovereignty and territorial integrity, with Secretary of State Blinken reaffirming this commitment during a visit to Kyiv on June 15, 2025 (state.gov).",
+      "regional_security_dynamics": {
+        "primary_security_concerns": [
+          "Russian aggression",
+          "Nuclear proliferation",
+          "Regional instability"
+        ],
+        "us_security_role": "Deterrence, alliance support, and conflict mitigation",
+        "alliance_structures": "NATO partnerships, bilateral security agreements",
+        "deterrence_strategies": "Military presence, sanctions, and diplomatic pressure"
+      },
+      "economic_engagement": {
+        "trade_relationships": "Limited trade with Russia due to sanctions",
+        "investment_patterns": "Reduced investment in Russia",
+        "economic_initiatives": "Support for economic diversification in partner countries",
+        "energy_security": "Efforts to reduce European dependence on Russian energy"
+      },
+      "diplomatic_strategy": {
+        "multilateral_engagement": "Engagement through the UN and other international organizations",
+        "bilateral_priorities": [
+          "Managing relations with Russia",
+          "Supporting allies and partners"
+        ],
+        "diplomatic_instruments": "Sanctions, negotiations, and public diplomacy",
+        "regional_coordination": "Coordination with European allies and regional partners"
+      },
+      "status": "completed",
+      "analysis_date": "2025-07-03"
+    }
+  }
+}

@@ -1,0 +1,498 @@
+{
+  "metadata": {
+    "generated_at": "2025-09-14T14:30:05.377744",
+    "congress_session": 119,
+    "data_sources": [
+      "LegiScan API (current & historical bills, partisan/bipartisan analysis)",
+      "Congress.gov API (session days & backup historical data)",
+      "Verified political composition"
+    ],
+    "api_status": "✅ Primary APIs tested",
+    "api_key_source": "encrypted .env file",
+    "analysis_type": "comprehensive_with_real_historical_data",
+    "partisanship_analysis": "✅ Real partisan/bipartisan classification from sponsor parties"
+  },
+  "congressional_composition": {
+    "house": {
+      "republican": 220,
+      "democratic": 215,
+      "independent": 0,
+      "total": 435
+    },
+    "senate": {
+      "republican": 53,
+      "democratic": 45,
+      "independent": 2,
+      "total": 100
+    },
+    "last_updated": "2025-09-14T14:29:27.791398"
+  },
+  "legislative_activity": {
+    "bills_introduced": 9466,
+    "bills_passed": 36,
+    "bipartisan_bills": 11,
+    "partisan_bills": 25,
+    "unknown_partisanship_bills": 0,
+    "days_in_session": 106,
+    "committee_hearings": "Not available",
+    "spending_authorized": "Not available",
+    "calendar_days_active": 254,
+    "last_updated": "2025-09-14T14:29:28.966446",
+    "data_source": "LegiScan API",
+    "passed_bill_details": [
+      {
+        "bill_id": 2032901,
+        "bill_number": "HB1",
+        "title": "FEHB Protection Act of 2025",
+        "partisanship": "partisan",
+        "parties": "R",
+        "sponsor_count": 1,
+        "classification": "Partisan (R)"
+      },
+      {
+        "bill_id": 2036128,
+        "bill_number": "HB4",
+        "title": "Rescissions Act of 2025",
+        "partisanship": "partisan",
+        "parties": "R",
+        "sponsor_count": 6,
+        "classification": "Partisan (R)"
+      },
+      {
+        "bill_id": 1901957,
+        "bill_number": "HB42",
+        "title": "Alaska Native Settlement Trust Eligibility Act",
+        "partisanship": "partisan",
+        "parties": "R",
+        "sponsor_count": 1,
+        "classification": "Partisan (R)"
+      },
+      {
+        "bill_id": 1901782,
+        "bill_number": "HB43",
+        "title": "Alaska Native Village Municipal Lands Restoration Act of 2025",
+        "partisanship": "partisan",
+        "parties": "R",
+        "sponsor_count": 1,
+        "classification": "Partisan (R)"
+      },
+      {
+        "bill_id": 1926657,
+        "bill_number": "HB517",
+        "title": "Filing Relief for Natural Disasters Act",
+        "partisanship": "bipartisan",
+        "parties": "D, R",
+        "sponsor_count": 2,
+        "classification": "Bipartisan (D, R)"
+      },
+      {
+        "bill_id": 1936801,
+        "bill_number": "HB618",
+        "title": "Apex Area Technical Corrections Act",
+        "partisanship": "bipartisan",
+        "parties": "D, R",
+        "sponsor_count": 4,
+        "classification": "Bipartisan (D, R)"
+      },
+      {
+        "bill_id": 1970513,
+        "bill_number": "HB1316",
+        "title": "Maintaining American Superiority by Improving Export Control Transparency Act",
+        "partisanship": "bipartisan",
+        "parties": "D, R",
+        "sponsor_count": 3,
+        "classification": "Bipartisan (D, R)"
+      },
+      {
+        "bill_id": 1990461,
+        "bill_number": "HB1815",
+        "title": "VA Home Loan Program Reform Act",
+        "partisanship": "partisan",
+        "parties": "R",
+        "sponsor_count": 1,
+        "classification": "Partisan (R)"
+      },
+      {
+        "bill_id": 1999391,
+        "bill_number": "HB1968",
+        "title": "Full-Year Continuing Appropriations and Extensions Act, 2025",
+        "partisanship": "partisan",
+        "parties": "R",
+        "sponsor_count": 1,
+        "classification": "Partisan (R)"
+      },
+      {
+        "bill_id": 2010665,
+        "bill_number": "HB2170",
+        "title": "To name the Department of Veterans Affairs community-based outpatient clinic in ",
+        "partisanship": "bipartisan",
+        "parties": "D, R",
+        "sponsor_count": 12,
+        "classification": "Bipartisan (D, R)"
+      },
+      {
+        "bill_id": 2010634,
+        "bill_number": "HB2215",
+        "title": "Salem Maritime National Historical Park Redesignation and Boundary Study Act",
+        "partisanship": "partisan",
+        "parties": "D",
+        "sponsor_count": 1,
+        "classification": "Partisan (D)"
+      },
+      {
+        "bill_id": 2023116,
+        "bill_number": "HB2808",
+        "title": "Homebuyers Privacy Protection Act",
+        "partisanship": "bipartisan",
+        "parties": "D, R",
+        "sponsor_count": 90,
+        "classification": "Bipartisan (D, R)"
+      },
+      {
+        "bill_id": 1922469,
+        "bill_number": "HJR20",
+        "title": "Providing for congressional disapproval under chapter 8 of title 5, United State",
+        "partisanship": "partisan",
+        "parties": "R",
+        "sponsor_count": 30,
+        "classification": "Partisan (R)"
+      },
+      {
+        "bill_id": 1926714,
+        "bill_number": "HJR24",
+        "title": "Providing for congressional disapproval under chapter 8 of title 5, United State",
+        "partisanship": "partisan",
+        "parties": "R",
+        "sponsor_count": 11,
+        "classification": "Partisan (R)"
+      },
+      {
+        "bill_id": 1933813,
+        "bill_number": "HJR25",
+        "title": "Providing for congressional disapproval under chapter 8 of title 5, United State",
+        "partisanship": "bipartisan",
+        "parties": "D, R",
+        "sponsor_count": 10,
+        "classification": "Bipartisan (D, R)"
+      },
+      {
+        "bill_id": 1955961,
+        "bill_number": "HJR35",
+        "title": "Providing for congressional disapproval under chapter 8 of title 5, United State",
+        "partisanship": "partisan",
+        "parties": "R",
+        "sponsor_count": 20,
+        "classification": "Partisan (R)"
+      },
+      {
+        "bill_id": 1968307,
+        "bill_number": "HJR42",
+        "title": "Providing for congressional disapproval under chapter 8 of title 5, United State",
+        "partisanship": "partisan",
+        "parties": "R",
+        "sponsor_count": 7,
+        "classification": "Partisan (R)"
+      },
+      {
+        "bill_id": 1980673,
+        "bill_number": "HJR60",
+        "title": "Providing for congressional disapproval under chapter 8 of title 5, United State",
+        "partisanship": "partisan",
+        "parties": "R",
+        "sponsor_count": 4,
+        "classification": "Partisan (R)"
+      },
+      {
+        "bill_id": 1983901,
+        "bill_number": "HJR61",
+        "title": "Providing for congressional disapproval under chapter 8 of title 5, United State",
+        "partisanship": "partisan",
+        "parties": "R",
+        "sponsor_count": 21,
+        "classification": "Partisan (R)"
+      },
+      {
+        "bill_id": 1999397,
+        "bill_number": "HJR75",
+        "title": "Providing for congressional disapproval under chapter 8 of title 5, United State",
+        "partisanship": "partisan",
+        "parties": "R",
+        "sponsor_count": 14,
+        "classification": "Partisan (R)"
+      },
+      {
+        "bill_id": 2020019,
+        "bill_number": "HJR87",
+        "title": "Providing congressional disapproval under chapter 8 of title 5, United States Co",
+        "partisanship": "partisan",
+        "parties": "R",
+        "sponsor_count": 25,
+        "classification": "Partisan (R)"
+      },
+      {
+        "bill_id": 2019689,
+        "bill_number": "HJR88",
+        "title": "Providing congressional disapproval under chapter 8 of title 5, United States Co",
+        "partisanship": "partisan",
+        "parties": "R",
+        "sponsor_count": 42,
+        "classification": "Partisan (R)"
+      },
+      {
+        "bill_id": 2019800,
+        "bill_number": "HJR89",
+        "title": "Providing congressional disapproval under chapter 8 of title 5, United States Co",
+        "partisanship": "partisan",
+        "parties": "R",
+        "sponsor_count": 33,
+        "classification": "Partisan (R)"
+      },
+      {
+        "bill_id": 1903351,
+        "bill_number": "SB5",
+        "title": "Laken Riley Act",
+        "partisanship": "bipartisan",
+        "parties": "D, R",
+        "sponsor_count": 54,
+        "classification": "Bipartisan (D, R)"
+      },
+      {
+        "bill_id": 1927158,
+        "bill_number": "SB146",
+        "title": "Tools to Address Known Exploitation by Immobilizing Technological Deepfakes on W",
+        "partisanship": "bipartisan",
+        "parties": "D, R",
+        "sponsor_count": 22,
+        "classification": "Bipartisan (D, R)"
+      },
+      {
+        "bill_id": 1934100,
+        "bill_number": "SB160",
+        "title": "Aerial Firefighting Enhancement Act of 2025",
+        "partisanship": "bipartisan",
+        "parties": "D, R",
+        "sponsor_count": 9,
+        "classification": "Bipartisan (D, R)"
+      },
+      {
+        "bill_id": 1939794,
+        "bill_number": "SB201",
+        "title": "ACES Act of 2025",
+        "partisanship": "bipartisan",
+        "parties": "D, R",
+        "sponsor_count": 4,
+        "classification": "Bipartisan (D, R)"
+      },
+      {
+        "bill_id": 1949931,
+        "bill_number": "SB331",
+        "title": "HALT Fentanyl Act Halt All Lethal Trafficking of Fentanyl Act",
+        "partisanship": "bipartisan",
+        "parties": "D, I, R",
+        "sponsor_count": 32,
+        "classification": "Bipartisan (D, I, R)"
+      },
+      {
+        "bill_id": 1961604,
+        "bill_number": "SB423",
+        "title": "Protecting Regular Order for Veterans Act of 2025 Improving Veterans’ Experience",
+        "partisanship": "partisan",
+        "parties": "R",
+        "sponsor_count": 14,
+        "classification": "Partisan (R)"
+      },
+      {
+        "bill_id": 2028140,
+        "bill_number": "SB1582",
+        "title": "GENIUS Act Guiding and Establishing National Innovation for U.S. Stablecoins Act",
+        "partisanship": "partisan",
+        "parties": "R",
+        "sponsor_count": 6,
+        "classification": "Partisan (R)"
+      },
+      {
+        "bill_id": 2028814,
+        "bill_number": "SB1596",
+        "title": "Jocelyn Nungaray National Wildlife Refuge Act",
+        "partisanship": "partisan",
+        "parties": "R",
+        "sponsor_count": 2,
+        "classification": "Partisan (R)"
+      },
+      {
+        "bill_id": 1956177,
+        "bill_number": "SJR11",
+        "title": "A joint resolution providing for congressional disapproval under chapter 8 of ti",
+        "partisanship": "partisan",
+        "parties": "R",
+        "sponsor_count": 3,
+        "classification": "Partisan (R)"
+      },
+      {
+        "bill_id": 1956409,
+        "bill_number": "SJR13",
+        "title": "A joint resolution providing for congressional disapproval under chapter 8 of ti",
+        "partisanship": "partisan",
+        "parties": "R",
+        "sponsor_count": 6,
+        "classification": "Partisan (R)"
+      },
+      {
+        "bill_id": 1970871,
+        "bill_number": "SJR18",
+        "title": "A joint resolution disapproving the rule submitted by the Bureau of Consumer Fin",
+        "partisanship": "partisan",
+        "parties": "R",
+        "sponsor_count": 17,
+        "classification": "Partisan (R)"
+      },
+      {
+        "bill_id": 1988237,
+        "bill_number": "SJR28",
+        "title": "A joint resolution disapproving the rule submitted by the Bureau of Consumer Fin",
+        "partisanship": "partisan",
+        "parties": "R",
+        "sponsor_count": 6,
+        "classification": "Partisan (R)"
+      },
+      {
+        "bill_id": 1994577,
+        "bill_number": "SJR31",
+        "title": "A joint resolution providing for congressional disapproval under chapter 8 of ti",
+        "partisanship": "partisan",
+        "parties": "R",
+        "sponsor_count": 6,
+        "classification": "Partisan (R)"
+      }
+    ],
+    "session_name": "119th Congress",
+    "session_id": 2199
+  },
+  "recent_articles": [
+    {
+      "title": "House Republican Leadership: Unity and Challenges in the Trump Era",
+      "excerpt": "Analysis of Speaker Johnson's leadership approach and the Republican caucus dynamics.",
+      "category": "Congress",
+      "date": "2025-06-24",
+      "url": "articles/house-leadership-dynamics.html"
+    },
+    {
+      "title": "Senate Confirmation Process: Streamlined Under Republican Control",
+      "excerpt": "Examination of how the Republican Senate majority has expedited Trump's nominees.",
+      "category": "Congress",
+      "date": "2025-06-22",
+      "url": "articles/senate-confirmations.html"
+    }
+  ],
+  "historical_productivity_comparison": {
+    "119": {
+      "congress_number": 119,
+      "years": "2025-2026",
+      "target_calendar_days": 254,
+      "start_date": "2025-01-03T00:00:00",
+      "bills_passed_in_timeframe": 36,
+      "is_current": true,
+      "data_source": "Real LegiScan data with partisan analysis",
+      "bipartisan_bills": 11,
+      "partisan_bills": 25,
+      "unknown_partisanship_bills": 0
+    },
+    "118": {
+      "congress_number": 118,
+      "years": "2023-2024",
+      "target_calendar_days": 254,
+      "start_date": "2023-01-03T00:00:00",
+      "bills_passed_in_timeframe": 13,
+      "is_current": false,
+      "data_source": "LegiScan"
+    },
+    "117": {
+      "congress_number": 117,
+      "years": "2021-2022",
+      "target_calendar_days": 254,
+      "start_date": "2021-01-03T00:00:00",
+      "bills_passed_in_timeframe": 39,
+      "is_current": false,
+      "data_source": "LegiScan"
+    },
+    "116": {
+      "congress_number": 116,
+      "years": "2019-2020",
+      "target_calendar_days": 254,
+      "start_date": "2019-01-03T00:00:00",
+      "bills_passed_in_timeframe": 56,
+      "is_current": false,
+      "data_source": "LegiScan"
+    },
+    "115": {
+      "congress_number": 115,
+      "years": "2017-2018",
+      "target_calendar_days": 254,
+      "start_date": "2017-01-03T00:00:00",
+      "bills_passed_in_timeframe": 58,
+      "is_current": false,
+      "data_source": "LegiScan"
+    },
+    "114": {
+      "congress_number": 114,
+      "years": "2015-2016",
+      "target_calendar_days": 254,
+      "start_date": "2015-01-06T00:00:00",
+      "bills_passed_in_timeframe": 49,
+      "is_current": false,
+      "data_source": "LegiScan"
+    },
+    "113": {
+      "congress_number": 113,
+      "years": "2013-2014",
+      "target_calendar_days": 254,
+      "start_date": "2013-01-03T00:00:00",
+      "bills_passed_in_timeframe": 31,
+      "is_current": false,
+      "data_source": "LegiScan"
+    },
+    "112": {
+      "congress_number": 112,
+      "years": "2011-2012",
+      "target_calendar_days": 254,
+      "start_date": "2011-01-05T00:00:00",
+      "bills_passed_in_timeframe": 30,
+      "is_current": false,
+      "data_source": "LegiScan"
+    },
+    "111": {
+      "congress_number": 111,
+      "years": "2009-2010",
+      "target_calendar_days": 254,
+      "start_date": "2009-01-06T00:00:00",
+      "bills_passed_in_timeframe": 58,
+      "is_current": false,
+      "data_source": "LegiScan"
+    },
+    "summary": {
+      "total_congresses_analyzed": 9,
+      "current_congress_rank": 6,
+      "best_performer": [
+        115,
+        58
+      ],
+      "worst_performer": [
+        118,
+        13
+      ],
+      "comparison_timeframe_days": 254,
+      "note": "All data uses real LegiScan API queries"
+    }
+  },
+  "summary": {
+    "house_majority": "Republican",
+    "senate_majority": "Republican",
+    "house_margin": 5,
+    "senate_margin": 6,
+    "total_members": 535,
+    "data_quality": "High - Real API data + real historical analysis",
+    "historical_rank": "6 of 9",
+    "calendar_days_active": 254,
+    "bills_passed_vs_historical": "Analysis included"
+  }
+}

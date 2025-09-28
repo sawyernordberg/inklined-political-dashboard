@@ -1,0 +1,32 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .ink-text {
+        font-family: Georgia, Times New Roman, serif;
+        font-weight: 800;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+        fill: #000000;
+      }
+      .ink-k {
+        fill: #0d9488;
+        font-weight: 900;
+      }
+      .underline {
+        fill: #000000;
+      }
+    </style>
+  </defs>
+  
+  <!-- White background -->
+  <rect width="32" height="32" fill="#ffffff" rx="4"/>
+  
+  <!-- INK text -->
+  <text x="16" y="20" text-anchor="middle" class="ink-text">
+    IN<tspan class="ink-k">K</tspan>
+  </text>
+  
+  <!-- Underline -->
+  <rect x="3" y="22" width="26" height="1.5" class="underline" rx="0.75"/>
+</svg>

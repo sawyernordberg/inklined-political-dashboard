@@ -1,0 +1,2373 @@
+{
+  "metadata": {
+    "collection_date": "2025-09-21 16:30:14",
+    "trump_inauguration_date": "2025-01-20",
+    "days_since_inauguration": 244,
+    "description": "Integrated Economic Dashboard - Tax Policy + Energy + Markets + Monthly Jobs Chart (Tariff data saved separately)",
+    "data_baseline": {
+      "tax_policy": "IRS + Tax Foundation + Treasury - Structured into Corporate/Individual/Investment categories",
+      "stock_data": "From January 20, 2025 (Inauguration Day) onwards",
+      "tariff_data_location": "tariff_data_clean.json (separate file)",
+      "inflation_analysis": "Clean Trump/Biden period separation",
+      "energy_data": "FRED API replacing EIA for reliability",
+      "employment_data": "BLS API with monthly jobs chart data (12 months)"
+    },
+    "integration_features": [
+      "Structured Tax Policy Tracking (Corporate/Individual/Investment)",
+      "Tariff Data: Saved separately in tariff_data_clean.json",
+      "FRED Energy Data",
+      "S&P 500 from Inauguration Day",
+      "Monthly Jobs Chart Data (12 months of changes)",
+      "Clean Trump/Biden Period Separation",
+      "Complete Source Documentation"
+    ],
+    "separate_files": {
+      "tariff_data": "tariff_data_clean.json",
+      "main_dashboard": "integrated_economic_dashboard.json"
+    }
+  },
+  "data_sections": {
+    "tax_policy": {
+      "tax_baseline_rates": {
+        "corporate_tax_policy": {
+          "corporate_rate": "21% (TCJA 2017)",
+          "rd_deduction": "5-year amortization (since 2022)",
+          "domestic_production": "Not available (expired 2017)",
+          "green_credits": "Available (IRA 2022)",
+          "gilti_rate": "10.5%-13.125% effective"
+        },
+        "individual_tax_policy": {
+          "standard_deduction": "$14,600 single / $29,200 married (2025)",
+          "child_tax_credit": "$2,000 per child",
+          "top_marginal_rate": "37%",
+          "salt_cap": "$10,000 (since 2018)",
+          "ss_cap": "$168,600 (2025)"
+        },
+        "investment_and_capital": {
+          "capital_gains": "20% (high), 15% (mid), 0% (low)",
+          "estate_exemption": "$13.99 million (2025)",
+          "crypto_treatment": "Like-kind NOT allowed",
+          "opportunity_zones": "Available through 2026",
+          "dividend_rate": "20% (qualified, high income)"
+        }
+      },
+      "current_bill_status": [
+        {
+          "actions": {
+            "count": 59,
+            "url": "https://api.congress.gov/v3/bill/119/hr/1/actions?format=json"
+          },
+          "amendments": {
+            "count": 493,
+            "url": "https://api.congress.gov/v3/bill/119/hr/1/amendments?format=json"
+          },
+          "cboCostEstimates": [
+            {
+              "description": "As passed by the House of Representatives on May 22, 2025",
+              "pubDate": "2025-06-04T14:00:00Z",
+              "title": "Estimated Budgetary Effects of H.R. 1, the One Big Beautiful Bill Act",
+              "url": "https://www.cbo.gov/publication/61461"
+            },
+            {
+              "description": "As passed by the House of Representatives on May 22, 2025",
+              "pubDate": "2025-06-17T18:00:00Z",
+              "title": "H.R. 1, One Big Beautiful Bill Act (Dynamic Estimate)",
+              "url": "https://www.cbo.gov/publication/61486"
+            },
+            {
+              "description": "CBO and the staff of the Joint Committee on Taxation have estimated the effects of the amendment relative to the baseline used for budget enforcement for consideration in the Senate.",
+              "pubDate": "2025-06-28T23:32:00Z",
+              "title": "Information About the Budgetary Effects of an Amendment in the Nature of a Substitute to H.R. 1, the One Big Beautiful Bill Act, as posted on the website of the Senate Committee on the Budget on June 27, 2025",
+              "url": "https://www.cbo.gov/publication/61536"
+            },
+            {
+              "description": "As posted on the website of the Senate Committee on the Budget on June 27, 2025",
+              "pubDate": "2025-06-29T03:29:00Z",
+              "title": "Estimated Budgetary Effects of an Amendment in the Nature of a Substitute to H.R. 1, the One Big Beautiful Bill Act, Relative to the Budget Enforcement Baseline for Consideration in the Senate",
+              "url": "https://www.cbo.gov/publication/61533"
+            },
+            {
+              "description": "As posted on the website of the Senate Committee on the Budget on June 27, 2025",
+              "pubDate": "2025-06-29T14:31:00Z",
+              "title": "Estimated Budgetary Effects of an Amendment in the Nature of a Substitute to H.R. 1, the One Big Beautiful Bill Act, Relative to CBO&#039;s January 2025 Baseline",
+              "url": "https://www.cbo.gov/publication/61534"
+            },
+            {
+              "description": "As posted on the website of the Senate Committee on the Budget on June 27, 2025",
+              "pubDate": "2025-06-29T14:43:00Z",
+              "title": "Estimated Budgetary Effects of Title VII, Finance, Within an Amendment in the Nature of a Substitute to H.R. 1",
+              "url": "https://www.cbo.gov/publication/61535"
+            },
+            {
+              "description": "As passed by the Senate on July 1, 2025",
+              "pubDate": "2025-07-02T01:45:00Z",
+              "title": "Information Concerning the Budgetary Effects of H.R. 1, as Passed by the Senate on July 1, 2025",
+              "url": "https://www.cbo.gov/publication/61537"
+            },
+            {
+              "description": "Public Law 119-21 as enacted on July 4, 2025",
+              "pubDate": "2025-07-21T18:15:00Z",
+              "title": "Estimated Budgetary Effects of Public Law 119-21, to Provide for Reconciliation Pursuant to Title II of H. Con. Res. 14, Relative to the Budget Enforcement Baseline for Consideration in the Senate",
+              "url": "https://www.cbo.gov/publication/61569"
+            },
+            {
+              "description": "Public Law 119-21 as enacted on July 4, 2025",
+              "pubDate": "2025-07-21T18:29:00Z",
+              "title": "Estimated Budgetary Effects of Public Law 119-21, to Provide for Reconciliation Pursuant to Title II of H. Con. Res. 14, Relative to CBO’s January 2025 Baseline",
+              "url": "https://www.cbo.gov/publication/61570"
+            }
+          ],
+          "committeeReports": [
+            {
+              "citation": "H. Rept. 119-106,Book 1",
+              "url": "https://api.congress.gov/v3/committee-report/119/HRPT/106?format=json"
+            },
+            {
+              "citation": "H. Rept. 119-106,Book 2",
+              "url": "https://api.congress.gov/v3/committee-report/119/HRPT/106?format=json"
+            }
+          ],
+          "committees": {
+            "count": 1,
+            "url": "https://api.congress.gov/v3/bill/119/hr/1/committees?format=json"
+          },
+          "congress": 119,
+          "introducedDate": "2025-05-20",
+          "latestAction": {
+            "actionDate": "2025-07-04",
+            "text": "Became Public Law No: 119-21."
+          },
+          "laws": [
+            {
+              "number": "119-21",
+              "type": "Public Law"
+            }
+          ],
+          "legislationUrl": "https://www.congress.gov/bill/119th-congress/house-bill/1",
+          "notes": [
+            {
+              "links": [
+                {
+                  "name": "H.Res. 492",
+                  "url": "https://www.congress.gov/bill/119th-congress/house-resolution/492"
+                }
+              ],
+              "text": "The bill text and summary for the House-passed version have been updated pursuant to H.Res. 492."
+            }
+          ],
+          "number": "1",
+          "originChamber": "House",
+          "originChamberCode": "H",
+          "policyArea": {
+            "name": "Economics and Public Finance"
+          },
+          "relatedBills": {
+            "count": 22,
+            "url": "https://api.congress.gov/v3/bill/119/hr/1/relatedbills?format=json"
+          },
+          "sponsors": [
+            {
+              "bioguideId": "A000375",
+              "district": 19,
+              "firstName": "Jodey",
+              "fullName": "Rep. Arrington, Jodey C. [R-TX-19]",
+              "isByRequest": "N",
+              "lastName": "Arrington",
+              "middleName": "C.",
+              "party": "R",
+              "state": "TX",
+              "url": "https://api.congress.gov/v3/member/A000375?format=json"
+            }
+          ],
+          "subjects": {
+            "count": 238,
+            "url": "https://api.congress.gov/v3/bill/119/hr/1/subjects?format=json"
+          },
+          "summaries": {
+            "count": 4,
+            "url": "https://api.congress.gov/v3/bill/119/hr/1/summaries?format=json"
+          },
+          "textVersions": {
+            "count": 6,
+            "url": "https://api.congress.gov/v3/bill/119/hr/1/text?format=json"
+          },
+          "title": "One Big Beautiful Bill Act",
+          "titles": {
+            "count": 11,
+            "url": "https://api.congress.gov/v3/bill/119/hr/1/titles?format=json"
+          },
+          "type": "HR",
+          "updateDate": "2025-08-29T04:41:14Z",
+          "updateDateIncludingText": "2025-08-29T04:41:14Z"
+        },
+        {
+          "actions": {
+            "count": 3,
+            "url": "https://api.congress.gov/v3/bill/119/hr/561/actions?format=json"
+          },
+          "committees": {
+            "count": 1,
+            "url": "https://api.congress.gov/v3/bill/119/hr/561/committees?format=json"
+          },
+          "congress": 119,
+          "constitutionalAuthorityStatementText": "<pre>\n[Congressional Record Volume 171, Number 11 (Monday, January 20, 2025)]\n[House]\nFrom the Congressional Record Online through the Government Publishing Office [<a href=\"https://www.gpo.gov\">www.gpo.gov</a>]\nBy Mr. BACON:\nH.R. 561.\nCongress has the power to enact this legislation pursuant\nto the following:\nArticle 1, Section 8, Clause 1 of the U.S. Constitution.\n[Page H232]\n</pre>",
+          "introducedDate": "2025-01-20",
+          "latestAction": {
+            "actionDate": "2025-01-20",
+            "text": "Referred to the House Committee on Ways and Means."
+          },
+          "legislationUrl": "https://www.congress.gov/bill/119th-congress/house-bill/561",
+          "number": "561",
+          "originChamber": "House",
+          "originChamberCode": "H",
+          "policyArea": {
+            "name": "Taxation"
+          },
+          "sponsors": [
+            {
+              "bioguideId": "B001298",
+              "district": 2,
+              "firstName": "Don",
+              "fullName": "Rep. Bacon, Don [R-NE-2]",
+              "isByRequest": "N",
+              "lastName": "Bacon",
+              "party": "R",
+              "state": "NE",
+              "url": "https://api.congress.gov/v3/member/B001298?format=json"
+            }
+          ],
+          "subjects": {
+            "count": 1,
+            "url": "https://api.congress.gov/v3/bill/119/hr/561/subjects?format=json"
+          },
+          "summaries": {
+            "count": 1,
+            "url": "https://api.congress.gov/v3/bill/119/hr/561/summaries?format=json"
+          },
+          "textVersions": {
+            "count": 1,
+            "url": "https://api.congress.gov/v3/bill/119/hr/561/text?format=json"
+          },
+          "title": "Overtime Pay Tax Relief Act of 2025",
+          "titles": {
+            "count": 3,
+            "url": "https://api.congress.gov/v3/bill/119/hr/561/titles?format=json"
+          },
+          "type": "HR",
+          "updateDate": "2025-03-03T14:53:37Z",
+          "updateDateIncludingText": "2025-05-22T16:27:15Z"
+        }
+      ],
+      "recent_tax_changes": [],
+      "proposed_changes": {
+        "reconciliation_bills": [],
+        "tax_bills": []
+      },
+      "treasury_data": [],
+      "collection_date": "2025-09-21 16:29:59",
+      "source": "Congress.gov API - Comprehensive Tax Policy Tracker",
+      "essential_data_focus": "Tax baseline rates, current bills, recent changes, proposed changes"
+    },
+    "tariffs": {
+      "note": "Detailed tariff data saved in separate file: tariff_data_clean.json",
+      "summary_statistics": {
+        "total_countries": 70,
+        "total_distribution_categories": 0,
+        "total_updates": 0,
+        "collection_date": "2025-09-21 16:29:59",
+        "source": "tariff_data_clean.json",
+        "data_file_reference": "tariff_data_clean.json"
+      },
+      "data_excluded": "Actual tariff data saved separately to avoid duplication"
+    },
+    "stock": {
+      "current_price": 6602.95,
+      "current_date": "2025-01-20",
+      "inauguration_price": 6664.36,
+      "inauguration_date": "2025-09-19",
+      "performance": -0.9214688282145601,
+      "days_in_office": 244,
+      "date_range": "Sep 19, 2025 to Jan 20, 2025",
+      "source": "Yahoo Finance (Fixed Parser)",
+      "historical_data_points": 169,
+      "historical": [
+        {
+          "date": "2025-01-20",
+          "open": 6597.81,
+          "high": 6618.56,
+          "low": 6578.95,
+          "close": 6602.95,
+          "volume": 3483409827,
+          "change_pct": 0.08
+        },
+        {
+          "date": "2025-01-21",
+          "open": 6014.12,
+          "high": 6051.51,
+          "low": 6006.88,
+          "close": 6049.24,
+          "volume": 4702920000,
+          "change_pct": 0.58
+        },
+        {
+          "date": "2025-01-22",
+          "open": 6081.39,
+          "high": 6100.81,
+          "low": 6076.13,
+          "close": 6086.37,
+          "volume": 4323040000,
+          "change_pct": 0.08
+        },
+        {
+          "date": "2025-01-23",
+          "open": 6076.32,
+          "high": 6118.73,
+          "low": 6074.67,
+          "close": 6118.71,
+          "volume": 4432250000,
+          "change_pct": 0.7
+        },
+        {
+          "date": "2025-01-24",
+          "open": 6121.43,
+          "high": 6128.18,
+          "low": 6088.74,
+          "close": 6101.24,
+          "volume": 4214250000,
+          "change_pct": -0.33
+        },
+        {
+          "date": "2025-01-27",
+          "open": 5969.04,
+          "high": 6017.17,
+          "low": 5962.92,
+          "close": 6012.28,
+          "volume": 5198750000,
+          "change_pct": 0.72
+        },
+        {
+          "date": "2025-01-28",
+          "open": 6026.97,
+          "high": 6074.54,
+          "low": 5994.63,
+          "close": 6067.7,
+          "volume": 4473640000,
+          "change_pct": 0.68
+        },
+        {
+          "date": "2025-01-29",
+          "open": 6057.7,
+          "high": 6062.83,
+          "low": 6012.96,
+          "close": 6039.31,
+          "volume": 4115310000,
+          "change_pct": -0.3
+        },
+        {
+          "date": "2025-01-30",
+          "open": 6050.75,
+          "high": 6086.64,
+          "low": 6027.46,
+          "close": 6071.17,
+          "volume": 4634620000,
+          "change_pct": 0.34
+        },
+        {
+          "date": "2025-01-31",
+          "open": 6096.79,
+          "high": 6120.91,
+          "low": 6030.93,
+          "close": 6040.53,
+          "volume": 4843770000,
+          "change_pct": -0.92
+        },
+        {
+          "date": "2025-02-03",
+          "open": 5969.65,
+          "high": 6022.13,
+          "low": 5923.93,
+          "close": 5994.57,
+          "volume": 4797210000,
+          "change_pct": 0.42
+        },
+        {
+          "date": "2025-02-04",
+          "open": 5998.14,
+          "high": 6042.48,
+          "low": 5990.87,
+          "close": 6037.88,
+          "volume": 4410160000,
+          "change_pct": 0.66
+        },
+        {
+          "date": "2025-02-05",
+          "open": 6020.45,
+          "high": 6062.86,
+          "low": 6007.06,
+          "close": 6061.48,
+          "volume": 4756250000,
+          "change_pct": 0.68
+        },
+        {
+          "date": "2025-02-06",
+          "open": 6072.22,
+          "high": 6084.03,
+          "low": 6046.83,
+          "close": 6083.57,
+          "volume": 4847120000,
+          "change_pct": 0.19
+        },
+        {
+          "date": "2025-02-07",
+          "open": 6083.13,
+          "high": 6101.28,
+          "low": 6019.96,
+          "close": 6025.99,
+          "volume": 4766900000,
+          "change_pct": -0.94
+        },
+        {
+          "date": "2025-02-10",
+          "open": 6046.4,
+          "high": 6073.38,
+          "low": 6044.84,
+          "close": 6066.44,
+          "volume": 4458760000,
+          "change_pct": 0.33
+        },
+        {
+          "date": "2025-02-11",
+          "open": 6049.32,
+          "high": 6076.28,
+          "low": 6042.34,
+          "close": 6068.5,
+          "volume": 4324880000,
+          "change_pct": 0.32
+        },
+        {
+          "date": "2025-02-12",
+          "open": 6025.08,
+          "high": 6063.0,
+          "low": 6003.0,
+          "close": 6051.97,
+          "volume": 4627960000,
+          "change_pct": 0.45
+        },
+        {
+          "date": "2025-02-13",
+          "open": 6060.59,
+          "high": 6116.91,
+          "low": 6050.95,
+          "close": 6115.07,
+          "volume": 4763800000,
+          "change_pct": 0.9
+        },
+        {
+          "date": "2025-02-14",
+          "open": 6115.52,
+          "high": 6127.47,
+          "low": 6107.62,
+          "close": 6114.63,
+          "volume": 4335190000,
+          "change_pct": -0.01
+        },
+        {
+          "date": "2025-02-18",
+          "open": 6121.6,
+          "high": 6129.63,
+          "low": 6099.51,
+          "close": 6129.58,
+          "volume": 4684980000,
+          "change_pct": 0.13
+        },
+        {
+          "date": "2025-02-19",
+          "open": 6117.76,
+          "high": 6147.43,
+          "low": 6111.15,
+          "close": 6144.15,
+          "volume": 4562330000,
+          "change_pct": 0.43
+        },
+        {
+          "date": "2025-02-20",
+          "open": 6134.5,
+          "high": 6134.5,
+          "low": 6084.59,
+          "close": 6117.52,
+          "volume": 4813690000,
+          "change_pct": -0.28
+        },
+        {
+          "date": "2025-02-21",
+          "open": 6114.1,
+          "high": 6114.82,
+          "low": 6008.56,
+          "close": 6013.13,
+          "volume": 5434560000,
+          "change_pct": -1.65
+        },
+        {
+          "date": "2025-02-24",
+          "open": 6026.69,
+          "high": 6043.65,
+          "low": 5977.83,
+          "close": 5983.25,
+          "volume": 4990120000,
+          "change_pct": -0.72
+        },
+        {
+          "date": "2025-02-25",
+          "open": 5982.73,
+          "high": 5992.65,
+          "low": 5908.49,
+          "close": 5955.25,
+          "volume": 5374690000,
+          "change_pct": -0.46
+        },
+        {
+          "date": "2025-02-26",
+          "open": 5970.87,
+          "high": 6009.82,
+          "low": 5932.69,
+          "close": 5956.06,
+          "volume": 4869580000,
+          "change_pct": -0.25
+        },
+        {
+          "date": "2025-02-27",
+          "open": 5981.88,
+          "high": 5993.69,
+          "low": 5858.78,
+          "close": 5861.57,
+          "volume": 5057680000,
+          "change_pct": -2.01
+        },
+        {
+          "date": "2025-02-28",
+          "open": 5856.74,
+          "high": 5959.4,
+          "low": 5837.66,
+          "close": 5954.5,
+          "volume": 6441140000,
+          "change_pct": 1.67
+        },
+        {
+          "date": "2025-03-03",
+          "open": 5968.33,
+          "high": 5986.09,
+          "low": 5810.91,
+          "close": 5849.72,
+          "volume": 5613850000,
+          "change_pct": -1.99
+        },
+        {
+          "date": "2025-03-04",
+          "open": 5811.98,
+          "high": 5865.08,
+          "low": 5732.59,
+          "close": 5778.15,
+          "volume": 6138110000,
+          "change_pct": -0.58
+        },
+        {
+          "date": "2025-03-05",
+          "open": 5781.36,
+          "high": 5860.59,
+          "low": 5742.35,
+          "close": 5842.63,
+          "volume": 5285970000,
+          "change_pct": 1.06
+        },
+        {
+          "date": "2025-03-06",
+          "open": 5785.87,
+          "high": 5812.08,
+          "low": 5711.64,
+          "close": 5738.52,
+          "volume": 5165080000,
+          "change_pct": -0.82
+        },
+        {
+          "date": "2025-03-07",
+          "open": 5726.01,
+          "high": 5783.01,
+          "low": 5666.29,
+          "close": 5770.2,
+          "volume": 5705140000,
+          "change_pct": 0.77
+        },
+        {
+          "date": "2025-03-10",
+          "open": 5705.37,
+          "high": 5705.37,
+          "low": 5564.02,
+          "close": 5614.56,
+          "volume": 6409370000,
+          "change_pct": -1.59
+        },
+        {
+          "date": "2025-03-11",
+          "open": 5603.65,
+          "high": 5636.3,
+          "low": 5528.41,
+          "close": 5572.07,
+          "volume": 6221240000,
+          "change_pct": -0.56
+        },
+        {
+          "date": "2025-03-12",
+          "open": 5624.84,
+          "high": 5642.19,
+          "low": 5546.09,
+          "close": 5599.3,
+          "volume": 5219830000,
+          "change_pct": -0.45
+        },
+        {
+          "date": "2025-03-13",
+          "open": 5594.45,
+          "high": 5597.78,
+          "low": 5504.65,
+          "close": 5521.52,
+          "volume": 5018980000,
+          "change_pct": -1.3
+        },
+        {
+          "date": "2025-03-14",
+          "open": 5563.85,
+          "high": 5645.27,
+          "low": 5563.85,
+          "close": 5638.94,
+          "volume": 4863180000,
+          "change_pct": 1.35
+        },
+        {
+          "date": "2025-03-17",
+          "open": 5635.6,
+          "high": 5703.52,
+          "low": 5631.12,
+          "close": 5675.12,
+          "volume": 5031770000,
+          "change_pct": 0.7
+        },
+        {
+          "date": "2025-03-18",
+          "open": 5654.53,
+          "high": 5654.53,
+          "low": 5597.76,
+          "close": 5614.66,
+          "volume": 4666270000,
+          "change_pct": -0.71
+        },
+        {
+          "date": "2025-03-19",
+          "open": 5632.37,
+          "high": 5715.33,
+          "low": 5622.2,
+          "close": 5675.29,
+          "volume": 4660090000,
+          "change_pct": 0.76
+        },
+        {
+          "date": "2025-03-20",
+          "open": 5646.92,
+          "high": 5711.15,
+          "low": 5632.33,
+          "close": 5662.89,
+          "volume": 4678420000,
+          "change_pct": 0.28
+        },
+        {
+          "date": "2025-03-21",
+          "open": 5630.73,
+          "high": 5670.84,
+          "low": 5603.1,
+          "close": 5667.56,
+          "volume": 9367460000,
+          "change_pct": 0.65
+        },
+        {
+          "date": "2025-03-24",
+          "open": 5718.08,
+          "high": 5775.14,
+          "low": 5718.08,
+          "close": 5767.57,
+          "volume": 4517990000,
+          "change_pct": 0.87
+        },
+        {
+          "date": "2025-03-25",
+          "open": 5775.96,
+          "high": 5786.95,
+          "low": 5760.42,
+          "close": 5776.65,
+          "volume": 4467340000,
+          "change_pct": 0.01
+        },
+        {
+          "date": "2025-03-26",
+          "open": 5771.66,
+          "high": 5783.62,
+          "low": 5694.41,
+          "close": 5712.2,
+          "volume": 4183140000,
+          "change_pct": -1.03
+        },
+        {
+          "date": "2025-03-27",
+          "open": 5695.64,
+          "high": 5732.28,
+          "low": 5670.94,
+          "close": 5693.31,
+          "volume": 4403460000,
+          "change_pct": -0.04
+        },
+        {
+          "date": "2025-03-28",
+          "open": 5679.2,
+          "high": 5685.89,
+          "low": 5572.42,
+          "close": 5580.94,
+          "volume": 4513330000,
+          "change_pct": -1.73
+        },
+        {
+          "date": "2025-03-31",
+          "open": 5527.91,
+          "high": 5627.56,
+          "low": 5488.73,
+          "close": 5611.85,
+          "volume": 5257250000,
+          "change_pct": 1.52
+        },
+        {
+          "date": "2025-04-01",
+          "open": 5597.53,
+          "high": 5650.57,
+          "low": 5558.52,
+          "close": 5633.07,
+          "volume": 4434500000,
+          "change_pct": 0.63
+        },
+        {
+          "date": "2025-04-02",
+          "open": 5580.76,
+          "high": 5695.31,
+          "low": 5571.48,
+          "close": 5670.97,
+          "volume": 4243830000,
+          "change_pct": 1.62
+        },
+        {
+          "date": "2025-04-03",
+          "open": 5492.74,
+          "high": 5499.53,
+          "low": 5390.83,
+          "close": 5396.52,
+          "volume": 7210470000,
+          "change_pct": -1.75
+        },
+        {
+          "date": "2025-04-04",
+          "open": 5292.14,
+          "high": 5292.14,
+          "low": 5069.9,
+          "close": 5074.08,
+          "volume": 8853500000,
+          "change_pct": -4.12
+        },
+        {
+          "date": "2025-04-07",
+          "open": 4953.79,
+          "high": 5246.57,
+          "low": 4835.04,
+          "close": 5062.25,
+          "volume": 8691980000,
+          "change_pct": 2.19
+        },
+        {
+          "date": "2025-04-08",
+          "open": 5193.57,
+          "high": 5267.47,
+          "low": 4910.42,
+          "close": 4982.77,
+          "volume": 7408140000,
+          "change_pct": -4.06
+        },
+        {
+          "date": "2025-04-09",
+          "open": 4965.28,
+          "high": 5481.34,
+          "low": 4948.43,
+          "close": 5456.9,
+          "volume": 9489600000,
+          "change_pct": 9.9
+        },
+        {
+          "date": "2025-04-10",
+          "open": 5353.15,
+          "high": 5353.15,
+          "low": 5115.27,
+          "close": 5268.05,
+          "volume": 6677140000,
+          "change_pct": -1.59
+        },
+        {
+          "date": "2025-04-11",
+          "open": 5255.56,
+          "high": 5381.46,
+          "low": 5220.77,
+          "close": 5363.36,
+          "volume": 5602550000,
+          "change_pct": 2.05
+        },
+        {
+          "date": "2025-04-14",
+          "open": 5441.96,
+          "high": 5459.46,
+          "low": 5358.02,
+          "close": 5405.97,
+          "volume": 5031440000,
+          "change_pct": -0.66
+        },
+        {
+          "date": "2025-04-15",
+          "open": 5411.99,
+          "high": 5450.41,
+          "low": 5386.44,
+          "close": 5396.63,
+          "volume": 4317110000,
+          "change_pct": -0.28
+        },
+        {
+          "date": "2025-04-16",
+          "open": 5335.75,
+          "high": 5367.24,
+          "low": 5220.79,
+          "close": 5275.7,
+          "volume": 4607750000,
+          "change_pct": -1.13
+        },
+        {
+          "date": "2025-04-17",
+          "open": 5305.45,
+          "high": 5328.31,
+          "low": 5255.58,
+          "close": 5282.7,
+          "volume": 4714880000,
+          "change_pct": -0.43
+        },
+        {
+          "date": "2025-04-21",
+          "open": 5232.94,
+          "high": 5232.94,
+          "low": 5101.63,
+          "close": 5158.2,
+          "volume": 4226340000,
+          "change_pct": -1.43
+        },
+        {
+          "date": "2025-04-22",
+          "open": 5207.67,
+          "high": 5309.61,
+          "low": 5207.67,
+          "close": 5287.76,
+          "volume": 4666950000,
+          "change_pct": 1.54
+        },
+        {
+          "date": "2025-04-23",
+          "open": 5395.92,
+          "high": 5469.69,
+          "low": 5356.17,
+          "close": 5375.86,
+          "volume": 5371390000,
+          "change_pct": -0.37
+        },
+        {
+          "date": "2025-04-24",
+          "open": 5381.38,
+          "high": 5489.4,
+          "low": 5371.96,
+          "close": 5484.77,
+          "volume": 4697710000,
+          "change_pct": 1.92
+        },
+        {
+          "date": "2025-04-25",
+          "open": 5489.73,
+          "high": 5528.11,
+          "low": 5455.86,
+          "close": 5525.21,
+          "volume": 4236580000,
+          "change_pct": 0.65
+        },
+        {
+          "date": "2025-04-28",
+          "open": 5529.22,
+          "high": 5553.66,
+          "low": 5468.64,
+          "close": 5528.75,
+          "volume": 4257880000,
+          "change_pct": -0.01
+        },
+        {
+          "date": "2025-04-29",
+          "open": 5508.87,
+          "high": 5571.95,
+          "low": 5505.7,
+          "close": 5560.83,
+          "volume": 4747150000,
+          "change_pct": 0.94
+        },
+        {
+          "date": "2025-04-30",
+          "open": 5499.44,
+          "high": 5581.84,
+          "low": 5433.24,
+          "close": 5569.06,
+          "volume": 5449490000,
+          "change_pct": 1.27
+        },
+        {
+          "date": "2025-05-01",
+          "open": 5625.14,
+          "high": 5658.91,
+          "low": 5597.35,
+          "close": 5604.14,
+          "volume": 4935270000,
+          "change_pct": -0.37
+        },
+        {
+          "date": "2025-05-02",
+          "open": 5645.88,
+          "high": 5700.7,
+          "low": 5642.28,
+          "close": 5686.67,
+          "volume": 4854380000,
+          "change_pct": 0.72
+        },
+        {
+          "date": "2025-05-05",
+          "open": 5655.32,
+          "high": 5683.38,
+          "low": 5634.48,
+          "close": 5650.38,
+          "volume": 4358260000,
+          "change_pct": -0.09
+        },
+        {
+          "date": "2025-05-06",
+          "open": 5605.87,
+          "high": 5649.58,
+          "low": 5586.04,
+          "close": 5606.91,
+          "volume": 4717260000,
+          "change_pct": 0.02
+        },
+        {
+          "date": "2025-05-07",
+          "open": 5614.18,
+          "high": 5654.73,
+          "low": 5578.64,
+          "close": 5631.28,
+          "volume": 4987440000,
+          "change_pct": 0.3
+        },
+        {
+          "date": "2025-05-08",
+          "open": 5663.6,
+          "high": 5720.1,
+          "low": 5635.38,
+          "close": 5663.94,
+          "volume": 5627400000,
+          "change_pct": 0.01
+        },
+        {
+          "date": "2025-05-09",
+          "open": 5679.65,
+          "high": 5691.69,
+          "low": 5644.15,
+          "close": 5659.91,
+          "volume": 4645090000,
+          "change_pct": -0.35
+        },
+        {
+          "date": "2025-05-12",
+          "open": 5807.2,
+          "high": 5845.37,
+          "low": 5786.08,
+          "close": 5844.19,
+          "volume": 6014580000,
+          "change_pct": 0.64
+        },
+        {
+          "date": "2025-05-13",
+          "open": 5854.15,
+          "high": 5906.64,
+          "low": 5845.02,
+          "close": 5886.55,
+          "volume": 5516290000,
+          "change_pct": 0.55
+        },
+        {
+          "date": "2025-05-14",
+          "open": 5896.74,
+          "high": 5906.55,
+          "low": 5872.11,
+          "close": 5892.58,
+          "volume": 5233450000,
+          "change_pct": -0.07
+        },
+        {
+          "date": "2025-05-15",
+          "open": 5869.82,
+          "high": 5924.21,
+          "low": 5865.16,
+          "close": 5916.93,
+          "volume": 4991290000,
+          "change_pct": 0.8
+        },
+        {
+          "date": "2025-05-16",
+          "open": 5929.09,
+          "high": 5958.62,
+          "low": 5907.36,
+          "close": 5958.38,
+          "volume": 4850850000,
+          "change_pct": 0.49
+        },
+        {
+          "date": "2025-05-19",
+          "open": 5902.88,
+          "high": 5968.61,
+          "low": 5895.69,
+          "close": 5963.6,
+          "volume": 4144010000,
+          "change_pct": 1.03
+        },
+        {
+          "date": "2025-05-20",
+          "open": 5944.66,
+          "high": 5953.06,
+          "low": 5909.26,
+          "close": 5940.46,
+          "volume": 4416850000,
+          "change_pct": -0.07
+        },
+        {
+          "date": "2025-05-21",
+          "open": 5910.18,
+          "high": 5938.37,
+          "low": 5830.91,
+          "close": 5844.61,
+          "volume": 5254250000,
+          "change_pct": -1.11
+        },
+        {
+          "date": "2025-05-22",
+          "open": 5841.26,
+          "high": 5878.08,
+          "low": 5825.82,
+          "close": 5842.01,
+          "volume": 5157050000,
+          "change_pct": 0.01
+        },
+        {
+          "date": "2025-05-23",
+          "open": 5781.89,
+          "high": 5829.51,
+          "low": 5767.41,
+          "close": 5802.82,
+          "volume": 4662820000,
+          "change_pct": 0.36
+        },
+        {
+          "date": "2025-05-27",
+          "open": 5854.07,
+          "high": 5924.33,
+          "low": 5854.07,
+          "close": 5921.54,
+          "volume": 5366380000,
+          "change_pct": 1.15
+        },
+        {
+          "date": "2025-05-28",
+          "open": 5925.54,
+          "high": 5939.92,
+          "low": 5881.88,
+          "close": 5888.55,
+          "volume": 4665050000,
+          "change_pct": -0.62
+        },
+        {
+          "date": "2025-05-29",
+          "open": 5939.96,
+          "high": 5943.13,
+          "low": 5873.8,
+          "close": 5912.17,
+          "volume": 4569750000,
+          "change_pct": -0.47
+        },
+        {
+          "date": "2025-05-30",
+          "open": 5903.67,
+          "high": 5922.14,
+          "low": 5843.66,
+          "close": 5911.69,
+          "volume": 6378540000,
+          "change_pct": 0.14
+        },
+        {
+          "date": "2025-06-02",
+          "open": 5896.68,
+          "high": 5937.4,
+          "low": 5861.43,
+          "close": 5935.94,
+          "volume": 4832240000,
+          "change_pct": 0.67
+        },
+        {
+          "date": "2025-06-03",
+          "open": 5938.56,
+          "high": 5981.35,
+          "low": 5929.0,
+          "close": 5970.37,
+          "volume": 5026680000,
+          "change_pct": 0.54
+        },
+        {
+          "date": "2025-06-04",
+          "open": 5978.94,
+          "high": 5990.48,
+          "low": 5966.11,
+          "close": 5970.81,
+          "volume": 4767050000,
+          "change_pct": -0.14
+        },
+        {
+          "date": "2025-06-05",
+          "open": 5985.67,
+          "high": 5999.7,
+          "low": 5921.2,
+          "close": 5939.3,
+          "volume": 5091850000,
+          "change_pct": -0.77
+        },
+        {
+          "date": "2025-06-06",
+          "open": 5987.06,
+          "high": 6016.87,
+          "low": 5978.63,
+          "close": 6000.36,
+          "volume": 4355710000,
+          "change_pct": 0.22
+        },
+        {
+          "date": "2025-06-09",
+          "open": 6004.63,
+          "high": 6021.31,
+          "low": 5994.18,
+          "close": 6005.88,
+          "volume": 4642360000,
+          "change_pct": 0.02
+        },
+        {
+          "date": "2025-06-10",
+          "open": 6009.91,
+          "high": 6043.01,
+          "low": 6000.28,
+          "close": 6038.81,
+          "volume": 4882880000,
+          "change_pct": 0.48
+        },
+        {
+          "date": "2025-06-11",
+          "open": 6049.38,
+          "high": 6059.4,
+          "low": 6002.32,
+          "close": 6022.24,
+          "volume": 5111550000,
+          "change_pct": -0.45
+        },
+        {
+          "date": "2025-06-12",
+          "open": 6009.9,
+          "high": 6045.43,
+          "low": 6003.88,
+          "close": 6045.26,
+          "volume": 4669500000,
+          "change_pct": 0.59
+        },
+        {
+          "date": "2025-06-13",
+          "open": 6000.56,
+          "high": 6026.16,
+          "low": 5963.21,
+          "close": 5976.97,
+          "volume": 5258910000,
+          "change_pct": -0.39
+        },
+        {
+          "date": "2025-06-16",
+          "open": 6004.0,
+          "high": 6050.83,
+          "low": 6004.0,
+          "close": 6033.11,
+          "volume": 5111710000,
+          "change_pct": 0.48
+        },
+        {
+          "date": "2025-06-17",
+          "open": 6012.15,
+          "high": 6023.25,
+          "low": 5974.8,
+          "close": 5982.72,
+          "volume": 4955700000,
+          "change_pct": -0.49
+        },
+        {
+          "date": "2025-06-18",
+          "open": 5987.93,
+          "high": 6018.25,
+          "low": 5971.89,
+          "close": 5980.87,
+          "volume": 5106470000,
+          "change_pct": -0.12
+        },
+        {
+          "date": "2025-06-20",
+          "open": 5999.67,
+          "high": 6018.2,
+          "low": 5952.56,
+          "close": 5967.84,
+          "volume": 7451500000,
+          "change_pct": -0.53
+        },
+        {
+          "date": "2025-06-23",
+          "open": 5969.67,
+          "high": 6028.77,
+          "low": 5943.23,
+          "close": 6025.17,
+          "volume": 5597000000,
+          "change_pct": 0.93
+        },
+        {
+          "date": "2025-06-24",
+          "open": 6061.21,
+          "high": 6101.76,
+          "low": 6059.25,
+          "close": 6092.18,
+          "volume": 5443690000,
+          "change_pct": 0.51
+        },
+        {
+          "date": "2025-06-25",
+          "open": 6104.23,
+          "high": 6108.51,
+          "low": 6080.09,
+          "close": 6092.16,
+          "volume": 5171110000,
+          "change_pct": -0.2
+        },
+        {
+          "date": "2025-06-26",
+          "open": 6112.09,
+          "high": 6146.52,
+          "low": 6107.27,
+          "close": 6141.02,
+          "volume": 5308140000,
+          "change_pct": 0.47
+        },
+        {
+          "date": "2025-06-27",
+          "open": 6150.7,
+          "high": 6187.68,
+          "low": 6132.35,
+          "close": 6173.07,
+          "volume": 7889350000,
+          "change_pct": 0.36
+        },
+        {
+          "date": "2025-06-30",
+          "open": 6193.36,
+          "high": 6215.08,
+          "low": 6174.97,
+          "close": 6204.95,
+          "volume": 5782900000,
+          "change_pct": 0.19
+        },
+        {
+          "date": "2025-07-01",
+          "open": 6187.25,
+          "high": 6210.78,
+          "low": 6177.97,
+          "close": 6198.01,
+          "volume": 6275310000,
+          "change_pct": 0.17
+        },
+        {
+          "date": "2025-07-02",
+          "open": 6193.88,
+          "high": 6227.6,
+          "low": 6188.29,
+          "close": 6227.42,
+          "volume": 5645710000,
+          "change_pct": 0.54
+        },
+        {
+          "date": "2025-07-03",
+          "open": 6246.46,
+          "high": 6284.65,
+          "low": 6246.46,
+          "close": 6279.35,
+          "volume": 3378110000,
+          "change_pct": 0.53
+        },
+        {
+          "date": "2025-07-07",
+          "open": 6259.04,
+          "high": 6262.07,
+          "low": 6201.0,
+          "close": 6229.98,
+          "volume": 5236740000,
+          "change_pct": -0.46
+        },
+        {
+          "date": "2025-07-08",
+          "open": 6234.03,
+          "high": 6242.7,
+          "low": 6217.75,
+          "close": 6225.52,
+          "volume": 5739030000,
+          "change_pct": -0.14
+        },
+        {
+          "date": "2025-07-09",
+          "open": 6243.33,
+          "high": 6269.16,
+          "low": 6231.43,
+          "close": 6263.26,
+          "volume": 4813340000,
+          "change_pct": 0.32
+        },
+        {
+          "date": "2025-07-10",
+          "open": 6266.8,
+          "high": 6290.22,
+          "low": 6251.44,
+          "close": 6280.46,
+          "volume": 5367350000,
+          "change_pct": 0.22
+        },
+        {
+          "date": "2025-07-11",
+          "open": 6255.68,
+          "high": 6269.44,
+          "low": 6237.6,
+          "close": 6259.75,
+          "volume": 4656210000,
+          "change_pct": 0.07
+        },
+        {
+          "date": "2025-07-14",
+          "open": 6255.15,
+          "high": 6273.31,
+          "low": 6239.22,
+          "close": 6268.56,
+          "volume": 4722250000,
+          "change_pct": 0.21
+        },
+        {
+          "date": "2025-07-15",
+          "open": 6295.29,
+          "high": 6302.04,
+          "low": 6241.68,
+          "close": 6243.76,
+          "volume": 5133670000,
+          "change_pct": -0.82
+        },
+        {
+          "date": "2025-07-16",
+          "open": 6254.5,
+          "high": 6268.12,
+          "low": 6201.59,
+          "close": 6263.7,
+          "volume": 5177460000,
+          "change_pct": 0.15
+        },
+        {
+          "date": "2025-07-17",
+          "open": 6263.4,
+          "high": 6304.69,
+          "low": 6262.27,
+          "close": 6297.36,
+          "volume": 5512290000,
+          "change_pct": 0.54
+        },
+        {
+          "date": "2025-07-18",
+          "open": 6312.95,
+          "high": 6315.61,
+          "low": 6285.27,
+          "close": 6296.79,
+          "volume": 5184700000,
+          "change_pct": -0.26
+        },
+        {
+          "date": "2025-07-21",
+          "open": 6304.74,
+          "high": 6336.08,
+          "low": 6303.79,
+          "close": 6305.6,
+          "volume": 5010840000,
+          "change_pct": 0.01
+        },
+        {
+          "date": "2025-07-22",
+          "open": 6306.6,
+          "high": 6316.12,
+          "low": 6281.71,
+          "close": 6309.62,
+          "volume": 5662040000,
+          "change_pct": 0.05
+        },
+        {
+          "date": "2025-07-23",
+          "open": 6326.9,
+          "high": 6360.64,
+          "low": 6317.49,
+          "close": 6358.91,
+          "volume": 5642510000,
+          "change_pct": 0.51
+        },
+        {
+          "date": "2025-07-24",
+          "open": 6368.6,
+          "high": 6381.31,
+          "low": 6360.57,
+          "close": 6363.35,
+          "volume": 5282720000,
+          "change_pct": -0.08
+        },
+        {
+          "date": "2025-07-25",
+          "open": 6370.01,
+          "high": 6395.82,
+          "low": 6368.53,
+          "close": 6388.64,
+          "volume": 4470720000,
+          "change_pct": 0.29
+        },
+        {
+          "date": "2025-07-28",
+          "open": 6397.69,
+          "high": 6401.07,
+          "low": 6375.79,
+          "close": 6389.77,
+          "volume": 4565620000,
+          "change_pct": -0.12
+        },
+        {
+          "date": "2025-07-29",
+          "open": 6405.62,
+          "high": 6409.26,
+          "low": 6363.92,
+          "close": 6370.86,
+          "volume": 5076120000,
+          "change_pct": -0.54
+        },
+        {
+          "date": "2025-07-30",
+          "open": 6381.23,
+          "high": 6396.54,
+          "low": 6336.38,
+          "close": 6362.9,
+          "volume": 5375070000,
+          "change_pct": -0.29
+        },
+        {
+          "date": "2025-07-31",
+          "open": 6427.02,
+          "high": 6427.02,
+          "low": 6327.64,
+          "close": 6339.39,
+          "volume": 6077080000,
+          "change_pct": -1.36
+        },
+        {
+          "date": "2025-08-01",
+          "open": 6287.28,
+          "high": 6287.28,
+          "low": 6212.69,
+          "close": 6238.01,
+          "volume": 5827150000,
+          "change_pct": -0.78
+        },
+        {
+          "date": "2025-08-04",
+          "open": 6271.71,
+          "high": 6330.69,
+          "low": 6271.71,
+          "close": 6329.94,
+          "volume": 4842580000,
+          "change_pct": 0.93
+        },
+        {
+          "date": "2025-08-05",
+          "open": 6336.63,
+          "high": 6346.0,
+          "low": 6289.37,
+          "close": 6299.19,
+          "volume": 5517410000,
+          "change_pct": -0.59
+        },
+        {
+          "date": "2025-08-06",
+          "open": 6309.3,
+          "high": 6352.83,
+          "low": 6301.11,
+          "close": 6345.06,
+          "volume": 5408560000,
+          "change_pct": 0.57
+        },
+        {
+          "date": "2025-08-07",
+          "open": 6374.32,
+          "high": 6389.71,
+          "low": 6310.32,
+          "close": 6340.0,
+          "volume": 5306090000,
+          "change_pct": -0.54
+        },
+        {
+          "date": "2025-08-08",
+          "open": 6355.22,
+          "high": 6395.16,
+          "low": 6355.22,
+          "close": 6389.45,
+          "volume": 4769910000,
+          "change_pct": 0.54
+        },
+        {
+          "date": "2025-08-11",
+          "open": 6389.67,
+          "high": 6407.25,
+          "low": 6364.06,
+          "close": 6373.45,
+          "volume": 4652400000,
+          "change_pct": -0.25
+        },
+        {
+          "date": "2025-08-12",
+          "open": 6395.17,
+          "high": 6446.55,
+          "low": 6385.76,
+          "close": 6445.76,
+          "volume": 5135300000,
+          "change_pct": 0.79
+        },
+        {
+          "date": "2025-08-13",
+          "open": 6462.67,
+          "high": 6480.28,
+          "low": 6445.02,
+          "close": 6466.58,
+          "volume": 5195950000,
+          "change_pct": 0.06
+        },
+        {
+          "date": "2025-08-14",
+          "open": 6453.46,
+          "high": 6473.92,
+          "low": 6441.07,
+          "close": 6468.54,
+          "volume": 4462050000,
+          "change_pct": 0.23
+        },
+        {
+          "date": "2025-08-15",
+          "open": 6477.38,
+          "high": 6481.34,
+          "low": 6441.85,
+          "close": 6449.8,
+          "volume": 4575060000,
+          "change_pct": -0.43
+        },
+        {
+          "date": "2025-08-18",
+          "open": 6445.02,
+          "high": 6455.35,
+          "low": 6437.7,
+          "close": 6449.15,
+          "volume": 4162290000,
+          "change_pct": 0.06
+        },
+        {
+          "date": "2025-08-19",
+          "open": 6446.24,
+          "high": 6456.48,
+          "low": 6400.22,
+          "close": 6411.37,
+          "volume": 4377440000,
+          "change_pct": -0.54
+        },
+        {
+          "date": "2025-08-20",
+          "open": 6406.62,
+          "high": 6408.4,
+          "low": 6343.86,
+          "close": 6395.78,
+          "volume": 4470390000,
+          "change_pct": -0.17
+        },
+        {
+          "date": "2025-08-21",
+          "open": 6380.83,
+          "high": 6393.65,
+          "low": 6352.71,
+          "close": 6370.17,
+          "volume": 4013560000,
+          "change_pct": -0.17
+        },
+        {
+          "date": "2025-08-22",
+          "open": 6384.59,
+          "high": 6478.89,
+          "low": 6384.59,
+          "close": 6466.91,
+          "volume": 5046860000,
+          "change_pct": 1.29
+        },
+        {
+          "date": "2025-08-25",
+          "open": 6457.67,
+          "high": 6466.89,
+          "low": 6438.06,
+          "close": 6439.32,
+          "volume": 4059070000,
+          "change_pct": -0.28
+        },
+        {
+          "date": "2025-08-26",
+          "open": 6435.49,
+          "high": 6468.37,
+          "low": 6429.21,
+          "close": 6465.94,
+          "volume": 4867680000,
+          "change_pct": 0.47
+        },
+        {
+          "date": "2025-08-27",
+          "open": 6462.26,
+          "high": 6487.06,
+          "low": 6457.84,
+          "close": 6481.4,
+          "volume": 4143680000,
+          "change_pct": 0.3
+        },
+        {
+          "date": "2025-08-28",
+          "open": 6483.84,
+          "high": 6508.23,
+          "low": 6466.96,
+          "close": 6501.86,
+          "volume": 4283760000,
+          "change_pct": 0.28
+        },
+        {
+          "date": "2025-08-29",
+          "open": 6489.28,
+          "high": 6491.76,
+          "low": 6444.57,
+          "close": 6460.26,
+          "volume": 4234840000,
+          "change_pct": -0.45
+        },
+        {
+          "date": "2025-09-02",
+          "open": 6401.51,
+          "high": 6416.54,
+          "low": 6360.58,
+          "close": 6415.54,
+          "volume": 4784000000,
+          "change_pct": 0.22
+        },
+        {
+          "date": "2025-09-03",
+          "open": 6445.82,
+          "high": 6453.67,
+          "low": 6416.17,
+          "close": 6448.26,
+          "volume": 4465360000,
+          "change_pct": 0.04
+        },
+        {
+          "date": "2025-09-04",
+          "open": 6456.6,
+          "high": 6502.54,
+          "low": 6445.98,
+          "close": 6502.08,
+          "volume": 4670770000,
+          "change_pct": 0.7
+        },
+        {
+          "date": "2025-09-05",
+          "open": 6529.08,
+          "high": 6532.65,
+          "low": 6443.98,
+          "close": 6481.5,
+          "volume": 5066120000,
+          "change_pct": -0.73
+        },
+        {
+          "date": "2025-09-08",
+          "open": 6498.09,
+          "high": 6508.67,
+          "low": 6483.29,
+          "close": 6495.15,
+          "volume": 5211500000,
+          "change_pct": -0.05
+        },
+        {
+          "date": "2025-09-09",
+          "open": 6503.33,
+          "high": 6518.23,
+          "low": 6483.08,
+          "close": 6512.61,
+          "volume": 4798350000,
+          "change_pct": 0.14
+        },
+        {
+          "date": "2025-09-10",
+          "open": 6550.29,
+          "high": 6555.97,
+          "low": 6516.34,
+          "close": 6532.04,
+          "volume": 5253010000,
+          "change_pct": -0.28
+        },
+        {
+          "date": "2025-09-11",
+          "open": 6554.41,
+          "high": 6592.89,
+          "low": 6545.8,
+          "close": 6587.47,
+          "volume": 5426460000,
+          "change_pct": 0.5
+        },
+        {
+          "date": "2025-09-12",
+          "open": 6590.66,
+          "high": 6600.21,
+          "low": 6579.49,
+          "close": 6584.29,
+          "volume": 4641640000,
+          "change_pct": -0.1
+        },
+        {
+          "date": "2025-09-15",
+          "open": 6603.49,
+          "high": 6619.62,
+          "low": 6602.07,
+          "close": 6615.28,
+          "volume": 5045020000,
+          "change_pct": 0.18
+        },
+        {
+          "date": "2025-09-16",
+          "open": 6624.13,
+          "high": 6626.99,
+          "low": 6600.11,
+          "close": 6606.76,
+          "volume": 5359510000,
+          "change_pct": -0.26
+        },
+        {
+          "date": "2025-09-17",
+          "open": 6604.87,
+          "high": 6624.39,
+          "low": 6551.15,
+          "close": 6600.35,
+          "volume": 5805340000,
+          "change_pct": -0.07
+        },
+        {
+          "date": "2025-09-18",
+          "open": 6626.85,
+          "high": 6656.8,
+          "low": 6611.89,
+          "close": 6631.96,
+          "volume": 5292400000,
+          "change_pct": 0.08
+        },
+        {
+          "date": "2025-09-19",
+          "open": 6647.11,
+          "high": 6671.82,
+          "low": 6630.31,
+          "close": 6664.36,
+          "volume": 9125960000,
+          "change_pct": 0.26
+        }
+      ]
+    },
+    "energy": {
+      "Gasoline (Regular, Weekly)": {
+        "current": 3.168,
+        "current_date": "2025-09-15",
+        "inauguration_price": 3.109,
+        "inauguration_date": "2025-01-20",
+        "biden_average": 3.3038490566037737,
+        "biden_peak": 3.668,
+        "biden_peak_date": "2024-04-22",
+        "biden_recent": 3.006,
+        "biden_recent_date": "2024-12-30",
+        "changes": {
+          "since_inauguration": 0.05900000000000016,
+          "pct_since_inauguration": 1.8977163074943766,
+          "since_biden_avg": -0.13584905660377355,
+          "pct_since_biden_avg": -4.111842105263157,
+          "vs_biden_peak": -0.5,
+          "pct_vs_biden_peak": -13.631406761177752,
+          "vs_biden_recent": 0.16200000000000037,
+          "pct_vs_biden_recent": 5.38922155688624
+        },
+        "date_ranges": {
+          "inauguration": "Jan 20, 2025 to Sep 15, 2025",
+          "biden_comparison": "Dec 30, 2024 to Sep 15, 2025"
+        },
+        "series_id": "GASREGW",
+        "frequency": "Weekly",
+        "data_quality": {
+          "total_points": 150,
+          "biden_data_points": 53,
+          "inauguration_days_diff": 0,
+          "current_vs_inauguration_identical": false
+        }
+      },
+      "Crude Oil WTI (Weekly)": {
+        "current": 63.06,
+        "current_date": "2025-09-12",
+        "inauguration_price": 79.28,
+        "inauguration_date": "2025-01-17",
+        "biden_average": 76.60115384615385,
+        "biden_peak": 86.5,
+        "biden_peak_date": "2024-04-12",
+        "biden_recent": 70.51,
+        "biden_recent_date": "2024-12-27",
+        "changes": {
+          "since_inauguration": -16.22,
+          "pct_since_inauguration": -20.459132189707365,
+          "since_biden_avg": -13.541153846153847,
+          "pct_since_biden_avg": -17.677480254866616,
+          "vs_biden_peak": -23.439999999999998,
+          "pct_vs_biden_peak": -27.098265895953755,
+          "vs_biden_recent": -7.450000000000003,
+          "pct_vs_biden_recent": -10.56587718054177
+        },
+        "date_ranges": {
+          "inauguration": "Jan 17, 2025 to Sep 12, 2025",
+          "biden_comparison": "Dec 27, 2024 to Sep 12, 2025"
+        },
+        "series_id": "WCOILWTICO",
+        "frequency": "Weekly",
+        "data_quality": {
+          "total_points": 150,
+          "biden_data_points": 52,
+          "inauguration_days_diff": 3,
+          "current_vs_inauguration_identical": false
+        }
+      },
+      "Natural Gas Henry Hub (Weekly)": {
+        "current": 2.96,
+        "current_date": "2025-09-12",
+        "inauguration_price": 5.47,
+        "inauguration_date": "2025-01-17",
+        "biden_average": 2.186923076923077,
+        "biden_peak": 5.11,
+        "biden_peak_date": "2024-01-12",
+        "biden_recent": 2.94,
+        "biden_recent_date": "2024-12-27",
+        "changes": {
+          "since_inauguration": -2.51,
+          "pct_since_inauguration": -45.88665447897623,
+          "since_biden_avg": 0.773076923076923,
+          "pct_since_biden_avg": 35.34998241294407,
+          "vs_biden_peak": -2.1500000000000004,
+          "pct_vs_biden_peak": -42.074363992172216,
+          "vs_biden_recent": 0.020000000000000018,
+          "pct_vs_biden_recent": 0.680272108843538
+        },
+        "date_ranges": {
+          "inauguration": "Jan 17, 2025 to Sep 12, 2025",
+          "biden_comparison": "Dec 27, 2024 to Sep 12, 2025"
+        },
+        "series_id": "WHHNGSP",
+        "frequency": "Weekly",
+        "data_quality": {
+          "total_points": 150,
+          "biden_data_points": 52,
+          "inauguration_days_diff": 3,
+          "current_vs_inauguration_identical": false
+        }
+      }
+    },
+    "economic": {
+      "Unemployment Rate": {
+        "current_value": 4.3,
+        "current_date": "2025-08-01",
+        "current_month_year": "August 2025",
+        "biden_value": 4.2,
+        "biden_date": "2024-08-01",
+        "biden_month_year": "August 2024",
+        "change": 0.09999999999999964,
+        "change_pct": 2.3809523809523725,
+        "comparison_type": "Same Month Comparison",
+        "days_apart_from_year": 0,
+        "as_of_current": "As of August 01, 2025",
+        "as_of_biden": "As of August 01, 2024"
+      },
+      "Inflation (CPI)": {
+        "current_value": 323.364,
+        "current_date": "2025-08-01",
+        "current_month_year": "August 2025",
+        "biden_value": 314.131,
+        "biden_date": "2024-08-01",
+        "biden_month_year": "August 2024",
+        "change": 9.233000000000004,
+        "change_pct": 2.9392196249335485,
+        "comparison_type": "Same Month Comparison",
+        "days_apart_from_year": 0,
+        "as_of_current": "As of August 01, 2025",
+        "as_of_biden": "As of August 01, 2024"
+      },
+      "GDP (Real)": {
+        "current_value": 23703.782,
+        "current_date": "2025-04-01",
+        "current_month_year": "April 2025",
+        "biden_value": 23223.906,
+        "biden_date": "2024-04-01",
+        "biden_month_year": "April 2024",
+        "change": 479.8760000000002,
+        "change_pct": 2.0663018529268946,
+        "comparison_type": "Same Month Comparison",
+        "days_apart_from_year": 0,
+        "as_of_current": "As of April 01, 2025",
+        "as_of_biden": "As of April 01, 2024"
+      },
+      "GDP Growth Rate": {
+        "current_value": 3.3,
+        "current_date": "2025-04-01",
+        "current_month_year": "April 2025",
+        "biden_value": 3.0,
+        "biden_date": "2024-04-01",
+        "biden_month_year": "April 2024",
+        "change": 0.2999999999999998,
+        "change_pct": 9.999999999999993,
+        "comparison_type": "Same Month Comparison",
+        "days_apart_from_year": 0,
+        "as_of_current": "As of April 01, 2025",
+        "as_of_biden": "As of April 01, 2024"
+      },
+      "Consumer Confidence": {
+        "current_value": 61.7,
+        "current_date": "2025-07-01",
+        "current_month_year": "July 2025",
+        "biden_value": 66.4,
+        "biden_date": "2024-07-01",
+        "biden_month_year": "July 2024",
+        "change": -4.700000000000003,
+        "change_pct": -7.078313253012052,
+        "comparison_type": "Same Month Comparison",
+        "days_apart_from_year": 0,
+        "as_of_current": "As of July 01, 2025",
+        "as_of_biden": "As of July 01, 2024"
+      },
+      "Personal Income": {
+        "current_value": 25905.4,
+        "current_date": "2025-07-01",
+        "current_month_year": "July 2025",
+        "biden_value": 24669.3,
+        "biden_date": "2024-07-01",
+        "biden_month_year": "July 2024",
+        "change": 1236.1000000000022,
+        "change_pct": 5.010681292132335,
+        "comparison_type": "Same Month Comparison",
+        "days_apart_from_year": 0,
+        "as_of_current": "As of July 01, 2025",
+        "as_of_biden": "As of July 01, 2024"
+      },
+      "Retail Sales": {
+        "current_value": 732010.0,
+        "current_date": "2025-08-01",
+        "current_month_year": "August 2025",
+        "biden_value": 697157.0,
+        "biden_date": "2024-08-01",
+        "biden_month_year": "August 2024",
+        "change": 34853.0,
+        "change_pct": 4.999304317391922,
+        "comparison_type": "Same Month Comparison",
+        "days_apart_from_year": 0,
+        "as_of_current": "As of August 01, 2025",
+        "as_of_biden": "As of August 01, 2024"
+      },
+      "Industrial Production": {
+        "current_value": 103.9203,
+        "current_date": "2025-08-01",
+        "current_month_year": "August 2025",
+        "biden_value": 103.0196,
+        "biden_date": "2024-08-01",
+        "biden_month_year": "August 2024",
+        "change": 0.9007000000000005,
+        "change_pct": 0.8742996478340049,
+        "comparison_type": "Same Month Comparison",
+        "days_apart_from_year": 0,
+        "as_of_current": "As of August 01, 2025",
+        "as_of_biden": "As of August 01, 2024"
+      }
+    },
+    "employment": {
+      "Total Nonfarm Employment": {
+        "current": 159540.0,
+        "current_period": "August 2025",
+        "change": 22.0,
+        "change_pct": 0.013789645230036354,
+        "biden_value": 158358.0,
+        "biden_period": "October 2024",
+        "monthly_jobs_data": {
+          "labels": [
+            "Sep 24",
+            "Oct 24",
+            "Nov 24",
+            "Dec 24",
+            "Jan 25",
+            "Feb 25",
+            "Mar 25",
+            "Apr 25",
+            "May 25",
+            "Jun 25",
+            "Jul 25",
+            "Aug 25"
+          ],
+          "values": [
+            240.0,
+            44.0,
+            261.0,
+            323.0,
+            111.0,
+            102.0,
+            120.0,
+            158.0,
+            19.0,
+            -13.0,
+            79.0,
+            22.0
+          ],
+          "series_name": "Total Nonfarm Employment",
+          "series_id": "CES0000000001",
+          "unit": "thousands",
+          "source": "Bureau of Labor Statistics",
+          "last_updated": "2025-08",
+          "total_12_months": 1466.0,
+          "average_monthly": 122.2
+        },
+        "current_month_label": "Aug 25"
+      },
+      "Total Private Employment": {
+        "current": 135972.0,
+        "current_period": "August 2025",
+        "biden_value": 135382.0,
+        "biden_period": "December 2024",
+        "change": 590.0,
+        "change_pct": 0.4358038734839195,
+        "comparison_period": "December 2024 to August 2025"
+      },
+      "Manufacturing Employment": {
+        "current": 12722.0,
+        "current_period": "August 2025",
+        "biden_value": 12760.0,
+        "biden_period": "December 2024",
+        "change": -38.0,
+        "change_pct": -0.29780564263322884,
+        "comparison_period": "December 2024 to August 2025"
+      },
+      "Construction Employment": {
+        "current": 8295.0,
+        "current_period": "August 2025",
+        "biden_value": 8289.0,
+        "biden_period": "December 2024",
+        "change": 6.0,
+        "change_pct": 0.07238508867173363,
+        "comparison_period": "December 2024 to August 2025"
+      },
+      "Professional and Business Services Employment": {
+        "current": 22536.0,
+        "current_period": "August 2025",
+        "biden_value": 22614.0,
+        "biden_period": "December 2024",
+        "change": -78.0,
+        "change_pct": -0.344919076678164,
+        "comparison_period": "December 2024 to August 2025"
+      },
+      "Oil and Gas Extraction Employment": {
+        "current": 119.1,
+        "current_period": "August 2025",
+        "biden_value": 123.0,
+        "biden_period": "December 2024",
+        "change": -3.9000000000000057,
+        "change_pct": -3.170731707317078,
+        "comparison_period": "December 2024 to August 2025"
+      },
+      "Private Education and Health Services Employment": {
+        "current": 27452.0,
+        "current_period": "August 2025",
+        "biden_value": 26931.0,
+        "biden_period": "December 2024",
+        "change": 521.0,
+        "change_pct": 1.9345735397868626,
+        "comparison_period": "December 2024 to August 2025"
+      },
+      "Average Hourly Earnings": {
+        "current": 36.53,
+        "current_period": "August 2025",
+        "biden_value": 35.68,
+        "biden_period": "December 2024",
+        "change": 0.8500000000000014,
+        "change_pct": 2.3822869955156993,
+        "comparison_period": "December 2024 to August 2025"
+      },
+      "monthly_jobs_data": {
+        "labels": [
+          "Sep 24",
+          "Oct 24",
+          "Nov 24",
+          "Dec 24",
+          "Jan 25",
+          "Feb 25",
+          "Mar 25",
+          "Apr 25",
+          "May 25",
+          "Jun 25",
+          "Jul 25",
+          "Aug 25"
+        ],
+        "values": [
+          240.0,
+          44.0,
+          261.0,
+          323.0,
+          111.0,
+          102.0,
+          120.0,
+          158.0,
+          19.0,
+          -13.0,
+          79.0,
+          22.0
+        ],
+        "series_name": "Total Nonfarm Employment",
+        "series_id": "CES0000000001",
+        "unit": "thousands",
+        "source": "Bureau of Labor Statistics",
+        "last_updated": "2025-08",
+        "total_12_months": 1466.0,
+        "average_monthly": 122.2
+      }
+    },
+    "housing": {
+      "Median Home Price": {
+        "current": 410800.0,
+        "current_date": "2025-04-01",
+        "biden_value": 419300.0,
+        "biden_date": "2024-10-01",
+        "change": -8500.0,
+        "change_pct": -2.027188170760792,
+        "date_range": "Oct 01, 2024 to Apr 01, 2025",
+        "as_of_current": "As of April 01, 2025",
+        "as_of_biden": "As of October 01, 2024"
+      },
+      "Housing Starts": {
+        "current": 1307.0,
+        "current_date": "2025-08-01",
+        "biden_value": 1514.0,
+        "biden_date": "2024-12-01",
+        "change": -207.0,
+        "change_pct": -13.672391017173052,
+        "date_range": "Dec 01, 2024 to Aug 01, 2025",
+        "as_of_current": "As of August 01, 2025",
+        "as_of_biden": "As of December 01, 2024"
+      },
+      "Case Shiller Index": {
+        "current": 326.358,
+        "current_date": "2025-06-01",
+        "biden_value": 327.902,
+        "biden_date": "2024-12-01",
+        "change": -1.5439999999999827,
+        "change_pct": -0.4708723948008804,
+        "date_range": "Dec 01, 2024 to Jun 01, 2025",
+        "as_of_current": "As of June 01, 2025",
+        "as_of_biden": "As of December 01, 2024"
+      }
+    },
+    "consumer": {
+      "Overall CPI": {
+        "trump_inflation": 2.011056580357629,
+        "trump_period": "Jan 01, 2025 to Aug 01, 2025",
+        "trump_latest_date": "2025-08-01",
+        "trump_months": 8,
+        "biden_inflation": 2.0999438336442875,
+        "biden_period": "Jan 01, 2024 to Aug 01, 2024",
+        "biden_latest_date": "2024-08-01",
+        "inflation_change": -0.08888725328665847,
+        "analysis_type": "Trump-Only Period",
+        "as_of_trump": "As of August 01, 2025",
+        "index_trump_latest": 323.364,
+        "index_trump_earliest": 319.086,
+        "period_description": "8 months Trump vs same months Biden"
+      },
+      "Core CPI": {
+        "trump_inflation": 2.334490159789876,
+        "trump_period": "Jan 01, 2025 to Aug 01, 2025",
+        "trump_latest_date": "2025-08-01",
+        "trump_months": 8,
+        "biden_inflation": 2.6002818164757615,
+        "biden_period": "Jan 01, 2024 to Aug 01, 2024",
+        "biden_latest_date": "2024-08-01",
+        "inflation_change": -0.26579165668588534,
+        "analysis_type": "Trump-Only Period",
+        "as_of_trump": "As of August 01, 2025",
+        "index_trump_latest": 329.793,
+        "index_trump_earliest": 324.739,
+        "period_description": "8 months Trump vs same months Biden"
+      },
+      "Food CPI": {
+        "trump_inflation": 2.4742977498801064,
+        "trump_period": "Jan 01, 2025 to Aug 01, 2025",
+        "trump_latest_date": "2025-08-01",
+        "trump_months": 8,
+        "biden_inflation": 1.4053270243455773,
+        "biden_period": "Jan 01, 2024 to Aug 01, 2024",
+        "biden_latest_date": "2024-08-01",
+        "inflation_change": 1.068970725534529,
+        "analysis_type": "Trump-Only Period",
+        "as_of_trump": "As of August 01, 2025",
+        "index_trump_latest": 341.208,
+        "index_trump_earliest": 335.671,
+        "period_description": "8 months Trump vs same months Biden"
+      },
+      "Energy CPI": {
+        "trump_inflation": -2.9444458211348814,
+        "trump_period": "Jan 01, 2025 to Aug 01, 2025",
+        "trump_latest_date": "2025-08-01",
+        "trump_months": 8,
+        "biden_inflation": -2.341759504421242,
+        "biden_period": "Jan 01, 2024 to Aug 01, 2024",
+        "biden_latest_date": "2024-08-01",
+        "inflation_change": -0.6026863167136396,
+        "analysis_type": "Trump-Only Period",
+        "as_of_trump": "As of August 01, 2025",
+        "index_trump_latest": 276.936,
+        "index_trump_earliest": 282.481,
+        "period_description": "8 months Trump vs same months Biden"
+      },
+      "Housing CPI": {
+        "trump_inflation": 3.697249724972491,
+        "trump_period": "Jan 01, 2025 to Aug 01, 2025",
+        "trump_latest_date": "2025-08-01",
+        "trump_months": 8,
+        "biden_inflation": 3.5230727982889647,
+        "biden_period": "Jan 01, 2024 to Aug 01, 2024",
+        "biden_latest_date": "2024-08-01",
+        "inflation_change": 0.17417692668352647,
+        "analysis_type": "Trump-Only Period",
+        "as_of_trump": "As of August 01, 2025",
+        "index_trump_latest": 349.277,
+        "index_trump_earliest": 340.875,
+        "period_description": "8 months Trump vs same months Biden"
+      },
+      "Transportation CPI": {
+        "trump_inflation": -2.7984205145249734,
+        "trump_period": "Jan 01, 2025 to Aug 01, 2025",
+        "trump_latest_date": "2025-08-01",
+        "trump_months": 8,
+        "biden_inflation": 0.12231493582654407,
+        "biden_period": "Jan 01, 2024 to Aug 01, 2024",
+        "biden_latest_date": "2024-08-01",
+        "inflation_change": -2.9207354503515175,
+        "analysis_type": "Trump-Only Period",
+        "as_of_trump": "As of August 01, 2025",
+        "index_trump_latest": 271.635,
+        "index_trump_earliest": 276.799,
+        "period_description": "8 months Trump vs same months Biden"
+      }
+    }
+  },
+  "sources": [
+    {
+      "name": "Congress.gov API",
+      "url": "https://api.congress.gov/v3",
+      "type": "Tax Policy",
+      "description": "Federal legislation and bill tracking",
+      "timestamp": "2025-09-21 16:29:54"
+    },
+    {
+      "name": "IRS.gov",
+      "url": "https://www.irs.gov",
+      "type": "Tax Policy",
+      "description": "Current tax rates and regulations",
+      "timestamp": "2025-09-21 16:29:54"
+    },
+    {
+      "name": "Tax Foundation",
+      "url": "https://taxfoundation.org",
+      "type": "Tax Policy",
+      "description": "Tax policy research and analysis",
+      "timestamp": "2025-09-21 16:29:54"
+    },
+    {
+      "name": "Treasury Fiscal Data API",
+      "url": "https://api.fiscaldata.treasury.gov",
+      "type": "Tax Policy",
+      "description": "Federal revenue and fiscal data",
+      "timestamp": "2025-09-21 16:29:54"
+    },
+    {
+      "name": "Tariff Data Clean",
+      "url": "tariff_data_clean.json",
+      "type": "Tariff Data",
+      "description": "Country tariff rates and distribution analysis",
+      "timestamp": "2025-09-21 16:29:59"
+    },
+    {
+      "name": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/%5EGSPC/history/?period1=1737331200&period2=1758472199",
+      "type": "Stock Data",
+      "description": "S&P 500 Historical Prices from January 20, 2025",
+      "timestamp": "2025-09-21 16:29:59"
+    },
+    {
+      "name": "Federal Reserve Economic Data (FRED) - Energy",
+      "url": "https://api.stlouisfed.org/fred",
+      "type": "Energy Data",
+      "description": "Gasoline, crude oil, and natural gas prices from EIA via FRED",
+      "timestamp": "2025-09-21 16:30:00"
+    },
+    {
+      "name": "Federal Reserve Economic Data (FRED)",
+      "url": "https://api.stlouisfed.org/fred",
+      "type": "Economic Data",
+      "description": "Economic indicators and time series data",
+      "timestamp": "2025-09-21 16:30:02"
+    },
+    {
+      "name": "Bureau of Labor Statistics (BLS)",
+      "url": "https://api.bls.gov",
+      "type": "Employment Data",
+      "description": "Employment statistics and wage data",
+      "timestamp": "2025-09-21 16:30:07"
+    }
+  ]
+}

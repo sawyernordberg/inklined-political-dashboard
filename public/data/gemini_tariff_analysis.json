@@ -1,0 +1,402 @@
+{
+  "last_updated": "2025-09-13T16:00:00.000000",
+  "source_timestamp": "",
+  "source_file": "integrated_economic_dashboard.json",
+  "tariff_updates": [
+    {
+      "title": "US Imposes Universal 10% Tariff and Higher 'Reciprocal' Tariffs on Most Trade Partners",
+      "description": "President Trump issued a 'reciprocal tariff' order, imposing tariffs on most US trade partners. This includes a 10% \"baseline\" rate on most trade partners, effective April 5, 2025, and higher, country-specific \"reciprocal\" rates on 57 trade partners with which the United States has trade deficits, effective April 9, 2025. Exemptions include sector-specific Section 232 tariffs, certain energy and mineral products, and imports from Canada and Mexico (temporarily).",
+      "status": "implemented/enacted/active/in_effect",
+      "announcement_date": "2025-04-02",
+      "tariff_rate": "10% baseline, varies for reciprocal tariffs",
+      "affected_products": "Nearly all US imports, excluding certain exempted categories.",
+      "source_titles": [
+        "President Trump Orders 10% Global Tariff and Higher \"Reciprocal\" Tariffs - White & Case LLP",
+        "\"Liberation Day\" Tariffs Explained - CSIS"
+      ],
+      "last_verified": "2025-09-13",
+      "confidence_level": "high"
+    },
+    {
+      "title": "US and China Agree to Partially De-escalate April Tariffs",
+      "description": "The United States and China reached an agreement to de-escalate from the latest rounds of tariff increases. The arrangement reduces tariffs back to the levels of the United States' April 2 \"baseline\" and \"reciprocal\" tariff order and suspends the reciprocal tariff for 90 days to allow for further negotiations. The 10% baseline tariff (and a retaliatory 10% tariff by China) will remain in effect, as will all other active tariffs. China will also lift certain non-tariff retaliation measures announced in early April. The changes enter into effect on May 14, 2025, and the 90-day suspension will last until around August 12, 2025.",
+      "status": "implemented/enacted/active/in_effect",
+      "announcement_date": "2025-05-14",
+      "tariff_rate": "10% baseline, 34% reciprocal tariff suspended",
+      "affected_products": "All US imports from China, Hong Kong, and Macau",
+      "source_titles": [
+        "United States and China Agree to Partially De-escalate April Tariffs | White & Case LLP",
+        "2025 U.S. Tariffs Update - New Trade Policies & Ecommerce Impact | Zonos Docs"
+      ],
+      "last_verified": "2025-09-13",
+      "confidence_level": "high"
+    },
+    {
+      "title": "US Adds 50% Tariff on Steel-Derivative Household Appliances",
+      "description": "The Bureau of Industry and Security (BIS) of the US Department of Commerce published a notice adding several household appliances to the tariff list of steel-derivative items, meaning they will be subject to an additional 50 percent tariff when imported into the US. The new tariff, which will be levied on the proportion of steel contained in the product rather than the entire item, will come into effect on June 23, 2025.",
+      "status": "implemented/enacted/active/in_effect",
+      "announcement_date": "2025-06-16",
+      "tariff_rate": "50%",
+      "affected_products": "Combined refrigerator-freezers, dryers, washing machines, dishwashers, and cooking stoves, among other product categories.",
+      "source_titles": [
+        "Breaking Down the US-China Trade Tariffs: What's in Effect Now?",
+        "2025 U.S. Tariffs Update - New Trade Policies & Ecommerce Impact | Zonos Docs"
+      ],
+      "last_verified": "2025-09-13",
+      "confidence_level": "high"
+    },
+    {
+      "title": "US-Vietnam Trade Deal Imposes 20% Tariff on Most Vietnamese Exports, 40% on Transshipped Goods",
+      "description": "The U.S. and Vietnam reached a trade deal where the U.S. will impose a 20% tariff on most Vietnamese exports and a 40% levy on goods transshipped through Vietnam from third countries. In return, Vietnam will grant zero tariffs on U.S. imports and provide preferential access for certain American goods, such as large-engine automobiles.",
+      "status": "implemented/enacted/active/in_effect",
+      "announcement_date": "2025-07-02",
+      "tariff_rate": "20% or 40%",
+      "affected_products": "Most Vietnamese exports, with higher tariffs on transshipped goods.",
+      "source_titles": [
+        "Vietnam and US Reach Trade Accord: Implications for Business and Supply Chains",
+        "Trump's Trade Deals, Negotiations, and New Tariffs for Each Country - Time Magazine"
+      ],
+      "last_verified": "2025-09-13",
+      "confidence_level": "high"
+    },
+    {
+      "title": "US to Impose 50% Tariff on Brazilian Imports Citing Political Concerns",
+      "description": "The US will impose a 50% tariff on Brazilian imports starting August 1, citing concerns over the prosecution of former Brazilian president Jair Bolsonaro. The letter was released in Trump's social media platform, Truth Social, and came as a relative surprise to the Brazilian government.",
+      "status": "enacted",
+      "announcement_date": "2025-07-09",
+      "tariff_rate": "50%",
+      "affected_products": "All Brazilian imports to the US",
+      "source_titles": [
+        "What's behind Trump's 50 percent tariff for Brazil despite trade surplus? - Al Jazeera",
+        "Trump's \"Tarifaço\" Against Brazil: a Breach of the Non-Intervention Rule - EJIL: Talk!"
+      ],
+      "last_verified": "2025-09-13",
+      "confidence_level": "high"
+    },
+    {
+      "title": "US Imposes 50% Tariff on Steel and Aluminum Imports",
+      "description": "The U.S. has officially increased its tariff on all imported steel and aluminum products from 25% to 50% for every country with the exception of the United Kingdom (GB) which stays at 25%.",
+      "status": "implemented/enacted/active/in_effect",
+      "announcement_date": "2025-06-04",
+      "tariff_rate": "50%",
+      "affected_products": "All imported steel and aluminum products",
+      "source_titles": [
+        "2025 U.S. Tariffs Update - New Trade Policies & Ecommerce Impact | Zonos Docs",
+        "Tariffs in the second Trump administration - Wikipedia"
+      ],
+      "last_verified": "2025-09-13",
+      "confidence_level": "high"
+    },
+    {
+      "title": "US Announces 30% Tariffs on EU and Mexico",
+      "description": "President Trump announced plans to impose a 30% tariff on EU and Mexico goods shipped to the U.S., arguing that a trade deficit was a potential threat. This would take effect from August 1; however, the EU has not retaliated and is willing to continue negotiating.",
+      "status": "announced",
+      "announcement_date": "2025-07-12",
+      "tariff_rate": "30%",
+      "affected_products": "All goods shipped from the EU and Mexico to the US",
+      "source_titles": [
+        "What's Happening With Trump Tariffs? Letters, New Threats, Rates - Kiplinger",
+        "State of U.S. Tariffs: July 14, 2025 | The Budget Lab at Yale"
+      ],
+      "last_verified": "2025-09-13",
+      "confidence_level": "high"
+    },
+    {
+      "title": "US and UK Finalize Trade Deal Reducing Tariffs on UK Exports",
+      "description": "A trade deal was signed between the US and UK at the G7 summit and implemented on June 30, 2025, reducing tariffs on U.K. exports, including cars and aerospace products. The U.S. received increased market access for its export to the U.K., particularly agricultural exports. The deal leaves steel and aluminum tariffs unresolved, with the potential to rise to 50 percent by July 9, 2025.",
+      "status": "implemented",
+      "announcement_date": "2025-06-16",
+      "tariff_rate": "varies",
+      "affected_products": "Cars, aerospace products, agricultural exports",
+      "source_titles": [
+        "Status of U.S. Bilateral Trade Negotiations as the July 9 Deadline Approaches | Insights"
+      ],
+      "last_verified": "2025-09-13",
+      "confidence_level": "high"
+    },
+    {
+      "title": "Trump Administration Delays Reciprocal Tariff Implementation to August 1, 2025, and Announces New Tariff Rates",
+      "description": "On July 7, 2025, President Trump signed an Executive Order postponing the implementation of country-specific reciprocal tariffs from July 9 to August 1, 2025. This decision was based on recommendations from senior officials and the status of trade discussions with partner countries. Letters were sent to 14 countries, including Japan, South Korea, Malaysia, and Kazakhstan, outlining new tariff rates ranging from 25% to 40% that would take effect on August 1, 2025, if trade deals are not reached. On July 9, additional letters were sent to seven more countries. The EU and Mexico criticized the tariffs, but negotiations continued. A separate suspension for China, established under Executive Order 14298 (May 12, 2025), remained unchanged. The administration argues these tariffs will promote domestic manufacturing and protect national security.",
+      "status": "announced",
+      "announcement_date": "2025-07-07",
+      "tariff_rate": "varies (25% to 40% for initial 14 countries, other rates announced separately)",
+      "affected_products": "Imports from the European Union, Canada, Japan, South Korea, Thailand, Indonesia, Bangladesh, Mexico and others. Specific products not detailed in initial announcement but subject to Harmonized Tariff Schedule sections 9903.01.43 through 9903.01.62 and 9903.01.64 through 9903.01.76.",
+      "source_titles": [
+        "Trump Delays Reciprocal Tariffs to August 1, 2025 - EgeTrans",
+        "Trump administration announces new country-specific tariff rates, extends reciprocal tariff pause - PwC",
+        "Tariffs in the second Trump administration - Wikipedia",
+        "Global trade tensions escalate amid new US tariffs, and other international trade stories to know this month - The World Economic Forum",
+        "Fact Sheet: President Donald J. Trump Continues Enforcement of Reciprocal Tariffs and Announces New Tariff Rates - The White House"
+      ],
+      "last_verified": "2025-09-13",
+      "confidence_level": "high"
+    },
+    {
+      "title": "Canada Rescinds Digital Services Tax to Resume Trade Negotiations with the U.S.",
+      "description": "On June 29, 2025, Canada's Minister of Finance announced the rescission of the Digital Services Tax (DST) to facilitate the resumption of trade negotiations with the United States. This decision halts the June 30, 2025, collection of the DST and will be followed by legislation to repeal the Digital Services Tax Act. The DST, initially announced in 2020, would have imposed a 3% tax on revenue from Canadian digital services, affecting U.S. tech companies. The U.S. President had previously terminated trade talks in response to the DST. Both countries aim to reach a new bilateral framework by July 21, 2025. The reversal is expected to relieve trade risks for industries reliant on Canadian imports, including automotive, manufacturing, and pharmaceuticals.",
+      "status": "implemented",
+      "announcement_date": "2025-06-29",
+      "tariff_rate": "N/A",
+      "affected_products": "Digital services, potentially affecting online retailers, social media platforms, and other similar entities.",
+      "source_titles": [
+        "US, Canada trade talks to resume after digital tax scrapped – DW - 2025-06-30",
+        "Canada rescinds digital services tax to advance broader trade negotiations with the United States - Department of Finance Canada",
+        "Digital Services Tax: Canada-US Negotiation Updates - Green Worldwide Shipping"
+      ],
+      "last_verified": "2025-09-13",
+      "confidence_level": "high"
+    },
+    {
+      "title": "U.S. Ends De Minimis Exemption for Imports from China and Hong Kong",
+      "description": "Effective May 2, 2025, the United States terminated the de minimis tariff exemption for low-value imports from China and Hong Kong. This policy change, announced through an executive order on April 2, 2025, subjects goods valued at or under $800 to full duties and standard customs procedures. The move aims to combat the illicit flow of synthetic opioids into the U.S. Goods sent through the international postal network are now subject to a duty equal to 30% of their value, or a flat fee of $25 per item, whichever is greater, increasing to $50 per item beginning June 1, 2025. Shipments through carriers not part of the Universal Postal Union are subject to all applicable duties, including Section 301 tariffs and additional levies. Carriers must report shipment data to U.S. Customs and Border Protection (CBP) in advance of arrival.",
+      "status": "implemented",
+      "announcement_date": "2025-05-02",
+      "tariff_rate": "Varies; 30% of value or $25 per item (postal network), increasing to $50 per item on June 1, 2025. Other carriers subject to all applicable duties.",
+      "affected_products": "Low-value imports (under $800) from China and Hong Kong, including e-commerce goods, apparel, electronics, and various consumer products.",
+      "source_titles": [
+        "U.S. Ends De Minimis Tariff Exemptions for Imports from China and Hong Kong - Cole Blog",
+        "U.S. Trade Policy Updates – May 2025: De Minimis Ends for China & Hong Kong, Tariffs Stack Up, and What Brands Should Do Now - Passport Shipping",
+        "U.S. Ends De Minimis Exemption for Imports From China & Hong Kong - ASI"
+      ],
+      "last_verified": "2025-09-13",
+      "confidence_level": "high"
+    },
+    {
+      "title": "China Raises Duties on US Goods to 125% in Retaliation",
+      "description": "Effective April 12, 2025, China raised duties on U.S. goods to 125% in response to increased U.S. tariffs on Chinese imports. This action followed the U.S. increasing duties on Chinese imports to 125% on April 9, 2025. The 125% tariff replaced a previous 84% tariff. However, after negotiations in Geneva, China reduced the 125% tariff to 10% starting May 14, 2025, for a period of 90 days. China also pledged to suspend or remove non-tariff countermeasures taken against the United States since April 2, 2025.",
+      "status": "implemented",
+      "announcement_date": "2025-04-11",
+      "tariff_rate": "Initially 125%, reduced to 10% on May 14, 2025, for 90 days.",
+      "affected_products": "U.S. goods imported into China, including agricultural products, machinery, and automobiles.",
+      "source_titles": [
+        "Trump Raises Tariffs on China to 145% – Overview and Trade Implications",
+        "How to handle US-China tariffs and the end of de minimis - Avalara",
+        "A Timeline of the U.S.-China Trade War During Trump's Second Term - Time Magazine"
+      ],
+      "last_verified": "2025-09-13",
+      "confidence_level": "high"
+    },
+    {
+      "title": "Trump Imposes 90-Day Pause on Reciprocal Tariffs (Excluding China)",
+      "description": "On April 9, 2025, President Trump announced a 90-day pause on reciprocal tariffs for all countries except China. This pause was implemented after a stock market crash triggered by the initial tariff announcements. However, this pause was set to expire on July 9, 2025, but was extended to August 1, 2025. New reciprocal tariff rates were sent to various countries, set to take effect on August 1, 2025. These rates are designed to address the U.S. goods trade deficit.",
+      "status": "announced",
+      "announcement_date": "2025-04-09",
+      "tariff_rate": "Varies by country; initially 10% baseline, with higher rates for specific trading partners. New rates to be implemented on August 1, 2025.",
+      "affected_products": "Imports from various countries, excluding those already subject to product-specific tariffs (e.g., steel, aluminum, autos) and specified electronics.",
+      "source_titles": [
+        "Trump's Trade Deals, Negotiations, and New Tariffs for Each Country - Time Magazine",
+        "Trump Tariffs: Tracking the Economic Impact of the Trump Trade War - Tax Foundation",
+        "Fact Sheet: President Donald J. Trump Continues Enforcement of Reciprocal Tariffs and Announces New Tariff Rates - The White House"
+      ],
+      "last_verified": "2025-09-13",
+      "confidence_level": "high"
+    },
+    {
+      "title": "US Clarifies Semiconductor Exclusion from Reciprocal Tariffs",
+      "description": "On April 11, 2025, President Trump issued a Presidential Memorandum excluding certain semiconductor products providing relief from reciprocal tariffs. The additional excluded products are classified under Chapters 84 and 85 of the Harmonized Tariff Schedule (\"HTS\") and include certain automatic data processing systems and related accessories, machines for semiconductor manufacturing, smartphones, and flat panel display modules.",
+      "status": "implemented/enacted/active/in_effect",
+      "announcement_date": "2025-04-11",
+      "tariff_rate": "0%",
+      "affected_products": "Certain automatic data processing systems and related accessories, machines for semiconductor manufacturing, smartphones, and flat panel display modules.",
+      "source_titles": [
+        "Semiconductor Tariff Exclusions & New Section 232 Investigations - Torres Trade Law",
+        "Clarification of Exceptions Under Executive Order 14257 of April 2, 2025, as Amended"
+      ],
+      "last_verified": "2025-09-13",
+      "confidence_level": "high"
+    },
+    {
+      "title": "Appeals Court Temporarily Reinstates Trump's IEEPA Tariffs After Lower Court Block",
+      "description": "On May 29, 2025, a federal appeals court temporarily reinstated President Trump's tariffs that were previously blocked by the U.S. Court of International Trade on May 28, 2025. The lower court had ruled that Trump exceeded his authority under the International Emergency Economic Powers Act (IEEPA). The appeals court's stay allows the tariffs to remain in effect while the case is under review, with responses from both sides due in early June.",
+      "status": "active",
+      "announcement_date": "2025-05-29",
+      "tariff_rate": "varies",
+      "affected_products": "Range of goods from major trading partners, including those subject to 'reciprocal' tariffs.",
+      "source_titles": [
+        "Trump's tariffs temporarily reinstated after appeals court issues stay - Straight Arrow News",
+        "Trump tariffs face legal battle as federal appeals court temporarily blocks trade ruling - Fox News"
+      ],
+      "last_verified": "2025-09-13",
+      "confidence_level": "high"
+    },
+    {
+      "title": "Trump Announces Potential 50% Tariff on Copper Imports, Effective August 1",
+      "description": "On July 8, 2025, President Trump announced a potential 50% tariff on copper imports, stating it would take effect on August 1 after a Commerce Department review. This action follows a Section 232 investigation into copper imports initiated in February 2025. Copper is a crucial component in various goods, including electronics, machinery, and cars.",
+      "status": "implemented/enacted/active/in_effect",
+      "announcement_date": "2025-08-01",
+      "tariff_rate": "50%",
+      "affected_products": "Copper imports, potentially impacting electronics, machinery, and automotive industries.",
+      "source_titles": [
+        "Trump announces US will impose 50% tariff on copper imports, threatens 200% tariff on pharmaceuticals - Mint",
+        "Trump's Trade Deals, Negotiations, and New Tariffs for Each Country - Time Magazine",
+        "Trump says 50% tariff on copper imports is coming and threatens 200% on pharmaceuticals - KEYT"
+      ],
+      "last_verified": "2025-09-13",
+      "confidence_level": "high"
+    },
+    {
+      "title": "Trump Threatens 200% Tariff on Pharmaceutical Imports if Manufacturing Not Moved to US",
+      "description": "On July 8, 2025, President Trump warned that pharmaceutical companies might face a 200% import tariff unless they relocate their manufacturing bases to the U.S. by next year. The administration launched an investigation into pharmaceutical imports in mid-April 2025, setting the stage to impose tariffs on national security grounds.",
+      "status": "threatened",
+      "announcement_date": "2025-07-08",
+      "tariff_rate": "200%",
+      "affected_products": "Pharmaceutical imports.",
+      "source_titles": [
+        "Trump announces US will impose 50% tariff on copper imports, threatens 200% tariff on pharmaceuticals - Mint",
+        "Trump confirms no extension on tariff deadline, threatens 200% tax on drug imports - CNBC",
+        "Trump says 50% tariff on copper imports is coming and threatens 200% on pharmaceuticals - KEYT"
+      ],
+      "last_verified": "2025-09-13",
+      "confidence_level": "high"
+    },
+    {
+      "title": "US and Mexico Negotiating Steel Import Quota System to Replace Tariffs",
+      "description": "As of June 10, 2025, the U.S. and Mexico were in negotiations to replace the 50% steel tariffs with a quota system based on historical trade volumes. Under the proposed system, a specific volume of Mexican steel could enter the U.S. at a reduced tariff rate, potentially 10%, while imports exceeding the quota would be subject to the full 50% duty. The quota is expected to be based on average steel imports from Mexico during 2015-2017, translating to approximately 2.8 million metric tons.",
+      "status": "active",
+      "announcement_date": "2025-06-10",
+      "tariff_rate": "varies",
+      "affected_products": "Steel imports from Mexico.",
+      "source_titles": [
+        "Steel Tariff Talks Between US, Mexico Nearing Resolution - TT - Transport Topics",
+        "US and Mexico are moving toward a quota system for steel imports - Arab Iron and Steel Union",
+        "Automakers may get relief in U.S.-Mexico steel tariff deal - CBT News",
+        "Mexico close to striking a deal on US steel tariffs, Bloomberg reports"
+      ],
+      "last_verified": "2025-09-13",
+      "confidence_level": "high"
+    },
+    {
+      "title": "US and Japan Sign Trade Deal with 15% Reciprocal Tariffs and $550 Billion Japanese Investment",
+      "description": "On July 23, 2025, the U.S. and Japan signed a trade deal involving reciprocal tariffs and significant Japanese investment in the U.S. Japan will pay a 15% tariff on exports to the U.S. In return, Japan will invest $550 billion in the U.S. to rebuild and expand core American industries, including energy infrastructure and production. Japan will also increase imports of U.S. rice by 75% and purchase $8 billion of goods such as corn, soybeans, fertilizer, bioethanol, and aviation fuel. Longstanding restrictions on U.S. cars and trucks will be lifted, granting U.S. automakers access to the Japanese consumer market.",
+      "status": "implemented/enacted/active/in_effect",
+      "announcement_date": "2025-07-23",
+      "tariff_rate": "15%",
+      "affected_products": "Cars, trucks, rice, corn, soybeans, fertilizer, bioethanol, aviation fuel, energy infrastructure",
+      "source_titles": [
+        "US signs 'massive' trade deal with Japan - Investment Week",
+        "Fact Sheet: President Donald J. Trump Secures Unprecedented U.S.–Japan Strategic Trade and Investment Agreement - The White House"
+      ],
+      "last_verified": "2025-09-13",
+      "confidence_level": "high"
+    },
+    {
+      "title": "US and EU Reach Trade Deal with 15% Tariff on Most Goods, EU to Increase Purchases of US Energy and Military Equipment",
+      "description": "On July 27, 2025, the U.S. and the European Union reached a trade agreement, setting a 15% tariff on most goods. The EU also agreed to increase purchases of U.S. energy products by $750 billion and invest $600 billion more in America, as well as make a major military equipment purchase. The agreement aims to bring stability and predictability to businesses on both sides of the Atlantic. The 15% tariff applies to automobiles and other goods, but excludes steel and aluminum, which remain subject to a 50% tariff. The EU will seek to buy an extra $250 billion of U.S. energy products each year from now until 2027.",
+      "status": "implemented/enacted/active/in_effect",
+      "announcement_date": "2025-07-27",
+      "tariff_rate": "15%",
+      "affected_products": "Automobiles, energy products, military equipment",
+      "source_titles": [
+        "What to know about the US and EU trade deal - Baton Rouge Business Report",
+        "EU and US announce trade deal: What you need to know - Al Jazeera"
+      ],
+      "last_verified": "2025-09-13",
+      "confidence_level": "high"
+    },
+    {
+      "title": "US and South Korea Sign Trade Deal with 15% Tariffs and $350 Billion Investment Commitment",
+      "description": "On July 30, 2025, the U.S. and South Korea reached a trade agreement under which South Korean goods will face a 15% tariff, down from the threatened 25%. The deal includes South Korea's commitment to invest $350 billion in U.S. industries including shipbuilding, semiconductors, secondary batteries, biotechnology, and energy. South Korea will also purchase $100 billion of U.S. liquefied natural gas and other energy products over 3.5 years. A $150 billion shipbuilding fund was established to support Korean companies entering the U.S. shipbuilding industry. The agreement ensures South Korea pays tariffs at equal or lower levels than its major export competitors.",
+      "status": "implemented/enacted/active/in_effect",
+      "announcement_date": "2025-07-30",
+      "tariff_rate": "15%",
+      "affected_products": "Most South Korean exports including automobiles (15% vs 25% threatened), semiconductors, electronics, shipbuilding materials",
+      "source_titles": [
+        "South Korea Gets Its Trade Deal with the United States - CSIS",
+        "Trump announces trade agreement with South Korea ahead of August 1 tariff deadline - CNN Business",
+        "Trump announces tariff deal with South Korea — U.S.'s 6th-biggest trading partner - CBS News",
+        "U.S. and South Korea strike a trade deal with tariffs on Seoul set at 15% - CNBC"
+      ],
+      "last_verified": "2025-09-13",
+      "confidence_level": "high"
+    },
+    {
+      "title": "Trump Imposes 25% Tariff on India, Then Doubles to 50% Over Russian Oil Purchases",
+      "description": "On July 30, 2025, President Trump announced a 25% tariff on Indian goods due to high Indian tariffs and trade practices. On August 6, 2025, Trump doubled the tariff to 50% (an additional 25%) as punishment for India's continued purchase of Russian oil, which Trump said enables Russia's war machine in Ukraine. The 50% tariff rate took effect on August 27, 2025, making it one of the highest tariffs the U.S. charges on any trading partner. India strongly criticized the tariffs as 'unfair, unjustified and unreasonable' and vowed to protect its national interests.",
+      "status": "implemented/enacted/active/in_effect",
+      "announcement_date": "2025-07-30, doubled on 2025-08-06, effective 2025-08-27",
+      "tariff_rate": "50% (25% baseline + 25% penalty for Russian oil)",
+      "affected_products": "All Indian exports to the U.S., including pharmaceuticals, communications equipment, smartphones, apparel, textiles",
+      "source_titles": [
+        "Trump raises India tariffs to 50% over Russian oil purchases - CNBC",
+        "Trump hikes India tariffs to 50% for buying Russian oil - NBC News",
+        "Trump hits India with punishing 50% tariffs for buying Russian oil - NBC News",
+        "Trump threatens India with 50% tariff as negotiations fizzle and Modi keeps importing Russian oil - CNN Politics"
+      ],
+      "last_verified": "2025-09-13",
+      "confidence_level": "high"
+    },
+    {
+      "title": "Trump Announces 100% Tariff on Semiconductor Imports with Exemptions for US Building Companies",
+      "description": "On August 6, 2025, President Trump announced a 100% tariff on all semiconductor and chip imports, but with a major exemption for companies that are \"building in the United States\" or have made commitments to build facilities in the U.S. Companies like Apple (which pledged $600 billion in U.S. manufacturing), TSMC (investing $165 billion in Arizona), Samsung and SK Hynix (investing in Texas and Indiana) would be exempt. The tariff aims to incentivize domestic chip manufacturing while potentially raising costs for essential products dependent on semiconductors, including cars, smartphones, and computers.",
+      "status": "announced/threatened",
+      "announcement_date": "2025-08-06",
+      "tariff_rate": "100%",
+      "affected_products": "All semiconductor and chip imports, with exemptions for companies building in the U.S.; potentially affects smartphones, computers, cars, appliances, and all electronics",
+      "source_titles": [
+        "Trump vows 100% tariff on chips, unless companies are building in the U.S. - CNBC",
+        "Trump announces 100 percent tariff on semiconductor imports - Al Jazeera",
+        "Trump's latest chip tariff declaration raises more questions than answers - CNBC",
+        "Trump Announces 100% Tariff on Semiconductors, With Exemptions for Companies Building in the U.S. - MacRumors"
+      ],
+      "last_verified": "2025-09-13",
+      "confidence_level": "high"
+    },
+    {
+      "title": "Trump Ends Global De Minimis Exemption for All Countries",
+      "description": "On July 30, 2025, President Trump signed an executive order suspending the duty-free de minimis exemption for low-value shipments (under $800) from all countries, taking effect August 29, 2025. This followed the earlier suspension for China and Hong Kong on May 2, 2025. The move closes what Trump called a \"catastrophic loophole\" used to avoid tariffs and import unsafe products, including fentanyl. The volume of de minimis shipments had exploded from 134 million in 2015 to over 1.36 billion in 2024. Under the new rules, goods sent through international postal networks are subject to either ad valorem duties based on the effective IEEPA tariff rate or specific duties ranging from $80-$200 per item.",
+      "status": "implemented/enacted/active/in_effect",
+      "announcement_date": "2025-07-30, effective 2025-08-29",
+      "tariff_rate": "Varies: Ad valorem duty based on IEEPA rates or specific duty of $80-$200 per item",
+      "affected_products": "All low-value imports under $800 from all countries, particularly affecting e-commerce goods from platforms like Temu, Shein, and direct-to-consumer shipments",
+      "source_titles": [
+        "Fact Sheet: President Donald J. Trump is Protecting the United States' National Security and Economy by Suspending the De Minimis Exemption for Commercial Shipments Globally - The White House",
+        "President Trump Ends Unfair \"De Minimis\" Tariff Exemption, A Major Victory in Securing the Homeland - Department of Homeland Security",
+        "Trump ends de minimis exemption for global low-cost goods - CNBC",
+        "Retail panic: What the end of the \"de minimis\" exemption means for brands across the globe - CNBC"
+      ],
+      "last_verified": "2025-09-13",
+      "confidence_level": "high"
+    },
+    {
+      "title": "Federal Appeals Court Rules Trump's Tariffs Illegal, Supreme Court to Decide",
+      "description": "On August 29, 2025, the U.S. Court of Appeals for the Federal Circuit ruled 7-4 that most of President Trump's global tariffs imposed under the International Emergency Economic Powers Act (IEEPA) are illegal, stating that \"the core Congressional power to impose taxes such as tariffs is vested exclusively in the legislative branch.\" The ruling affects both \"reciprocal\" tariffs (ranging from 10% baseline to country-specific rates) and \"trafficking\" tariffs on Canada, China, and Mexico (25% fentanyl-related tariffs). Trump vowed to appeal to the Supreme Court, which agreed on September 10, 2025, to hear the case on an expedited basis with oral arguments in early November. The tariffs remain in effect pending the Supreme Court's decision.",
+      "status": "under_legal_challenge",
+      "announcement_date": "2025-08-29, Supreme Court appeal filed 2025-09-10",
+      "tariff_rate": "Varies (10% baseline, up to 50% reciprocal rates, 25% trafficking tariffs)",
+      "affected_products": "Nearly all U.S. imports from most trading partners under IEEPA authority (excludes Section 232 steel/aluminum/auto tariffs and Section 301 China tariffs)",
+      "source_titles": [
+        "Most Trump tariffs ruled illegal by appeals court - CNBC",
+        "A federal appeals court ruled against Trump's tariffs. Here's what could happen next. - CBS News",
+        "Appeals court strikes down many Trump tariffs, saying he overstepped his authority - CNN Business",
+        "Supreme Court will hear Trump tariffs case on fast track - CNBC",
+        "Supreme Court agrees to decide the fate of Trump's tariffs - SCOTUSblog"
+      ],
+      "last_verified": "2025-09-13",
+      "confidence_level": "high"
+    },
+    {
+      "title": "Executive Order 14326: July 31 Reciprocal Tariff Rates Modifications",
+      "description": "On July 31, 2025, President Trump signed Executive Order 14326 titled \"Further Modifying the Reciprocal Tariff Rates,\" which modified the scope of reciprocal tariffs and established procedures for implementing trade and security agreements. The order updated Annex II to Executive Order 14257, modifying the list of goods exempt from reciprocal tariffs. It also provided framework for implementing current and forthcoming trade and security framework agreements between foreign trading partners and the United States, including modifications required for deals with Japan, EU, and other countries that had agreed to meaningful trade and security commitments.",
+      "status": "implemented/enacted/active/in_effect",
+      "announcement_date": "2025-07-31",
+      "tariff_rate": "Varies by product and country based on framework agreements",
+      "affected_products": "Various goods as specified in updated Annex II, with provisions for implementing bilateral trade deals",
+      "source_titles": [
+        "Modifying The Scope of Reciprocal Tariffs and Establishing Procedures for Implementing Trade and Security Agreements - The White House",
+        "Implementing The United States–Japan Agreement - The White House"
+      ],
+      "last_verified": "2025-09-13",
+      "confidence_level": "high"
+    }
+  ],
+  "country_tariffs": [],
+  "analysis_summary": {
+    "total_updates": 26,
+    "new_updates": 6,
+    "total_countries_analyzed": 0,
+    "minimum_update_date": "2025-04-02",
+    "analysis_method": "Comprehensive web search and analysis",
+    "update_type": "complete_tariff_analysis",
+    "user_requested_updates": 10
+  }
+}

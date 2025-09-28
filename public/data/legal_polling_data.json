@@ -1,0 +1,15 @@
+{
+  "metadata": {
+    "scraped_at": "2025-09-06T23:05:28.391390",
+    "sources": [],
+    "total_polls": 0,
+    "legal_notice": "No real data available - all sources blocked",
+    "error": "All polling sources are currently blocking automated access"
+  },
+  "polls": [],
+  "averages": {
+    "approve": 0,
+    "disapprove": 0,
+    "unsure": 0
+  }
+}

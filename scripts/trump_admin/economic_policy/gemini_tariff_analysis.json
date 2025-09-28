@@ -1,0 +1,15 @@
+{
+  "analysis_timestamp": "2025-09-14T14:30:24.211306",
+  "source_timestamp": "",
+  "source_file": "integrated_economic_dashboard.json",
+  "gemini_generated_updates": [],
+  "enhanced_country_tariffs": [],
+  "analysis_summary": {
+    "total_gemini_updates": 0,
+    "new_gemini_updates": 0,
+    "total_countries_analyzed": 0,
+    "minimum_update_date": "2025-04-02",
+    "analysis_method": "Google Gemini 2.0 Flash (without external tools due to API limitations)",
+    "update_type": "country_tariffs_only"
+  }
+}
