@@ -4,6 +4,35 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Navigation from '../components/Navigation';
 import Header from '../components/Header';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "The State of the Union - Real-time Political Analysis",
+  description: "Real-time analysis of America's political landscape, policy implementation, and government performance through comprehensive data and expert insights. Track S&P 500 performance, immigration enforcement, economic indicators, and campaign promises.",
+  keywords: [
+    "political analysis",
+    "government performance",
+    "S&P 500 performance",
+    "immigration enforcement",
+    "economic indicators",
+    "campaign promises",
+    "political dashboard",
+    "government data",
+    "policy tracking"
+  ],
+  openGraph: {
+    title: "The State of the Union - Real-time Political Analysis",
+    description: "Real-time analysis of America's political landscape, policy implementation, and government performance through comprehensive data and expert insights.",
+    type: 'website',
+  },
+  twitter: {
+    title: "The State of the Union - Real-time Political Analysis",
+    description: "Real-time analysis of America's political landscape, policy implementation, and government performance through comprehensive data and expert insights.",
+  },
+  alternates: {
+    canonical: '/',
+  },
+};
 
 // Type definitions for data structures
 interface DataState {
@@ -71,6 +100,69 @@ export default function Home() {
 
   return (
     <div>
+      {/* Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Inklined",
+            "description": "Comprehensive analysis and real-time tracking of political developments, policy changes, and government data.",
+            "url": "https://inklined.com",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://inklined.com/search?q={search_term_string}",
+              "query-input": "required name=search_term_string"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Inklined",
+              "url": "https://inklined.com",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://inklined.com/favicon.svg"
+              }
+            }
+          })
+        }}
+      />
+      
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "DataCatalog",
+            "name": "Political Dashboard Data",
+            "description": "Real-time political data including economic indicators, immigration enforcement, campaign promises, and government performance metrics.",
+            "url": "https://inklined.com",
+            "provider": {
+              "@type": "Organization",
+              "name": "Inklined",
+              "url": "https://inklined.com"
+            },
+            "dataset": [
+              {
+                "@type": "Dataset",
+                "name": "Economic Indicators",
+                "description": "S&P 500 performance, unemployment rates, inflation data, and consumer confidence metrics"
+              },
+              {
+                "@type": "Dataset", 
+                "name": "Immigration Enforcement",
+                "description": "ICE detention statistics, border apprehensions, and immigration policy data"
+              },
+              {
+                "@type": "Dataset",
+                "name": "Campaign Promises Tracker",
+                "description": "Tracking of political campaign promises and their implementation status"
+              }
+            ]
+          })
+        }}
+      />
+
       <Header showSubtitle={true} />
 
       <Navigation currentPath="/" />
@@ -1229,9 +1321,14 @@ export default function Home() {
                 }}>
                   <span style={{ fontSize: '0.9rem', color: '#666' }}>Monthly Apprehensions</span>
                   <span style={{ fontSize: '1.1rem', fontWeight: '600', color: '#dc2626' }}>
-                    {immigrationData?.cbp?.categories?.nationwide_total?.monthly_data?.["May-25"] ? 
-                      Math.round(immigrationData.cbp.categories.nationwide_total.monthly_data["May-25"] / 1000) + 'K' : 
-                      'Loading...'}
+                    {(() => {
+                      const cbpData = immigrationData?.cbp as Record<string, unknown> | undefined;
+                      const categories = cbpData?.categories as Record<string, unknown> | undefined;
+                      const nationwideTotal = categories?.nationwide_total as Record<string, unknown> | undefined;
+                      const monthlyData = nationwideTotal?.monthly_data as Record<string, unknown> | undefined;
+                      const may25Data = monthlyData?.["May-25"] as number | undefined;
+                      return may25Data ? Math.round(may25Data / 1000) + 'K' : 'Loading...';
+                    })()}
                   </span>
                 </div>
                 <div style={{
@@ -1242,9 +1339,14 @@ export default function Home() {
                 }}>
                   <div style={{
                     height: '100%',
-                    width: immigrationData?.cbp?.categories?.nationwide_total?.monthly_data?.["May-25"] ? 
-                      `${Math.min((immigrationData.cbp.categories.nationwide_total.monthly_data["May-25"] / 300000) * 100, 100)}%` : 
-                      '0%',
+                    width: (() => {
+                      const cbpData = immigrationData?.cbp as Record<string, unknown> | undefined;
+                      const categories = cbpData?.categories as Record<string, unknown> | undefined;
+                      const nationwideTotal = categories?.nationwide_total as Record<string, unknown> | undefined;
+                      const monthlyData = nationwideTotal?.monthly_data as Record<string, unknown> | undefined;
+                      const may25Data = monthlyData?.["May-25"] as number | undefined;
+                      return may25Data ? `${Math.min((may25Data / 300000) * 100, 100)}%` : '0%';
+                    })(),
                     background: '#dc2626',
                     borderRadius: '3px'
                   }}></div>
@@ -1260,9 +1362,11 @@ export default function Home() {
                 }}>
                   <span style={{ fontSize: '0.9rem', color: '#666' }}>ICE Detainees</span>
                   <span style={{ fontSize: '1.1rem', fontWeight: '600', color: '#dc2626' }}>
-                    {immigrationData?.ice?.currentTotalDetainees ? 
-                      Math.round(immigrationData.ice.currentTotalDetainees).toLocaleString() : 
-                      'Loading...'}
+                    {(() => {
+                      const iceData = immigrationData?.ice as Record<string, unknown> | undefined;
+                      const totalDetainees = iceData?.currentTotalDetainees as number | undefined;
+                      return totalDetainees ? Math.round(totalDetainees).toLocaleString() : 'Loading...';
+                    })()}
                   </span>
                 </div>
                 <div style={{
@@ -1273,9 +1377,11 @@ export default function Home() {
                 }}>
                   <div style={{
                     height: '100%',
-                    width: immigrationData?.ice?.currentTotalDetainees ? 
-                      `${Math.min((immigrationData.ice.currentTotalDetainees / 50000) * 100, 100)}%` : 
-                      '0%',
+                    width: (() => {
+                      const iceData = immigrationData?.ice as Record<string, unknown> | undefined;
+                      const totalDetainees = iceData?.currentTotalDetainees as number | undefined;
+                      return totalDetainees ? `${Math.min((totalDetainees / 50000) * 100, 100)}%` : '0%';
+                    })(),
                     background: '#dc2626',
                     borderRadius: '3px'
                   }}></div>
@@ -1298,59 +1404,18 @@ export default function Home() {
           margin: '0 auto',
           padding: '0 1rem'
         }}>
-          <div style={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-            marginBottom: '2rem'
-          }}>
-            <Link href="/" style={{
-              fontSize: '2rem',
-              fontWeight: '800',
-              textDecoration: 'none',
-              color: '#ffffff',
-              letterSpacing: '0.08em',
-              fontFamily: 'Georgia, Times New Roman, serif',
-              textTransform: 'uppercase'
-            }}>
+          <div className="footer-content">
+            <Link href="/" className="footer-logo">
               In<span style={{ color: '#0d9488', fontWeight: '900' }}>k</span>lined<span style={{ color: '#0d9488', fontWeight: '900' }}>.</span>
             </Link>
-            <div style={{
-              display: 'flex',
-              gap: '2rem',
-              alignItems: 'center'
-            }}>
-              <Link href="/transparency" style={{
-                color: '#cccccc',
-                textDecoration: 'none',
-                fontWeight: '500',
-                transition: 'color 0.2s ease',
-                textTransform: 'uppercase',
-                fontSize: '0.9rem',
-                letterSpacing: '0.05em'
-              }}>
+            <div className="footer-nav">
+              <Link href="/transparency" className="footer-link">
                 Transparency
               </Link>
-              <Link href="/about" style={{
-                color: '#cccccc',
-                textDecoration: 'none',
-                fontWeight: '500',
-                transition: 'color 0.2s ease',
-                textTransform: 'uppercase',
-                fontSize: '0.9rem',
-                letterSpacing: '0.05em'
-              }}>
+              <Link href="/about" className="footer-link">
                 About
               </Link>
-              <Link href="/contact" style={{
-                color: '#cccccc',
-                textDecoration: 'none',
-                fontWeight: '500',
-                transition: 'color 0.2s ease',
-                textTransform: 'uppercase',
-                fontSize: '0.9rem',
-                letterSpacing: '0.05em'
-              }}>
+              <Link href="/contact" className="footer-link">
                 Contact
               </Link>
             </div>
@@ -1438,6 +1503,44 @@ export default function Home() {
           margin-right: 0.5rem;
         }
         
+        /* Footer styles */
+        .footer-content {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 2rem;
+        }
+
+        .footer-logo {
+          font-size: 2rem;
+          font-weight: 800;
+          text-decoration: none;
+          color: #ffffff;
+          letter-spacing: 0.08em;
+          font-family: Georgia, Times New Roman, serif;
+          text-transform: uppercase;
+        }
+
+        .footer-nav {
+          display: flex;
+          gap: 2rem;
+          align-items: center;
+        }
+
+        .footer-link {
+          color: #cccccc;
+          text-decoration: none;
+          font-weight: 500;
+          transition: color 0.2s ease;
+          text-transform: uppercase;
+          font-size: 0.9rem;
+          letter-spacing: 0.05em;
+        }
+
+        .footer-link:hover {
+          color: #0d9488;
+        }
+
         /* Responsive design improvements */
         @media (max-width: 1024px) {
           main {
@@ -1484,6 +1587,18 @@ export default function Home() {
           
           .editorial-content {
             padding: 1.5rem 0 !important;
+          }
+
+          .footer-content {
+            flex-direction: column !important;
+            gap: 1.5rem !important;
+            text-align: center !important;
+          }
+
+          .footer-nav {
+            flex-wrap: wrap !important;
+            justify-content: center !important;
+            gap: 1.5rem !important;
           }
         }
         
