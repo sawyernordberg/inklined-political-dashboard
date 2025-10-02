@@ -198,6 +198,11 @@ nav {
         display: flex !important;
     }
     
+    /* Show mobile menu button in header on mobile */
+    header .mobile-menu-button {
+        display: flex !important;
+    }
+    
     .nav-container {
         padding: 0 1rem !important;
     }

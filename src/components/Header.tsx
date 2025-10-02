@@ -11,9 +11,11 @@ interface HeaderProps {
     }>;
   };
   showSubtitle?: boolean;
+  onMobileMenuToggle?: () => void;
+  isMobileMenuOpen?: boolean;
 }
 
-export default function Header({ breadcrumb, showSubtitle = false }: HeaderProps) {
+export default function Header({ breadcrumb, showSubtitle = false, onMobileMenuToggle, isMobileMenuOpen = false }: HeaderProps) {
   const [currentTime, setCurrentTime] = useState(new Date());
 
   useEffect(() => {
@@ -58,6 +60,47 @@ export default function Header({ breadcrumb, showSubtitle = false }: HeaderProps
           alignItems: 'center'
         }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+            {/* Mobile Hamburger Button */}
+            {onMobileMenuToggle && (
+              <button
+                className="mobile-menu-button"
+                onClick={onMobileMenuToggle}
+                style={{
+                  display: 'none',
+                  background: 'none',
+                  border: 'none',
+                  cursor: 'pointer',
+                  padding: '0.3rem',
+                  flexDirection: 'column',
+                  justifyContent: 'space-around',
+                  width: '1.5rem',
+                  height: '1.5rem'
+                }}
+                aria-label="Toggle mobile menu"
+              >
+                <span style={{
+                  width: '100%',
+                  height: '2px',
+                  background: '#fff',
+                  transition: 'all 0.3s ease',
+                  transform: isMobileMenuOpen ? 'rotate(45deg) translate(3px, 3px)' : 'none'
+                }}></span>
+                <span style={{
+                  width: '100%',
+                  height: '2px',
+                  background: '#fff',
+                  transition: 'all 0.3s ease',
+                  opacity: isMobileMenuOpen ? '0' : '1'
+                }}></span>
+                <span style={{
+                  width: '100%',
+                  height: '2px',
+                  background: '#fff',
+                  transition: 'all 0.3s ease',
+                  transform: isMobileMenuOpen ? 'rotate(-45deg) translate(4px, -4px)' : 'none'
+                }}></span>
+              </button>
+            )}
             <span style={{ fontWeight: '600' }}>LIVE DATA</span>
             <span className="top-bar-description">Real-time government and political statistics</span>
           </div>

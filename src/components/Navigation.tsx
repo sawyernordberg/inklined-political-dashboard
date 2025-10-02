@@ -5,26 +5,15 @@ import Link from 'next/link';
 
 interface NavigationProps {
   currentPath?: string;
+  isMobileMenuOpen?: boolean;
+  onMobileMenuToggle?: () => void;
 }
 
-export default function Navigation({ currentPath = '' }: NavigationProps) {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  const toggleMobileMenu = () => {
-    const newState = !isMobileMenuOpen;
-    setIsMobileMenuOpen(newState);
-    
-    // Prevent body scroll when sidebar is open
-    if (newState) {
-      document.body.classList.add('sidebar-open');
-    } else {
-      document.body.classList.remove('sidebar-open');
-    }
-  };
-
+export default function Navigation({ currentPath = '', isMobileMenuOpen = false, onMobileMenuToggle }: NavigationProps) {
   const closeMobileMenu = () => {
-    setIsMobileMenuOpen(false);
-    document.body.classList.remove('sidebar-open');
+    if (onMobileMenuToggle) {
+      onMobileMenuToggle();
+    }
   };
 
   const isActive = (path: string) => {
@@ -228,45 +217,6 @@ export default function Navigation({ currentPath = '' }: NavigationProps) {
             </ul>
           </div>
 
-          {/* Mobile Hamburger Button */}
-          <button
-            className="mobile-menu-button"
-            onClick={toggleMobileMenu}
-            style={{
-              display: 'none',
-              background: 'none',
-              border: 'none',
-              cursor: 'pointer',
-              padding: '0.5rem',
-              flexDirection: 'column',
-              justifyContent: 'space-around',
-              width: '2rem',
-              height: '2rem'
-            }}
-            aria-label="Toggle mobile menu"
-          >
-            <span style={{
-              width: '100%',
-              height: '2px',
-              background: '#333',
-              transition: 'all 0.3s ease',
-              transform: isMobileMenuOpen ? 'rotate(45deg) translate(5px, 5px)' : 'none'
-            }}></span>
-            <span style={{
-              width: '100%',
-              height: '2px',
-              background: '#333',
-              transition: 'all 0.3s ease',
-              opacity: isMobileMenuOpen ? '0' : '1'
-            }}></span>
-            <span style={{
-              width: '100%',
-              height: '2px',
-              background: '#333',
-              transition: 'all 0.3s ease',
-              transform: isMobileMenuOpen ? 'rotate(-45deg) translate(7px, -6px)' : 'none'
-            }}></span>
-          </button>
         </div>
 
         {/* Mobile Sidebar Navigation */}

@@ -20,6 +20,19 @@ export default function Home() {
   const [congressData, setCongressData] = useState<DataState | null>(null);
   const [, setTariffData] = useState<DataState | null>(null);
   const [, setForeignAffairsData] = useState<DataState | null>(null);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    const newState = !isMobileMenuOpen;
+    setIsMobileMenuOpen(newState);
+    
+    // Prevent body scroll when sidebar is open
+    if (newState) {
+      document.body.classList.add('sidebar-open');
+    } else {
+      document.body.classList.remove('sidebar-open');
+    }
+  };
 
 
   useEffect(() => {
@@ -135,9 +148,9 @@ export default function Home() {
         }}
       />
 
-      <Header showSubtitle={true} />
+      <Header showSubtitle={true} onMobileMenuToggle={toggleMobileMenu} isMobileMenuOpen={isMobileMenuOpen} />
 
-      <Navigation currentPath="/" />
+      <Navigation currentPath="/" isMobileMenuOpen={isMobileMenuOpen} onMobileMenuToggle={toggleMobileMenu} />
 
       {/* Main Content */}
       <main style={{
