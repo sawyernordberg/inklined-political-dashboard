@@ -234,7 +234,7 @@ export default function Navigation({ currentPath = '', isMobileMenuOpen = false,
           paddingTop: '0'
         }}>
           <div style={{
-            padding: '3rem 0 1rem 0',
+            padding: '5rem 0 1rem 0',
             borderBottom: '1px solid #e5e5e5'
           }}>
             <div style={{
