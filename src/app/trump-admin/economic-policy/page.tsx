@@ -3921,6 +3921,16 @@ export default function EconomicPolicyPage() {
             font-size: 1.3rem !important;
             margin-bottom: 16px !important;
           }
+
+          /* Stock chart mobile optimization */
+          .chart-container {
+            background: transparent !important;
+            border: none !important;
+            padding: 0 !important;
+            margin: 0 -12px 20px -12px !important;
+            height: 300px !important;
+            border-radius: 0 !important;
+          }
         }
       `}</style>
     </div>
