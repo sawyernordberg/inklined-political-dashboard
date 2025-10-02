@@ -1,0 +1,30 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://inklined.com/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Disallow admin and API routes
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /scripts/
+
+# Allow important pages
+Allow: /
+Allow: /about
+Allow: /trump-admin
+Allow: /trump-admin/economic-policy
+Allow: /trump-admin/immigration
+Allow: /trump-admin/promises-tracker
+Allow: /trump-admin/spending-cuts
+Allow: /congress
+Allow: /courts
+Allow: /departments
+Allow: /foreign-affairs
+Allow: /research
+Allow: /transparency
+Allow: /support

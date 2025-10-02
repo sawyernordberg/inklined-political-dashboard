@@ -4,6 +4,36 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Navigation from '../../components/Navigation';
 import Header from '../../components/Header';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Trump Administration Dashboard - Policy Analysis & Performance Tracking",
+  description: "Comprehensive overview of the Trump administration's policies and performance. Track campaign promises, immigration enforcement, economic policy impacts, and federal spending cuts with real-time data and analysis.",
+  keywords: [
+    "Trump administration",
+    "campaign promises tracker",
+    "immigration enforcement",
+    "economic policy",
+    "federal spending cuts",
+    "ICE detention",
+    "border apprehensions",
+    "S&P 500 performance",
+    "unemployment rate",
+    "political dashboard"
+  ],
+  openGraph: {
+    title: "Trump Administration Dashboard - Policy Analysis & Performance Tracking",
+    description: "Comprehensive overview of the Trump administration's policies and performance. Track campaign promises, immigration enforcement, economic policy impacts, and federal spending cuts.",
+    type: 'website',
+  },
+  twitter: {
+    title: "Trump Administration Dashboard - Policy Analysis & Performance Tracking",
+    description: "Comprehensive overview of the Trump administration's policies and performance. Track campaign promises, immigration enforcement, economic policy impacts, and federal spending cuts.",
+  },
+  alternates: {
+    canonical: '/trump-admin',
+  },
+};
 // import { Line } from 'react-chartjs-2';
 import {
   Chart as ChartJS,
@@ -246,6 +276,46 @@ export default function TrumpAdminPage() {
 
   return (
     <div>
+      {/* Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Trump Administration Dashboard",
+            "description": "Comprehensive overview of the Trump administration's policies and performance. Track campaign promises, immigration enforcement, economic policy impacts, and federal spending cuts.",
+            "url": "https://inklined.com/trump-admin",
+            "isPartOf": {
+              "@type": "WebSite",
+              "name": "Inklined",
+              "url": "https://inklined.com"
+            },
+            "breadcrumb": {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://inklined.com"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Trump Administration",
+                  "item": "https://inklined.com/trump-admin"
+                }
+              ]
+            },
+            "mainEntity": {
+              "@type": "DataCatalog",
+              "name": "Trump Administration Data",
+              "description": "Comprehensive data on Trump administration policies, performance metrics, and policy implementation tracking"
+            }
+          })
+        }}
+      />
 
       <Header breadcrumb={{
         items: [

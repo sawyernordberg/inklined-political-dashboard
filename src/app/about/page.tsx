@@ -4,6 +4,35 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Navigation from '../../components/Navigation';
 import Header from '../../components/Header';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "About Inklined - Political Analysis & Data Transparency",
+  description: "Learn about Inklined's mission to provide comprehensive, data-driven analysis of American politics and governance. Discover our commitment to transparency, accuracy, and informed analysis.",
+  keywords: [
+    "about inklined",
+    "political analysis",
+    "data transparency",
+    "government accountability",
+    "political journalism",
+    "data-driven analysis",
+    "non-partisan",
+    "public service",
+    "political methodology"
+  ],
+  openGraph: {
+    title: "About Inklined - Political Analysis & Data Transparency",
+    description: "Learn about Inklined's mission to provide comprehensive, data-driven analysis of American politics and governance. Discover our commitment to transparency, accuracy, and informed analysis.",
+    type: 'website',
+  },
+  twitter: {
+    title: "About Inklined - Political Analysis & Data Transparency",
+    description: "Learn about Inklined's mission to provide comprehensive, data-driven analysis of American politics and governance. Discover our commitment to transparency, accuracy, and informed analysis.",
+  },
+  alternates: {
+    canonical: '/about',
+  },
+};
 
 export default function AboutPage() {
   const [isLoading, setIsLoading] = useState(true);
@@ -29,6 +58,56 @@ export default function AboutPage() {
 
   return (
     <div>
+      {/* Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "AboutPage",
+            "name": "About Inklined",
+            "description": "Learn about Inklined's mission to provide comprehensive, data-driven analysis of American politics and governance. Discover our commitment to transparency, accuracy, and informed analysis.",
+            "url": "https://inklined.com/about",
+            "isPartOf": {
+              "@type": "WebSite",
+              "name": "Inklined",
+              "url": "https://inklined.com"
+            },
+            "breadcrumb": {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://inklined.com"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "About",
+                  "item": "https://inklined.com/about"
+                }
+              ]
+            },
+            "mainEntity": {
+              "@type": "Organization",
+              "name": "Inklined",
+              "description": "A comprehensive political dashboard dedicated to transparency, accuracy, and informed analysis of American governance.",
+              "url": "https://inklined.com",
+              "foundingDate": "2025",
+              "mission": "To provide comprehensive, data-driven analysis of American politics and governance with transparency and accuracy",
+              "values": [
+                "Non-Partisan Analysis",
+                "Public Service", 
+                "Continuous Improvement",
+                "Accountability"
+              ]
+            }
+          })
+        }}
+      />
+
       <Header breadcrumb={{
         items: [
           { label: 'Home', href: '/' },

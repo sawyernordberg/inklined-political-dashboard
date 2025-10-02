@@ -1,0 +1,21 @@
+{
+  "name": "Inklined - Political Dashboard",
+  "short_name": "Inklined",
+  "description": "Comprehensive analysis and real-time tracking of political developments, policy changes, and government data.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0d9488",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["news", "politics", "government", "analysis"],
+  "lang": "en-US",
+  "dir": "ltr"
+}

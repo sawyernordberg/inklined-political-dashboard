@@ -1,0 +1,19 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#1a1a1a"/>
+  
+  <!-- Main logo - matching homepage style -->
+  <text x="600" y="280" text-anchor="middle" fill="white" font-family="Georgia, serif" font-size="120" font-weight="800" letter-spacing="0.08em">
+    <tspan fill="white">IN</tspan><tspan fill="#0d9488" font-weight="900">K</tspan><tspan fill="white">LINED</tspan><tspan fill="#0d9488" font-weight="900">.</tspan>
+  </text>
+  
+  <!-- Description -->
+  <text x="600" y="350" text-anchor="middle" fill="#cccccc" font-family="Georgia, serif" font-size="28" font-weight="400" font-style="italic">
+    Political Dashboard Hub
+  </text>
+  
+  <!-- URL -->
+  <text x="600" y="400" text-anchor="middle" fill="#666666" font-family="system-ui, sans-serif" font-size="20" font-weight="400">
+    inklined.com
+  </text>
+</svg>
