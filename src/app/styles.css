@@ -219,7 +219,16 @@ nav {
     
     /* Ensure mobile sidebar covers entire left side including header */
     .mobile-sidebar {
-        z-index: 1001 !important;
+        z-index: 9999 !important;
+    }
+    
+    /* Hide header elements when mobile menu is open */
+    body.sidebar-open header {
+        z-index: 1 !important;
+    }
+    
+    body.sidebar-open .header-container {
+        z-index: 1 !important;
     }
     
     .mobile-sidebar a:active {

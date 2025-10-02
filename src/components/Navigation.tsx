@@ -278,7 +278,7 @@ export default function Navigation({ currentPath = '' }: NavigationProps) {
           height: '100vh',
           background: 'white',
           boxShadow: '2px 0 10px rgba(0, 0, 0, 0.1)',
-          zIndex: '1001',
+          zIndex: '9999',
           transition: 'left 0.3s ease',
           overflowY: 'auto'
         }}>
@@ -465,7 +465,7 @@ export default function Navigation({ currentPath = '' }: NavigationProps) {
             right: '0',
             bottom: '0',
             background: 'rgba(0, 0, 0, 0.5)',
-            zIndex: '1000'
+            zIndex: '9998'
           }}
         />
       )}
