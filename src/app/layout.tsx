@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     siteName: 'Inklined',
     images: [
       {
-        url: '/og-image.jpg',
+        url: '/og-image.png',
         width: 1200,
         height: 630,
         alt: 'Inklined Political Dashboard',
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: "Inklined - Political Dashboard Hub",
     description: "Comprehensive analysis and real-time tracking of political developments, policy changes, and government data.",
-    images: ['/og-image.jpg'],
+    images: ['/og-image.png'],
     creator: '@inklined',
   },
   robots: {
