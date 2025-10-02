@@ -725,23 +725,6 @@ export default function EconomicPolicyPage() {
           </table>
         </div>
 
-        {Array.isArray(data.tariff?.sources) && data.tariff.sources.length > 0 && (
-          <div style={{ 
-            marginTop: '30px', 
-            padding: '15px', 
-            background: '#f5f5f5', 
-            borderRadius: '8px' 
-          }}>
-            <h4 style={{ marginBottom: '10px' }}>Data Sources ({data.tariff.sources.length} sources)</h4>
-            <div style={{ 
-              maxHeight: '200px', 
-              overflowY: 'auto', 
-              fontSize: '0.9rem' 
-            }}>
-              {data.tariff.sources.slice(0, 20).join(', ')}{data.tariff.sources.length > 20 ? ` and ${data.tariff.sources.length - 20} more...` : ''}
-            </div>
-          </div>
-        )}
       </>
     );
   };

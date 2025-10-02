@@ -945,18 +945,6 @@ export default function PromisesTrackerPage() {
         </section>
 
         {/* Data Source */}
-        <div style={{
-          marginTop: '80px',
-          padding: '20px',
-          background: '#f8f9fa',
-          borderRadius: '8px',
-          fontSize: '0.9rem',
-          color: '#666'
-        }}>
-          <strong>Data Source:</strong> {data.metadata.sources.join(', ')} | 
-          <strong>Report Date:</strong> {data.metadata.report_date} | 
-          <strong>Methodology:</strong> {data.metadata.methodology}
-        </div>
       </div>
 
       {/* Footer */}
