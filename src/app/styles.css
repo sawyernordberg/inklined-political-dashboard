@@ -217,6 +217,11 @@ nav {
         color: #0d9488 !important;
     }
     
+    /* Ensure mobile sidebar covers entire left side including header */
+    .mobile-sidebar {
+        z-index: 1001 !important;
+    }
+    
     .mobile-sidebar a:active {
         background-color: #e5e7eb !important;
     }
