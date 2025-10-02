@@ -230,10 +230,11 @@ export default function Navigation({ currentPath = '', isMobileMenuOpen = false,
           boxShadow: '2px 0 10px rgba(0, 0, 0, 0.1)',
           zIndex: '9999',
           transition: 'left 0.3s ease',
-          overflowY: 'auto'
+          overflowY: 'auto',
+          paddingTop: '0'
         }}>
           <div style={{
-            padding: '2rem 0 1rem 0',
+            padding: '3rem 0 1rem 0',
             borderBottom: '1px solid #e5e5e5'
           }}>
             <div style={{
