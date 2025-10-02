@@ -1392,7 +1392,7 @@ export default function Home() {
         </section>
       </main>
 
-      {/* Footer */}
+      {/* Footer - Updated */}
       <footer style={{
         background: '#1a1a1a',
         color: '#ffffff',
