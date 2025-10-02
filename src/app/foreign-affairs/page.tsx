@@ -4,35 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Navigation from '../../components/Navigation';
 import Header from '../../components/Header';
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: "Foreign Affairs Analysis - International Relations & Diplomatic Engagement",
-  description: "Comprehensive analysis of US foreign affairs, international relations, diplomatic engagement, and global policy initiatives. Track trade agreements, security cooperation, and multilateral partnerships.",
-  keywords: [
-    "foreign affairs",
-    "international relations",
-    "diplomatic engagement",
-    "trade agreements",
-    "security cooperation",
-    "multilateral partnerships",
-    "global policy",
-    "diplomatic analysis",
-    "international diplomacy"
-  ],
-  openGraph: {
-    title: "Foreign Affairs Analysis - International Relations & Diplomatic Engagement",
-    description: "Comprehensive analysis of US foreign affairs, international relations, diplomatic engagement, and global policy initiatives. Track trade agreements, security cooperation, and multilateral partnerships.",
-    type: 'website',
-  },
-  twitter: {
-    title: "Foreign Affairs Analysis - International Relations & Diplomatic Engagement",
-    description: "Comprehensive analysis of US foreign affairs, international relations, diplomatic engagement, and global policy initiatives. Track trade agreements, security cooperation, and multilateral partnerships.",
-  },
-  alternates: {
-    canonical: '/foreign-affairs',
-  },
-};
+// Metadata is handled by the layout.tsx file for client components
 
 interface EconomicCooperation {
   trade_volume_estimate: string;

@@ -4,36 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Navigation from '../../components/Navigation';
 import Header from '../../components/Header';
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: "Trump Administration Dashboard - Policy Analysis & Performance Tracking",
-  description: "Comprehensive overview of the Trump administration's policies and performance. Track campaign promises, immigration enforcement, economic policy impacts, and federal spending cuts with real-time data and analysis.",
-  keywords: [
-    "Trump administration",
-    "campaign promises tracker",
-    "immigration enforcement",
-    "economic policy",
-    "federal spending cuts",
-    "ICE detention",
-    "border apprehensions",
-    "S&P 500 performance",
-    "unemployment rate",
-    "political dashboard"
-  ],
-  openGraph: {
-    title: "Trump Administration Dashboard - Policy Analysis & Performance Tracking",
-    description: "Comprehensive overview of the Trump administration's policies and performance. Track campaign promises, immigration enforcement, economic policy impacts, and federal spending cuts.",
-    type: 'website',
-  },
-  twitter: {
-    title: "Trump Administration Dashboard - Policy Analysis & Performance Tracking",
-    description: "Comprehensive overview of the Trump administration's policies and performance. Track campaign promises, immigration enforcement, economic policy impacts, and federal spending cuts.",
-  },
-  alternates: {
-    canonical: '/trump-admin',
-  },
-};
+// Metadata is handled by the layout.tsx file for client components
 // import { Line } from 'react-chartjs-2';
 import {
   Chart as ChartJS,

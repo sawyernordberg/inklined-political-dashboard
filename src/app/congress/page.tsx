@@ -4,35 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Navigation from '../../components/Navigation';
 import Header from '../../components/Header';
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: "Congressional Analysis - Legislative Activity & Performance Tracking",
-  description: "Comprehensive analysis of congressional activity, legislative productivity, and bipartisan cooperation. Track bills passed, committee hearings, and congressional composition with real-time data.",
-  keywords: [
-    "congressional analysis",
-    "legislative activity",
-    "bills passed",
-    "congressional productivity",
-    "bipartisan cooperation",
-    "committee hearings",
-    "congressional composition",
-    "legislative tracking",
-    "government data"
-  ],
-  openGraph: {
-    title: "Congressional Analysis - Legislative Activity & Performance Tracking",
-    description: "Comprehensive analysis of congressional activity, legislative productivity, and bipartisan cooperation. Track bills passed, committee hearings, and congressional composition.",
-    type: 'website',
-  },
-  twitter: {
-    title: "Congressional Analysis - Legislative Activity & Performance Tracking",
-    description: "Comprehensive analysis of congressional activity, legislative productivity, and bipartisan cooperation. Track bills passed, committee hearings, and congressional composition.",
-  },
-  alternates: {
-    canonical: '/congress',
-  },
-};
+// Metadata is handled by the layout.tsx file for client components
 
 interface BillDetail {
   bill_id: number;

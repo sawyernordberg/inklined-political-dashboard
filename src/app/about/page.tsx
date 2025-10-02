@@ -4,35 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Navigation from '../../components/Navigation';
 import Header from '../../components/Header';
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: "About Inklined - Political Analysis & Data Transparency",
-  description: "Learn about Inklined's mission to provide comprehensive, data-driven analysis of American politics and governance. Discover our commitment to transparency, accuracy, and informed analysis.",
-  keywords: [
-    "about inklined",
-    "political analysis",
-    "data transparency",
-    "government accountability",
-    "political journalism",
-    "data-driven analysis",
-    "non-partisan",
-    "public service",
-    "political methodology"
-  ],
-  openGraph: {
-    title: "About Inklined - Political Analysis & Data Transparency",
-    description: "Learn about Inklined's mission to provide comprehensive, data-driven analysis of American politics and governance. Discover our commitment to transparency, accuracy, and informed analysis.",
-    type: 'website',
-  },
-  twitter: {
-    title: "About Inklined - Political Analysis & Data Transparency",
-    description: "Learn about Inklined's mission to provide comprehensive, data-driven analysis of American politics and governance. Discover our commitment to transparency, accuracy, and informed analysis.",
-  },
-  alternates: {
-    canonical: '/about',
-  },
-};
+// Metadata is handled by the layout.tsx file for client components
 
 export default function AboutPage() {
   const [isLoading, setIsLoading] = useState(true);
