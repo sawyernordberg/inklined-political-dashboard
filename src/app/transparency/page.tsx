@@ -9,6 +9,19 @@ export default function TransparencyPage() {
   const [tariffData, setTariffData] = useState<Record<string, unknown> | null>(null);
   const [loading, setLoading] = useState(true);
   const [showTariffSources, setShowTariffSources] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    const newState = !isMobileMenuOpen;
+    setIsMobileMenuOpen(newState);
+    
+    // Prevent body scroll when sidebar is open
+    if (newState) {
+      document.body.classList.add('sidebar-open');
+    } else {
+      document.body.classList.remove('sidebar-open');
+    }
+  };
 
   useEffect(() => {
     async function loadTariffData() {
@@ -34,10 +47,10 @@ export default function TransparencyPage() {
           { label: 'Home', href: '/' },
           { label: 'Transparency' }
         ]
-      }} />
+      }} onMobileMenuToggle={toggleMobileMenu} isMobileMenuOpen={isMobileMenuOpen} />
 
 
-      <Navigation currentPath="/transparency" />
+      <Navigation currentPath="/transparency" isMobileMenuOpen={isMobileMenuOpen} onMobileMenuToggle={toggleMobileMenu}>
       {/* Main Content */}
       <main style={{
         maxWidth: '1400px',
@@ -863,6 +876,7 @@ export default function TransparencyPage() {
           }
         }
       `}</style>
+      </Navigation>
     </div>
   );
 }

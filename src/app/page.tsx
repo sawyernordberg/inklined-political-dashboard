@@ -148,8 +148,9 @@ export default function Home() {
         }}
       />
 
+      <Header showSubtitle={true} onMobileMenuToggle={toggleMobileMenu} isMobileMenuOpen={isMobileMenuOpen} />
+      
       <Navigation currentPath="/" isMobileMenuOpen={isMobileMenuOpen} onMobileMenuToggle={toggleMobileMenu}>
-        <Header showSubtitle={true} onMobileMenuToggle={toggleMobileMenu} isMobileMenuOpen={isMobileMenuOpen} />
 
       {/* Main Content */}
       <main style={{

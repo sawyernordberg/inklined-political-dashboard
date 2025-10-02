@@ -58,6 +58,19 @@ export default function EconomicPolicyPage() {
   const [error, setError] = useState<string | null>(null);
   const [selectedPresident, setSelectedPresident] = useState('trump_current');
   const [selectedTimeframe, setSelectedTimeframe] = useState('days_100');
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    const newState = !isMobileMenuOpen;
+    setIsMobileMenuOpen(newState);
+    
+    // Prevent body scroll when sidebar is open
+    if (newState) {
+      document.body.classList.add('sidebar-open');
+    } else {
+      document.body.classList.remove('sidebar-open');
+    }
+  };
 
   console.log('EconomicPolicyPage component mounted');
 
@@ -3407,10 +3420,10 @@ export default function EconomicPolicyPage() {
           { label: 'Trump Administration', href: '/trump-admin' },
           { label: 'Economic Policy' }
         ]
-      }} />
+      }} onMobileMenuToggle={toggleMobileMenu} isMobileMenuOpen={isMobileMenuOpen} />
 
 
-      <Navigation currentPath="/trump-admin/economic-policy" />
+      <Navigation currentPath="/trump-admin/economic-policy" isMobileMenuOpen={isMobileMenuOpen} onMobileMenuToggle={toggleMobileMenu}>
       {/* Scroll Indicator */}
       <div style={{ 
         position: 'fixed', 
@@ -3916,6 +3929,7 @@ export default function EconomicPolicyPage() {
           }
         }
       `}</style>
+      </Navigation>
     </div>
   );
 }

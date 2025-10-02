@@ -28,6 +28,19 @@ export default function SpendingCutsPage() {
   const [data, setData] = useState<CutsData | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    const newState = !isMobileMenuOpen;
+    setIsMobileMenuOpen(newState);
+    
+    // Prevent body scroll when sidebar is open
+    if (newState) {
+      document.body.classList.add('sidebar-open');
+    } else {
+      document.body.classList.remove('sidebar-open');
+    }
+  };
 
   useEffect(() => {
     async function loadData() {
@@ -509,10 +522,10 @@ export default function SpendingCutsPage() {
           { label: 'Trump Administration', href: '/trump-admin' },
           { label: 'Spending Cuts' }
         ]
-      }} />
+      }} onMobileMenuToggle={toggleMobileMenu} isMobileMenuOpen={isMobileMenuOpen} />
 
 
-      <Navigation currentPath="/trump-admin/spending-cuts" />
+      <Navigation currentPath="/trump-admin/spending-cuts" isMobileMenuOpen={isMobileMenuOpen} onMobileMenuToggle={toggleMobileMenu}>
       {/* Scroll Progress Indicator */}
       <div style={{
         position: 'fixed',
@@ -945,6 +958,7 @@ export default function SpendingCutsPage() {
           }
         }
       `}</style>
+      </Navigation>
     </div>
   );
 }

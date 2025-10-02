@@ -38,6 +38,19 @@ export default function PromisesTrackerPage() {
   const [error, setError] = useState<string | null>(null);
   const [searchTerm, setSearchTerm] = useState('');
   const [statusFilter, setStatusFilter] = useState('all');
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    const newState = !isMobileMenuOpen;
+    setIsMobileMenuOpen(newState);
+    
+    // Prevent body scroll when sidebar is open
+    if (newState) {
+      document.body.classList.add('sidebar-open');
+    } else {
+      document.body.classList.remove('sidebar-open');
+    }
+  };
   const [categoryFilter, setCategoryFilter] = useState('all');
   const [expandedPromises, setExpandedPromises] = useState<Set<string>>(new Set());
 
@@ -200,7 +213,7 @@ export default function PromisesTrackerPage() {
           { label: 'Trump Administration', href: '/trump-admin' },
           { label: 'Promises Tracker' }
         ]
-      }} />
+      }} onMobileMenuToggle={toggleMobileMenu} isMobileMenuOpen={isMobileMenuOpen} />
 
       <style jsx global>{`
         * {
@@ -742,7 +755,7 @@ export default function PromisesTrackerPage() {
       </div>
 
 
-      <Navigation currentPath="/trump-admin/promises-tracker" />
+      <Navigation currentPath="/trump-admin/promises-tracker" isMobileMenuOpen={isMobileMenuOpen} onMobileMenuToggle={toggleMobileMenu}>
       <div className="container">
         <div className="header-content">
           <h1>Trump Campaign Promises Tracker</h1>
@@ -1027,6 +1040,7 @@ export default function PromisesTrackerPage() {
           </div>
         </div>
       </footer>
+      </Navigation>
     </>
   );
 }

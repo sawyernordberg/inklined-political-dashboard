@@ -8,6 +8,19 @@ import Header from '../../components/Header';
 
 export default function AboutPage() {
   const [isLoading, setIsLoading] = useState(true);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    const newState = !isMobileMenuOpen;
+    setIsMobileMenuOpen(newState);
+    
+    // Prevent body scroll when sidebar is open
+    if (newState) {
+      document.body.classList.add('sidebar-open');
+    } else {
+      document.body.classList.remove('sidebar-open');
+    }
+  };
 
   useEffect(() => {
     setIsLoading(false);
@@ -85,7 +98,7 @@ export default function AboutPage() {
           { label: 'Home', href: '/' },
           { label: 'About' }
         ]
-      }} />
+      }} onMobileMenuToggle={toggleMobileMenu} isMobileMenuOpen={isMobileMenuOpen} />
 
 
       {/* Breadcrumb */}
@@ -116,7 +129,7 @@ export default function AboutPage() {
         </div>
       </div>
 
-      <Navigation currentPath="/about" />
+      <Navigation currentPath="/about" isMobileMenuOpen={isMobileMenuOpen} onMobileMenuToggle={toggleMobileMenu}>
       {/* Main Content */}
       <main style={{
         maxWidth: '1000px',
@@ -639,6 +652,7 @@ export default function AboutPage() {
           </div>
         </div>
       </footer>
+      </Navigation>
     </div>
   );
 }

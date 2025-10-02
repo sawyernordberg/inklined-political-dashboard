@@ -1,10 +1,24 @@
 'use client';
 
+import { useState } from 'react';
 import Navigation from '../../components/Navigation';
 import Link from 'next/link';
 import Header from '../../components/Header';
 
 export default function ResearchPage() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    const newState = !isMobileMenuOpen;
+    setIsMobileMenuOpen(newState);
+    
+    // Prevent body scroll when sidebar is open
+    if (newState) {
+      document.body.classList.add('sidebar-open');
+    } else {
+      document.body.classList.remove('sidebar-open');
+    }
+  };
   return (
     <div className="min-h-screen bg-white">
       <Header breadcrumb={{
@@ -12,7 +26,7 @@ export default function ResearchPage() {
           { label: 'Home', href: '/' },
           { label: 'Research' }
         ]
-      }} />
+      }} onMobileMenuToggle={toggleMobileMenu} isMobileMenuOpen={isMobileMenuOpen} />
 
       <style jsx global>{`
         * {
@@ -210,7 +224,7 @@ export default function ResearchPage() {
       `}</style>
 
 
-      <Navigation currentPath="/research" />
+      <Navigation currentPath="/research" isMobileMenuOpen={isMobileMenuOpen} onMobileMenuToggle={toggleMobileMenu}>
       <div className="container">
         {/* Coming Soon Section */}
         <div className="coming-soon-container">
@@ -399,6 +413,7 @@ export default function ResearchPage() {
           </div>
         </div>
       </footer>
+      </Navigation>
     </div>
   );
 }

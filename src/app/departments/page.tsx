@@ -59,6 +59,19 @@ export default function DepartmentsPage() {
   const [federalEmployeesData, setFederalEmployeesData] = useState<FederalEmployeeData[]>([]);
   const [timeRange, setTimeRange] = useState<'1Y' | '3Y' | '5Y'>('1Y');
   const [isLoadingFederalData, setIsLoadingFederalData] = useState(true);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    const newState = !isMobileMenuOpen;
+    setIsMobileMenuOpen(newState);
+    
+    // Prevent body scroll when sidebar is open
+    if (newState) {
+      document.body.classList.add('sidebar-open');
+    } else {
+      document.body.classList.remove('sidebar-open');
+    }
+  };
 
   const departments: Department[] = [
     {
@@ -591,7 +604,7 @@ export default function DepartmentsPage() {
           { label: 'Home', href: '/' },
           { label: 'Federal Departments' }
         ]
-      }} />
+      }} onMobileMenuToggle={toggleMobileMenu} isMobileMenuOpen={isMobileMenuOpen} />
 
       <style jsx global>{`
         * {
@@ -1025,7 +1038,7 @@ export default function DepartmentsPage() {
       )}
 
 
-      <Navigation currentPath="/departments" />
+      <Navigation currentPath="/departments" isMobileMenuOpen={isMobileMenuOpen} onMobileMenuToggle={toggleMobileMenu}>
       {/* Scroll Progress Indicator */}
       <div style={{
         position: 'fixed',
@@ -1499,6 +1512,7 @@ export default function DepartmentsPage() {
           </div>
         </div>
       </footer>
+      </Navigation>
 
     </>
   );

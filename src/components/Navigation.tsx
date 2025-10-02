@@ -8,10 +8,9 @@ interface NavigationProps {
   isMobileMenuOpen?: boolean;
   onMobileMenuToggle?: () => void;
   children?: React.ReactNode;
-  showHeader?: boolean;
 }
 
-export default function Navigation({ currentPath = '', isMobileMenuOpen = false, onMobileMenuToggle, children, showHeader = true }: NavigationProps) {
+export default function Navigation({ currentPath = '', isMobileMenuOpen = false, onMobileMenuToggle, children }: NavigationProps) {
   const closeMobileMenu = () => {
     if (onMobileMenuToggle) {
       onMobileMenuToggle();
@@ -22,25 +21,6 @@ export default function Navigation({ currentPath = '', isMobileMenuOpen = false,
     return currentPath === path;
   };
 
-  useEffect(() => {
-    const handleDropdown = () => {
-      const dropdownParents = document.querySelectorAll('.dropdown-parent');
-      dropdownParents.forEach(parent => {
-        const dropdownMenu = parent.querySelector('.dropdown-menu') as HTMLElement;
-        if (dropdownMenu) {
-          parent.addEventListener('mouseenter', () => {
-            dropdownMenu.style.display = 'block';
-          });
-          parent.addEventListener('mouseleave', () => {
-            dropdownMenu.style.display = 'none';
-          });
-        }
-      });
-    };
-
-    handleDropdown();
-  }, []);
-
   // Cleanup effect to remove body class when component unmounts
   useEffect(() => {
     return () => {
@@ -50,241 +30,490 @@ export default function Navigation({ currentPath = '', isMobileMenuOpen = false,
 
   return (
     <>
-       <style jsx global>{`
-         /* Desktop Navigation Styles */
-         @media (min-width: 1025px) {
-           .desktop-sidebar {
-             display: none !important;
-           }
-           
-           .main-content-wrapper {
-             margin-left: 0 !important;
-           }
-           
-           .desktop-nav {
-             display: flex !important;
-           }
-           
-           .mobile-menu-button {
-             display: none !important;
-           }
-         }
-         
-         /* Mobile styles */
-         @media (max-width: 1024px) {
-           .desktop-sidebar {
-             display: none !important;
-           }
-           
-           .main-content-wrapper {
-             margin-left: 0 !important;
-           }
-           
-           .desktop-nav {
-             display: none !important;
-           }
-           
-           .mobile-menu-button {
-             display: flex !important;
-           }
-         }
-         
-         /* Prevent body scroll when sidebar is open on mobile */
-         body.sidebar-open {
-           overflow: hidden;
-         }
-       `}</style>
+      <style jsx global>{`
+        /* Desktop Navigation Styles */
+        @media (min-width: 1025px) {
+          .desktop-nav {
+            display: flex !important;
+          }
+          
+          .desktop-sidebar {
+            display: none !important;
+          }
+          
+          .main-content-wrapper {
+            margin-left: 0 !important;
+          }
+          
+          .mobile-menu-button {
+            display: none !important;
+          }
+        }
+        
+        /* Mobile styles */
+        @media (max-width: 1024px) {
+          .desktop-nav {
+            display: none !important;
+          }
+          
+          .desktop-sidebar {
+            display: none !important;
+          }
+          
+          .main-content-wrapper {
+            margin-left: 0 !important;
+          }
+          
+          .mobile-menu-button {
+            display: flex !important;
+          }
+        }
+        
+        /* Dropdown hover effects */
+        .dropdown-parent:hover .dropdown-menu {
+          display: block !important;
+        }
+        
+        /* Dropdown link hover effects */
+        .dropdown-parent:hover .dropdown-menu a:hover {
+          background: #f8f9fa;
+          color: #0d9488;
+          padding-left: 2rem;
+        }
+        
+        /* Dropdown arrow effects */
+        .dropdown-parent:hover .dropdown-menu a::before {
+          content: "→";
+          opacity: 1;
+          margin-right: 0.5rem;
+        }
+        
+        /* Prevent body scroll when sidebar is open on mobile */
+        body.sidebar-open {
+          overflow: hidden;
+        }
+      `}</style>
       
-       {/* Navigation */}
-       <nav style={{
-         background: '#fafafa',
-         borderBottom: '1px solid #e5e5e5',
-         padding: '0',
-         position: 'sticky',
-         top: '0',
-         zIndex: '100',
-         backdropFilter: 'blur(10px)',
-         backgroundColor: 'rgba(250, 250, 250, 0.98)',
-         boxShadow: '0 2px 10px rgba(0, 0, 0, 0.1)'
-       }}>
-         <div style={{
-           maxWidth: '1400px',
-           margin: '0 auto',
-           padding: '0 2rem',
-           display: 'flex',
-           justifyContent: 'space-between',
-           alignItems: 'center'
-         }}>
-           {/* Desktop Navigation */}
-           <div className="desktop-nav" style={{
-             display: 'flex',
-             justifyContent: 'center',
-             flex: '1'
-           }}>
-             <ul style={{
-               display: 'flex',
-               listStyle: 'none',
-               margin: '0',
-               padding: '0',
-               gap: '2.5rem',
-               justifyContent: 'center',
-               width: '100%'
-             }}>
-               <li className="dropdown-parent" style={{ position: 'relative' }}>
-                 <Link href="/trump-admin" style={{
-                   display: 'block',
-                   padding: '1.3rem 0',
-                   textDecoration: 'none',
-                   color: isActive('/trump-admin') ? '#0d9488' : '#333333',
-                   fontWeight: '500',
-                   fontSize: '0.85rem',
-                   borderBottom: isActive('/trump-admin') ? '2px solid #0d9488' : '2px solid transparent',
-                   transition: 'all 0.2s ease',
-                   textTransform: 'uppercase',
-                   letterSpacing: '0.01em'
-                 }}>
-                   Trump Administration
-                 </Link>
-                 <div className="dropdown-menu" style={{
-                   display: 'none',
-                   position: 'absolute',
-                   top: '100%',
-                   left: '0',
-                   background: 'white',
-                   minWidth: '280px',
-                   boxShadow: '0 8px 32px rgba(0, 0, 0, 0.15)',
-                   border: '1px solid #e5e5e5',
-                   borderRadius: '8px',
-                   zIndex: '1000',
-                   padding: '1rem 0',
-                   marginTop: '2px'
-                 }}>
-                   <Link href="/trump-admin/promises-tracker" style={{
-                     display: 'block',
-                     padding: '0.8rem 1.5rem',
-                     textDecoration: 'none',
-                     color: '#333333',
-                     fontSize: '0.9rem',
-                     fontWeight: '500',
-                     transition: 'all 0.2s ease'
-                   }}>
-                     Campaign Promises Tracker
-                   </Link>
-                   <Link href="/trump-admin/immigration" style={{
-                     display: 'block',
-                     padding: '0.8rem 1.5rem',
-                     textDecoration: 'none',
-                     color: '#333333',
-                     fontSize: '0.9rem',
-                     fontWeight: '500',
-                     transition: 'all 0.2s ease'
-                   }}>
-                     Immigration Enforcement
-                   </Link>
-                   <Link href="/trump-admin/spending-cuts" style={{
-                     display: 'block',
-                     padding: '0.8rem 1.5rem',
-                     textDecoration: 'none',
-                     color: '#333333',
-                     fontSize: '0.9rem',
-                     fontWeight: '500',
-                     transition: 'all 0.2s ease'
-                   }}>
-                     Spending Cuts
-                   </Link>
-                   <Link href="/trump-admin/economic-policy" style={{
-                     display: 'block',
-                     padding: '0.8rem 1.5rem',
-                     textDecoration: 'none',
-                     color: '#333333',
-                     fontSize: '0.9rem',
-                     fontWeight: '500',
-                     transition: 'all 0.2s ease'
-                   }}>
-                     Economic Policy Impact
-                   </Link>
-                 </div>
-               </li>
-               <li>
-                 <Link href="/congress" style={{
-                   display: 'block',
-                   padding: '1.3rem 0',
-                   textDecoration: 'none',
-                   color: isActive('/congress') ? '#0d9488' : '#333333',
-                   fontWeight: '500',
-                   fontSize: '0.85rem',
-                   borderBottom: isActive('/congress') ? '2px solid #0d9488' : '2px solid transparent',
-                   textTransform: 'uppercase',
-                   letterSpacing: '0.01em'
-                 }}>
-                   Congressional Breakdown
-                 </Link>
-               </li>
-               <li>
-                 <Link href="/departments" style={{
-                   display: 'block',
-                   padding: '1.3rem 0',
-                   textDecoration: 'none',
-                   color: isActive('/departments') ? '#0d9488' : '#333333',
-                   fontWeight: '500',
-                   fontSize: '0.85rem',
-                   borderBottom: isActive('/departments') ? '2px solid #0d9488' : '2px solid transparent',
-                   textTransform: 'uppercase',
-                   letterSpacing: '0.01em'
-                 }}>
-                   US Departments
-                 </Link>
-               </li>
-               <li>
-                 <Link href="/research" style={{
-                   display: 'block',
-                   padding: '1.3rem 0',
-                   textDecoration: 'none',
-                   color: isActive('/research') ? '#0d9488' : '#333333',
-                   fontWeight: '500',
-                   fontSize: '0.85rem',
-                   borderBottom: isActive('/research') ? '2px solid #0d9488' : '2px solid transparent',
-                   textTransform: 'uppercase',
-                   letterSpacing: '0.01em'
-                 }}>
-                   Political Research
-                 </Link>
-               </li>
-               <li>
-                 <Link href="/foreign-affairs" style={{
-                   display: 'block',
-                   padding: '1.3rem 0',
-                   textDecoration: 'none',
-                   color: isActive('/foreign-affairs') ? '#0d9488' : '#333333',
-                   fontWeight: '500',
-                   fontSize: '0.85rem',
-                   borderBottom: isActive('/foreign-affairs') ? '2px solid #0d9488' : '2px solid transparent',
-                   textTransform: 'uppercase',
-                   letterSpacing: '0.01em'
-                 }}>
-                   Foreign Affairs
-                 </Link>
-               </li>
-               <li>
-                 <Link href="/courts" style={{
-                   display: 'block',
-                   padding: '1.3rem 0',
-                   textDecoration: 'none',
-                   color: isActive('/courts') ? '#0d9488' : '#333333',
-                   fontWeight: '500',
-                   fontSize: '0.85rem',
-                   borderBottom: isActive('/courts') ? '2px solid #0d9488' : '2px solid transparent',
-                   textTransform: 'uppercase',
-                   letterSpacing: '0.01em'
-                 }}>
-                   The Courts
-                 </Link>
-               </li>
-             </ul>
-           </div>
+      {/* Desktop Navigation Menu Bar */}
+      <nav className="desktop-nav" style={{
+        background: '#fafafa',
+        borderBottom: '1px solid #e5e5e5',
+        padding: '0',
+        position: 'sticky',
+        top: '0',
+        zIndex: '100',
+        backdropFilter: 'blur(10px)',
+        backgroundColor: 'rgba(250, 250, 250, 0.98)',
+        boxShadow: '0 2px 10px rgba(0, 0, 0, 0.1)',
+        display: 'none' // Hidden by default, shown via CSS
+      }}>
+        <div style={{
+          maxWidth: '1400px',
+          margin: '0 auto',
+          padding: '0 2rem',
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center'
+        }}>
+          {/* Desktop Navigation */}
+          <div style={{
+            display: 'flex',
+            justifyContent: 'center',
+            flex: '1'
+          }}>
+            <ul style={{
+              display: 'flex',
+              listStyle: 'none',
+              margin: '0',
+              padding: '0',
+              gap: '2.5rem',
+              justifyContent: 'center',
+              width: '100%'
+            }}>
+              <li className="dropdown-parent" style={{ position: 'relative' }}>
+                <Link href="/trump-admin" style={{
+                  display: 'block',
+                  padding: '1.3rem 0',
+                  textDecoration: 'none',
+                  color: isActive('/trump-admin') ? '#0d9488' : '#333333',
+                  fontWeight: '500',
+                  fontSize: '0.85rem',
+                  borderBottom: isActive('/trump-admin') ? '2px solid #0d9488' : '2px solid transparent',
+                  transition: 'all 0.2s ease',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.01em'
+                }}>
+                  Trump Administration
+                </Link>
+                <div className="dropdown-menu" style={{
+                  display: 'none',
+                  position: 'absolute',
+                  top: '100%',
+                  left: '0',
+                  background: 'white',
+                  minWidth: '280px',
+                  boxShadow: '0 8px 32px rgba(0, 0, 0, 0.15)',
+                  border: '1px solid #e5e5e5',
+                  borderRadius: '8px',
+                  zIndex: '1000',
+                  padding: '1rem 0',
+                  marginTop: '2px'
+                }}>
+                  <Link href="/trump-admin/promises-tracker" style={{
+                    display: 'block',
+                    padding: '0.8rem 1.5rem',
+                    textDecoration: 'none',
+                    color: '#333333',
+                    fontSize: '0.9rem',
+                    fontWeight: '500',
+                    transition: 'all 0.2s ease'
+                  }}>
+                    Campaign Promises Tracker
+                  </Link>
+                  <Link href="/trump-admin/immigration" style={{
+                    display: 'block',
+                    padding: '0.8rem 1.5rem',
+                    textDecoration: 'none',
+                    color: '#333333',
+                    fontSize: '0.9rem',
+                    fontWeight: '500',
+                    transition: 'all 0.2s ease'
+                  }}>
+                    Immigration Enforcement
+                  </Link>
+                  <Link href="/trump-admin/spending-cuts" style={{
+                    display: 'block',
+                    padding: '0.8rem 1.5rem',
+                    textDecoration: 'none',
+                    color: '#333333',
+                    fontSize: '0.9rem',
+                    fontWeight: '500',
+                    transition: 'all 0.2s ease'
+                  }}>
+                    Spending Cuts
+                  </Link>
+                  <Link href="/trump-admin/economic-policy" style={{
+                    display: 'block',
+                    padding: '0.8rem 1.5rem',
+                    textDecoration: 'none',
+                    color: '#333333',
+                    fontSize: '0.9rem',
+                    fontWeight: '500',
+                    transition: 'all 0.2s ease'
+                  }}>
+                    Economic Policy Impact
+                  </Link>
+                </div>
+              </li>
+              <li>
+                <Link href="/congress" style={{
+                  display: 'block',
+                  padding: '1.3rem 0',
+                  textDecoration: 'none',
+                  color: isActive('/congress') ? '#0d9488' : '#333333',
+                  fontWeight: '500',
+                  fontSize: '0.85rem',
+                  borderBottom: isActive('/congress') ? '2px solid #0d9488' : '2px solid transparent',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.01em'
+                }}>
+                  Congressional Breakdown
+                </Link>
+              </li>
+              <li>
+                <Link href="/departments" style={{
+                  display: 'block',
+                  padding: '1.3rem 0',
+                  textDecoration: 'none',
+                  color: isActive('/departments') ? '#0d9488' : '#333333',
+                  fontWeight: '500',
+                  fontSize: '0.85rem',
+                  borderBottom: isActive('/departments') ? '2px solid #0d9488' : '2px solid transparent',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.01em'
+                }}>
+                  US Departments
+                </Link>
+              </li>
+              <li>
+                <Link href="/research" style={{
+                  display: 'block',
+                  padding: '1.3rem 0',
+                  textDecoration: 'none',
+                  color: isActive('/research') ? '#0d9488' : '#333333',
+                  fontWeight: '500',
+                  fontSize: '0.85rem',
+                  borderBottom: isActive('/research') ? '2px solid #0d9488' : '2px solid transparent',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.01em'
+                }}>
+                  Political Research
+                </Link>
+              </li>
+              <li>
+                <Link href="/foreign-affairs" style={{
+                  display: 'block',
+                  padding: '1.3rem 0',
+                  textDecoration: 'none',
+                  color: isActive('/foreign-affairs') ? '#0d9488' : '#333333',
+                  fontWeight: '500',
+                  fontSize: '0.85rem',
+                  borderBottom: isActive('/foreign-affairs') ? '2px solid #0d9488' : '2px solid transparent',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.01em'
+                }}>
+                  Foreign Affairs
+                </Link>
+              </li>
+              <li>
+                <Link href="/courts" style={{
+                  display: 'block',
+                  padding: '1.3rem 0',
+                  textDecoration: 'none',
+                  color: isActive('/courts') ? '#0d9488' : '#333333',
+                  fontWeight: '500',
+                  fontSize: '0.85rem',
+                  borderBottom: isActive('/courts') ? '2px solid #0d9488' : '2px solid transparent',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.01em'
+                }}>
+                  The Courts
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+      {/* Desktop Sidebar Navigation */}
+      <div className="desktop-sidebar" style={{
+        position: 'fixed',
+        top: '0',
+        left: '0',
+        width: '280px',
+        height: '100vh',
+        background: 'white',
+        boxShadow: '2px 0 10px rgba(0, 0, 0, 0.1)',
+        zIndex: '1000',
+        overflowY: 'auto',
+        display: 'none' // Hidden by default, will be shown via CSS
+      }}>
+        {/* Top Bar Overlay */}
+        <div style={{
+          background: '#000',
+          color: '#fff',
+          padding: '0.5rem 1rem',
+          fontSize: '0.8rem',
+          display: 'flex',
+          alignItems: 'center',
+          gap: '1rem'
+        }}>
+          <span style={{ fontWeight: '600' }}>LIVE DATA</span>
+        </div>
+        
+        {/* Header Overlay */}
+        <div style={{
+          background: '#fff',
+          borderBottom: '4px solid #1a1a1a',
+          padding: '1rem',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center'
+        }}>
+          <Link href="/" style={{
+            fontSize: '1.8rem',
+            fontWeight: '800',
+            textDecoration: 'none',
+            color: '#1a1a1a',
+            letterSpacing: '0.08em',
+            fontFamily: 'Georgia, Times New Roman, serif',
+            textTransform: 'uppercase',
+            display: 'flex',
+            alignItems: 'baseline',
+            gap: '0.2rem'
+          }}>
+            <span style={{
+              fontSize: '0.8rem',
+              fontWeight: '600',
+              textTransform: 'lowercase',
+              letterSpacing: '0.01em',
+              marginRight: '0.1rem'
+            }}>the</span>
+            In<span style={{ color: '#0d9488', fontWeight: '900' }}>k</span>lined<span style={{ color: '#0d9488', fontWeight: '900' }}>.</span>
+          </Link>
+        </div>
 
-         </div>
-       </nav>
+        {/* Navigation Content */}
+        <div style={{
+          padding: '2rem 0 1rem 0',
+          borderBottom: '1px solid #e5e5e5'
+        }}>
+          <div style={{
+            padding: '0 2rem',
+            fontSize: '1.2rem',
+            fontWeight: '600',
+            color: '#1a1a1a',
+            textTransform: 'uppercase',
+            letterSpacing: '0.05em'
+          }}>
+            Navigation
+          </div>
+        </div>
+        
+        <ul style={{
+          listStyle: 'none',
+          margin: '0',
+          padding: '1rem 0',
+          display: 'flex',
+          flexDirection: 'column'
+        }}>
+          <li>
+            <Link href="/trump-admin" style={{
+              display: 'block',
+              padding: '1rem 2rem',
+              textDecoration: 'none',
+              color: isActive('/trump-admin') ? '#0d9488' : '#333333',
+              fontWeight: '500',
+              fontSize: '0.95rem',
+              borderBottom: '1px solid #f0f0f0',
+              textTransform: 'uppercase',
+              letterSpacing: '0.01em',
+              transition: 'all 0.2s ease'
+            }}>
+              Trump Administration
+            </Link>
+            <div style={{
+              paddingLeft: '2rem',
+              background: '#f8f9fa'
+            }}>
+              <Link href="/trump-admin/promises-tracker" style={{
+                display: 'block',
+                padding: '0.8rem 1rem',
+                textDecoration: 'none',
+                color: '#666666',
+                fontSize: '0.85rem',
+                fontWeight: '400',
+                transition: 'all 0.2s ease'
+              }}>
+                Campaign Promises Tracker
+              </Link>
+              <Link href="/trump-admin/immigration" style={{
+                display: 'block',
+                padding: '0.8rem 1rem',
+                textDecoration: 'none',
+                color: '#666666',
+                fontSize: '0.85rem',
+                fontWeight: '400',
+                transition: 'all 0.2s ease'
+              }}>
+                Immigration Enforcement
+              </Link>
+              <Link href="/trump-admin/spending-cuts" style={{
+                display: 'block',
+                padding: '0.8rem 1rem',
+                textDecoration: 'none',
+                color: '#666666',
+                fontSize: '0.85rem',
+                fontWeight: '400',
+                transition: 'all 0.2s ease'
+              }}>
+                Spending Cuts
+              </Link>
+              <Link href="/trump-admin/economic-policy" style={{
+                display: 'block',
+                padding: '0.8rem 1rem',
+                textDecoration: 'none',
+                color: '#666666',
+                fontSize: '0.85rem',
+                fontWeight: '400',
+                transition: 'all 0.2s ease'
+              }}>
+                Economic Policy Impact
+              </Link>
+            </div>
+          </li>
+          <li>
+            <Link href="/congress" style={{
+              display: 'block',
+              padding: '1rem 2rem',
+              textDecoration: 'none',
+              color: isActive('/congress') ? '#0d9488' : '#333333',
+              fontWeight: '500',
+              fontSize: '0.95rem',
+              borderBottom: '1px solid #f0f0f0',
+              textTransform: 'uppercase',
+              letterSpacing: '0.01em',
+              transition: 'all 0.2s ease'
+            }}>
+              Congressional Breakdown
+            </Link>
+          </li>
+          <li>
+            <Link href="/departments" style={{
+              display: 'block',
+              padding: '1rem 2rem',
+              textDecoration: 'none',
+              color: isActive('/departments') ? '#0d9488' : '#333333',
+              fontWeight: '500',
+              fontSize: '0.95rem',
+              borderBottom: '1px solid #f0f0f0',
+              textTransform: 'uppercase',
+              letterSpacing: '0.01em',
+              transition: 'all 0.2s ease'
+            }}>
+              US Departments
+            </Link>
+          </li>
+          <li>
+            <Link href="/research" style={{
+              display: 'block',
+              padding: '1rem 2rem',
+              textDecoration: 'none',
+              color: isActive('/research') ? '#0d9488' : '#333333',
+              fontWeight: '500',
+              fontSize: '0.95rem',
+              borderBottom: '1px solid #f0f0f0',
+              textTransform: 'uppercase',
+              letterSpacing: '0.01em',
+              transition: 'all 0.2s ease'
+            }}>
+              Political Research
+            </Link>
+          </li>
+          <li>
+            <Link href="/foreign-affairs" style={{
+              display: 'block',
+              padding: '1rem 2rem',
+              textDecoration: 'none',
+              color: isActive('/foreign-affairs') ? '#0d9488' : '#333333',
+              fontWeight: '500',
+              fontSize: '0.95rem',
+              borderBottom: '1px solid #f0f0f0',
+              textTransform: 'uppercase',
+              letterSpacing: '0.01em',
+              transition: 'all 0.2s ease'
+            }}>
+              Foreign Affairs
+            </Link>
+          </li>
+          <li>
+            <Link href="/courts" style={{
+              display: 'block',
+              padding: '1rem 2rem',
+              textDecoration: 'none',
+              color: isActive('/courts') ? '#0d9488' : '#333333',
+              fontWeight: '500',
+              fontSize: '0.95rem',
+              borderBottom: '1px solid #f0f0f0',
+              textTransform: 'uppercase',
+              letterSpacing: '0.01em',
+              transition: 'all 0.2s ease'
+            }}>
+              The Courts
+            </Link>
+          </li>
+        </ul>
+      </div>
 
       {/* Main Content Wrapper - This will wrap all page content */}
       <div className="main-content-wrapper" style={{
@@ -307,6 +536,48 @@ export default function Navigation({ currentPath = '', isMobileMenuOpen = false,
         transition: 'left 0.3s ease',
         overflowY: 'auto'
       }}>
+          {/* Close Button */}
+          <button
+            onClick={closeMobileMenu}
+            style={{
+              position: 'absolute',
+              top: '1rem',
+              right: '1rem',
+              background: 'none',
+              border: 'none',
+              cursor: 'pointer',
+              padding: '0.5rem',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              width: '2rem',
+              height: '2rem',
+              borderRadius: '50%',
+              transition: 'background-color 0.2s ease'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.backgroundColor = '#f0f0f0';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.backgroundColor = 'transparent';
+            }}
+            aria-label="Close menu"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#333333"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+          
           <div style={{
             padding: '2rem 0 1rem 0',
             borderBottom: '1px solid #e5e5e5'

@@ -42,6 +42,19 @@ export default function ImmigrationPage() {
   const [data, setData] = useState<ImmigrationData | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    const newState = !isMobileMenuOpen;
+    setIsMobileMenuOpen(newState);
+    
+    // Prevent body scroll when sidebar is open
+    if (newState) {
+      document.body.classList.add('sidebar-open');
+    } else {
+      document.body.classList.remove('sidebar-open');
+    }
+  };
 
   useEffect(() => {
     async function loadData() {
@@ -352,10 +365,10 @@ export default function ImmigrationPage() {
           { label: 'Trump Administration', href: '/trump-admin' },
           { label: 'Immigration' }
         ]
-      }} />
+      }} onMobileMenuToggle={toggleMobileMenu} isMobileMenuOpen={isMobileMenuOpen} />
 
 
-      <Navigation currentPath="/trump-admin/immigration" />
+      <Navigation currentPath="/trump-admin/immigration" isMobileMenuOpen={isMobileMenuOpen} onMobileMenuToggle={toggleMobileMenu}>
       {/* Scroll Progress Indicator */}
       <div style={{
         position: 'fixed',
@@ -1651,6 +1664,7 @@ export default function ImmigrationPage() {
           margin-right: 0.5rem;
         }
       `}</style>
+      </Navigation>
     </div>
   );
 }

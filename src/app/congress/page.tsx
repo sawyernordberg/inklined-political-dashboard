@@ -161,6 +161,19 @@ export default function CongressPage() {
   const [data, setData] = useState<CongressData | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    const newState = !isMobileMenuOpen;
+    setIsMobileMenuOpen(newState);
+    
+    // Prevent body scroll when sidebar is open
+    if (newState) {
+      document.body.classList.add('sidebar-open');
+    } else {
+      document.body.classList.remove('sidebar-open');
+    }
+  };
 
   useEffect(() => {
     // Fetch real data from the JSON file
@@ -279,7 +292,7 @@ export default function CongressPage() {
           { label: 'Home', href: '/' },
           { label: 'Congressional Breakdown' }
         ]
-      }} />
+      }} onMobileMenuToggle={toggleMobileMenu} isMobileMenuOpen={isMobileMenuOpen} />
 
       <style jsx global>{`
         * {
@@ -769,7 +782,7 @@ export default function CongressPage() {
       </div>
 
 
-      <Navigation currentPath="/congress" />
+      <Navigation currentPath="/congress" isMobileMenuOpen={isMobileMenuOpen} onMobileMenuToggle={toggleMobileMenu}>
       <main role="main">
         <div className="container">
           {/* Header Content */}
@@ -1021,6 +1034,7 @@ export default function CongressPage() {
           </div>
         </div>
       </footer>
+      </Navigation>
     </>
   );
 }

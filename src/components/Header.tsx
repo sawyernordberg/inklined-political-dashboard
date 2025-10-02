@@ -83,7 +83,7 @@ export default function Header({ breadcrumb, showSubtitle = false, onMobileMenuT
                   height: '2px',
                   background: '#fff',
                   transition: 'all 0.3s ease',
-                  transform: isMobileMenuOpen ? 'rotate(45deg) translate(3px, 3px)' : 'none'
+                  transform: isMobileMenuOpen ? 'rotate(45deg) translate(6px, 6px)' : 'none'
                 }}></span>
                 <span style={{
                   width: '100%',
@@ -97,7 +97,7 @@ export default function Header({ breadcrumb, showSubtitle = false, onMobileMenuT
                   height: '2px',
                   background: '#fff',
                   transition: 'all 0.3s ease',
-                  transform: isMobileMenuOpen ? 'rotate(-45deg) translate(4px, -4px)' : 'none'
+                  transform: isMobileMenuOpen ? 'rotate(-45deg) translate(6px, -6px)' : 'none'
                 }}></span>
               </button>
             )}

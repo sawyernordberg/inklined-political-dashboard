@@ -90,6 +90,19 @@ export default function TrumpAdminPage() {
   const [stockData, setStockData] = useState<Record<string, unknown> | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    const newState = !isMobileMenuOpen;
+    setIsMobileMenuOpen(newState);
+    
+    // Prevent body scroll when sidebar is open
+    if (newState) {
+      document.body.classList.add('sidebar-open');
+    } else {
+      document.body.classList.remove('sidebar-open');
+    }
+  };
 
   useEffect(() => {
     async function loadData() {
@@ -293,9 +306,9 @@ export default function TrumpAdminPage() {
           { label: 'Home', href: '/' },
           { label: 'Trump Administration' }
         ]
-      }} />
+      }} onMobileMenuToggle={toggleMobileMenu} isMobileMenuOpen={isMobileMenuOpen} />
 
-      <Navigation currentPath="/trump-admin" />
+      <Navigation currentPath="/trump-admin" isMobileMenuOpen={isMobileMenuOpen} onMobileMenuToggle={toggleMobileMenu}>
 
       {/* Scroll Progress Indicator */}
       <div style={{
@@ -1271,6 +1284,7 @@ export default function TrumpAdminPage() {
           }
         }
       `}</style>
+      </Navigation>
     </div>
   );
 }

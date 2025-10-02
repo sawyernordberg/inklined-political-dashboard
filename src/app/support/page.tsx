@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { loadStripe } from '@stripe/stripe-js';
 import Header from '../../components/Header';
+import Navigation from '../../components/Navigation';
 
 // Initialize Stripe
 const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!);
@@ -15,6 +16,19 @@ export default function SupportPage() {
   const [donorName, setDonorName] = useState('');
   const [donorEmail, setDonorEmail] = useState('');
   const [isProcessing, setIsProcessing] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    const newState = !isMobileMenuOpen;
+    setIsMobileMenuOpen(newState);
+    
+    // Prevent body scroll when sidebar is open
+    if (newState) {
+      document.body.classList.add('sidebar-open');
+    } else {
+      document.body.classList.remove('sidebar-open');
+    }
+  };
 
   const presetAmounts = [15, 25, 50, 100, 250, 500];
 
@@ -106,8 +120,9 @@ export default function SupportPage() {
           { label: 'Home', href: '/' },
           { label: 'Support Us' }
         ]
-      }} />
+      }} onMobileMenuToggle={toggleMobileMenu} isMobileMenuOpen={isMobileMenuOpen} />
 
+      <Navigation currentPath="/support" isMobileMenuOpen={isMobileMenuOpen} onMobileMenuToggle={toggleMobileMenu}>
       {/* Support Content */}
       <main style={{
         maxWidth: '1000px',
@@ -417,6 +432,7 @@ export default function SupportPage() {
           </div>
         </div>
       </main>
+      </Navigation>
     </div>
   );
 }
