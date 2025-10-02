@@ -4,35 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Navigation from '../components/Navigation';
 import Header from '../components/Header';
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: "The State of the Union - Real-time Political Analysis",
-  description: "Real-time analysis of America's political landscape, policy implementation, and government performance through comprehensive data and expert insights. Track S&P 500 performance, immigration enforcement, economic indicators, and campaign promises.",
-  keywords: [
-    "political analysis",
-    "government performance",
-    "S&P 500 performance",
-    "immigration enforcement",
-    "economic indicators",
-    "campaign promises",
-    "political dashboard",
-    "government data",
-    "policy tracking"
-  ],
-  openGraph: {
-    title: "The State of the Union - Real-time Political Analysis",
-    description: "Real-time analysis of America's political landscape, policy implementation, and government performance through comprehensive data and expert insights.",
-    type: 'website',
-  },
-  twitter: {
-    title: "The State of the Union - Real-time Political Analysis",
-    description: "Real-time analysis of America's political landscape, policy implementation, and government performance through comprehensive data and expert insights.",
-  },
-  alternates: {
-    canonical: '/',
-  },
-};
+// Metadata is handled by the layout.tsx file for client components
 
 // Type definitions for data structures
 interface DataState {
