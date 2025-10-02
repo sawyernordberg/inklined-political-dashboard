@@ -3900,6 +3900,28 @@ export default function EconomicPolicyPage() {
           opacity: 1;
           margin-right: 0.5rem;
         }
+
+        /* Mobile responsive styles */
+        @media (max-width: 768px) {
+          .dashboard {
+            grid-template-columns: 1fr !important;
+            gap: 20px !important;
+          }
+          
+          .dashboard-section {
+            width: 100% !important;
+            margin-bottom: 15px !important;
+          }
+          
+          .category-section {
+            padding: 16px 12px !important;
+          }
+          
+          .category-title {
+            font-size: 1.3rem !important;
+            margin-bottom: 16px !important;
+          }
+        }
       `}</style>
     </div>
   );
