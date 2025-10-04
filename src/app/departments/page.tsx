@@ -39,7 +39,6 @@ interface Department {
   keyAgencies: string[];
   budget: string;
   budgetYear: string;
-  secretaryImage?: string;
 }
 
 interface FederalEmployeeData {
@@ -981,16 +980,6 @@ export default function DepartmentsPage() {
                   marginBottom: '1.5rem',
                   textAlign: 'center'
                 }}>
-                  <div style={{
-                    width: '120px',
-                    height: '120px',
-                    background: '#e5e5e5',
-                    borderRadius: '4px',
-                    margin: '1rem auto',
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                    border: '2px solid #0d9488'
-                  }}></div>
                   <div style={{
                     fontSize: '0.9rem',
                     color: '#666666',
