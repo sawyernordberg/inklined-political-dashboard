@@ -144,11 +144,17 @@ export default function RootLayout({
               "alternateName": "The Inklined",
               "url": "https://theinklined.com",
               "description": "Comprehensive analysis and real-time tracking of US political developments, policy changes, and government data. Track Trump administration policies, US immigration enforcement, economic indicators, and campaign promises.",
+              "creator": {
+                "@type": "Organization",
+                "name": "The Inklined",
+                "url": "https://theinklined.com"
+              },
               "publisher": {
                 "@type": "Organization",
                 "name": "The Inklined",
                 "url": "https://theinklined.com"
               },
+              "license": "https://creativecommons.org/licenses/by/4.0/",
               "potentialAction": {
                 "@type": "SearchAction",
                 "target": "https://theinklined.com/search?q={search_term_string}",
@@ -158,7 +164,13 @@ export default function RootLayout({
                 "@type": "DataCatalog",
                 "name": "Political Data Dashboard",
                 "description": "Government data, policy analysis, and political tracking",
-                "keywords": ["political dashboard", "government data", "policy analysis", "Trump administration", "immigration enforcement", "economic policy"]
+                "keywords": ["political dashboard", "government data", "policy analysis", "Trump administration", "immigration enforcement", "economic policy"],
+                "creator": {
+                  "@type": "Organization",
+                  "name": "The Inklined",
+                  "url": "https://theinklined.com"
+                },
+                "license": "https://creativecommons.org/licenses/by/4.0/"
               }
             })
           }}
