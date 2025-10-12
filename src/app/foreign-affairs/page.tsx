@@ -931,12 +931,12 @@ export default function ForeignAffairsPage() {
                 border: '1px solid #e5e7eb',
                 transition: 'transform 0.2s ease, box-shadow 0.2s ease'
               }}>
-              <div style={{
-                display: 'flex',
-                justifyContent: 'space-between',
-                alignItems: 'center',
-                marginBottom: '20px'
-              }}>
+                <div style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  marginBottom: '20px'
+                }}>
                 <h3 style={{
                   fontSize: '1.4rem',
                   fontWeight: '600',
@@ -1107,33 +1107,33 @@ export default function ForeignAffairsPage() {
                 border: '1px solid #e5e7eb',
                 transition: 'transform 0.2s ease, box-shadow 0.2s ease'
               }}>
-              <div style={{
-                display: 'flex',
-                justifyContent: 'space-between',
-                alignItems: 'center',
-                marginBottom: '20px'
-              }}>
-                <h3 style={{
-                  fontSize: '1.4rem',
-                  fontWeight: '600',
-                  color: '#1e293b',
-                  fontFamily: 'Georgia, Times New Roman, serif'
-                }}>
-                  Eurasia
-                </h3>
                 <div style={{
-                  padding: '4px 12px',
-                  borderRadius: '6px',
-                  fontSize: '0.8rem',
-                  fontWeight: '600',
-                  textTransform: 'uppercase',
-                  letterSpacing: '0.05em',
-                  background: '#fee2e2',
-                  color: '#dc2626'
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  marginBottom: '20px'
                 }}>
-                  Critical
+                  <h3 style={{
+                    fontSize: '1.4rem',
+                    fontWeight: '600',
+                    color: '#1e293b',
+                    fontFamily: 'Georgia, Times New Roman, serif'
+                  }}>
+                    Eurasia
+                  </h3>
+                  <div style={{
+                    padding: '4px 12px',
+                    borderRadius: '6px',
+                    fontSize: '0.8rem',
+                    fontWeight: '600',
+                    textTransform: 'uppercase',
+                    letterSpacing: '0.05em',
+                    background: '#fee2e2',
+                    color: '#dc2626'
+                  }}>
+                    Critical
+                  </div>
                 </div>
-              </div>
               <div style={{
                 display: 'flex',
                 flexDirection: 'column',
@@ -1274,7 +1274,9 @@ export default function ForeignAffairsPage() {
                   </div>
                 </div>
               </div>
+              </div>
             </div>
+          </div>
           </section>
 
           {/* Security & Defense Partnerships */}
