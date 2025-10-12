@@ -15,10 +15,10 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Inklined - Political Dashboard Hub",
-    template: "%s | Inklined"
+    default: "The Inklined - Political Dashboard Hub",
+    template: "%s | The Inklined"
   },
-  description: "Comprehensive analysis and real-time tracking of political developments, policy changes, and government data. Track Trump administration policies, immigration enforcement, economic indicators, and campaign promises.",
+  description: "Comprehensive analysis and real-time tracking of US political developments, policy changes, and government data. Track Trump administration policies, US immigration enforcement, economic indicators, and campaign promises.",
   keywords: [
     "political dashboard",
     "Trump administration",
@@ -44,10 +44,10 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: "Inklined - Political Dashboard Hub",
-    description: "Comprehensive analysis and real-time tracking of political developments, policy changes, and government data.",
+    title: "The Inklined - Political Dashboard Hub",
+    description: "Comprehensive analysis and real-time tracking of US political developments, policy changes, and government data.",
     url: 'https://theinklined.com',
-    siteName: 'Inklined',
+    siteName: 'The Inklined',
     images: [
       {
         url: '/og-image.png',
@@ -61,8 +61,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Inklined - Political Dashboard Hub",
-    description: "Comprehensive analysis and real-time tracking of political developments, policy changes, and government data.",
+    title: "The Inklined - Political Dashboard Hub",
+    description: "Comprehensive analysis and real-time tracking of US political developments, policy changes, and government data.",
     images: ['/og-image.png'],
     creator: '@inklined',
   },
@@ -80,6 +80,7 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: '/image.png', sizes: '32x32', type: 'image/png' },
+      { url: '/image.png', sizes: '16x16', type: 'image/png' },
       { url: '/favicon.svg', type: 'image/svg+xml' }
     ],
     shortcut: [
@@ -139,13 +140,13 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
-              "name": "Inklined - Political Dashboard Hub",
-              "alternateName": "Inklined",
+              "name": "The Inklined - Political Dashboard Hub",
+              "alternateName": "The Inklined",
               "url": "https://theinklined.com",
-              "description": "Comprehensive analysis and real-time tracking of political developments, policy changes, and government data. Track Trump administration policies, immigration enforcement, economic indicators, and campaign promises.",
+              "description": "Comprehensive analysis and real-time tracking of US political developments, policy changes, and government data. Track Trump administration policies, US immigration enforcement, economic indicators, and campaign promises.",
               "publisher": {
                 "@type": "Organization",
-                "name": "Inklined",
+                "name": "The Inklined",
                 "url": "https://theinklined.com"
               },
               "potentialAction": {
