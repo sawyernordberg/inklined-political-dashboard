@@ -922,17 +922,15 @@ export default function ForeignAffairsPage() {
                   </div>
                 </div>
               </div>
-            </div>
 
-            {/* North America Regional Overview */}
-            <div className="section" style={{
-              background: '#f8f9fa',
-              borderRadius: '12px',
-              padding: '30px',
-              border: '1px solid #e5e7eb',
-              transition: 'transform 0.2s ease, box-shadow 0.2s ease',
-              marginBottom: '30px'
-            }}>
+              {/* North America Regional Overview */}
+              <div className="section" style={{
+                background: '#f8f9fa',
+                borderRadius: '12px',
+                padding: '30px',
+                border: '1px solid #e5e7eb',
+                transition: 'transform 0.2s ease, box-shadow 0.2s ease'
+              }}>
               <div style={{
                 display: 'flex',
                 justifyContent: 'space-between',
@@ -1100,16 +1098,15 @@ export default function ForeignAffairsPage() {
                   </div>
                 </div>
               </div>
-            </div>
 
-            {/* Eurasia Regional Overview */}
-            <div className="section" style={{
-              background: '#f8f9fa',
-              borderRadius: '12px',
-              padding: '30px',
-              border: '1px solid #e5e7eb',
-              transition: 'transform 0.2s ease, box-shadow 0.2s ease'
-            }}>
+              {/* Eurasia Regional Overview */}
+              <div className="section" style={{
+                background: '#f8f9fa',
+                borderRadius: '12px',
+                padding: '30px',
+                border: '1px solid #e5e7eb',
+                transition: 'transform 0.2s ease, box-shadow 0.2s ease'
+              }}>
               <div style={{
                 display: 'flex',
                 justifyContent: 'space-between',
