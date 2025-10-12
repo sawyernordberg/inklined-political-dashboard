@@ -416,18 +416,6 @@ export default function ForeignAffairsPage() {
                   }}>
                     Indo-Pacific
                   </h3>
-                  <div style={{
-                    padding: '4px 12px',
-                    borderRadius: '6px',
-                    fontSize: '0.8rem',
-                    fontWeight: '600',
-                    textTransform: 'uppercase',
-                    letterSpacing: '0.05em',
-                    background: '#fee2e2',
-                    color: '#dc2626'
-                  }}>
-                    Critical
-                  </div>
                 </div>
                 <div style={{
                   display: 'flex',
@@ -768,18 +756,6 @@ export default function ForeignAffairsPage() {
                   }}>
                     Middle East
                   </h3>
-                  <div style={{
-                    padding: '4px 12px',
-                    borderRadius: '6px',
-                    fontSize: '0.8rem',
-                    fontWeight: '600',
-                    textTransform: 'uppercase',
-                    letterSpacing: '0.05em',
-                    background: '#fee2e2',
-                    color: '#dc2626'
-                  }}>
-                    Critical
-                  </div>
                 </div>
                 <div style={{
                   display: 'flex',
@@ -945,18 +921,6 @@ export default function ForeignAffairsPage() {
                 }}>
                   North America
                 </h3>
-                <div style={{
-                  padding: '4px 12px',
-                  borderRadius: '6px',
-                  fontSize: '0.8rem',
-                  fontWeight: '600',
-                  textTransform: 'uppercase',
-                  letterSpacing: '0.05em',
-                  background: '#dcfce7',
-                  color: '#16a34a'
-                }}>
-                  High Priority
-                </div>
               </div>
               <div style={{
                 display: 'flex',
@@ -1098,6 +1062,7 @@ export default function ForeignAffairsPage() {
                   </div>
                 </div>
               </div>
+            </div>
 
               {/* Eurasia Regional Overview */}
               <div className="section" style={{
@@ -1121,18 +1086,6 @@ export default function ForeignAffairsPage() {
                   }}>
                     Eurasia
                   </h3>
-                  <div style={{
-                    padding: '4px 12px',
-                    borderRadius: '6px',
-                    fontSize: '0.8rem',
-                    fontWeight: '600',
-                    textTransform: 'uppercase',
-                    letterSpacing: '0.05em',
-                    background: '#fee2e2',
-                    color: '#dc2626'
-                  }}>
-                    Critical
-                  </div>
                 </div>
               <div style={{
                 display: 'flex',
@@ -1273,7 +1226,6 @@ export default function ForeignAffairsPage() {
                     {data?.regional_analysis?.['Eurasia']?.regional_security_dynamics?.primary_security_concerns?.join(', ') || 'Russian aggression, Nuclear proliferation, Regional instability'}
                   </div>
                 </div>
-              </div>
               </div>
             </div>
           </div>
