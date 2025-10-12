@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "collection_date": "2025-09-21 16:30:14",
+    "collection_date": "2025-10-12 12:24:58",
     "trump_inauguration_date": "2025-01-20",
-    "days_since_inauguration": 244,
+    "days_since_inauguration": 265,
     "description": "Integrated Economic Dashboard - Tax Policy + Energy + Markets + Monthly Jobs Chart (Tariff data saved separately)",
     "data_baseline": {
       "tax_policy": "IRS + Tax Foundation + Treasury - Structured into Corporate/Individual/Investment categories",
@@ -184,7 +184,7 @@
             "url": "https://api.congress.gov/v3/bill/119/hr/1/subjects?format=json"
           },
           "summaries": {
-            "count": 4,
+            "count": 5,
             "url": "https://api.congress.gov/v3/bill/119/hr/1/summaries?format=json"
           },
           "textVersions": {
@@ -197,8 +197,8 @@
             "url": "https://api.congress.gov/v3/bill/119/hr/1/titles?format=json"
           },
           "type": "HR",
-          "updateDate": "2025-08-29T04:41:14Z",
-          "updateDateIncludingText": "2025-08-29T04:41:14Z"
+          "updateDate": "2025-10-09T03:26:23Z",
+          "updateDateIncludingText": "2025-10-09T03:26:23Z"
         },
         {
           "actions": {
@@ -261,10 +261,26 @@
       "recent_tax_changes": [],
       "proposed_changes": {
         "reconciliation_bills": [],
-        "tax_bills": []
+        "tax_bills": [
+          {
+            "congress": 119,
+            "latestAction": {
+              "actionDate": "2025-10-09",
+              "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent."
+            },
+            "number": "447",
+            "originChamber": "Senate",
+            "originChamberCode": "S",
+            "title": "A resolution designating September 25, 2025, as \"National Ataxia Awareness Day\", and raising awareness of ataxia, ataxia research, and the search for a cure.",
+            "type": "SRES",
+            "updateDate": "2025-10-10",
+            "updateDateIncludingText": "2025-10-10",
+            "url": "https://api.congress.gov/v3/bill/119/sres/447?format=json"
+          }
+        ]
       },
       "treasury_data": [],
-      "collection_date": "2025-09-21 16:29:59",
+      "collection_date": "2025-10-12 12:24:48",
       "source": "Congress.gov API - Comprehensive Tax Policy Tracker",
       "essential_data_focus": "Tax baseline rates, current bills, recent changes, proposed changes"
     },
@@ -274,31 +290,31 @@
         "total_countries": 70,
         "total_distribution_categories": 0,
         "total_updates": 0,
-        "collection_date": "2025-09-21 16:29:59",
+        "collection_date": "2025-10-12 12:24:48",
         "source": "tariff_data_clean.json",
         "data_file_reference": "tariff_data_clean.json"
       },
       "data_excluded": "Actual tariff data saved separately to avoid duplication"
     },
     "stock": {
-      "current_price": 6602.95,
+      "current_price": 6617.74,
       "current_date": "2025-01-20",
-      "inauguration_price": 6664.36,
-      "inauguration_date": "2025-09-19",
-      "performance": -0.9214688282145601,
-      "days_in_office": 244,
-      "date_range": "Sep 19, 2025 to Jan 20, 2025",
+      "inauguration_price": 6552.51,
+      "inauguration_date": "2025-10-10",
+      "performance": 0.9954963823023476,
+      "days_in_office": 265,
+      "date_range": "Oct 10, 2025 to Jan 20, 2025",
       "source": "Yahoo Finance (Fixed Parser)",
-      "historical_data_points": 169,
+      "historical_data_points": 184,
       "historical": [
         {
           "date": "2025-01-20",
-          "open": 6597.81,
-          "high": 6618.56,
-          "low": 6578.95,
-          "close": 6602.95,
-          "volume": 3483409827,
-          "change_pct": 0.08
+          "open": 6603.09,
+          "high": 6630.48,
+          "low": 6577.73,
+          "close": 6617.74,
+          "volume": 3883682739,
+          "change_pct": 0.22
         },
         {
           "date": "2025-01-21",
@@ -1811,13 +1827,148 @@
           "close": 6664.36,
           "volume": 9125960000,
           "change_pct": 0.26
+        },
+        {
+          "date": "2025-09-22",
+          "open": 6654.28,
+          "high": 6698.88,
+          "low": 6648.07,
+          "close": 6693.75,
+          "volume": 5642620000,
+          "change_pct": 0.59
+        },
+        {
+          "date": "2025-09-23",
+          "open": 6692.44,
+          "high": 6699.52,
+          "low": 6645.58,
+          "close": 6656.92,
+          "volume": 5633620000,
+          "change_pct": -0.53
+        },
+        {
+          "date": "2025-09-24",
+          "open": 6669.79,
+          "high": 6672.66,
+          "low": 6621.76,
+          "close": 6637.97,
+          "volume": 5459180000,
+          "change_pct": -0.48
+        },
+        {
+          "date": "2025-09-25",
+          "open": 6608.19,
+          "high": 6619.0,
+          "low": 6569.22,
+          "close": 6604.72,
+          "volume": 5874670000,
+          "change_pct": -0.05
+        },
+        {
+          "date": "2025-09-26",
+          "open": 6615.38,
+          "high": 6648.97,
+          "low": 6604.43,
+          "close": 6643.7,
+          "volume": 5103110000,
+          "change_pct": 0.43
+        },
+        {
+          "date": "2025-09-29",
+          "open": 6661.58,
+          "high": 6677.31,
+          "low": 6644.49,
+          "close": 6661.21,
+          "volume": 5358760000,
+          "change_pct": -0.01
+        },
+        {
+          "date": "2025-09-30",
+          "open": 6656.19,
+          "high": 6691.25,
+          "low": 6641.0,
+          "close": 6688.46,
+          "volume": 6057210000,
+          "change_pct": 0.48
+        },
+        {
+          "date": "2025-10-01",
+          "open": 6664.92,
+          "high": 6718.48,
+          "low": 6656.2,
+          "close": 6711.2,
+          "volume": 6037950000,
+          "change_pct": 0.69
+        },
+        {
+          "date": "2025-10-02",
+          "open": 6731.31,
+          "high": 6731.94,
+          "low": 6693.23,
+          "close": 6715.35,
+          "volume": 5416130000,
+          "change_pct": -0.24
+        },
+        {
+          "date": "2025-10-03",
+          "open": 6722.14,
+          "high": 6750.87,
+          "low": 6705.67,
+          "close": 6715.79,
+          "volume": 5713110000,
+          "change_pct": -0.09
+        },
+        {
+          "date": "2025-10-06",
+          "open": 6733.86,
+          "high": 6749.52,
+          "low": 6717.78,
+          "close": 6740.28,
+          "volume": 5604460000,
+          "change_pct": 0.1
+        },
+        {
+          "date": "2025-10-07",
+          "open": 6746.14,
+          "high": 6754.49,
+          "low": 6699.96,
+          "close": 6714.59,
+          "volume": 5546150000,
+          "change_pct": -0.47
+        },
+        {
+          "date": "2025-10-08",
+          "open": 6723.87,
+          "high": 6755.64,
+          "low": 6718.09,
+          "close": 6753.72,
+          "volume": 5383130000,
+          "change_pct": 0.44
+        },
+        {
+          "date": "2025-10-09",
+          "open": 6760.5,
+          "high": 6764.58,
+          "low": 6716.17,
+          "close": 6735.11,
+          "volume": 5385020000,
+          "change_pct": -0.38
+        },
+        {
+          "date": "2025-10-10",
+          "open": 6740.49,
+          "high": 6762.4,
+          "low": 6550.78,
+          "close": 6552.51,
+          "volume": 5385020000,
+          "change_pct": -2.79
         }
       ]
     },
     "energy": {
       "Gasoline (Regular, Weekly)": {
-        "current": 3.168,
-        "current_date": "2025-09-15",
+        "current": 3.124,
+        "current_date": "2025-10-06",
         "inauguration_price": 3.109,
         "inauguration_date": "2025-01-20",
         "biden_average": 3.3038490566037737,
@@ -1826,18 +1977,18 @@
         "biden_recent": 3.006,
         "biden_recent_date": "2024-12-30",
         "changes": {
-          "since_inauguration": 0.05900000000000016,
-          "pct_since_inauguration": 1.8977163074943766,
-          "since_biden_avg": -0.13584905660377355,
-          "pct_since_biden_avg": -4.111842105263157,
-          "vs_biden_peak": -0.5,
-          "pct_vs_biden_peak": -13.631406761177752,
-          "vs_biden_recent": 0.16200000000000037,
-          "pct_vs_biden_recent": 5.38922155688624
+          "since_inauguration": 0.015000000000000124,
+          "pct_since_inauguration": 0.48247024766806446,
+          "since_biden_avg": -0.1798490566037736,
+          "pct_since_biden_avg": -5.4436220760233915,
+          "vs_biden_peak": -0.544,
+          "pct_vs_biden_peak": -14.830970556161397,
+          "vs_biden_recent": 0.11800000000000033,
+          "pct_vs_biden_recent": 3.9254823685961524
         },
         "date_ranges": {
-          "inauguration": "Jan 20, 2025 to Sep 15, 2025",
-          "biden_comparison": "Dec 30, 2024 to Sep 15, 2025"
+          "inauguration": "Jan 20, 2025 to Oct 06, 2025",
+          "biden_comparison": "Dec 30, 2024 to Oct 06, 2025"
         },
         "series_id": "GASREGW",
         "frequency": "Weekly",
@@ -1849,8 +2000,8 @@
         }
       },
       "Crude Oil WTI (Weekly)": {
-        "current": 63.06,
-        "current_date": "2025-09-12",
+        "current": 62.59,
+        "current_date": "2025-10-03",
         "inauguration_price": 79.28,
         "inauguration_date": "2025-01-17",
         "biden_average": 76.60115384615385,
@@ -1859,18 +2010,18 @@
         "biden_recent": 70.51,
         "biden_recent_date": "2024-12-27",
         "changes": {
-          "since_inauguration": -16.22,
-          "pct_since_inauguration": -20.459132189707365,
-          "since_biden_avg": -13.541153846153847,
-          "pct_since_biden_avg": -17.677480254866616,
-          "vs_biden_peak": -23.439999999999998,
-          "pct_vs_biden_peak": -27.098265895953755,
-          "vs_biden_recent": -7.450000000000003,
-          "pct_vs_biden_recent": -10.56587718054177
+          "since_inauguration": -16.689999999999998,
+          "pct_since_inauguration": -21.051967709384456,
+          "since_biden_avg": -14.011153846153846,
+          "pct_since_biden_avg": -18.291048036030787,
+          "vs_biden_peak": -23.909999999999997,
+          "pct_vs_biden_peak": -27.64161849710982,
+          "vs_biden_recent": -7.920000000000002,
+          "pct_vs_biden_recent": -11.23244929797192
         },
         "date_ranges": {
-          "inauguration": "Jan 17, 2025 to Sep 12, 2025",
-          "biden_comparison": "Dec 27, 2024 to Sep 12, 2025"
+          "inauguration": "Jan 17, 2025 to Oct 03, 2025",
+          "biden_comparison": "Dec 27, 2024 to Oct 03, 2025"
         },
         "series_id": "WCOILWTICO",
         "frequency": "Weekly",
@@ -1882,8 +2033,8 @@
         }
       },
       "Natural Gas Henry Hub (Weekly)": {
-        "current": 2.96,
-        "current_date": "2025-09-12",
+        "current": 3.16,
+        "current_date": "2025-10-03",
         "inauguration_price": 5.47,
         "inauguration_date": "2025-01-17",
         "biden_average": 2.186923076923077,
@@ -1892,18 +2043,18 @@
         "biden_recent": 2.94,
         "biden_recent_date": "2024-12-27",
         "changes": {
-          "since_inauguration": -2.51,
-          "pct_since_inauguration": -45.88665447897623,
-          "since_biden_avg": 0.773076923076923,
-          "pct_since_biden_avg": 35.34998241294407,
-          "vs_biden_peak": -2.1500000000000004,
-          "pct_vs_biden_peak": -42.074363992172216,
-          "vs_biden_recent": 0.020000000000000018,
-          "pct_vs_biden_recent": 0.680272108843538
+          "since_inauguration": -2.3099999999999996,
+          "pct_since_inauguration": -42.23034734917733,
+          "since_biden_avg": 0.9730769230769232,
+          "pct_since_biden_avg": 44.495251494899755,
+          "vs_biden_peak": -1.9500000000000002,
+          "pct_vs_biden_peak": -38.160469667318985,
+          "vs_biden_recent": 0.2200000000000002,
+          "pct_vs_biden_recent": 7.482993197278918
         },
         "date_ranges": {
-          "inauguration": "Jan 17, 2025 to Sep 12, 2025",
-          "biden_comparison": "Dec 27, 2024 to Sep 12, 2025"
+          "inauguration": "Jan 17, 2025 to Oct 03, 2025",
+          "biden_comparison": "Dec 27, 2024 to Oct 03, 2025"
         },
         "series_id": "WHHNGSP",
         "frequency": "Weekly",
@@ -1945,60 +2096,60 @@
         "as_of_biden": "As of August 01, 2024"
       },
       "GDP (Real)": {
-        "current_value": 23703.782,
+        "current_value": 23770.976,
         "current_date": "2025-04-01",
         "current_month_year": "April 2025",
-        "biden_value": 23223.906,
+        "biden_value": 23286.508,
         "biden_date": "2024-04-01",
         "biden_month_year": "April 2024",
-        "change": 479.8760000000002,
-        "change_pct": 2.0663018529268946,
+        "change": 484.4679999999971,
+        "change_pct": 2.080466508761198,
         "comparison_type": "Same Month Comparison",
         "days_apart_from_year": 0,
         "as_of_current": "As of April 01, 2025",
         "as_of_biden": "As of April 01, 2024"
       },
       "GDP Growth Rate": {
-        "current_value": 3.3,
+        "current_value": 3.8,
         "current_date": "2025-04-01",
         "current_month_year": "April 2025",
-        "biden_value": 3.0,
+        "biden_value": 3.6,
         "biden_date": "2024-04-01",
         "biden_month_year": "April 2024",
-        "change": 0.2999999999999998,
-        "change_pct": 9.999999999999993,
+        "change": 0.19999999999999973,
+        "change_pct": 5.555555555555548,
         "comparison_type": "Same Month Comparison",
         "days_apart_from_year": 0,
         "as_of_current": "As of April 01, 2025",
         "as_of_biden": "As of April 01, 2024"
       },
       "Consumer Confidence": {
-        "current_value": 61.7,
-        "current_date": "2025-07-01",
-        "current_month_year": "July 2025",
-        "biden_value": 66.4,
-        "biden_date": "2024-07-01",
-        "biden_month_year": "July 2024",
-        "change": -4.700000000000003,
-        "change_pct": -7.078313253012052,
+        "current_value": 58.2,
+        "current_date": "2025-08-01",
+        "current_month_year": "August 2025",
+        "biden_value": 67.9,
+        "biden_date": "2024-08-01",
+        "biden_month_year": "August 2024",
+        "change": -9.700000000000003,
+        "change_pct": -14.285714285714288,
         "comparison_type": "Same Month Comparison",
         "days_apart_from_year": 0,
-        "as_of_current": "As of July 01, 2025",
-        "as_of_biden": "As of July 01, 2024"
+        "as_of_current": "As of August 01, 2025",
+        "as_of_biden": "As of August 01, 2024"
       },
       "Personal Income": {
-        "current_value": 25905.4,
-        "current_date": "2025-07-01",
-        "current_month_year": "July 2025",
-        "biden_value": 24669.3,
-        "biden_date": "2024-07-01",
-        "biden_month_year": "July 2024",
-        "change": 1236.1000000000022,
-        "change_pct": 5.010681292132335,
+        "current_value": 26279.9,
+        "current_date": "2025-08-01",
+        "current_month_year": "August 2025",
+        "biden_value": 25013.0,
+        "biden_date": "2024-08-01",
+        "biden_month_year": "August 2024",
+        "change": 1266.9000000000015,
+        "change_pct": 5.064966217566871,
         "comparison_type": "Same Month Comparison",
         "days_apart_from_year": 0,
-        "as_of_current": "As of July 01, 2025",
-        "as_of_biden": "As of July 01, 2024"
+        "as_of_current": "As of August 01, 2025",
+        "as_of_biden": "As of August 01, 2024"
       },
       "Retail Sales": {
         "current_value": 732010.0,
@@ -2201,14 +2352,14 @@
         "as_of_biden": "As of December 01, 2024"
       },
       "Case Shiller Index": {
-        "current": 326.358,
-        "current_date": "2025-06-01",
-        "biden_value": 327.902,
+        "current": 326.43,
+        "current_date": "2025-07-01",
+        "biden_value": 327.834,
         "biden_date": "2024-12-01",
-        "change": -1.5439999999999827,
-        "change_pct": -0.4708723948008804,
-        "date_range": "Dec 01, 2024 to Jun 01, 2025",
-        "as_of_current": "As of June 01, 2025",
+        "change": -1.4039999999999964,
+        "change_pct": -0.42826552462526657,
+        "date_range": "Dec 01, 2024 to Jul 01, 2025",
+        "as_of_current": "As of July 01, 2025",
         "as_of_biden": "As of December 01, 2024"
       }
     },
@@ -2311,63 +2462,63 @@
       "url": "https://api.congress.gov/v3",
       "type": "Tax Policy",
       "description": "Federal legislation and bill tracking",
-      "timestamp": "2025-09-21 16:29:54"
+      "timestamp": "2025-10-12 12:24:42"
     },
     {
       "name": "IRS.gov",
       "url": "https://www.irs.gov",
       "type": "Tax Policy",
       "description": "Current tax rates and regulations",
-      "timestamp": "2025-09-21 16:29:54"
+      "timestamp": "2025-10-12 12:24:42"
     },
     {
       "name": "Tax Foundation",
       "url": "https://taxfoundation.org",
       "type": "Tax Policy",
       "description": "Tax policy research and analysis",
-      "timestamp": "2025-09-21 16:29:54"
+      "timestamp": "2025-10-12 12:24:42"
     },
     {
       "name": "Treasury Fiscal Data API",
       "url": "https://api.fiscaldata.treasury.gov",
       "type": "Tax Policy",
       "description": "Federal revenue and fiscal data",
-      "timestamp": "2025-09-21 16:29:54"
+      "timestamp": "2025-10-12 12:24:42"
     },
     {
       "name": "Tariff Data Clean",
       "url": "tariff_data_clean.json",
       "type": "Tariff Data",
       "description": "Country tariff rates and distribution analysis",
-      "timestamp": "2025-09-21 16:29:59"
+      "timestamp": "2025-10-12 12:24:48"
     },
     {
       "name": "Yahoo Finance",
-      "url": "https://finance.yahoo.com/quote/%5EGSPC/history/?period1=1737331200&period2=1758472199",
+      "url": "https://finance.yahoo.com/quote/%5EGSPC/history/?period1=1737331200&period2=1760271888",
       "type": "Stock Data",
       "description": "S&P 500 Historical Prices from January 20, 2025",
-      "timestamp": "2025-09-21 16:29:59"
+      "timestamp": "2025-10-12 12:24:48"
     },
     {
       "name": "Federal Reserve Economic Data (FRED) - Energy",
       "url": "https://api.stlouisfed.org/fred",
       "type": "Energy Data",
       "description": "Gasoline, crude oil, and natural gas prices from EIA via FRED",
-      "timestamp": "2025-09-21 16:30:00"
+      "timestamp": "2025-10-12 12:24:48"
     },
     {
       "name": "Federal Reserve Economic Data (FRED)",
       "url": "https://api.stlouisfed.org/fred",
       "type": "Economic Data",
       "description": "Economic indicators and time series data",
-      "timestamp": "2025-09-21 16:30:02"
+      "timestamp": "2025-10-12 12:24:50"
     },
     {
       "name": "Bureau of Labor Statistics (BLS)",
       "url": "https://api.bls.gov",
       "type": "Employment Data",
       "description": "Employment statistics and wage data",
-      "timestamp": "2025-09-21 16:30:07"
+      "timestamp": "2025-10-12 12:24:53"
     }
   ]
 }

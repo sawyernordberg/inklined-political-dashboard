@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "collection_date": "2025-10-12T12:30:41.581615",
+    "collection_date": "2025-10-12T12:27:32.115098",
     "reference_president": "Donald Trump (2nd Term)",
     "reference_inauguration": "2025-01-20T00:00:00",
     "comparison_period_days": 265,
-    "comparison_end_date": "2025-10-12T12:30:19.344686",
+    "comparison_end_date": "2025-10-12T12:27:09.486179",
     "description": "S&P 500 performance for each president during their first 265 days in office",
     "data_source": "Yahoo Finance",
     "presidents_included": 9,

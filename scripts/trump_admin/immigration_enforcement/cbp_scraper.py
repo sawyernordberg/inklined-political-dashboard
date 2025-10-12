@@ -192,8 +192,9 @@ class CBPApprehensionsScraper:
         """Save the structured data to JSON files"""
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         
-        # Save main data file
-        main_file = self.data_dir / 'cbp_apprehensions_data.json'
+        # Save main data file to public folder
+        public_data_dir = Path(__file__).parent.parent.parent.parent / 'public' / 'data'
+        main_file = public_data_dir / 'cbp_apprehensions_data.json'
         with open(main_file, 'w', encoding='utf-8') as f:
             json.dump(data, f, indent=2, ensure_ascii=False)
         logger.info(f"Saved main data to {main_file}")

@@ -576,7 +576,7 @@ class PresidentialSP500Comparison:
         else:
             return obj
     
-    def export_to_json(self, filename: str = "presidential_sp500_comparison.json"):
+    def export_to_json(self, filename: str = "../../../public/data/presidential_sp500_comparison.json"):
         """Export all collected data to JSON file"""
         try:
             # Convert all presidential data to remove datetime objects
