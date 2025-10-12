@@ -268,8 +268,6 @@ export default function ForeignAffairsPage() {
         <div className="scroll-progress"></div>
       </div>
 
-
-      <Navigation currentPath="/foreign-affairs" />
       <main role="main">
         <div className="container" style={{
           maxWidth: '1200px',
@@ -1159,7 +1157,7 @@ export default function ForeignAffairsPage() {
             fontSize: '0.9rem',
             color: '#666'
           }}>
-            <strong>Data Source:</strong> Enhanced Foreign Affairs Database with AI-powered analysis | 
+            <strong>Data Source:</strong> Enhanced Foreign Affairs Database with AI-assisted analysis | 
             <strong>Last Updated:</strong> {new Date(data.metadata.last_overview_update).toLocaleDateString()} | 
             <strong>Analysis Tools:</strong> {data.metadata.research_tools.join(', ')}
           </div>
