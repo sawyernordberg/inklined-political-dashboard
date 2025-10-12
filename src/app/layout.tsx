@@ -18,18 +18,28 @@ export const metadata: Metadata = {
     default: "The Inklined - Political Dashboard Hub",
     template: "%s | The Inklined"
   },
-  description: "Comprehensive analysis and real-time tracking of US political developments, policy changes, and government data. Track Trump administration policies, US immigration enforcement, economic indicators, and campaign promises.",
+  description: "The Inklined delivers comprehensive political analysis, government data insights, and real-time tracking of US policy developments. Your trusted source for political news, government statistics, and policy research.",
   keywords: [
-    "political dashboard",
-    "Trump administration",
+    "inklined",
+    "political news",
     "government data",
     "political analysis",
+    "political dashboard",
+    "Trump administration",
     "immigration enforcement",
     "economic policy",
     "campaign promises",
     "political transparency",
     "government accountability",
-    "policy tracking"
+    "policy tracking",
+    "political insights",
+    "government statistics",
+    "political research",
+    "public policy",
+    "political trends",
+    "government analysis",
+    "political data",
+    "policy research"
   ],
   authors: [{ name: "Inklined" }],
   creator: "Inklined",
@@ -45,7 +55,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "The Inklined - Political Dashboard Hub",
-    description: "Comprehensive analysis and real-time tracking of US political developments, policy changes, and government data.",
+    description: "The Inklined delivers comprehensive political analysis, government data insights, and real-time tracking of US policy developments. Your trusted source for political news and policy research.",
     url: 'https://theinklined.com',
     siteName: 'The Inklined',
     images: [
@@ -62,7 +72,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: "The Inklined - Political Dashboard Hub",
-    description: "Comprehensive analysis and real-time tracking of US political developments, policy changes, and government data.",
+    description: "The Inklined delivers comprehensive political analysis, government data insights, and real-time tracking of US policy developments. Your trusted source for political news and policy research.",
     images: ['/og-image.png'],
     creator: '@inklined',
   },
@@ -143,7 +153,7 @@ export default function RootLayout({
               "name": "The Inklined - Political Dashboard Hub",
               "alternateName": "The Inklined",
               "url": "https://theinklined.com",
-              "description": "Comprehensive analysis and real-time tracking of US political developments, policy changes, and government data. Track Trump administration policies, US immigration enforcement, economic indicators, and campaign promises.",
+              "description": "The Inklined delivers comprehensive political analysis, government data insights, and real-time tracking of US policy developments. Your trusted source for political news, government statistics, and policy research.",
               "creator": {
                 "@type": "Organization",
                 "name": "The Inklined",
