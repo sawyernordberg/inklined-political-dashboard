@@ -32,6 +32,43 @@ interface ChallengesAndOpportunities {
   cooperation_opportunities: string[];
 }
 
+interface RegionalSecurityDynamics {
+  primary_security_concerns: string[];
+  us_security_role: string;
+  alliance_structures: string;
+  deterrence_strategies: string;
+}
+
+interface RegionalAnalysis {
+  region_name: string;
+  countries: Array<{
+    code: string;
+    name: string;
+  }>;
+  strategic_priority: string;
+  key_challenges: string[];
+  us_initiatives: string[];
+  total_military_spending_billions: number;
+  nato_members: number;
+  relationship_strength: string;
+  comprehensive_regional_overview: string;
+  regional_security_dynamics: RegionalSecurityDynamics;
+  economic_engagement: {
+    trade_relationships: string;
+    investment_patterns: string;
+    economic_initiatives: string;
+    energy_security: string;
+  };
+  diplomatic_strategy: {
+    multilateral_engagement: string;
+    bilateral_priorities: string[];
+    diplomatic_instruments: string;
+    regional_coordination: string;
+  };
+  status: string;
+  analysis_date: string;
+}
+
 interface BilateralRelation {
   country_name: string;
   relationship_strength: string;
@@ -67,12 +104,27 @@ interface ForeignAffairsData {
   bilateral_relations: {
     [key: string]: BilateralRelation;
   };
+  regional_analysis: {
+    [key: string]: RegionalAnalysis;
+  };
 }
 
 export default function ForeignAffairsPage() {
   const [data, setData] = useState<ForeignAffairsData | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [selectedCountry, setSelectedCountry] = useState<BilateralRelation | null>(null);
+  const [showModal, setShowModal] = useState(false);
+
+  const handleCountryClick = (country: BilateralRelation) => {
+    setSelectedCountry(country);
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+    setSelectedCountry(null);
+  };
 
   useEffect(() => {
     // Fetch real data from the JSON file
@@ -80,7 +132,7 @@ export default function ForeignAffairsPage() {
       try {
         setLoading(true);
         // Fetch the real JSON data
-        const response = await fetch('/data/foreign_affairs_data_condensed.json');
+        const response = await fetch('/data/enhanced_foreign_affairs_data_detailed.json');
         if (!response.ok) {
           throw new Error(`Failed to fetch data: ${response.status}`);
         }
@@ -492,6 +544,30 @@ export default function ForeignAffairsPage() {
                       Maritime Disputes
                     </span>
                   </div>
+                  
+                  <div style={{
+                    marginTop: '15px',
+                    padding: '15px',
+                    backgroundColor: '#fef2f2',
+                    borderRadius: '8px',
+                    border: '1px solid #fecaca'
+                  }}>
+                    <div style={{
+                      fontSize: '0.9rem',
+                      fontWeight: '600',
+                      color: '#dc2626',
+                      marginBottom: '8px'
+                    }}>
+                      Primary Security Concerns
+                    </div>
+                    <div style={{
+                      fontSize: '0.85rem',
+                      color: '#7f1d1d',
+                      lineHeight: '1.4'
+                    }}>
+                      {data?.regional_analysis?.['Indo-Pacific']?.regional_security_dynamics?.primary_security_concerns?.join(', ') || 'China\'s military expansion, North Korea\'s nuclear program, maritime disputes in the South China Sea, cybersecurity threats'}
+                    </div>
+                  </div>
                 </div>
               </div>
 
@@ -644,6 +720,30 @@ export default function ForeignAffairsPage() {
                       Defense Spending
                     </span>
                   </div>
+                  
+                  <div style={{
+                    marginTop: '15px',
+                    padding: '15px',
+                    backgroundColor: '#fef2f2',
+                    borderRadius: '8px',
+                    border: '1px solid #fecaca'
+                  }}>
+                    <div style={{
+                      fontSize: '0.9rem',
+                      fontWeight: '600',
+                      color: '#dc2626',
+                      marginBottom: '8px'
+                    }}>
+                      Primary Security Concerns
+                    </div>
+                    <div style={{
+                      fontSize: '0.85rem',
+                      color: '#7f1d1d',
+                      lineHeight: '1.4'
+                    }}>
+                      {data?.regional_analysis?.['Europe']?.regional_security_dynamics?.primary_security_concerns?.join(', ') || 'Russian aggression, Terrorism, Cybersecurity threats, Regional conflicts'}
+                    </div>
+                  </div>
                 </div>
               </div>
 
@@ -795,6 +895,30 @@ export default function ForeignAffairsPage() {
                     }}>
                       Regional Conflicts
                     </span>
+                  </div>
+                  
+                  <div style={{
+                    marginTop: '15px',
+                    padding: '15px',
+                    backgroundColor: '#fef2f2',
+                    borderRadius: '8px',
+                    border: '1px solid #fecaca'
+                  }}>
+                    <div style={{
+                      fontSize: '0.9rem',
+                      fontWeight: '600',
+                      color: '#dc2626',
+                      marginBottom: '8px'
+                    }}>
+                      Primary Security Concerns
+                    </div>
+                    <div style={{
+                      fontSize: '0.85rem',
+                      color: '#7f1d1d',
+                      lineHeight: '1.4'
+                    }}>
+                      {data?.regional_analysis?.['Middle East']?.regional_security_dynamics?.primary_security_concerns?.join(', ') || 'Iranian Influence, Terrorism, Regional Conflicts, Cybersecurity Threats'}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1014,13 +1138,27 @@ export default function ForeignAffairsPage() {
               gap: '30px'
             }}>
               {Object.entries(data.bilateral_relations).map(([code, country]) => (
-                <div key={code} className="country-card section" style={{
-                  background: '#f8f9fa',
-                  borderRadius: '12px',
-                  padding: '30px',
-                  border: '1px solid #e5e7eb',
-                  transition: 'transform 0.2s ease, box-shadow 0.2s ease'
-                }}>
+                <div 
+                  key={code} 
+                  className="country-card section" 
+                  onClick={() => handleCountryClick(country)}
+                  style={{
+                    background: '#f8f9fa',
+                    borderRadius: '12px',
+                    padding: '30px',
+                    border: '1px solid #e5e7eb',
+                    transition: 'transform 0.2s ease, box-shadow 0.2s ease',
+                    cursor: 'pointer'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.transform = 'translateY(-2px)';
+                    e.currentTarget.style.boxShadow = '0 10px 25px rgba(0, 0, 0, 0.1)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.transform = 'translateY(0)';
+                    e.currentTarget.style.boxShadow = 'none';
+                  }}
+                >
                   <div style={{
                     display: 'flex',
                     justifyContent: 'space-between',
@@ -1088,16 +1226,6 @@ export default function ForeignAffairsPage() {
                     {country.diplomatic_status}
                   </div>
 
-                  <div style={{
-                    fontSize: '0.9rem',
-                    color: '#374151',
-                    lineHeight: '1.5',
-                    marginBottom: '20px'
-                  }}>
-                    {country.detailed_relationship_summary.length > 200 
-                      ? country.detailed_relationship_summary.substring(0, 200) + '...'
-                      : country.detailed_relationship_summary}
-                  </div>
 
                   <div style={{
                     display: 'flex',
@@ -1126,21 +1254,6 @@ export default function ForeignAffairsPage() {
                     gap: '15px'
                   }}>
                     <div>
-                      <div style={{
-                        fontSize: '0.9rem',
-                        fontWeight: '600',
-                        color: '#64748b',
-                        marginBottom: '8px'
-                      }}>
-                        Trade Volume
-                      </div>
-                      <div style={{
-                        fontSize: '1rem',
-                        color: '#1e293b',
-                        fontWeight: '500'
-                      }}>
-                        {country.economic_cooperation.trade_volume_estimate}
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -1245,6 +1358,211 @@ export default function ForeignAffairsPage() {
         </div>
       </footer>
       </Navigation>
+
+      {/* Country Detail Modal */}
+      {showModal && selectedCountry && (
+        <div style={{
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          backgroundColor: 'rgba(0, 0, 0, 0.5)',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          zIndex: 1000,
+          padding: '20px'
+        }} onClick={closeModal}>
+          <div style={{
+            backgroundColor: 'white',
+            borderRadius: '12px',
+            maxWidth: '800px',
+            maxHeight: '90vh',
+            width: '100%',
+            overflow: 'auto',
+            position: 'relative'
+          }} onClick={(e) => e.stopPropagation()}>
+            {/* Modal Header */}
+            <div style={{
+              padding: '30px 30px 0 30px',
+              borderBottom: '1px solid #e5e7eb',
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center'
+            }}>
+              <h2 style={{
+                fontSize: '2rem',
+                fontWeight: '700',
+                color: '#1e293b',
+                margin: 0,
+                fontFamily: 'Georgia, Times New Roman, serif'
+              }}>
+                {selectedCountry.country_name}
+              </h2>
+              <button
+                onClick={closeModal}
+                style={{
+                  background: 'none',
+                  border: 'none',
+                  fontSize: '1.5rem',
+                  cursor: 'pointer',
+                  color: '#64748b',
+                  padding: '5px'
+                }}
+              >
+                ×
+              </button>
+            </div>
+
+            {/* Modal Content */}
+            <div style={{ padding: '30px' }}>
+              {/* Detailed Summary */}
+              <div style={{
+                marginBottom: '30px',
+                padding: '20px',
+                backgroundColor: '#f8f9fa',
+                borderRadius: '8px'
+              }}>
+                <h3 style={{
+                  fontSize: '1.2rem',
+                  fontWeight: '600',
+                  color: '#1e293b',
+                  marginBottom: '15px'
+                }}>
+                  Relationship Overview
+                </h3>
+                <p style={{
+                  fontSize: '1rem',
+                  lineHeight: '1.6',
+                  color: '#374151',
+                  margin: 0
+                }}>
+                  {selectedCountry.detailed_relationship_summary}
+                </p>
+              </div>
+
+              {/* Key Metrics Grid */}
+              <div style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+                gap: '20px',
+                marginBottom: '30px'
+              }}>
+                <div style={{
+                  padding: '20px',
+                  backgroundColor: '#f0f9ff',
+                  borderRadius: '8px',
+                  textAlign: 'center'
+                }}>
+                  <div style={{ fontSize: '0.9rem', color: '#0369a1', fontWeight: '600', marginBottom: '8px' }}>
+                    Relationship Score
+                  </div>
+                  <div style={{ fontSize: '2rem', fontWeight: '700', color: '#1e293b' }}>
+                    {selectedCountry.relationship_score}/100
+                  </div>
+                </div>
+
+                <div style={{
+                  padding: '20px',
+                  backgroundColor: '#f0fdf4',
+                  borderRadius: '8px',
+                  textAlign: 'center'
+                }}>
+                  <div style={{ fontSize: '0.9rem', color: '#059669', fontWeight: '600', marginBottom: '8px' }}>
+                    Trade Volume
+                  </div>
+                  <div style={{ fontSize: '1.2rem', fontWeight: '600', color: '#1e293b' }}>
+                    {selectedCountry.economic_cooperation.trade_volume_estimate}
+                  </div>
+                </div>
+
+                <div style={{
+                  padding: '20px',
+                  backgroundColor: '#fef3c7',
+                  borderRadius: '8px',
+                  textAlign: 'center'
+                }}>
+                  <div style={{ fontSize: '0.9rem', color: '#d97706', fontWeight: '600', marginBottom: '8px' }}>
+                    Economic Ties
+                  </div>
+                  <div style={{ fontSize: '1.2rem', fontWeight: '600', color: '#1e293b' }}>
+                    {selectedCountry.economic_ties}
+                  </div>
+                </div>
+
+                <div style={{
+                  padding: '20px',
+                  backgroundColor: '#fce7f3',
+                  borderRadius: '8px',
+                  textAlign: 'center'
+                }}>
+                  <div style={{ fontSize: '0.9rem', color: '#be185d', fontWeight: '600', marginBottom: '8px' }}>
+                    Military Cooperation
+                  </div>
+                  <div style={{ fontSize: '1.2rem', fontWeight: '600', color: '#1e293b' }}>
+                    {selectedCountry.military_cooperation}
+                  </div>
+                </div>
+              </div>
+
+              {/* Key Issues */}
+              <div style={{ marginBottom: '30px' }}>
+                <h3 style={{
+                  fontSize: '1.2rem',
+                  fontWeight: '600',
+                  color: '#1e293b',
+                  marginBottom: '15px'
+                }}>
+                  Key Issues
+                </h3>
+                <div style={{
+                  display: 'flex',
+                  flexWrap: 'wrap',
+                  gap: '8px'
+                }}>
+                  {selectedCountry.key_issues.map((issue, index) => (
+                    <span key={index} style={{
+                      backgroundColor: '#dbeafe',
+                      color: '#1e40af',
+                      padding: '6px 12px',
+                      borderRadius: '20px',
+                      fontSize: '0.9rem',
+                      fontWeight: '500'
+                    }}>
+                      {issue}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* Diplomatic Status */}
+              <div style={{
+                padding: '20px',
+                backgroundColor: '#f8f9fa',
+                borderRadius: '8px',
+                marginBottom: '20px'
+              }}>
+                <h3 style={{
+                  fontSize: '1.2rem',
+                  fontWeight: '600',
+                  color: '#1e293b',
+                  marginBottom: '10px'
+                }}>
+                  Diplomatic Status
+                </h3>
+                <p style={{
+                  fontSize: '1rem',
+                  color: '#374151',
+                  margin: 0
+                }}>
+                  {selectedCountry.diplomatic_status}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 }
