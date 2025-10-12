@@ -24,9 +24,19 @@ export async function GET() {
       fs.readFileSync(path.join(publicDataDir, 'integrated_economic_dashboard.json'), 'utf8')
     );
     
-    const tariffData = JSON.parse(
+    const tariffAnalysisData = JSON.parse(
+      fs.readFileSync(path.join(publicDataDir, 'gemini_tariff_analysis.json'), 'utf8')
+    );
+    
+    const tariffCountryData = JSON.parse(
       fs.readFileSync(path.join(publicDataDir, 'tariff_data_clean.json'), 'utf8')
     );
+    
+    // Merge tariff data
+    const tariffData = {
+      ...tariffAnalysisData,
+      country_tariffs: tariffCountryData.country_tariffs || []
+    };
     
     const stockData = JSON.parse(
       fs.readFileSync(path.join(process.cwd(), 'public', 'data', 'presidential_sp500_comparison.json'), 'utf8')

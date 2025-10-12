@@ -487,13 +487,13 @@ export default function EconomicPolicyPage() {
       return <div className="loading">Loading tariff data...</div>;
     }
 
-    const updates = Array.isArray(data.tariff.updates) ? data.tariff.updates : [];
+    const updates = Array.isArray(data.tariff.tariff_updates) ? data.tariff.tariff_updates : [];
     const countryTariffs = Array.isArray(data.tariff.country_tariffs) ? data.tariff.country_tariffs : [];
     
     // Sort updates by date (most recent first)
     const sortedUpdates = [...updates].sort((a: Record<string, unknown>, b: Record<string, unknown>) => {
-      const dateA = new Date(a.date || a.announcement_date || 0);
-      const dateB = new Date(b.date || b.announcement_date || 0);
+      const dateA = new Date(a.announcement_date || 0);
+      const dateB = new Date(b.announcement_date || 0);
       return dateB.getTime() - dateA.getTime();
     });
 
