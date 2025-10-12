@@ -923,6 +923,361 @@ export default function ForeignAffairsPage() {
                 </div>
               </div>
             </div>
+
+            {/* North America Regional Overview */}
+            <div className="section" style={{
+              background: '#f8f9fa',
+              borderRadius: '12px',
+              padding: '30px',
+              border: '1px solid #e5e7eb',
+              transition: 'transform 0.2s ease, box-shadow 0.2s ease',
+              marginBottom: '30px'
+            }}>
+              <div style={{
+                display: 'flex',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+                marginBottom: '20px'
+              }}>
+                <h3 style={{
+                  fontSize: '1.4rem',
+                  fontWeight: '600',
+                  color: '#1e293b',
+                  fontFamily: 'Georgia, Times New Roman, serif'
+                }}>
+                  North America
+                </h3>
+                <div style={{
+                  padding: '4px 12px',
+                  borderRadius: '6px',
+                  fontSize: '0.8rem',
+                  fontWeight: '600',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.05em',
+                  background: '#dcfce7',
+                  color: '#16a34a'
+                }}>
+                  High Priority
+                </div>
+              </div>
+              <div style={{
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '15px'
+              }}>
+                <div style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  padding: '8px 0',
+                  borderBottom: '1px solid #e5e7eb'
+                }}>
+                  <span style={{
+                    fontSize: '0.9rem',
+                    color: '#64748b',
+                    fontWeight: '500'
+                  }}>
+                    Key Partners
+                  </span>
+                  <span style={{
+                    fontWeight: '600',
+                    color: '#1e293b'
+                  }}>
+                    Canada, Mexico
+                  </span>
+                </div>
+                <div style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  padding: '8px 0',
+                  borderBottom: '1px solid #e5e7eb'
+                }}>
+                  <span style={{
+                    fontSize: '0.9rem',
+                    color: '#64748b',
+                    fontWeight: '500'
+                  }}>
+                    Strategic Focus
+                  </span>
+                  <span style={{
+                    fontWeight: '600',
+                    color: '#1e293b'
+                  }}>
+                    USMCA, NORAD, Security
+                  </span>
+                </div>
+                <div style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  padding: '8px 0'
+                }}>
+                  <span style={{
+                    fontSize: '0.9rem',
+                    color: '#64748b',
+                    fontWeight: '500'
+                  }}>
+                    Trade Volume
+                  </span>
+                  <span style={{
+                    fontWeight: '600',
+                    color: '#1e293b'
+                  }}>
+                    $1.2T+ Annually
+                  </span>
+                </div>
+              </div>
+              <div style={{
+                marginTop: '15px'
+              }}>
+                <div style={{
+                  fontSize: '0.9rem',
+                  fontWeight: '600',
+                  color: '#374151',
+                  marginBottom: '8px'
+                }}>
+                  Key Challenges
+                </div>
+                <div style={{
+                  display: 'flex',
+                  flexWrap: 'wrap',
+                  gap: '6px'
+                }}>
+                  <span style={{
+                    background: '#e5e7eb',
+                    color: '#374151',
+                    padding: '4px 8px',
+                    borderRadius: '4px',
+                    fontSize: '0.8rem',
+                    fontWeight: '500'
+                  }}>
+                    Migration
+                  </span>
+                  <span style={{
+                    background: '#e5e7eb',
+                    color: '#374151',
+                    padding: '4px 8px',
+                    borderRadius: '4px',
+                    fontSize: '0.8rem',
+                    fontWeight: '500'
+                  }}>
+                    Drug Trafficking
+                  </span>
+                  <span style={{
+                    background: '#e5e7eb',
+                    color: '#374151',
+                    padding: '4px 8px',
+                    borderRadius: '4px',
+                    fontSize: '0.8rem',
+                    fontWeight: '500'
+                  }}>
+                    Cybersecurity
+                  </span>
+                </div>
+                
+                <div style={{
+                  marginTop: '15px',
+                  padding: '15px',
+                  backgroundColor: '#fef2f2',
+                  borderRadius: '8px',
+                  border: '1px solid #fecaca'
+                }}>
+                  <div style={{
+                    fontSize: '0.9rem',
+                    fontWeight: '600',
+                    color: '#dc2626',
+                    marginBottom: '8px'
+                  }}>
+                    Primary Security Concerns
+                  </div>
+                  <div style={{
+                    fontSize: '0.85rem',
+                    color: '#7f1d1d',
+                    lineHeight: '1.4'
+                  }}>
+                    {data?.regional_analysis?.['North America']?.regional_security_dynamics?.primary_security_concerns?.join(', ') || 'Aerospace and maritime threats, Transnational organized crime, Drug trafficking, Irregular migration, Cybersecurity'}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Eurasia Regional Overview */}
+            <div className="section" style={{
+              background: '#f8f9fa',
+              borderRadius: '12px',
+              padding: '30px',
+              border: '1px solid #e5e7eb',
+              transition: 'transform 0.2s ease, box-shadow 0.2s ease'
+            }}>
+              <div style={{
+                display: 'flex',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+                marginBottom: '20px'
+              }}>
+                <h3 style={{
+                  fontSize: '1.4rem',
+                  fontWeight: '600',
+                  color: '#1e293b',
+                  fontFamily: 'Georgia, Times New Roman, serif'
+                }}>
+                  Eurasia
+                </h3>
+                <div style={{
+                  padding: '4px 12px',
+                  borderRadius: '6px',
+                  fontSize: '0.8rem',
+                  fontWeight: '600',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.05em',
+                  background: '#fee2e2',
+                  color: '#dc2626'
+                }}>
+                  Critical
+                </div>
+              </div>
+              <div style={{
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '15px'
+              }}>
+                <div style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  padding: '8px 0',
+                  borderBottom: '1px solid #e5e7eb'
+                }}>
+                  <span style={{
+                    fontSize: '0.9rem',
+                    color: '#64748b',
+                    fontWeight: '500'
+                  }}>
+                    Key Partners
+                  </span>
+                  <span style={{
+                    fontWeight: '600',
+                    color: '#1e293b'
+                  }}>
+                    Poland, Ukraine
+                  </span>
+                </div>
+                <div style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  padding: '8px 0',
+                  borderBottom: '1px solid #e5e7eb'
+                }}>
+                  <span style={{
+                    fontSize: '0.9rem',
+                    color: '#64748b',
+                    fontWeight: '500'
+                  }}>
+                    Strategic Focus
+                  </span>
+                  <span style={{
+                    fontWeight: '600',
+                    color: '#1e293b'
+                  }}>
+                    Deterrence, Alliance Support
+                  </span>
+                </div>
+                <div style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  padding: '8px 0'
+                }}>
+                  <span style={{
+                    fontSize: '0.9rem',
+                    color: '#64748b',
+                    fontWeight: '500'
+                  }}>
+                    Trade Volume
+                  </span>
+                  <span style={{
+                    fontWeight: '600',
+                    color: '#1e293b'
+                  }}>
+                    Sanctions Impact
+                  </span>
+                </div>
+              </div>
+              <div style={{
+                marginTop: '15px'
+              }}>
+                <div style={{
+                  fontSize: '0.9rem',
+                  fontWeight: '600',
+                  color: '#374151',
+                  marginBottom: '8px'
+                }}>
+                  Key Challenges
+                </div>
+                <div style={{
+                  display: 'flex',
+                  flexWrap: 'wrap',
+                  gap: '6px'
+                }}>
+                  <span style={{
+                    background: '#e5e7eb',
+                    color: '#374151',
+                    padding: '4px 8px',
+                    borderRadius: '4px',
+                    fontSize: '0.8rem',
+                    fontWeight: '500'
+                  }}>
+                    Russian Aggression
+                  </span>
+                  <span style={{
+                    background: '#e5e7eb',
+                    color: '#374151',
+                    padding: '4px 8px',
+                    borderRadius: '4px',
+                    fontSize: '0.8rem',
+                    fontWeight: '500'
+                  }}>
+                    Nuclear Threats
+                  </span>
+                  <span style={{
+                    background: '#e5e7eb',
+                    color: '#374151',
+                    padding: '4px 8px',
+                    borderRadius: '4px',
+                    fontSize: '0.8rem',
+                    fontWeight: '500'
+                  }}>
+                    Regional Instability
+                  </span>
+                </div>
+                
+                <div style={{
+                  marginTop: '15px',
+                  padding: '15px',
+                  backgroundColor: '#fef2f2',
+                  borderRadius: '8px',
+                  border: '1px solid #fecaca'
+                }}>
+                  <div style={{
+                    fontSize: '0.9rem',
+                    fontWeight: '600',
+                    color: '#dc2626',
+                    marginBottom: '8px'
+                  }}>
+                    Primary Security Concerns
+                  </div>
+                  <div style={{
+                    fontSize: '0.85rem',
+                    color: '#7f1d1d',
+                    lineHeight: '1.4'
+                  }}>
+                    {data?.regional_analysis?.['Eurasia']?.regional_security_dynamics?.primary_security_concerns?.join(', ') || 'Russian aggression, Nuclear proliferation, Regional instability'}
+                  </div>
+                </div>
+              </div>
+            </div>
           </section>
 
           {/* Security & Defense Partnerships */}
@@ -1442,67 +1797,83 @@ export default function ForeignAffairsPage() {
                 </p>
               </div>
 
-              {/* Key Metrics Grid */}
+              {/* Key Metrics - Simple Layout */}
               <div style={{
-                display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
-                gap: '20px',
-                marginBottom: '30px'
+                display: 'flex',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+                marginBottom: '20px',
+                padding: '20px',
+                backgroundColor: '#f8f9fa',
+                borderRadius: '8px'
               }}>
                 <div style={{
-                  padding: '20px',
-                  backgroundColor: '#f0f9ff',
-                  borderRadius: '8px',
-                  textAlign: 'center'
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                  flex: 1
                 }}>
-                  <div style={{ fontSize: '0.9rem', color: '#0369a1', fontWeight: '600', marginBottom: '8px' }}>
-                    Relationship Score
-                  </div>
-                  <div style={{ fontSize: '2rem', fontWeight: '700', color: '#1e293b' }}>
-                    {selectedCountry.relationship_score}/100
-                  </div>
-                </div>
-
-                <div style={{
-                  padding: '20px',
-                  backgroundColor: '#f0fdf4',
-                  borderRadius: '8px',
-                  textAlign: 'center'
-                }}>
-                  <div style={{ fontSize: '0.9rem', color: '#059669', fontWeight: '600', marginBottom: '8px' }}>
-                    Trade Volume
-                  </div>
-                  <div style={{ fontSize: '1.2rem', fontWeight: '600', color: '#1e293b' }}>
-                    {selectedCountry.economic_cooperation.trade_volume_estimate}
-                  </div>
-                </div>
-
-                <div style={{
-                  padding: '20px',
-                  backgroundColor: '#fef3c7',
-                  borderRadius: '8px',
-                  textAlign: 'center'
-                }}>
-                  <div style={{ fontSize: '0.9rem', color: '#d97706', fontWeight: '600', marginBottom: '8px' }}>
+                  <div style={{
+                    fontSize: '0.9rem',
+                    color: '#64748b',
+                    fontWeight: '500',
+                    marginBottom: '8px'
+                  }}>
                     Economic Ties
                   </div>
-                  <div style={{ fontSize: '1.2rem', fontWeight: '600', color: '#1e293b' }}>
+                  <div style={{
+                    fontSize: '1.1rem',
+                    fontWeight: '600',
+                    color: '#1e293b'
+                  }}>
                     {selectedCountry.economic_ties}
                   </div>
                 </div>
-
+                
                 <div style={{
-                  padding: '20px',
-                  backgroundColor: '#fce7f3',
-                  borderRadius: '8px',
-                  textAlign: 'center'
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                  flex: 1
                 }}>
-                  <div style={{ fontSize: '0.9rem', color: '#be185d', fontWeight: '600', marginBottom: '8px' }}>
+                  <div style={{
+                    fontSize: '0.9rem',
+                    color: '#64748b',
+                    fontWeight: '500',
+                    marginBottom: '8px'
+                  }}>
                     Military Cooperation
                   </div>
-                  <div style={{ fontSize: '1.2rem', fontWeight: '600', color: '#1e293b' }}>
+                  <div style={{
+                    fontSize: '1.1rem',
+                    fontWeight: '600',
+                    color: '#1e293b'
+                  }}>
                     {selectedCountry.military_cooperation}
                   </div>
+                </div>
+              </div>
+
+              {/* Trade Volume */}
+              <div style={{
+                marginBottom: '30px',
+                padding: '15px',
+                backgroundColor: '#f8f9fa',
+                borderRadius: '8px'
+              }}>
+                <div style={{
+                  fontSize: '0.9rem',
+                  fontWeight: '600',
+                  color: '#374151',
+                  marginBottom: '8px'
+                }}>
+                  Trade Volume
+                </div>
+                <div style={{
+                  fontSize: '1rem',
+                  color: '#1e293b'
+                }}>
+                  {selectedCountry.economic_cooperation.trade_volume_estimate}
                 </div>
               </div>
 
