@@ -39,14 +39,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://inklined.com'),
+  metadataBase: new URL('https://theinklined.com'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: "Inklined - Political Dashboard Hub",
     description: "Comprehensive analysis and real-time tracking of political developments, policy changes, and government data.",
-    url: 'https://inklined.com',
+    url: 'https://theinklined.com',
     siteName: 'Inklined',
     images: [
       {
@@ -79,11 +79,11 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/image.png?v=2', sizes: '32x32', type: 'image/png' },
+      { url: '/image.png', sizes: '32x32', type: 'image/png' },
       { url: '/favicon.svg', type: 'image/svg+xml' }
     ],
     shortcut: [
-      { url: '/image.png?v=2', sizes: '32x32', type: 'image/png' },
+      { url: '/image.png', sizes: '32x32', type: 'image/png' },
       { url: '/favicon.svg', type: 'image/svg+xml' }
     ],
     apple: [
@@ -131,6 +131,37 @@ export default function RootLayout({
         <meta name="revisit-after" content="1 days" />
         <meta name="rating" content="General" />
         <meta name="distribution" content="Global" />
+        
+        {/* Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "Inklined - Political Dashboard Hub",
+              "alternateName": "Inklined",
+              "url": "https://theinklined.com",
+              "description": "Comprehensive analysis and real-time tracking of political developments, policy changes, and government data. Track Trump administration policies, immigration enforcement, economic indicators, and campaign promises.",
+              "publisher": {
+                "@type": "Organization",
+                "name": "Inklined",
+                "url": "https://theinklined.com"
+              },
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://theinklined.com/search?q={search_term_string}",
+                "query-input": "required name=search_term_string"
+              },
+              "mainEntity": {
+                "@type": "DataCatalog",
+                "name": "Political Data Dashboard",
+                "description": "Government data, policy analysis, and political tracking",
+                "keywords": ["political dashboard", "government data", "policy analysis", "Trump administration", "immigration enforcement", "economic policy"]
+              }
+            })
+          }}
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
