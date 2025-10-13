@@ -507,11 +507,36 @@ export default function EconomicPolicyPage() {
           <h4 style={{ marginBottom: '10px', color: '#0d9488' }}>Tariff Data Overview</h4>
           <p><strong>Last Updated:</strong> {data.tariff?.last_updated || 'Unknown'}</p>
           <p><strong>Total Sources:</strong> {
-            Array.isArray(updates) 
-              ? updates.reduce((total, update: any) => {
-                  return total + (Array.isArray(update.source_titles) ? update.source_titles.length : 0);
-                }, 0)
-              : 0
+            (() => {
+              // Extract unique publisher names
+              const extractPublisher = (sourceTitle: string): string => {
+                if (sourceTitle.includes('Wikipedia') || sourceTitle.includes('Zonos Docs')) {
+                  return '';
+                }
+                let publisher = sourceTitle;
+                if (publisher.includes(' - ')) {
+                  publisher = publisher.split(' - ').pop() || publisher;
+                } else if (publisher.includes(' | ')) {
+                  publisher = publisher.split(' | ').pop() || publisher;
+                }
+                return publisher.trim();
+              };
+              
+              const uniquePublishers = new Set<string>();
+              if (Array.isArray(updates)) {
+                updates.forEach((update: any) => {
+                  if (Array.isArray(update.source_titles)) {
+                    update.source_titles.forEach((source: string) => {
+                      const publisher = extractPublisher(source);
+                      if (publisher) {
+                        uniquePublishers.add(publisher);
+                      }
+                    });
+                  }
+                });
+              }
+              return uniquePublishers.size;
+            })()
           } verified sources</p>
           <p><strong>Data Coverage:</strong> {countryTariffs.length} countries, {updates.length} updates</p>
         </div>

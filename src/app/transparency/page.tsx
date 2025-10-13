@@ -197,14 +197,38 @@ export default function TransparencyPage() {
               {loading ? (
                 <p style={{ marginBottom: '1rem', fontStyle: 'italic' }}>Loading tariff update sources...</p>
               ) : (() => {
-                // Extract all unique sources from tariff updates
+                // Extract publisher/organization names from source titles
+                const extractPublisher = (sourceTitle: string): string => {
+                  // Remove Wikipedia and Zonos Docs
+                  if (sourceTitle.includes('Wikipedia') || sourceTitle.includes('Zonos Docs')) {
+                    return '';
+                  }
+                  
+                  // Extract publisher name after the last dash, pipe, or "from"
+                  let publisher = sourceTitle;
+                  
+                  // Try to extract after " - " or " | "
+                  if (publisher.includes(' - ')) {
+                    publisher = publisher.split(' - ').pop() || publisher;
+                  } else if (publisher.includes(' | ')) {
+                    publisher = publisher.split(' | ').pop() || publisher;
+                  }
+                  
+                  // Clean up common patterns
+                  publisher = publisher.trim();
+                  
+                  return publisher;
+                };
+                
+                // Extract all unique publisher names from tariff updates
                 const allSources: string[] = [];
                 if (Array.isArray(tariffData?.tariff_updates)) {
                   tariffData.tariff_updates.forEach((update: any) => {
                     if (Array.isArray(update.source_titles)) {
                       update.source_titles.forEach((source: string) => {
-                        if (!allSources.includes(source)) {
-                          allSources.push(source);
+                        const publisher = extractPublisher(source);
+                        if (publisher && !allSources.includes(publisher)) {
+                          allSources.push(publisher);
                         }
                       });
                     }
