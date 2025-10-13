@@ -506,7 +506,13 @@ export default function EconomicPolicyPage() {
         <div style={{ marginBottom: '30px', padding: '15px', background: '#e6f7f6', borderRadius: '8px', borderLeft: '4px solid #0d9488' }}>
           <h4 style={{ marginBottom: '10px', color: '#0d9488' }}>Tariff Data Overview</h4>
           <p><strong>Last Updated:</strong> {data.tariff?.last_updated || 'Unknown'}</p>
-          <p><strong>Total Sources:</strong> {Array.isArray(data.tariff?.sources) ? data.tariff.sources.length : 0} verified sources</p>
+          <p><strong>Total Sources:</strong> {
+            Array.isArray(updates) 
+              ? updates.reduce((total, update: any) => {
+                  return total + (Array.isArray(update.source_titles) ? update.source_titles.length : 0);
+                }, 0)
+              : 0
+          } verified sources</p>
           <p><strong>Data Coverage:</strong> {countryTariffs.length} countries, {updates.length} updates</p>
         </div>
 

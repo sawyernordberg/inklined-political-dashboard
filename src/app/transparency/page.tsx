@@ -196,47 +196,62 @@ export default function TransparencyPage() {
 
               {loading ? (
                 <p style={{ marginBottom: '1rem', fontStyle: 'italic' }}>Loading tariff update sources...</p>
-              ) : tariffData?.sources && tariffData.sources.length > 0 ? (
-                <div style={{ marginBottom: '1rem' }}>
-                  <p style={{ marginBottom: '0.5rem', fontWeight: '600' }}>
-                    Tariff policy updates are sourced from {tariffData.sources.length} verified news organizations and research institutions. 
-                    <span style={{ 
-                      cursor: 'pointer',
-                      color: '#0d9488',
-                      textDecoration: 'underline',
-                      marginLeft: '0.5rem'
-                    }} onClick={() => setShowTariffSources(!showTariffSources)}>
-                      {showTariffSources ? 'Hide sources' : 'View complete source list'}
-                    </span>
-                  </p>
-                  {showTariffSources && (
-                    <div style={{ 
-                      marginTop: '1rem',
-                      padding: '1rem',
-                      backgroundColor: '#f8f9fa',
-                      borderRadius: '4px',
-                      border: '1px solid #e5e5e5',
-                      fontSize: '0.95rem'
-                    }}>
+              ) : (() => {
+                // Extract all unique sources from tariff updates
+                const allSources: string[] = [];
+                if (Array.isArray(tariffData?.tariff_updates)) {
+                  tariffData.tariff_updates.forEach((update: any) => {
+                    if (Array.isArray(update.source_titles)) {
+                      update.source_titles.forEach((source: string) => {
+                        if (!allSources.includes(source)) {
+                          allSources.push(source);
+                        }
+                      });
+                    }
+                  });
+                }
+                return allSources.length > 0 ? (
+                  <div style={{ marginBottom: '1rem' }}>
+                    <p style={{ marginBottom: '0.5rem', fontWeight: '600' }}>
+                      Tariff policy updates are sourced from {allSources.length} verified news organizations and research institutions. 
+                      <span style={{ 
+                        cursor: 'pointer',
+                        color: '#0d9488',
+                        textDecoration: 'underline',
+                        marginLeft: '0.5rem'
+                      }} onClick={() => setShowTariffSources(!showTariffSources)}>
+                        {showTariffSources ? 'Hide sources' : 'View complete source list'}
+                      </span>
+                    </p>
+                    {showTariffSources && (
                       <div style={{ 
-                        display: 'grid', 
-                        gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', 
-                        gap: '0.5rem'
+                        marginTop: '1rem',
+                        padding: '1rem',
+                        backgroundColor: '#f8f9fa',
+                        borderRadius: '4px',
+                        border: '1px solid #e5e5e5',
+                        fontSize: '0.95rem'
                       }}>
-                        {tariffData.sources.map((source: string, index: number) => (
-                          <p key={index} style={{ marginBottom: '0.3rem' }}>• {source}</p>
-                        ))}
+                        <div style={{ 
+                          display: 'grid', 
+                          gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', 
+                          gap: '0.5rem'
+                        }}>
+                          {allSources.map((source: string, index: number) => (
+                            <p key={index} style={{ marginBottom: '0.3rem' }}>• {source}</p>
+                          ))}
+                        </div>
                       </div>
-                    </div>
-                  )}
-                </div>
-              ) : (
-                <p style={{ marginBottom: '1rem', fontStyle: 'italic' }}>No tariff update sources available</p>
-              )}
+                    )}
+                  </div>
+                ) : (
+                  <p style={{ marginBottom: '1rem', fontStyle: 'italic' }}>No tariff update sources available</p>
+                );
+              })()}
 
               {!loading && tariffData && (
                 <p style={{ marginBottom: '1rem', fontSize: '0.95rem', color: '#666666' }}>
-                  Current dataset includes {tariffData.country_tariffs?.length || 0} countries with tariff data, {tariffData.updates?.length || 0} policy updates, and {tariffData.exemptions?.length || 0} tariff exemptions. Last updated: {tariffData.last_updated || 'Unknown'}.
+                  Current dataset includes {Array.isArray(tariffData.country_tariffs) ? tariffData.country_tariffs.length : 0} countries with tariff data and {Array.isArray(tariffData.tariff_updates) ? tariffData.tariff_updates.length : 0} policy updates. Last updated: {String(tariffData.last_updated || 'Unknown')}.
                 </p>
               )}
 
