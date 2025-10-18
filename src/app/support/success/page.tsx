@@ -86,7 +86,7 @@ function DonationSuccessContent() {
               margin: '0'
             }}>
               You should receive a confirmation email shortly. If you have any questions 
-              about your donation, please contact us at support@inklined.com
+              about your donation, please contact us at support@theinklined.com
             </p>
           </div>
           

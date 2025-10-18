@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Navigation from '../../../components/Navigation';
 import Header from '../../../components/Header';
+import ShareButton from '../../../components/ShareButton';
 import { Line, Pie, Bar } from 'react-chartjs-2';
 import {
   Chart as ChartJS,
@@ -397,8 +398,26 @@ export default function ImmigrationPage() {
           <header className="header" style={{
             textAlign: 'center',
             marginBottom: '80px',
-            padding: '60px 0'
+            padding: '60px 0',
+            position: 'relative'
           }}>
+            <div style={{
+              position: 'absolute',
+              top: '20px',
+              right: '20px',
+              zIndex: 10
+            }}>
+              <ShareButton
+                title="ICE Detention Statistics Dashboard"
+                description="Comprehensive analysis of Immigration and Customs Enforcement detention data"
+                url="https://theinklined.com/trump-admin/immigration"
+                metric="ICE Detainees"
+                value={(() => {
+                  const totalDetainees = data?.ice?.currentTotalDetainees as number | undefined;
+                  return totalDetainees ? Math.round(totalDetainees).toLocaleString() : 'Loading...';
+                })()}
+              />
+            </div>
             <h1 style={{
               fontSize: '2.5rem',
               color: '#1a1a1a',
@@ -468,8 +487,23 @@ export default function ImmigrationPage() {
           <section className="section" style={{
             marginBottom: '70px',
             paddingBottom: '30px',
-            borderBottom: '1px solid #f0f0f0'
+            borderBottom: '1px solid #f0f0f0',
+            position: 'relative'
           }}>
+            <div style={{
+              position: 'absolute',
+              top: '0',
+              right: '0',
+              zIndex: 10
+            }}>
+              <ShareButton
+                title="ICE Detention Geographic Distribution"
+                description="State-by-state breakdown of ICE detention populations"
+                url="https://theinklined.com/trump-admin/immigration"
+                screenshotElement=".geographic-distribution-chart"
+                isVisualization={true}
+              />
+            </div>
             <div className="section-header" style={{
               textAlign: 'center',
               marginBottom: '40px'
@@ -943,8 +977,23 @@ export default function ImmigrationPage() {
           <section className="section" style={{
             marginBottom: '70px',
             paddingBottom: '30px',
-            borderBottom: '1px solid #f0f0f0'
+            borderBottom: '1px solid #f0f0f0',
+            position: 'relative'
           }}>
+            <div style={{
+              position: 'absolute',
+              top: '0',
+              right: '0',
+              zIndex: 10
+            }}>
+              <ShareButton
+                title="U.S. Border Patrol Apprehensions Data"
+                description="Monthly border apprehension statistics and trends"
+                url="https://theinklined.com/trump-admin/immigration"
+                screenshotElement=".border-apprehensions-chart"
+                isVisualization={true}
+              />
+            </div>
             <div className="section-header" style={{
               textAlign: 'center',
               marginBottom: '40px'

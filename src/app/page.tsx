@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Navigation from '../components/Navigation';
 import Header from '../components/Header';
+import ShareButton from '../components/ShareButton';
 // Metadata is handled by the layout.tsx file for client components
 
 // Type definitions for data structures
@@ -94,19 +95,19 @@ export default function Home() {
             "@type": "WebSite",
             "name": "Inklined",
             "description": "Comprehensive analysis and real-time tracking of political developments, policy changes, and government data.",
-            "url": "https://inklined.com",
+            "url": "https://theinklined.com",
             "potentialAction": {
               "@type": "SearchAction",
-              "target": "https://inklined.com/search?q={search_term_string}",
+              "target": "https://theinklined.com/search?q={search_term_string}",
               "query-input": "required name=search_term_string"
             },
             "publisher": {
               "@type": "Organization",
               "name": "Inklined",
-              "url": "https://inklined.com",
+              "url": "https://theinklined.com",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://inklined.com/favicon.svg"
+                "url": "https://theinklined.com/favicon.svg"
               }
             }
           })
@@ -121,11 +122,11 @@ export default function Home() {
             "@type": "DataCatalog",
             "name": "Political Dashboard Data",
             "description": "Real-time political data including economic indicators, immigration enforcement, campaign promises, and government performance metrics.",
-            "url": "https://inklined.com",
+            "url": "https://theinklined.com",
             "provider": {
               "@type": "Organization",
               "name": "Inklined",
-              "url": "https://inklined.com"
+              "url": "https://theinklined.com"
             },
             "dataset": [
               {
@@ -199,8 +200,28 @@ export default function Home() {
               color: 'white',
               padding: '2.5rem',
               borderRadius: '8px',
-              textAlign: 'center'
+              textAlign: 'center',
+              position: 'relative'
             }}>
+              <div style={{
+                position: 'absolute',
+                top: '1rem',
+                right: '1rem'
+              }}>
+                <ShareButton
+                  title="S&P 500 Performance Since Trump Inauguration"
+                  description="Real-time tracking of stock market performance under the current administration"
+                  url="https://theinklined.com"
+                  metric="S&P 500 Performance"
+                  value={(() => {
+                    const presidentialData = sp500Data?.presidential_data as Record<string, unknown> | undefined;
+                    const trumpData = presidentialData?.["Donald Trump (2nd Term)"] as Record<string, unknown> | undefined;
+                    const performance = trumpData?.performance as Record<string, unknown> | undefined;
+                    const returnPct = performance?.total_return_pct as number | undefined;
+                    return returnPct ? `${returnPct > 0 ? '+' : ''}${returnPct.toFixed(1)}%` : 'Loading...';
+                  })()}
+                />
+              </div>
               <div style={{
                 fontSize: '3rem',
                 fontWeight: '700',
@@ -354,8 +375,21 @@ export default function Home() {
             <article style={{
               marginBottom: '3rem',
               paddingBottom: '2rem',
-              borderBottom: '1px solid #e5e5e5'
+              borderBottom: '1px solid #e5e5e5',
+              position: 'relative'
             }}>
+              <div style={{
+                position: 'absolute',
+                top: '0',
+                right: '0',
+                zIndex: 10
+              }}>
+                <ShareButton
+                  title="Immigration Enforcement Data"
+                  description="Border apprehensions and ICE detention statistics"
+                  url="https://theinklined.com/trump-admin/immigration"
+                />
+              </div>
               <div style={{
                 display: 'flex',
                 alignItems: 'center',
@@ -689,8 +723,27 @@ export default function Home() {
               background: 'white',
               border: '1px solid #e5e5e5',
               padding: '2rem',
-              borderRadius: '8px'
+              borderRadius: '8px',
+              position: 'relative'
             }}>
+              <div style={{
+                position: 'absolute',
+                top: '1rem',
+                right: '1rem'
+              }}>
+                <ShareButton
+                  title="Campaign Promises Tracker"
+                  description="Real-time tracking of campaign promise fulfillment status"
+                  url="https://theinklined.com/trump-admin/promises-tracker"
+                  metric="Promise Status"
+                  value={`${(() => {
+                    const summary = promisesData?.summary as Record<string, unknown> | undefined;
+                    const kept = summary?.kept as number | undefined;
+                    const totalPromises = summary?.total_promises as number | undefined;
+                    return kept && totalPromises ? `${kept}/${totalPromises} kept` : 'Loading...';
+                  })()}`}
+                />
+              </div>
               <h3 style={{
                 fontSize: '1.3rem',
                 fontWeight: '600',

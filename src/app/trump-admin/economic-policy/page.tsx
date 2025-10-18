@@ -4,6 +4,7 @@ import { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
 import Navigation from '../../../components/Navigation';
 import Header from '../../../components/Header';
+import ShareButton from '../../../components/ShareButton';
 import { Line, Bar } from 'react-chartjs-2';
 import {
   Chart as ChartJS,
@@ -2153,8 +2154,23 @@ export default function EconomicPolicyPage() {
           background: '#f8f9fa', 
           borderRadius: '8px', 
           padding: '24px 18px', 
-          border: '1px solid #f0f0f0' 
+          border: '1px solid #f0f0f0',
+          position: 'relative'
         }}>
+          <div style={{
+            position: 'absolute',
+            top: '24px',
+            right: '24px',
+            zIndex: 10
+          }}>
+            <ShareButton
+              title="Monthly Jobs Added Under Trump Administration"
+              description="Employment growth tracking and job creation statistics"
+              url="https://theinklined.com/trump-admin/economic-policy"
+              screenshotElement=".jobs-chart-container"
+              isVisualization={true}
+            />
+          </div>
           <h3 className="category-title" style={{ 
             fontSize: '1.5rem', 
             fontWeight: '600', 
@@ -3517,8 +3533,23 @@ export default function EconomicPolicyPage() {
           <section className="section" style={{ 
             marginBottom: '70px', 
             paddingBottom: '30px', 
-            borderBottom: '1px solid #f0f0f0' 
+            borderBottom: '1px solid #f0f0f0',
+            position: 'relative'
           }}>
+            <div style={{
+              position: 'absolute',
+              top: '0',
+              right: '0',
+              zIndex: 10
+            }}>
+              <ShareButton
+                title="S&P 500 Performance Under Trump Administration"
+                description="Stock market performance comparison with previous presidents"
+                url="https://theinklined.com/trump-admin/economic-policy"
+                screenshotElement=".chart-container"
+                isVisualization={true}
+              />
+            </div>
             <div className="section-header" style={{ 
               textAlign: 'center', 
               marginBottom: '40px' 
@@ -3610,7 +3641,7 @@ export default function EconomicPolicyPage() {
           <section className="section" style={{ 
             marginBottom: '70px', 
             paddingBottom: '30px', 
-            borderBottom: '1px solid #f0f0f0' 
+            borderBottom: '1px solid #f0f0f0'
           }}>
             <div className="section-header" style={{ 
               textAlign: 'center', 

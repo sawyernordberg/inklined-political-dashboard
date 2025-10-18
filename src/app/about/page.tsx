@@ -52,11 +52,11 @@ export default function AboutPage() {
             "@type": "AboutPage",
             "name": "About Inklined",
             "description": "Learn about Inklined's mission to provide comprehensive, data-driven analysis of American politics and governance. Discover our commitment to transparency, accuracy, and informed analysis.",
-            "url": "https://inklined.com/about",
+            "url": "https://theinklined.com/about",
             "isPartOf": {
               "@type": "WebSite",
               "name": "Inklined",
-              "url": "https://inklined.com"
+              "url": "https://theinklined.com"
             },
             "breadcrumb": {
               "@type": "BreadcrumbList",
@@ -65,13 +65,13 @@ export default function AboutPage() {
                   "@type": "ListItem",
                   "position": 1,
                   "name": "Home",
-                  "item": "https://inklined.com"
+                  "item": "https://theinklined.com"
                 },
                 {
                   "@type": "ListItem",
                   "position": 2,
                   "name": "About",
-                  "item": "https://inklined.com/about"
+                  "item": "https://theinklined.com/about"
                 }
               ]
             },
@@ -79,7 +79,7 @@ export default function AboutPage() {
               "@type": "Organization",
               "name": "Inklined",
               "description": "A comprehensive political dashboard dedicated to transparency, accuracy, and informed analysis of American governance.",
-              "url": "https://inklined.com",
+              "url": "https://theinklined.com",
               "foundingDate": "2025",
               "mission": "To provide comprehensive, data-driven analysis of American politics and governance with transparency and accuracy",
               "values": [

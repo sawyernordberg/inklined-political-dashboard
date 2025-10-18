@@ -269,11 +269,11 @@ export default function TrumpAdminPage() {
             "@type": "WebPage",
             "name": "Trump Administration Dashboard",
             "description": "Comprehensive overview of the Trump administration's policies and performance. Track campaign promises, immigration enforcement, economic policy impacts, and federal spending cuts.",
-            "url": "https://inklined.com/trump-admin",
+            "url": "https://theinklined.com/trump-admin",
             "isPartOf": {
               "@type": "WebSite",
               "name": "Inklined",
-              "url": "https://inklined.com"
+              "url": "https://theinklined.com"
             },
             "breadcrumb": {
               "@type": "BreadcrumbList",
@@ -282,13 +282,13 @@ export default function TrumpAdminPage() {
                   "@type": "ListItem",
                   "position": 1,
                   "name": "Home",
-                  "item": "https://inklined.com"
+                  "item": "https://theinklined.com"
                 },
                 {
                   "@type": "ListItem",
                   "position": 2,
                   "name": "Trump Administration",
-                  "item": "https://inklined.com/trump-admin"
+                  "item": "https://theinklined.com/trump-admin"
                 }
               ]
             },
