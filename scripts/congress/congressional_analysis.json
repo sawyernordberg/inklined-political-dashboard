@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2025-10-12T12:24:39.314385",
+    "generated_at": "2025-10-17T22:21:18.058580",
     "congress_session": 119,
     "data_sources": [
       "LegiScan API (current & historical bills, partisan/bipartisan analysis)",
@@ -25,19 +25,19 @@
       "independent": 2,
       "total": 100
     },
-    "last_updated": "2025-10-12T12:23:59.945144"
+    "last_updated": "2025-10-17T22:20:40.533578"
   },
   "legislative_activity": {
-    "bills_introduced": 10269,
+    "bills_introduced": 10318,
     "bills_passed": 36,
     "bipartisan_bills": 11,
     "partisan_bills": 25,
     "unknown_partisanship_bills": 0,
-    "days_in_session": 118,
+    "days_in_session": 120,
     "committee_hearings": "Not available",
     "spending_authorized": "Not available",
-    "calendar_days_active": 282,
-    "last_updated": "2025-10-12T12:24:01.245636",
+    "calendar_days_active": 287,
+    "last_updated": "2025-10-17T22:20:41.638875",
     "data_source": "LegiScan API",
     "passed_bill_details": [
       {
@@ -388,7 +388,7 @@
     "119": {
       "congress_number": 119,
       "years": "2025-2026",
-      "target_calendar_days": 282,
+      "target_calendar_days": 287,
       "start_date": "2025-01-03T00:00:00",
       "bills_passed_in_timeframe": 36,
       "is_current": true,
@@ -400,7 +400,7 @@
     "118": {
       "congress_number": 118,
       "years": "2023-2024",
-      "target_calendar_days": 282,
+      "target_calendar_days": 287,
       "start_date": "2023-01-03T00:00:00",
       "bills_passed_in_timeframe": 19,
       "is_current": false,
@@ -409,16 +409,16 @@
     "117": {
       "congress_number": 117,
       "years": "2021-2022",
-      "target_calendar_days": 282,
+      "target_calendar_days": 287,
       "start_date": "2021-01-03T00:00:00",
-      "bills_passed_in_timeframe": 47,
+      "bills_passed_in_timeframe": 50,
       "is_current": false,
       "data_source": "LegiScan"
     },
     "116": {
       "congress_number": 116,
       "years": "2019-2020",
-      "target_calendar_days": 282,
+      "target_calendar_days": 287,
       "start_date": "2019-01-03T00:00:00",
       "bills_passed_in_timeframe": 65,
       "is_current": false,
@@ -427,7 +427,7 @@
     "115": {
       "congress_number": 115,
       "years": "2017-2018",
-      "target_calendar_days": 282,
+      "target_calendar_days": 287,
       "start_date": "2017-01-03T00:00:00",
       "bills_passed_in_timeframe": 68,
       "is_current": false,
@@ -436,25 +436,25 @@
     "114": {
       "congress_number": 114,
       "years": "2015-2016",
-      "target_calendar_days": 282,
+      "target_calendar_days": 287,
       "start_date": "2015-01-06T00:00:00",
-      "bills_passed_in_timeframe": 67,
+      "bills_passed_in_timeframe": 71,
       "is_current": false,
       "data_source": "LegiScan"
     },
     "113": {
       "congress_number": 113,
       "years": "2013-2014",
-      "target_calendar_days": 282,
+      "target_calendar_days": 287,
       "start_date": "2013-01-03T00:00:00",
-      "bills_passed_in_timeframe": 44,
+      "bills_passed_in_timeframe": 46,
       "is_current": false,
       "data_source": "LegiScan"
     },
     "112": {
       "congress_number": 112,
       "years": "2011-2012",
-      "target_calendar_days": 282,
+      "target_calendar_days": 287,
       "start_date": "2011-01-05T00:00:00",
       "bills_passed_in_timeframe": 39,
       "is_current": false,
@@ -463,9 +463,9 @@
     "111": {
       "congress_number": 111,
       "years": "2009-2010",
-      "target_calendar_days": 282,
+      "target_calendar_days": 287,
       "start_date": "2009-01-06T00:00:00",
-      "bills_passed_in_timeframe": 69,
+      "bills_passed_in_timeframe": 75,
       "is_current": false,
       "data_source": "LegiScan"
     },
@@ -474,13 +474,13 @@
       "current_congress_rank": 8,
       "best_performer": [
         111,
-        69
+        75
       ],
       "worst_performer": [
         118,
         19
       ],
-      "comparison_timeframe_days": 282,
+      "comparison_timeframe_days": 287,
       "note": "All data uses real LegiScan API queries"
     }
   },
@@ -492,7 +492,7 @@
     "total_members": 535,
     "data_quality": "High - Real API data + real historical analysis",
     "historical_rank": "8 of 9",
-    "calendar_days_active": 282,
+    "calendar_days_active": 287,
     "bills_passed_vs_historical": "Analysis included"
   }
 }

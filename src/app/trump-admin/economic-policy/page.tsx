@@ -3536,20 +3536,6 @@ export default function EconomicPolicyPage() {
             borderBottom: '1px solid #f0f0f0',
             position: 'relative'
           }}>
-            <div style={{
-              position: 'absolute',
-              top: '0',
-              right: '0',
-              zIndex: 10
-            }}>
-              <ShareButton
-                title="S&P 500 Performance Under Trump Administration"
-                description="Stock market performance comparison with previous presidents"
-                url="https://theinklined.com/trump-admin/economic-policy"
-                screenshotElement=".chart-container"
-                isVisualization={true}
-              />
-            </div>
             <div className="section-header" style={{ 
               textAlign: 'center', 
               marginBottom: '40px' 

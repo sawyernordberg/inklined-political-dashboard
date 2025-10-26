@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Navigation from '../../components/Navigation';
 import Header from '../../components/Header';
+import ShareButton from '../../components/ShareButton';
 // Metadata is handled by the layout.tsx file for client components
 // import { Line } from 'react-chartjs-2';
 import {
@@ -338,8 +339,21 @@ export default function TrumpAdminPage() {
           <header className="header" style={{
             textAlign: 'center',
             marginBottom: '80px',
-            padding: '60px 0'
+            padding: '60px 0',
+            position: 'relative'
           }}>
+            <div style={{
+              position: 'absolute',
+              top: '20px',
+              right: '20px',
+              zIndex: 10
+            }}>
+              <ShareButton
+                title="Trump Administration Dashboard"
+                description="Comprehensive overview of the Trump administration's policies and performance. Track campaign promises, immigration enforcement, economic policy impacts, and federal spending cuts"
+                url="https://theinklined.com/trump-admin"
+              />
+            </div>
             <h1 style={{
               fontSize: '2.5rem',
               color: '#1a1a1a',

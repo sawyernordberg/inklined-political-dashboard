@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Navigation from '../../components/Navigation';
 import Header from '../../components/Header';
+import ShareButton from '../../components/ShareButton';
 // Metadata is handled by the layout.tsx file for client components
 
 interface BillDetail {
@@ -786,7 +787,19 @@ export default function CongressPage() {
       <main role="main">
         <div className="container">
           {/* Header Content */}
-          <header className="page-header">
+          <header className="page-header" style={{ position: 'relative' }}>
+            <div style={{
+              position: 'absolute',
+              top: '0',
+              right: '0',
+              zIndex: 10
+            }}>
+              <ShareButton
+                title="119th Congress Analysis"
+                description="Comprehensive analysis of congressional composition, legislative productivity, and historical performance during the 2025-2026 session"
+                url="https://theinklined.com/congress"
+              />
+            </div>
             <h1>119th Congress Analysis</h1>
             <p>Comprehensive analysis of congressional composition, legislative productivity, and historical performance during the 2025-2026 session</p>
             <div className="metadata">

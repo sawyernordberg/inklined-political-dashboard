@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Navigation from '../../components/Navigation';
 import Header from '../../components/Header';
+import ShareButton from '../../components/ShareButton';
 // Metadata is handled by the layout.tsx file for client components
 
 interface EconomicCooperation {
@@ -330,8 +331,21 @@ export default function ForeignAffairsPage() {
           <header style={{
             textAlign: 'center',
             marginBottom: '80px',
-            padding: '60px 0'
+            padding: '60px 0',
+            position: 'relative'
           }}>
+            <div style={{
+              position: 'absolute',
+              top: '20px',
+              right: '20px',
+              zIndex: 10
+            }}>
+              <ShareButton
+                title="US Foreign Affairs Analysis"
+                description="Comprehensive analysis of US foreign policy, international relations, and global diplomatic engagement"
+                url="https://theinklined.com/foreign-affairs"
+              />
+            </div>
             <h1 style={{
               fontSize: '2.5rem',
               color: '#1a1a1a',

@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Navigation from '../../../components/Navigation';
 import Header from '../../../components/Header';
+import ShareButton from '../../../components/ShareButton';
 
 interface Promise {
   promise: string;
@@ -757,7 +758,19 @@ export default function PromisesTrackerPage() {
 
       <Navigation currentPath="/trump-admin/promises-tracker" isMobileMenuOpen={isMobileMenuOpen} onMobileMenuToggle={toggleMobileMenu}>
       <div className="container">
-        <div className="header-content">
+        <div className="header-content" style={{ position: 'relative' }}>
+          <div style={{
+            position: 'absolute',
+            top: '0',
+            right: '0',
+            zIndex: 10
+          }}>
+            <ShareButton
+              title="Trump Campaign Promises Tracker"
+              description="Comprehensive analysis of Donald Trump's 2024 campaign promises with detailed status updates and evidence"
+              url="https://theinklined.com/trump-admin/promises-tracker"
+            />
+          </div>
           <h1>Trump Campaign Promises Tracker</h1>
           <p>Comprehensive analysis of Donald Trump&apos;s 2024 campaign promises with detailed status updates and evidence</p>
           <div className="metadata">

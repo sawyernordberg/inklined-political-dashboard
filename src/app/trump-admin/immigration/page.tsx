@@ -490,20 +490,6 @@ export default function ImmigrationPage() {
             borderBottom: '1px solid #f0f0f0',
             position: 'relative'
           }}>
-            <div style={{
-              position: 'absolute',
-              top: '0',
-              right: '0',
-              zIndex: 10
-            }}>
-              <ShareButton
-                title="ICE Detention Geographic Distribution"
-                description="State-by-state breakdown of ICE detention populations"
-                url="https://theinklined.com/trump-admin/immigration"
-                screenshotElement=".geographic-distribution-chart"
-                isVisualization={true}
-              />
-            </div>
             <div className="section-header" style={{
               textAlign: 'center',
               marginBottom: '40px'
@@ -980,20 +966,6 @@ export default function ImmigrationPage() {
             borderBottom: '1px solid #f0f0f0',
             position: 'relative'
           }}>
-            <div style={{
-              position: 'absolute',
-              top: '0',
-              right: '0',
-              zIndex: 10
-            }}>
-              <ShareButton
-                title="U.S. Border Patrol Apprehensions Data"
-                description="Monthly border apprehension statistics and trends"
-                url="https://theinklined.com/trump-admin/immigration"
-                screenshotElement=".border-apprehensions-chart"
-                isVisualization={true}
-              />
-            </div>
             <div className="section-header" style={{
               textAlign: 'center',
               marginBottom: '40px'

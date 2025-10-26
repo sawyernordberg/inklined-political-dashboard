@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Navigation from '../../../components/Navigation';
 import Header from '../../../components/Header';
+import ShareButton from '../../../components/ShareButton';
 
 interface CutItem {
   title: string;
@@ -554,8 +555,21 @@ export default function SpendingCutsPage() {
           <header className="header" style={{
             textAlign: 'center',
             marginBottom: '80px',
-            padding: '60px 0'
+            padding: '60px 0',
+            position: 'relative'
           }}>
+            <div style={{
+              position: 'absolute',
+              top: '20px',
+              right: '20px',
+              zIndex: 10
+            }}>
+              <ShareButton
+                title="Trump Administration Spending Cuts"
+                description="Comprehensive analysis of federal spending cuts and budget reductions implemented by the Trump administration"
+                url="https://theinklined.com/trump-admin/spending-cuts"
+              />
+            </div>
             <h1 style={{
               fontSize: '2.5rem',
               color: '#1a1a1a',

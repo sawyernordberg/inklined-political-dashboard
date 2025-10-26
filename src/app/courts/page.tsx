@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Navigation from '../../components/Navigation';
 import Link from 'next/link';
 import Header from '../../components/Header';
+import ShareButton from '../../components/ShareButton';
 
 export default function CourtsPage() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -265,11 +266,25 @@ export default function CourtsPage() {
             <span>Coming Soon</span>
           </div>
           
-          <h1 className="main-title">Federal Courts Analysis</h1>
-          
-          <p className="subtitle">
-            Comprehensive analysis of federal court decisions, judicial appointments, and legal developments that shape American policy and governance.
-          </p>
+          <div style={{ position: 'relative' }}>
+            <div style={{
+              position: 'absolute',
+              top: '0',
+              right: '0',
+              zIndex: 10
+            }}>
+              <ShareButton
+                title="Federal Courts Analysis"
+                description="Comprehensive analysis of federal court decisions, judicial appointments, and legal developments that shape American policy and governance"
+                url="https://theinklined.com/courts"
+              />
+            </div>
+            <h1 className="main-title">Federal Courts Analysis</h1>
+            
+            <p className="subtitle">
+              Comprehensive analysis of federal court decisions, judicial appointments, and legal developments that shape American policy and governance.
+            </p>
+          </div>
         </div>
 
         {/* Features Preview */}

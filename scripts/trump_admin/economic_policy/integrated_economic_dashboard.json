@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "collection_date": "2025-10-12 12:24:58",
+    "collection_date": "2025-10-17 22:16:25",
     "trump_inauguration_date": "2025-01-20",
-    "days_since_inauguration": 265,
+    "days_since_inauguration": 270,
     "description": "Integrated Economic Dashboard - Tax Policy + Energy + Markets + Monthly Jobs Chart (Tariff data saved separately)",
     "data_baseline": {
       "tax_policy": "IRS + Tax Foundation + Treasury - Structured into Corporate/Individual/Investment categories",
@@ -261,26 +261,10 @@
       "recent_tax_changes": [],
       "proposed_changes": {
         "reconciliation_bills": [],
-        "tax_bills": [
-          {
-            "congress": 119,
-            "latestAction": {
-              "actionDate": "2025-10-09",
-              "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent."
-            },
-            "number": "447",
-            "originChamber": "Senate",
-            "originChamberCode": "S",
-            "title": "A resolution designating September 25, 2025, as \"National Ataxia Awareness Day\", and raising awareness of ataxia, ataxia research, and the search for a cure.",
-            "type": "SRES",
-            "updateDate": "2025-10-10",
-            "updateDateIncludingText": "2025-10-10",
-            "url": "https://api.congress.gov/v3/bill/119/sres/447?format=json"
-          }
-        ]
+        "tax_bills": []
       },
       "treasury_data": [],
-      "collection_date": "2025-10-12 12:24:48",
+      "collection_date": "2025-10-17 22:16:15",
       "source": "Congress.gov API - Comprehensive Tax Policy Tracker",
       "essential_data_focus": "Tax baseline rates, current bills, recent changes, proposed changes"
     },
@@ -290,31 +274,31 @@
         "total_countries": 70,
         "total_distribution_categories": 0,
         "total_updates": 0,
-        "collection_date": "2025-10-12 12:24:48",
+        "collection_date": "2025-10-17 22:16:15",
         "source": "tariff_data_clean.json",
         "data_file_reference": "tariff_data_clean.json"
       },
       "data_excluded": "Actual tariff data saved separately to avoid duplication"
     },
     "stock": {
-      "current_price": 6617.74,
+      "current_price": 6711.91,
       "current_date": "2025-01-20",
-      "inauguration_price": 6552.51,
-      "inauguration_date": "2025-10-10",
-      "performance": 0.9954963823023476,
-      "days_in_office": 265,
-      "date_range": "Oct 10, 2025 to Jan 20, 2025",
+      "inauguration_price": 6664.01,
+      "inauguration_date": "2025-10-17",
+      "performance": 0.7187864363948979,
+      "days_in_office": 270,
+      "date_range": "Oct 17, 2025 to Jan 20, 2025",
       "source": "Yahoo Finance (Fixed Parser)",
-      "historical_data_points": 184,
+      "historical_data_points": 189,
       "historical": [
         {
           "date": "2025-01-20",
-          "open": 6603.09,
-          "high": 6630.48,
-          "low": 6577.73,
-          "close": 6617.74,
-          "volume": 3883682739,
-          "change_pct": 0.22
+          "open": 6701.89,
+          "high": 6737.91,
+          "low": 6685.42,
+          "close": 6711.91,
+          "volume": 3439482282,
+          "change_pct": 0.15
         },
         {
           "date": "2025-01-21",
@@ -1962,13 +1946,58 @@
           "close": 6552.51,
           "volume": 5385020000,
           "change_pct": -2.79
+        },
+        {
+          "date": "2025-10-13",
+          "open": 6622.53,
+          "high": 6668.68,
+          "low": 6620.71,
+          "close": 6654.72,
+          "volume": 5303960000,
+          "change_pct": 0.49
+        },
+        {
+          "date": "2025-10-14",
+          "open": 6602.49,
+          "high": 6680.7,
+          "low": 6555.07,
+          "close": 6644.31,
+          "volume": 5666920000,
+          "change_pct": 0.63
+        },
+        {
+          "date": "2025-10-15",
+          "open": 6688.27,
+          "high": 6724.12,
+          "low": 6612.11,
+          "close": 6671.06,
+          "volume": 5633060000,
+          "change_pct": -0.26
+        },
+        {
+          "date": "2025-10-16",
+          "open": 6689.02,
+          "high": 6709.34,
+          "low": 6593.99,
+          "close": 6629.07,
+          "volume": 6048180000,
+          "change_pct": -0.9
+        },
+        {
+          "date": "2025-10-17",
+          "open": 6613.27,
+          "high": 6678.88,
+          "low": 6603.76,
+          "close": 6664.01,
+          "volume": 5358120000,
+          "change_pct": 0.77
         }
       ]
     },
     "energy": {
       "Gasoline (Regular, Weekly)": {
-        "current": 3.124,
-        "current_date": "2025-10-06",
+        "current": 3.061,
+        "current_date": "2025-10-13",
         "inauguration_price": 3.109,
         "inauguration_date": "2025-01-20",
         "biden_average": 3.3038490566037737,
@@ -1977,18 +2006,18 @@
         "biden_recent": 3.006,
         "biden_recent_date": "2024-12-30",
         "changes": {
-          "since_inauguration": 0.015000000000000124,
-          "pct_since_inauguration": 0.48247024766806446,
-          "since_biden_avg": -0.1798490566037736,
-          "pct_since_biden_avg": -5.4436220760233915,
-          "vs_biden_peak": -0.544,
-          "pct_vs_biden_peak": -14.830970556161397,
-          "vs_biden_recent": 0.11800000000000033,
-          "pct_vs_biden_recent": 3.9254823685961524
+          "since_inauguration": -0.04800000000000004,
+          "pct_since_inauguration": -1.543904792537795,
+          "since_biden_avg": -0.24284905660377376,
+          "pct_since_biden_avg": -7.350488852339186,
+          "vs_biden_peak": -0.6070000000000002,
+          "pct_vs_biden_peak": -16.5485278080698,
+          "vs_biden_recent": 0.05500000000000016,
+          "pct_vs_biden_recent": 1.8296739853626134
         },
         "date_ranges": {
-          "inauguration": "Jan 20, 2025 to Oct 06, 2025",
-          "biden_comparison": "Dec 30, 2024 to Oct 06, 2025"
+          "inauguration": "Jan 20, 2025 to Oct 13, 2025",
+          "biden_comparison": "Dec 30, 2024 to Oct 13, 2025"
         },
         "series_id": "GASREGW",
         "frequency": "Weekly",
@@ -2000,8 +2029,8 @@
         }
       },
       "Crude Oil WTI (Weekly)": {
-        "current": 62.59,
-        "current_date": "2025-10-03",
+        "current": 62.1,
+        "current_date": "2025-10-10",
         "inauguration_price": 79.28,
         "inauguration_date": "2025-01-17",
         "biden_average": 76.60115384615385,
@@ -2010,18 +2039,18 @@
         "biden_recent": 70.51,
         "biden_recent_date": "2024-12-27",
         "changes": {
-          "since_inauguration": -16.689999999999998,
-          "pct_since_inauguration": -21.051967709384456,
-          "since_biden_avg": -14.011153846153846,
-          "pct_since_biden_avg": -18.291048036030787,
-          "vs_biden_peak": -23.909999999999997,
-          "pct_vs_biden_peak": -27.64161849710982,
-          "vs_biden_recent": -7.920000000000002,
-          "pct_vs_biden_recent": -11.23244929797192
+          "since_inauguration": -17.18,
+          "pct_since_inauguration": -21.670030272452067,
+          "since_biden_avg": -14.501153846153848,
+          "pct_since_biden_avg": -18.930725084478546,
+          "vs_biden_peak": -24.4,
+          "pct_vs_biden_peak": -28.20809248554913,
+          "vs_biden_recent": -8.410000000000004,
+          "pct_vs_biden_recent": -11.92738618635655
         },
         "date_ranges": {
-          "inauguration": "Jan 17, 2025 to Oct 03, 2025",
-          "biden_comparison": "Dec 27, 2024 to Oct 03, 2025"
+          "inauguration": "Jan 17, 2025 to Oct 10, 2025",
+          "biden_comparison": "Dec 27, 2024 to Oct 10, 2025"
         },
         "series_id": "WCOILWTICO",
         "frequency": "Weekly",
@@ -2033,8 +2062,8 @@
         }
       },
       "Natural Gas Henry Hub (Weekly)": {
-        "current": 3.16,
-        "current_date": "2025-10-03",
+        "current": 3.23,
+        "current_date": "2025-10-10",
         "inauguration_price": 5.47,
         "inauguration_date": "2025-01-17",
         "biden_average": 2.186923076923077,
@@ -2043,18 +2072,18 @@
         "biden_recent": 2.94,
         "biden_recent_date": "2024-12-27",
         "changes": {
-          "since_inauguration": -2.3099999999999996,
-          "pct_since_inauguration": -42.23034734917733,
-          "since_biden_avg": 0.9730769230769232,
-          "pct_since_biden_avg": 44.495251494899755,
-          "vs_biden_peak": -1.9500000000000002,
-          "pct_vs_biden_peak": -38.160469667318985,
-          "vs_biden_recent": 0.2200000000000002,
-          "pct_vs_biden_recent": 7.482993197278918
+          "since_inauguration": -2.2399999999999998,
+          "pct_since_inauguration": -40.95063985374771,
+          "since_biden_avg": 1.043076923076923,
+          "pct_since_biden_avg": 47.69609567358424,
+          "vs_biden_peak": -1.8800000000000003,
+          "pct_vs_biden_peak": -36.79060665362036,
+          "vs_biden_recent": 0.29000000000000004,
+          "pct_vs_biden_recent": 9.863945578231293
         },
         "date_ranges": {
-          "inauguration": "Jan 17, 2025 to Oct 03, 2025",
-          "biden_comparison": "Dec 27, 2024 to Oct 03, 2025"
+          "inauguration": "Jan 17, 2025 to Oct 10, 2025",
+          "biden_comparison": "Dec 27, 2024 to Oct 10, 2025"
         },
         "series_id": "WHHNGSP",
         "frequency": "Weekly",
@@ -2462,63 +2491,63 @@
       "url": "https://api.congress.gov/v3",
       "type": "Tax Policy",
       "description": "Federal legislation and bill tracking",
-      "timestamp": "2025-10-12 12:24:42"
+      "timestamp": "2025-10-17 22:16:09"
     },
     {
       "name": "IRS.gov",
       "url": "https://www.irs.gov",
       "type": "Tax Policy",
       "description": "Current tax rates and regulations",
-      "timestamp": "2025-10-12 12:24:42"
+      "timestamp": "2025-10-17 22:16:09"
     },
     {
       "name": "Tax Foundation",
       "url": "https://taxfoundation.org",
       "type": "Tax Policy",
       "description": "Tax policy research and analysis",
-      "timestamp": "2025-10-12 12:24:42"
+      "timestamp": "2025-10-17 22:16:09"
     },
     {
       "name": "Treasury Fiscal Data API",
       "url": "https://api.fiscaldata.treasury.gov",
       "type": "Tax Policy",
       "description": "Federal revenue and fiscal data",
-      "timestamp": "2025-10-12 12:24:42"
+      "timestamp": "2025-10-17 22:16:09"
     },
     {
       "name": "Tariff Data Clean",
       "url": "tariff_data_clean.json",
       "type": "Tariff Data",
       "description": "Country tariff rates and distribution analysis",
-      "timestamp": "2025-10-12 12:24:48"
+      "timestamp": "2025-10-17 22:16:15"
     },
     {
       "name": "Yahoo Finance",
-      "url": "https://finance.yahoo.com/quote/%5EGSPC/history/?period1=1737331200&period2=1760271888",
+      "url": "https://finance.yahoo.com/quote/%5EGSPC/history/?period1=1737331200&period2=1760739375",
       "type": "Stock Data",
       "description": "S&P 500 Historical Prices from January 20, 2025",
-      "timestamp": "2025-10-12 12:24:48"
+      "timestamp": "2025-10-17 22:16:15"
     },
     {
       "name": "Federal Reserve Economic Data (FRED) - Energy",
       "url": "https://api.stlouisfed.org/fred",
       "type": "Energy Data",
       "description": "Gasoline, crude oil, and natural gas prices from EIA via FRED",
-      "timestamp": "2025-10-12 12:24:48"
+      "timestamp": "2025-10-17 22:16:16"
     },
     {
       "name": "Federal Reserve Economic Data (FRED)",
       "url": "https://api.stlouisfed.org/fred",
       "type": "Economic Data",
       "description": "Economic indicators and time series data",
-      "timestamp": "2025-10-12 12:24:50"
+      "timestamp": "2025-10-17 22:16:18"
     },
     {
       "name": "Bureau of Labor Statistics (BLS)",
       "url": "https://api.bls.gov",
       "type": "Employment Data",
       "description": "Employment statistics and wage data",
-      "timestamp": "2025-10-12 12:24:53"
+      "timestamp": "2025-10-17 22:16:21"
     }
   ]
 }

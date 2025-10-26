@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Navigation from '../../components/Navigation';
 import Header from '../../components/Header';
+import ShareButton from '../../components/ShareButton';
 import { Line } from 'react-chartjs-2';
 import {
   Chart as ChartJS,
@@ -1049,7 +1050,19 @@ export default function DepartmentsPage() {
       <main role="main">
         <div className="container">
           {/* Header Content */}
-          <header className="page-header">
+          <header className="page-header" style={{ position: 'relative' }}>
+            <div style={{
+              position: 'absolute',
+              top: '0',
+              right: '0',
+              zIndex: 10
+            }}>
+              <ShareButton
+                title="Federal Departments & Agencies"
+                description="Interactive exploration of the Executive Branch structure, cabinet-level departments, and the officials who lead America's vast federal bureaucracy"
+                url="https://theinklined.com/departments"
+              />
+            </div>
             <h1>Federal Departments & Agencies</h1>
             <p>Interactive exploration of the Executive Branch structure, cabinet-level departments, and the officials who lead America&apos;s vast federal bureaucracy. Analyze organizational hierarchies, budgets, and operational mandates.</p>
             <div style={{

@@ -209,17 +209,9 @@ export default function Home() {
                 right: '1rem'
               }}>
                 <ShareButton
-                  title="S&P 500 Performance Since Trump Inauguration"
-                  description="Real-time tracking of stock market performance under the current administration"
+                  title="The State of the Union - Political Dashboard"
+                  description="Real-time analysis of America's political landscape, policy implementation, and government performance"
                   url="https://theinklined.com"
-                  metric="S&P 500 Performance"
-                  value={(() => {
-                    const presidentialData = sp500Data?.presidential_data as Record<string, unknown> | undefined;
-                    const trumpData = presidentialData?.["Donald Trump (2nd Term)"] as Record<string, unknown> | undefined;
-                    const performance = trumpData?.performance as Record<string, unknown> | undefined;
-                    const returnPct = performance?.total_return_pct as number | undefined;
-                    return returnPct ? `${returnPct > 0 ? '+' : ''}${returnPct.toFixed(1)}%` : 'Loading...';
-                  })()}
                 />
               </div>
               <div style={{
@@ -378,18 +370,6 @@ export default function Home() {
               borderBottom: '1px solid #e5e5e5',
               position: 'relative'
             }}>
-              <div style={{
-                position: 'absolute',
-                top: '0',
-                right: '0',
-                zIndex: 10
-              }}>
-                <ShareButton
-                  title="Immigration Enforcement Data"
-                  description="Border apprehensions and ICE detention statistics"
-                  url="https://theinklined.com/trump-admin/immigration"
-                />
-              </div>
               <div style={{
                 display: 'flex',
                 alignItems: 'center',
@@ -726,24 +706,6 @@ export default function Home() {
               borderRadius: '8px',
               position: 'relative'
             }}>
-              <div style={{
-                position: 'absolute',
-                top: '1rem',
-                right: '1rem'
-              }}>
-                <ShareButton
-                  title="Campaign Promises Tracker"
-                  description="Real-time tracking of campaign promise fulfillment status"
-                  url="https://theinklined.com/trump-admin/promises-tracker"
-                  metric="Promise Status"
-                  value={`${(() => {
-                    const summary = promisesData?.summary as Record<string, unknown> | undefined;
-                    const kept = summary?.kept as number | undefined;
-                    const totalPromises = summary?.total_promises as number | undefined;
-                    return kept && totalPromises ? `${kept}/${totalPromises} kept` : 'Loading...';
-                  })()}`}
-                />
-              </div>
               <h3 style={{
                 fontSize: '1.3rem',
                 fontWeight: '600',

@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Navigation from '../../components/Navigation';
 import Link from 'next/link';
 import Header from '../../components/Header';
+import ShareButton from '../../components/ShareButton';
 
 export default function ResearchPage() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -233,11 +234,25 @@ export default function ResearchPage() {
             <span>Coming Soon</span>
           </div>
           
-          <h1 className="main-title">Political Research</h1>
-          
-          <p className="subtitle">
-            In-depth research articles and analyses by our editors covering political developments, policy implications, and comprehensive investigative reporting. Our first analysis is coming soon.
-          </p>
+          <div style={{ position: 'relative' }}>
+            <div style={{
+              position: 'absolute',
+              top: '0',
+              right: '0',
+              zIndex: 10
+            }}>
+              <ShareButton
+                title="Political Research"
+                description="In-depth research articles and analyses covering political developments, policy implications, and comprehensive investigative reporting"
+                url="https://theinklined.com/research"
+              />
+            </div>
+            <h1 className="main-title">Political Research</h1>
+            
+            <p className="subtitle">
+              In-depth research articles and analyses by our editors covering political developments, policy implications, and comprehensive investigative reporting. Our first analysis is coming soon.
+            </p>
+          </div>
         </div>
 
         {/* Features Preview */}
