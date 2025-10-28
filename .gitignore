@@ -57,3 +57,12 @@ dist/
 build/
 *.log
 requirements.txt
+
+# Support page files (temporarily ignored)
+src/app/support/
+src/app/api/create-checkout-session/
+src/app/api/webhooks/
+src/app/admin/supporters/
+lib/database.ts
+lib/email.ts
+STRIPE_SETUP.md

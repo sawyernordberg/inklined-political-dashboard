@@ -127,7 +127,7 @@ export default function Header({ breadcrumb, showSubtitle = false, onMobileMenuT
           alignItems: 'center',
           textAlign: 'center'
         }}>
-          {/* Logo and Support Button Container */}
+          {/* Logo Container */}
           <div style={{
             display: 'flex',
             flexDirection: 'column',
@@ -170,21 +170,6 @@ export default function Header({ breadcrumb, showSubtitle = false, onMobileMenuT
               )}
             </div>
 
-            {/* Support Button - Desktop */}
-            <Link href="/support" className="support-button-desktop" style={{
-              background: '#0d9488',
-              color: '#fff',
-              padding: '0.8rem 1.5rem',
-              textDecoration: 'none',
-              borderRadius: '6px',
-              fontWeight: '600',
-              fontSize: '0.9rem',
-              textTransform: 'uppercase',
-              letterSpacing: '0.05em',
-              transition: 'all 0.2s ease'
-            }}>
-              Support Us
-            </Link>
           </div>
 
           {/* Breadcrumb */}
