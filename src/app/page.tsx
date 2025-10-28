@@ -300,15 +300,6 @@ export default function Home() {
             }}>
                 Trade Policy Reshapes Global Economic Landscape
             </h2>
-            <p style={{
-                fontSize: '1.1rem',
-                color: '#444444',
-                lineHeight: '1.7',
-                marginBottom: '1.5rem',
-                fontFamily: 'Georgia, serif'
-              }}>
-                The Trump administration&apos;s comprehensive tariff strategy has disrupted international trade dynamics, with the 10% baseline tariff and reciprocal measures costing average US households an extra $1,300 in 2025. Recent data shows significant shifts in supply chains and trade patterns as businesses adapt to the new economic reality.
-              </p>
           <div style={{
                 display: 'flex',
                 gap: '2rem',
