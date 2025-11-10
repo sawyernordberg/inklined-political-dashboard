@@ -147,9 +147,9 @@ export default function EconomicPolicyPageClient({ data }: EconomicPolicyPageCli
     
     if (!trumpCurrentData || trumpCurrentData.length === 0) return null;
     
-    // Normalize data to start at 100 for consistency
+    // Calculate percentage change from starting value (starting at 0%)
     const trumpStartValue = trumpCurrentData[0]?.close || 1;
-    const trumpNormalizedData = trumpCurrentData.map((d: Record<string, unknown>) => ((d.close as number) / trumpStartValue) * 100);
+    const trumpNormalizedData = trumpCurrentData.map((d: Record<string, unknown>) => (((d.close as number) / trumpStartValue) - 1) * 100);
     
     // Get comparison data if different president selected
     const comparisonData = selectedPresident !== 'trump_current' ? 
@@ -171,7 +171,7 @@ export default function EconomicPolicyPageClient({ data }: EconomicPolicyPageCli
     // Add comparison data if available
     if (comparisonData && comparisonData.length > 0) {
       const comparisonStartValue = comparisonData[0]?.close || 1;
-      const comparisonNormalizedData = comparisonData.map((d: Record<string, unknown>) => (d.close / comparisonStartValue) * 100);
+      const comparisonNormalizedData = comparisonData.map((d: Record<string, unknown>) => (((d.close as number) / comparisonStartValue) - 1) * 100);
       
       datasets.push({
         label: `Comparison (${selectedPresident})`,
@@ -343,7 +343,7 @@ export default function EconomicPolicyPageClient({ data }: EconomicPolicyPageCli
             display: true,
             title: {
               display: true,
-              text: 'S&P 500 Performance (Indexed to 100)'
+              text: 'S&P 500 Performance (%)'
             },
             grid: {
               color: '#e5e5e5'
