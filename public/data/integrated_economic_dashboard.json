@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "collection_date": "2025-10-17 22:16:25",
+    "collection_date": "2025-11-10 14:12:04",
     "trump_inauguration_date": "2025-01-20",
-    "days_since_inauguration": 270,
+    "days_since_inauguration": 294,
     "description": "Integrated Economic Dashboard - Tax Policy + Energy + Markets + Monthly Jobs Chart (Tariff data saved separately)",
     "data_baseline": {
       "tax_policy": "IRS + Tax Foundation + Treasury - Structured into Corporate/Individual/Investment categories",
@@ -197,8 +197,8 @@
             "url": "https://api.congress.gov/v3/bill/119/hr/1/titles?format=json"
           },
           "type": "HR",
-          "updateDate": "2025-10-09T03:26:23Z",
-          "updateDateIncludingText": "2025-10-09T03:26:23Z"
+          "updateDate": "2025-11-05T22:26:11Z",
+          "updateDateIncludingText": "2025-11-05T22:26:11Z"
         },
         {
           "actions": {
@@ -261,10 +261,26 @@
       "recent_tax_changes": [],
       "proposed_changes": {
         "reconciliation_bills": [],
-        "tax_bills": []
+        "tax_bills": [
+          {
+            "congress": 119,
+            "latestAction": {
+              "actionDate": "2025-11-07",
+              "text": "Referred to the House Committee on Ways and Means."
+            },
+            "number": "5978",
+            "originChamber": "House",
+            "originChamberCode": "H",
+            "title": "To direct the Comptroller General of the United States and the Secretary of the Treasury to investigate and report on foreign government programs that facilitate Federal tax evasion.",
+            "type": "HR",
+            "updateDate": "2025-11-08",
+            "updateDateIncludingText": "2025-11-08",
+            "url": "https://api.congress.gov/v3/bill/119/hr/5978?format=json"
+          }
+        ]
       },
       "treasury_data": [],
-      "collection_date": "2025-10-17 22:16:15",
+      "collection_date": "2025-11-10 14:11:55",
       "source": "Congress.gov API - Comprehensive Tax Policy Tracker",
       "essential_data_focus": "Tax baseline rates, current bills, recent changes, proposed changes"
     },
@@ -274,31 +290,31 @@
         "total_countries": 70,
         "total_distribution_categories": 0,
         "total_updates": 0,
-        "collection_date": "2025-10-17 22:16:15",
+        "collection_date": "2025-11-10 14:11:55",
         "source": "tariff_data_clean.json",
         "data_file_reference": "tariff_data_clean.json"
       },
       "data_excluded": "Actual tariff data saved separately to avoid duplication"
     },
     "stock": {
-      "current_price": 6711.91,
+      "current_price": 6729.16,
       "current_date": "2025-01-20",
-      "inauguration_price": 6664.01,
-      "inauguration_date": "2025-10-17",
-      "performance": 0.7187864363948979,
-      "days_in_office": 270,
-      "date_range": "Oct 17, 2025 to Jan 20, 2025",
+      "inauguration_price": 6728.8,
+      "inauguration_date": "2025-11-07",
+      "performance": 0.005350136725711458,
+      "days_in_office": 294,
+      "date_range": "Nov 07, 2025 to Jan 20, 2025",
       "source": "Yahoo Finance (Fixed Parser)",
-      "historical_data_points": 189,
+      "historical_data_points": 204,
       "historical": [
         {
           "date": "2025-01-20",
-          "open": 6701.89,
-          "high": 6737.91,
-          "low": 6685.42,
-          "close": 6711.91,
-          "volume": 3439482282,
-          "change_pct": 0.15
+          "open": 6746.47,
+          "high": 6779.36,
+          "low": 6695.86,
+          "close": 6729.16,
+          "volume": 3281733734,
+          "change_pct": -0.26
         },
         {
           "date": "2025-01-21",
@@ -1944,7 +1960,7 @@
           "high": 6762.4,
           "low": 6550.78,
           "close": 6552.51,
-          "volume": 5385020000,
+          "volume": 6596610000,
           "change_pct": -2.79
         },
         {
@@ -1991,13 +2007,148 @@
           "close": 6664.01,
           "volume": 5358120000,
           "change_pct": 0.77
+        },
+        {
+          "date": "2025-10-20",
+          "open": 6690.05,
+          "high": 6744.35,
+          "low": 6690.05,
+          "close": 6735.13,
+          "volume": 4672170000,
+          "change_pct": 0.67
+        },
+        {
+          "date": "2025-10-21",
+          "open": 6736.75,
+          "high": 6752.16,
+          "low": 6722.03,
+          "close": 6735.35,
+          "volume": 5245020000,
+          "change_pct": -0.02
+        },
+        {
+          "date": "2025-10-22",
+          "open": 6741.34,
+          "high": 6741.75,
+          "low": 6655.69,
+          "close": 6699.4,
+          "volume": 5710010000,
+          "change_pct": -0.62
+        },
+        {
+          "date": "2025-10-23",
+          "open": 6703.65,
+          "high": 6749.53,
+          "low": 6700.14,
+          "close": 6738.44,
+          "volume": 5565750000,
+          "change_pct": 0.52
+        },
+        {
+          "date": "2025-10-24",
+          "open": 6772.07,
+          "high": 6807.11,
+          "low": 6772.07,
+          "close": 6791.69,
+          "volume": 5058220000,
+          "change_pct": 0.29
+        },
+        {
+          "date": "2025-10-27",
+          "open": 6845.46,
+          "high": 6877.28,
+          "low": 6843.94,
+          "close": 6875.16,
+          "volume": 5290650000,
+          "change_pct": 0.43
+        },
+        {
+          "date": "2025-10-28",
+          "open": 6897.74,
+          "high": 6911.3,
+          "low": 6870.73,
+          "close": 6890.89,
+          "volume": 5695930000,
+          "change_pct": -0.1
+        },
+        {
+          "date": "2025-10-29",
+          "open": 6910.95,
+          "high": 6920.34,
+          "low": 6851.91,
+          "close": 6890.59,
+          "volume": 6280130000,
+          "change_pct": -0.29
+        },
+        {
+          "date": "2025-10-30",
+          "open": 6860.5,
+          "high": 6880.75,
+          "low": 6820.69,
+          "close": 6822.34,
+          "volume": 6052700000,
+          "change_pct": -0.56
+        },
+        {
+          "date": "2025-10-31",
+          "open": 6879.17,
+          "high": 6879.17,
+          "low": 6814.26,
+          "close": 6840.2,
+          "volume": 6398280000,
+          "change_pct": -0.57
+        },
+        {
+          "date": "2025-11-03",
+          "open": 6882.32,
+          "high": 6882.32,
+          "low": 6820.62,
+          "close": 6851.97,
+          "volume": 6065720000,
+          "change_pct": -0.44
+        },
+        {
+          "date": "2025-11-04",
+          "open": 6788.52,
+          "high": 6820.21,
+          "low": 6766.71,
+          "close": 6771.55,
+          "volume": 5739510000,
+          "change_pct": -0.25
+        },
+        {
+          "date": "2025-11-05",
+          "open": 6769.77,
+          "high": 6829.78,
+          "low": 6763.11,
+          "close": 6796.29,
+          "volume": 5939600000,
+          "change_pct": 0.39
+        },
+        {
+          "date": "2025-11-06",
+          "open": 6787.59,
+          "high": 6796.68,
+          "low": 6707.51,
+          "close": 6720.32,
+          "volume": 6051900000,
+          "change_pct": -0.99
+        },
+        {
+          "date": "2025-11-07",
+          "open": 6696.18,
+          "high": 6730.11,
+          "low": 6631.44,
+          "close": 6728.8,
+          "volume": 5926070000,
+          "change_pct": 0.49
         }
       ]
     },
     "energy": {
       "Gasoline (Regular, Weekly)": {
-        "current": 3.061,
-        "current_date": "2025-10-13",
+        "current": 3.019,
+        "current_date": "2025-11-03",
         "inauguration_price": 3.109,
         "inauguration_date": "2025-01-20",
         "biden_average": 3.3038490566037737,
@@ -2006,18 +2157,18 @@
         "biden_recent": 3.006,
         "biden_recent_date": "2024-12-30",
         "changes": {
-          "since_inauguration": -0.04800000000000004,
-          "pct_since_inauguration": -1.543904792537795,
-          "since_biden_avg": -0.24284905660377376,
-          "pct_since_biden_avg": -7.350488852339186,
-          "vs_biden_peak": -0.6070000000000002,
-          "pct_vs_biden_peak": -16.5485278080698,
-          "vs_biden_recent": 0.05500000000000016,
-          "pct_vs_biden_recent": 1.8296739853626134
+          "since_inauguration": -0.08999999999999986,
+          "pct_since_inauguration": -2.8948214860083583,
+          "since_biden_avg": -0.2848490566037736,
+          "pct_since_biden_avg": -8.62173336988304,
+          "vs_biden_peak": -0.649,
+          "pct_vs_biden_peak": -17.693565976008724,
+          "vs_biden_recent": 0.013000000000000345,
+          "pct_vs_biden_recent": 0.43246839654026437
         },
         "date_ranges": {
-          "inauguration": "Jan 20, 2025 to Oct 13, 2025",
-          "biden_comparison": "Dec 30, 2024 to Oct 13, 2025"
+          "inauguration": "Jan 20, 2025 to Nov 03, 2025",
+          "biden_comparison": "Dec 30, 2024 to Nov 03, 2025"
         },
         "series_id": "GASREGW",
         "frequency": "Weekly",
@@ -2029,8 +2180,8 @@
         }
       },
       "Crude Oil WTI (Weekly)": {
-        "current": 62.1,
-        "current_date": "2025-10-10",
+        "current": 61.49,
+        "current_date": "2025-10-31",
         "inauguration_price": 79.28,
         "inauguration_date": "2025-01-17",
         "biden_average": 76.60115384615385,
@@ -2039,18 +2190,18 @@
         "biden_recent": 70.51,
         "biden_recent_date": "2024-12-27",
         "changes": {
-          "since_inauguration": -17.18,
-          "pct_since_inauguration": -21.670030272452067,
-          "since_biden_avg": -14.501153846153848,
-          "pct_since_biden_avg": -18.930725084478546,
-          "vs_biden_peak": -24.4,
-          "pct_vs_biden_peak": -28.20809248554913,
-          "vs_biden_recent": -8.410000000000004,
-          "pct_vs_biden_recent": -11.92738618635655
+          "since_inauguration": -17.79,
+          "pct_since_inauguration": -22.439455095862765,
+          "since_biden_avg": -15.111153846153847,
+          "pct_since_biden_avg": -19.72705773662779,
+          "vs_biden_peak": -25.009999999999998,
+          "pct_vs_biden_peak": -28.91329479768786,
+          "vs_biden_recent": -9.020000000000003,
+          "pct_vs_biden_recent": -12.792511700468022
         },
         "date_ranges": {
-          "inauguration": "Jan 17, 2025 to Oct 10, 2025",
-          "biden_comparison": "Dec 27, 2024 to Oct 10, 2025"
+          "inauguration": "Jan 17, 2025 to Oct 31, 2025",
+          "biden_comparison": "Dec 27, 2024 to Oct 31, 2025"
         },
         "series_id": "WCOILWTICO",
         "frequency": "Weekly",
@@ -2062,8 +2213,8 @@
         }
       },
       "Natural Gas Henry Hub (Weekly)": {
-        "current": 3.23,
-        "current_date": "2025-10-10",
+        "current": 3.42,
+        "current_date": "2025-10-31",
         "inauguration_price": 5.47,
         "inauguration_date": "2025-01-17",
         "biden_average": 2.186923076923077,
@@ -2072,18 +2223,18 @@
         "biden_recent": 2.94,
         "biden_recent_date": "2024-12-27",
         "changes": {
-          "since_inauguration": -2.2399999999999998,
-          "pct_since_inauguration": -40.95063985374771,
-          "since_biden_avg": 1.043076923076923,
-          "pct_since_biden_avg": 47.69609567358424,
-          "vs_biden_peak": -1.8800000000000003,
-          "pct_vs_biden_peak": -36.79060665362036,
-          "vs_biden_recent": 0.29000000000000004,
-          "pct_vs_biden_recent": 9.863945578231293
+          "since_inauguration": -2.05,
+          "pct_since_inauguration": -37.47714808043875,
+          "since_biden_avg": 1.233076923076923,
+          "pct_since_biden_avg": 56.384101301442136,
+          "vs_biden_peak": -1.6900000000000004,
+          "pct_vs_biden_peak": -33.07240704500979,
+          "vs_biden_recent": 0.48,
+          "pct_vs_biden_recent": 16.3265306122449
         },
         "date_ranges": {
-          "inauguration": "Jan 17, 2025 to Oct 10, 2025",
-          "biden_comparison": "Dec 27, 2024 to Oct 10, 2025"
+          "inauguration": "Jan 17, 2025 to Oct 31, 2025",
+          "biden_comparison": "Dec 27, 2024 to Oct 31, 2025"
         },
         "series_id": "WHHNGSP",
         "frequency": "Weekly",
@@ -2111,18 +2262,18 @@
         "as_of_biden": "As of August 01, 2024"
       },
       "Inflation (CPI)": {
-        "current_value": 323.364,
-        "current_date": "2025-08-01",
-        "current_month_year": "August 2025",
-        "biden_value": 314.131,
-        "biden_date": "2024-08-01",
-        "biden_month_year": "August 2024",
-        "change": 9.233000000000004,
-        "change_pct": 2.9392196249335485,
+        "current_value": 324.368,
+        "current_date": "2025-09-01",
+        "current_month_year": "September 2025",
+        "biden_value": 314.851,
+        "biden_date": "2024-09-01",
+        "biden_month_year": "September 2024",
+        "change": 9.516999999999996,
+        "change_pct": 3.0226996261723786,
         "comparison_type": "Same Month Comparison",
         "days_apart_from_year": 0,
-        "as_of_current": "As of August 01, 2025",
-        "as_of_biden": "As of August 01, 2024"
+        "as_of_current": "As of September 01, 2025",
+        "as_of_biden": "As of September 01, 2024"
       },
       "GDP (Real)": {
         "current_value": 23770.976,
@@ -2153,18 +2304,18 @@
         "as_of_biden": "As of April 01, 2024"
       },
       "Consumer Confidence": {
-        "current_value": 58.2,
-        "current_date": "2025-08-01",
-        "current_month_year": "August 2025",
-        "biden_value": 67.9,
-        "biden_date": "2024-08-01",
-        "biden_month_year": "August 2024",
-        "change": -9.700000000000003,
-        "change_pct": -14.285714285714288,
+        "current_value": 55.1,
+        "current_date": "2025-09-01",
+        "current_month_year": "September 2025",
+        "biden_value": 70.1,
+        "biden_date": "2024-09-01",
+        "biden_month_year": "September 2024",
+        "change": -14.999999999999993,
+        "change_pct": -21.398002853067037,
         "comparison_type": "Same Month Comparison",
         "days_apart_from_year": 0,
-        "as_of_current": "As of August 01, 2025",
-        "as_of_biden": "As of August 01, 2024"
+        "as_of_current": "As of September 01, 2025",
+        "as_of_biden": "As of September 01, 2024"
       },
       "Personal Income": {
         "current_value": 26279.9,
@@ -2381,107 +2532,107 @@
         "as_of_biden": "As of December 01, 2024"
       },
       "Case Shiller Index": {
-        "current": 326.43,
-        "current_date": "2025-07-01",
-        "biden_value": 327.834,
+        "current": 327.127,
+        "current_date": "2025-08-01",
+        "biden_value": 327.817,
         "biden_date": "2024-12-01",
-        "change": -1.4039999999999964,
-        "change_pct": -0.42826552462526657,
-        "date_range": "Dec 01, 2024 to Jul 01, 2025",
-        "as_of_current": "As of July 01, 2025",
+        "change": -0.6899999999999977,
+        "change_pct": -0.21048328793198573,
+        "date_range": "Dec 01, 2024 to Aug 01, 2025",
+        "as_of_current": "As of August 01, 2025",
         "as_of_biden": "As of December 01, 2024"
       }
     },
     "consumer": {
       "Overall CPI": {
-        "trump_inflation": 2.011056580357629,
-        "trump_period": "Jan 01, 2025 to Aug 01, 2025",
-        "trump_latest_date": "2025-08-01",
-        "trump_months": 8,
-        "biden_inflation": 2.0999438336442875,
-        "biden_period": "Jan 01, 2024 to Aug 01, 2024",
-        "biden_latest_date": "2024-08-01",
-        "inflation_change": -0.08888725328665847,
+        "trump_inflation": 2.2071374697312454,
+        "trump_period": "Jan 01, 2025 to Sep 01, 2025",
+        "trump_latest_date": "2025-09-01",
+        "trump_months": 9,
+        "biden_inflation": 2.1765000828507617,
+        "biden_period": "Jan 01, 2024 to Sep 01, 2024",
+        "biden_latest_date": "2024-09-01",
+        "inflation_change": 0.030637386880483675,
         "analysis_type": "Trump-Only Period",
-        "as_of_trump": "As of August 01, 2025",
-        "index_trump_latest": 323.364,
+        "as_of_trump": "As of September 01, 2025",
+        "index_trump_latest": 324.368,
         "index_trump_earliest": 319.086,
-        "period_description": "8 months Trump vs same months Biden"
+        "period_description": "9 months Trump vs same months Biden"
       },
       "Core CPI": {
-        "trump_inflation": 2.334490159789876,
-        "trump_period": "Jan 01, 2025 to Aug 01, 2025",
-        "trump_latest_date": "2025-08-01",
-        "trump_months": 8,
-        "biden_inflation": 2.6002818164757615,
-        "biden_period": "Jan 01, 2024 to Aug 01, 2024",
-        "biden_latest_date": "2024-08-01",
-        "inflation_change": -0.26579165668588534,
+        "trump_inflation": 2.3826313849994394,
+        "trump_period": "Jan 01, 2025 to Sep 01, 2025",
+        "trump_latest_date": "2025-09-01",
+        "trump_months": 9,
+        "biden_inflation": 2.733768251009617,
+        "biden_period": "Jan 01, 2024 to Sep 01, 2024",
+        "biden_latest_date": "2024-09-01",
+        "inflation_change": -0.3511368660101777,
         "analysis_type": "Trump-Only Period",
-        "as_of_trump": "As of August 01, 2025",
-        "index_trump_latest": 329.793,
+        "as_of_trump": "As of September 01, 2025",
+        "index_trump_latest": 330.542,
         "index_trump_earliest": 324.739,
-        "period_description": "8 months Trump vs same months Biden"
+        "period_description": "9 months Trump vs same months Biden"
       },
       "Food CPI": {
-        "trump_inflation": 2.4742977498801064,
-        "trump_period": "Jan 01, 2025 to Aug 01, 2025",
-        "trump_latest_date": "2025-08-01",
-        "trump_months": 8,
-        "biden_inflation": 1.4053270243455773,
-        "biden_period": "Jan 01, 2024 to Aug 01, 2024",
-        "biden_latest_date": "2024-08-01",
-        "inflation_change": 1.068970725534529,
+        "trump_inflation": 2.5354191058109405,
+        "trump_period": "Jan 01, 2025 to Sep 01, 2025",
+        "trump_latest_date": "2025-09-01",
+        "trump_months": 9,
+        "biden_inflation": 1.6855173115571578,
+        "biden_period": "Jan 01, 2024 to Sep 01, 2024",
+        "biden_latest_date": "2024-09-01",
+        "inflation_change": 0.8499017942537828,
         "analysis_type": "Trump-Only Period",
-        "as_of_trump": "As of August 01, 2025",
-        "index_trump_latest": 341.208,
+        "as_of_trump": "As of September 01, 2025",
+        "index_trump_latest": 342.054,
         "index_trump_earliest": 335.671,
-        "period_description": "8 months Trump vs same months Biden"
+        "period_description": "9 months Trump vs same months Biden"
       },
       "Energy CPI": {
-        "trump_inflation": -2.9444458211348814,
-        "trump_period": "Jan 01, 2025 to Aug 01, 2025",
-        "trump_latest_date": "2025-08-01",
-        "trump_months": 8,
-        "biden_inflation": -2.341759504421242,
-        "biden_period": "Jan 01, 2024 to Aug 01, 2024",
-        "biden_latest_date": "2024-08-01",
-        "inflation_change": -0.6026863167136396,
+        "trump_inflation": -0.6424030878772921,
+        "trump_period": "Jan 01, 2025 to Sep 01, 2025",
+        "trump_latest_date": "2025-09-01",
+        "trump_months": 9,
+        "biden_inflation": -3.330502406287988,
+        "biden_period": "Jan 01, 2024 to Sep 01, 2024",
+        "biden_latest_date": "2024-09-01",
+        "inflation_change": 2.6880993184106963,
         "analysis_type": "Trump-Only Period",
-        "as_of_trump": "As of August 01, 2025",
-        "index_trump_latest": 276.936,
+        "as_of_trump": "As of September 01, 2025",
+        "index_trump_latest": 281.12,
         "index_trump_earliest": 282.481,
-        "period_description": "8 months Trump vs same months Biden"
+        "period_description": "9 months Trump vs same months Biden"
       },
       "Housing CPI": {
-        "trump_inflation": 3.697249724972491,
-        "trump_period": "Jan 01, 2025 to Aug 01, 2025",
-        "trump_latest_date": "2025-08-01",
-        "trump_months": 8,
-        "biden_inflation": 3.5230727982889647,
-        "biden_period": "Jan 01, 2024 to Aug 01, 2024",
-        "biden_latest_date": "2024-08-01",
-        "inflation_change": 0.17417692668352647,
+        "trump_inflation": 3.4804547121378904,
+        "trump_period": "Jan 01, 2025 to Sep 01, 2025",
+        "trump_latest_date": "2025-09-01",
+        "trump_months": 9,
+        "biden_inflation": 3.474883869251109,
+        "biden_period": "Jan 01, 2024 to Sep 01, 2024",
+        "biden_latest_date": "2024-09-01",
+        "inflation_change": 0.005570842886781335,
         "analysis_type": "Trump-Only Period",
-        "as_of_trump": "As of August 01, 2025",
-        "index_trump_latest": 349.277,
+        "as_of_trump": "As of September 01, 2025",
+        "index_trump_latest": 349.773,
         "index_trump_earliest": 340.875,
-        "period_description": "8 months Trump vs same months Biden"
+        "period_description": "9 months Trump vs same months Biden"
       },
       "Transportation CPI": {
-        "trump_inflation": -2.7984205145249734,
-        "trump_period": "Jan 01, 2025 to Aug 01, 2025",
-        "trump_latest_date": "2025-08-01",
-        "trump_months": 8,
-        "biden_inflation": 0.12231493582654407,
-        "biden_period": "Jan 01, 2024 to Aug 01, 2024",
-        "biden_latest_date": "2024-08-01",
-        "inflation_change": -2.9207354503515175,
+        "trump_inflation": -1.4002940762069143,
+        "trump_period": "Jan 01, 2025 to Sep 01, 2025",
+        "trump_latest_date": "2025-09-01",
+        "trump_months": 9,
+        "biden_inflation": 0.27454148964822056,
+        "biden_period": "Jan 01, 2024 to Sep 01, 2024",
+        "biden_latest_date": "2024-09-01",
+        "inflation_change": -1.6748355658551348,
         "analysis_type": "Trump-Only Period",
-        "as_of_trump": "As of August 01, 2025",
-        "index_trump_latest": 271.635,
+        "as_of_trump": "As of September 01, 2025",
+        "index_trump_latest": 273.892,
         "index_trump_earliest": 276.799,
-        "period_description": "8 months Trump vs same months Biden"
+        "period_description": "9 months Trump vs same months Biden"
       }
     }
   },
@@ -2491,63 +2642,63 @@
       "url": "https://api.congress.gov/v3",
       "type": "Tax Policy",
       "description": "Federal legislation and bill tracking",
-      "timestamp": "2025-10-17 22:16:09"
+      "timestamp": "2025-11-10 14:11:49"
     },
     {
       "name": "IRS.gov",
       "url": "https://www.irs.gov",
       "type": "Tax Policy",
       "description": "Current tax rates and regulations",
-      "timestamp": "2025-10-17 22:16:09"
+      "timestamp": "2025-11-10 14:11:49"
     },
     {
       "name": "Tax Foundation",
       "url": "https://taxfoundation.org",
       "type": "Tax Policy",
       "description": "Tax policy research and analysis",
-      "timestamp": "2025-10-17 22:16:09"
+      "timestamp": "2025-11-10 14:11:49"
     },
     {
       "name": "Treasury Fiscal Data API",
       "url": "https://api.fiscaldata.treasury.gov",
       "type": "Tax Policy",
       "description": "Federal revenue and fiscal data",
-      "timestamp": "2025-10-17 22:16:09"
+      "timestamp": "2025-11-10 14:11:49"
     },
     {
       "name": "Tariff Data Clean",
       "url": "tariff_data_clean.json",
       "type": "Tariff Data",
       "description": "Country tariff rates and distribution analysis",
-      "timestamp": "2025-10-17 22:16:15"
+      "timestamp": "2025-11-10 14:11:55"
     },
     {
       "name": "Yahoo Finance",
-      "url": "https://finance.yahoo.com/quote/%5EGSPC/history/?period1=1737331200&period2=1760739375",
+      "url": "https://finance.yahoo.com/quote/%5EGSPC/history/?period1=1737331200&period2=1762783915",
       "type": "Stock Data",
       "description": "S&P 500 Historical Prices from January 20, 2025",
-      "timestamp": "2025-10-17 22:16:15"
+      "timestamp": "2025-11-10 14:11:55"
     },
     {
       "name": "Federal Reserve Economic Data (FRED) - Energy",
       "url": "https://api.stlouisfed.org/fred",
       "type": "Energy Data",
       "description": "Gasoline, crude oil, and natural gas prices from EIA via FRED",
-      "timestamp": "2025-10-17 22:16:16"
+      "timestamp": "2025-11-10 14:11:55"
     },
     {
       "name": "Federal Reserve Economic Data (FRED)",
       "url": "https://api.stlouisfed.org/fred",
       "type": "Economic Data",
       "description": "Economic indicators and time series data",
-      "timestamp": "2025-10-17 22:16:18"
+      "timestamp": "2025-11-10 14:11:57"
     },
     {
       "name": "Bureau of Labor Statistics (BLS)",
       "url": "https://api.bls.gov",
       "type": "Employment Data",
       "description": "Employment statistics and wage data",
-      "timestamp": "2025-10-17 22:16:21"
+      "timestamp": "2025-11-10 14:12:00"
     }
   ]
 }

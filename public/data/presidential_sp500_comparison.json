@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "collection_date": "2025-10-25T22:42:19.294219",
+    "collection_date": "2025-11-10T14:12:44.098683",
     "reference_president": "Donald Trump (2nd Term)",
     "reference_inauguration": "2025-01-20T00:00:00",
-    "comparison_period_days": 278,
-    "comparison_end_date": "2025-10-25T22:41:50.838079",
-    "description": "S&P 500 performance for each president during their first 278 days in office",
+    "comparison_period_days": 294,
+    "comparison_end_date": "2025-11-10T14:12:20.975126",
+    "description": "S&P 500 performance for each president during their first 294 days in office",
     "data_source": "Yahoo Finance",
     "presidents_included": 9,
     "note": "Data for presidents before 1990 may be estimated due to limited historical availability"
@@ -15,23 +15,23 @@
       "president": "Jimmy Carter",
       "period": {
         "start_date": "1977-01-20",
-        "end_date": "1977-10-25",
-        "duration_days": 278,
-        "trading_days": 192
+        "end_date": "1977-11-10",
+        "duration_days": 294,
+        "trading_days": 204
       },
       "performance": {
         "start_price": 102.97,
-        "end_price": 91.63,
-        "total_return_pct": -11.01,
-        "annualized_return_pct": -14.21,
-        "volatility_pct": 8.29,
-        "max_drawdown_pct": 11.31,
-        "best_day_pct": 1.19,
+        "end_price": 92.98,
+        "total_return_pct": -9.7,
+        "annualized_return_pct": -11.91,
+        "volatility_pct": 8.45,
+        "max_drawdown_pct": 12.2,
+        "best_day_pct": 1.21,
         "worst_day_pct": -1.63,
-        "avg_daily_return_pct": -0.062,
-        "trading_days": 192,
-        "days_elapsed": 278,
-        "years_elapsed": 0.76
+        "avg_daily_return_pct": -0.051,
+        "trading_days": 204,
+        "days_elapsed": 294,
+        "years_elapsed": 0.8
       },
       "daily_data": [
         {
@@ -1761,6 +1761,114 @@
           "close": 91.63,
           "volume": 19210000,
           "change_pct": -0.75
+        },
+        {
+          "date": "1977-10-25",
+          "open": 91.63,
+          "high": 91.71,
+          "low": 90.2,
+          "close": 91.0,
+          "volume": 23590000,
+          "change_pct": -0.69
+        },
+        {
+          "date": "1977-10-26",
+          "open": 91.0,
+          "high": 92.46,
+          "low": 90.44,
+          "close": 92.1,
+          "volume": 24860000,
+          "change_pct": 1.21
+        },
+        {
+          "date": "1977-10-27",
+          "open": 92.1,
+          "high": 93.15,
+          "low": 91.54,
+          "close": 92.34,
+          "volume": 21920000,
+          "change_pct": 0.26
+        },
+        {
+          "date": "1977-10-28",
+          "open": 92.34,
+          "high": 93.13,
+          "low": 91.88,
+          "close": 92.61,
+          "volume": 18050000,
+          "change_pct": 0.29
+        },
+        {
+          "date": "1977-10-31",
+          "open": 92.61,
+          "high": 93.03,
+          "low": 91.85,
+          "close": 92.34,
+          "volume": 17070000,
+          "change_pct": -0.29
+        },
+        {
+          "date": "1977-11-01",
+          "open": 92.19,
+          "high": 92.19,
+          "low": 91.0,
+          "close": 91.35,
+          "volume": 17170000,
+          "change_pct": -0.91
+        },
+        {
+          "date": "1977-11-02",
+          "open": 91.35,
+          "high": 91.59,
+          "low": 90.29,
+          "close": 90.71,
+          "volume": 20760000,
+          "change_pct": -0.7
+        },
+        {
+          "date": "1977-11-03",
+          "open": 90.71,
+          "high": 91.18,
+          "low": 90.01,
+          "close": 90.76,
+          "volume": 18090000,
+          "change_pct": 0.06
+        },
+        {
+          "date": "1977-11-04",
+          "open": 90.76,
+          "high": 91.97,
+          "low": 90.72,
+          "close": 91.58,
+          "volume": 21700000,
+          "change_pct": 0.9
+        },
+        {
+          "date": "1977-11-07",
+          "open": 91.58,
+          "high": 92.7,
+          "low": 91.32,
+          "close": 92.29,
+          "volume": 21270000,
+          "change_pct": 0.78
+        },
+        {
+          "date": "1977-11-08",
+          "open": 92.29,
+          "high": 92.97,
+          "low": 91.82,
+          "close": 92.46,
+          "volume": 19210000,
+          "change_pct": 0.18
+        },
+        {
+          "date": "1977-11-09",
+          "open": 92.46,
+          "high": 93.27,
+          "low": 92.01,
+          "close": 92.98,
+          "volume": 21330000,
+          "change_pct": 0.56
         }
       ],
       "metadata": {
@@ -1768,30 +1876,30 @@
         "party": "Democrat",
         "term": "1977-1981",
         "number": 39,
-        "comparison_period_days": 278
+        "comparison_period_days": 294
       }
     },
     "Ronald Reagan": {
       "president": "Ronald Reagan",
       "period": {
         "start_date": "1981-01-20",
-        "end_date": "1981-10-25",
-        "duration_days": 278,
-        "trading_days": 194
+        "end_date": "1981-11-10",
+        "duration_days": 294,
+        "trading_days": 205
       },
       "performance": {
         "start_price": 131.65,
-        "end_price": 118.6,
-        "total_return_pct": -9.91,
-        "annualized_return_pct": -12.82,
-        "volatility_pct": 13.19,
+        "end_price": 123.29,
+        "total_return_pct": -6.35,
+        "annualized_return_pct": -7.83,
+        "volatility_pct": 13.36,
         "max_drawdown_pct": 17.75,
         "best_day_pct": 2.49,
         "worst_day_pct": -2.4,
-        "avg_daily_return_pct": -0.054,
-        "trading_days": 194,
-        "days_elapsed": 278,
-        "years_elapsed": 0.76
+        "avg_daily_return_pct": -0.033,
+        "trading_days": 205,
+        "days_elapsed": 294,
+        "years_elapsed": 0.8
       },
       "daily_data": [
         {
@@ -3539,6 +3647,105 @@
           "close": 118.6,
           "volume": 41990000,
           "change_pct": -0.87
+        },
+        {
+          "date": "1981-10-26",
+          "open": 118.6,
+          "high": 119.0,
+          "low": 116.81,
+          "close": 118.16,
+          "volume": 38210000,
+          "change_pct": -0.37
+        },
+        {
+          "date": "1981-10-27",
+          "open": 118.16,
+          "high": 120.43,
+          "low": 117.8,
+          "close": 119.29,
+          "volume": 53030000,
+          "change_pct": 0.96
+        },
+        {
+          "date": "1981-10-28",
+          "open": 119.29,
+          "high": 120.96,
+          "low": 118.39,
+          "close": 119.45,
+          "volume": 48100000,
+          "change_pct": 0.13
+        },
+        {
+          "date": "1981-10-29",
+          "open": 119.45,
+          "high": 120.37,
+          "low": 118.14,
+          "close": 119.06,
+          "volume": 40070000,
+          "change_pct": -0.33
+        },
+        {
+          "date": "1981-10-30",
+          "open": 119.06,
+          "high": 122.53,
+          "low": 118.43,
+          "close": 121.89,
+          "volume": 59570000,
+          "change_pct": 2.38
+        },
+        {
+          "date": "1981-11-02",
+          "open": 122.35,
+          "high": 125.14,
+          "low": 122.35,
+          "close": 124.2,
+          "volume": 65100000,
+          "change_pct": 1.51
+        },
+        {
+          "date": "1981-11-03",
+          "open": 124.2,
+          "high": 125.52,
+          "low": 123.14,
+          "close": 124.8,
+          "volume": 54620000,
+          "change_pct": 0.48
+        },
+        {
+          "date": "1981-11-04",
+          "open": 124.8,
+          "high": 126.0,
+          "low": 123.64,
+          "close": 124.74,
+          "volume": 53450000,
+          "change_pct": -0.05
+        },
+        {
+          "date": "1981-11-05",
+          "open": 124.74,
+          "high": 125.8,
+          "low": 122.98,
+          "close": 123.54,
+          "volume": 50860000,
+          "change_pct": -0.96
+        },
+        {
+          "date": "1981-11-06",
+          "open": 123.54,
+          "high": 124.03,
+          "low": 121.85,
+          "close": 122.67,
+          "volume": 43270000,
+          "change_pct": -0.7
+        },
+        {
+          "date": "1981-11-09",
+          "open": 122.67,
+          "high": 124.13,
+          "low": 121.59,
+          "close": 123.29,
+          "volume": 48310000,
+          "change_pct": 0.51
         }
       ],
       "metadata": {
@@ -3546,30 +3753,30 @@
         "party": "Republican",
         "term": "1981-1989",
         "number": 40,
-        "comparison_period_days": 278
+        "comparison_period_days": 294
       }
     },
     "George H.W. Bush": {
       "president": "George H.W. Bush",
       "period": {
         "start_date": "1989-01-20",
-        "end_date": "1989-10-25",
-        "duration_days": 278,
-        "trading_days": 193
+        "end_date": "1989-11-10",
+        "duration_days": 294,
+        "trading_days": 205
       },
       "performance": {
         "start_price": 286.63,
-        "end_price": 343.7,
-        "total_return_pct": 19.91,
-        "annualized_return_pct": 26.94,
-        "volatility_pct": 13.69,
-        "max_drawdown_pct": 7.27,
+        "end_price": 336.57,
+        "total_return_pct": 17.42,
+        "annualized_return_pct": 22.08,
+        "volatility_pct": 13.75,
+        "max_drawdown_pct": 7.56,
         "best_day_pct": 2.76,
         "worst_day_pct": -6.12,
-        "avg_daily_return_pct": 0.096,
-        "trading_days": 193,
-        "days_elapsed": 278,
-        "years_elapsed": 0.76
+        "avg_daily_return_pct": 0.08,
+        "trading_days": 205,
+        "days_elapsed": 294,
+        "years_elapsed": 0.8
       },
       "daily_data": [
         {
@@ -5308,6 +5515,114 @@
           "close": 343.7,
           "volume": 237960000,
           "change_pct": -0.33
+        },
+        {
+          "date": "1989-10-25",
+          "open": 343.7,
+          "high": 344.51,
+          "low": 341.96,
+          "close": 342.5,
+          "volume": 155650000,
+          "change_pct": -0.35
+        },
+        {
+          "date": "1989-10-26",
+          "open": 342.5,
+          "high": 342.5,
+          "low": 337.2,
+          "close": 337.93,
+          "volume": 175240000,
+          "change_pct": -1.33
+        },
+        {
+          "date": "1989-10-27",
+          "open": 337.93,
+          "high": 337.97,
+          "low": 333.26,
+          "close": 335.06,
+          "volume": 170330000,
+          "change_pct": -0.85
+        },
+        {
+          "date": "1989-10-30",
+          "open": 335.06,
+          "high": 337.04,
+          "low": 334.48,
+          "close": 335.07,
+          "volume": 126630000,
+          "change_pct": 0.0
+        },
+        {
+          "date": "1989-10-31",
+          "open": 335.08,
+          "high": 340.86,
+          "low": 335.07,
+          "close": 340.36,
+          "volume": 176100000,
+          "change_pct": 1.58
+        },
+        {
+          "date": "1989-11-01",
+          "open": 340.36,
+          "high": 341.74,
+          "low": 339.79,
+          "close": 341.2,
+          "volume": 154240000,
+          "change_pct": 0.25
+        },
+        {
+          "date": "1989-11-02",
+          "open": 341.2,
+          "high": 341.2,
+          "low": 336.61,
+          "close": 338.48,
+          "volume": 152440000,
+          "change_pct": -0.8
+        },
+        {
+          "date": "1989-11-03",
+          "open": 338.48,
+          "high": 339.67,
+          "low": 337.37,
+          "close": 337.62,
+          "volume": 131500000,
+          "change_pct": -0.25
+        },
+        {
+          "date": "1989-11-06",
+          "open": 337.61,
+          "high": 337.62,
+          "low": 332.33,
+          "close": 332.61,
+          "volume": 135480000,
+          "change_pct": -1.48
+        },
+        {
+          "date": "1989-11-07",
+          "open": 332.61,
+          "high": 334.82,
+          "low": 330.91,
+          "close": 334.81,
+          "volume": 163000000,
+          "change_pct": 0.66
+        },
+        {
+          "date": "1989-11-08",
+          "open": 334.81,
+          "high": 339.41,
+          "low": 334.81,
+          "close": 338.15,
+          "volume": 170150000,
+          "change_pct": 1.0
+        },
+        {
+          "date": "1989-11-09",
+          "open": 338.15,
+          "high": 338.73,
+          "low": 336.21,
+          "close": 336.57,
+          "volume": 143390000,
+          "change_pct": -0.47
         }
       ],
       "metadata": {
@@ -5315,30 +5630,30 @@
         "party": "Republican",
         "term": "1989-1993",
         "number": 41,
-        "comparison_period_days": 278
+        "comparison_period_days": 294
       }
     },
     "Bill Clinton": {
       "president": "Bill Clinton",
       "period": {
         "start_date": "1993-01-20",
-        "end_date": "1993-10-25",
-        "duration_days": 278,
-        "trading_days": 193
+        "end_date": "1993-11-10",
+        "duration_days": 294,
+        "trading_days": 205
       },
       "performance": {
         "start_price": 433.37,
-        "end_price": 463.27,
-        "total_return_pct": 6.9,
-        "annualized_return_pct": 9.16,
-        "volatility_pct": 9.05,
+        "end_price": 460.33,
+        "total_return_pct": 6.22,
+        "annualized_return_pct": 7.79,
+        "volatility_pct": 9.03,
         "max_drawdown_pct": 4.99,
         "best_day_pct": 1.93,
         "worst_day_pct": -2.39,
-        "avg_daily_return_pct": 0.034,
-        "trading_days": 193,
-        "days_elapsed": 278,
-        "years_elapsed": 0.76
+        "avg_daily_return_pct": 0.029,
+        "trading_days": 205,
+        "days_elapsed": 294,
+        "years_elapsed": 0.8
       },
       "daily_data": [
         {
@@ -7077,6 +7392,114 @@
           "close": 463.27,
           "volume": 301440000,
           "change_pct": -0.45
+        },
+        {
+          "date": "1993-10-25",
+          "open": 463.27,
+          "high": 464.49,
+          "low": 462.05,
+          "close": 464.2,
+          "volume": 260310000,
+          "change_pct": 0.2
+        },
+        {
+          "date": "1993-10-26",
+          "open": 464.2,
+          "high": 464.32,
+          "low": 462.65,
+          "close": 464.3,
+          "volume": 284530000,
+          "change_pct": 0.02
+        },
+        {
+          "date": "1993-10-27",
+          "open": 464.3,
+          "high": 464.61,
+          "low": 463.36,
+          "close": 464.61,
+          "volume": 279830000,
+          "change_pct": 0.07
+        },
+        {
+          "date": "1993-10-28",
+          "open": 464.52,
+          "high": 468.76,
+          "low": 464.52,
+          "close": 467.73,
+          "volume": 301220000,
+          "change_pct": 0.69
+        },
+        {
+          "date": "1993-10-29",
+          "open": 467.72,
+          "high": 468.2,
+          "low": 467.37,
+          "close": 467.83,
+          "volume": 270570000,
+          "change_pct": 0.02
+        },
+        {
+          "date": "1993-11-01",
+          "open": 467.83,
+          "high": 469.11,
+          "low": 467.33,
+          "close": 469.1,
+          "volume": 256030000,
+          "change_pct": 0.27
+        },
+        {
+          "date": "1993-11-02",
+          "open": 469.1,
+          "high": 469.1,
+          "low": 466.2,
+          "close": 468.44,
+          "volume": 304780000,
+          "change_pct": -0.14
+        },
+        {
+          "date": "1993-11-03",
+          "open": 468.44,
+          "high": 468.61,
+          "low": 460.95,
+          "close": 463.02,
+          "volume": 342110000,
+          "change_pct": -1.16
+        },
+        {
+          "date": "1993-11-04",
+          "open": 463.02,
+          "high": 463.16,
+          "low": 457.26,
+          "close": 457.49,
+          "volume": 323430000,
+          "change_pct": -1.19
+        },
+        {
+          "date": "1993-11-05",
+          "open": 457.49,
+          "high": 459.63,
+          "low": 454.36,
+          "close": 459.57,
+          "volume": 336890000,
+          "change_pct": 0.45
+        },
+        {
+          "date": "1993-11-08",
+          "open": 459.57,
+          "high": 461.54,
+          "low": 458.78,
+          "close": 460.21,
+          "volume": 234340000,
+          "change_pct": 0.14
+        },
+        {
+          "date": "1993-11-09",
+          "open": 460.21,
+          "high": 463.42,
+          "low": 460.21,
+          "close": 460.33,
+          "volume": 276360000,
+          "change_pct": 0.03
         }
       ],
       "metadata": {
@@ -7084,30 +7507,30 @@
         "party": "Democrat",
         "term": "1993-2001",
         "number": 42,
-        "comparison_period_days": 278
+        "comparison_period_days": 294
       }
     },
     "George W. Bush": {
       "president": "George W. Bush",
       "period": {
         "start_date": "2001-01-20",
-        "end_date": "2001-10-25",
-        "duration_days": 278,
-        "trading_days": 189
+        "end_date": "2001-11-10",
+        "duration_days": 294,
+        "trading_days": 201
       },
       "performance": {
         "start_price": 1342.9,
-        "end_price": 1085.2,
-        "total_return_pct": -19.19,
-        "annualized_return_pct": -24.42,
-        "volatility_pct": 21.84,
+        "end_price": 1120.31,
+        "total_return_pct": -16.58,
+        "annualized_return_pct": -20.16,
+        "volatility_pct": 21.79,
         "max_drawdown_pct": 29.7,
         "best_day_pct": 4.37,
         "worst_day_pct": -4.92,
-        "avg_daily_return_pct": -0.104,
-        "trading_days": 189,
-        "days_elapsed": 278,
-        "years_elapsed": 0.76
+        "avg_daily_return_pct": -0.082,
+        "trading_days": 201,
+        "days_elapsed": 294,
+        "years_elapsed": 0.8
       },
       "daily_data": [
         {
@@ -8810,6 +9233,114 @@
           "close": 1085.2,
           "volume": 1336200000,
           "change_pct": 0.04
+        },
+        {
+          "date": "2001-10-25",
+          "open": 1085.2,
+          "high": 1100.09,
+          "low": 1065.64,
+          "close": 1100.09,
+          "volume": 1364400000,
+          "change_pct": 1.37
+        },
+        {
+          "date": "2001-10-26",
+          "open": 1100.09,
+          "high": 1110.61,
+          "low": 1094.24,
+          "close": 1104.61,
+          "volume": 1244500000,
+          "change_pct": 0.41
+        },
+        {
+          "date": "2001-10-29",
+          "open": 1104.61,
+          "high": 1104.61,
+          "low": 1078.3,
+          "close": 1078.3,
+          "volume": 1106100000,
+          "change_pct": -2.38
+        },
+        {
+          "date": "2001-10-30",
+          "open": 1078.3,
+          "high": 1078.3,
+          "low": 1053.61,
+          "close": 1059.79,
+          "volume": 1297400000,
+          "change_pct": -1.72
+        },
+        {
+          "date": "2001-10-31",
+          "open": 1059.79,
+          "high": 1074.79,
+          "low": 1057.55,
+          "close": 1059.78,
+          "volume": 1352500000,
+          "change_pct": -0.0
+        },
+        {
+          "date": "2001-11-01",
+          "open": 1059.78,
+          "high": 1085.61,
+          "low": 1054.31,
+          "close": 1084.1,
+          "volume": 1317400000,
+          "change_pct": 2.29
+        },
+        {
+          "date": "2001-11-02",
+          "open": 1084.1,
+          "high": 1089.63,
+          "low": 1075.58,
+          "close": 1087.2,
+          "volume": 1121900000,
+          "change_pct": 0.29
+        },
+        {
+          "date": "2001-11-05",
+          "open": 1087.2,
+          "high": 1106.72,
+          "low": 1087.2,
+          "close": 1102.84,
+          "volume": 1267700000,
+          "change_pct": 1.44
+        },
+        {
+          "date": "2001-11-06",
+          "open": 1102.84,
+          "high": 1119.73,
+          "low": 1095.36,
+          "close": 1118.86,
+          "volume": 1356000000,
+          "change_pct": 1.45
+        },
+        {
+          "date": "2001-11-07",
+          "open": 1118.86,
+          "high": 1126.62,
+          "low": 1112.98,
+          "close": 1115.8,
+          "volume": 1411300000,
+          "change_pct": -0.27
+        },
+        {
+          "date": "2001-11-08",
+          "open": 1115.8,
+          "high": 1135.75,
+          "low": 1115.42,
+          "close": 1118.54,
+          "volume": 1517500000,
+          "change_pct": 0.25
+        },
+        {
+          "date": "2001-11-09",
+          "open": 1118.54,
+          "high": 1123.02,
+          "low": 1111.13,
+          "close": 1120.31,
+          "volume": 1093800000,
+          "change_pct": 0.16
         }
       ],
       "metadata": {
@@ -8817,30 +9348,30 @@
         "party": "Republican",
         "term": "2001-2009",
         "number": 43,
-        "comparison_period_days": 278
+        "comparison_period_days": 294
       }
     },
     "Barack Obama": {
       "president": "Barack Obama",
       "period": {
         "start_date": "2009-01-20",
-        "end_date": "2009-10-25",
-        "duration_days": 278,
-        "trading_days": 194
+        "end_date": "2009-11-10",
+        "duration_days": 294,
+        "trading_days": 205
       },
       "performance": {
         "start_price": 805.22,
-        "end_price": 1079.6,
-        "total_return_pct": 34.08,
-        "annualized_return_pct": 47.0,
-        "volatility_pct": 27.07,
+        "end_price": 1093.08,
+        "total_return_pct": 35.75,
+        "annualized_return_pct": 46.19,
+        "volatility_pct": 26.91,
         "max_drawdown_pct": 22.6,
         "best_day_pct": 6.55,
         "worst_day_pct": -5.23,
-        "avg_daily_return_pct": 0.166,
-        "trading_days": 194,
-        "days_elapsed": 278,
-        "years_elapsed": 0.76
+        "avg_daily_return_pct": 0.163,
+        "trading_days": 205,
+        "days_elapsed": 294,
+        "years_elapsed": 0.8
       },
       "daily_data": [
         {
@@ -10588,6 +11119,105 @@
           "close": 1079.6,
           "volume": 4767460000,
           "change_pct": -1.46
+        },
+        {
+          "date": "2009-10-26",
+          "open": 1080.36,
+          "high": 1091.75,
+          "low": 1065.23,
+          "close": 1066.95,
+          "volume": 6363380000,
+          "change_pct": -1.24
+        },
+        {
+          "date": "2009-10-27",
+          "open": 1067.54,
+          "high": 1072.48,
+          "low": 1060.62,
+          "close": 1063.41,
+          "volume": 5337380000,
+          "change_pct": -0.39
+        },
+        {
+          "date": "2009-10-28",
+          "open": 1061.51,
+          "high": 1063.26,
+          "low": 1042.19,
+          "close": 1042.63,
+          "volume": 6600350000,
+          "change_pct": -1.78
+        },
+        {
+          "date": "2009-10-29",
+          "open": 1043.69,
+          "high": 1066.83,
+          "low": 1043.69,
+          "close": 1066.11,
+          "volume": 5595040000,
+          "change_pct": 2.15
+        },
+        {
+          "date": "2009-10-30",
+          "open": 1065.41,
+          "high": 1065.41,
+          "low": 1033.38,
+          "close": 1036.19,
+          "volume": 6512420000,
+          "change_pct": -2.74
+        },
+        {
+          "date": "2009-11-02",
+          "open": 1036.18,
+          "high": 1052.18,
+          "low": 1029.38,
+          "close": 1042.88,
+          "volume": 6202640000,
+          "change_pct": 0.65
+        },
+        {
+          "date": "2009-11-03",
+          "open": 1040.92,
+          "high": 1046.36,
+          "low": 1033.94,
+          "close": 1045.41,
+          "volume": 5487500000,
+          "change_pct": 0.43
+        },
+        {
+          "date": "2009-11-04",
+          "open": 1047.14,
+          "high": 1061.0,
+          "low": 1045.15,
+          "close": 1046.5,
+          "volume": 5635510000,
+          "change_pct": -0.06
+        },
+        {
+          "date": "2009-11-05",
+          "open": 1047.3,
+          "high": 1066.65,
+          "low": 1047.3,
+          "close": 1066.63,
+          "volume": 4848350000,
+          "change_pct": 1.85
+        },
+        {
+          "date": "2009-11-06",
+          "open": 1064.95,
+          "high": 1071.48,
+          "low": 1059.32,
+          "close": 1069.3,
+          "volume": 4277130000,
+          "change_pct": 0.41
+        },
+        {
+          "date": "2009-11-09",
+          "open": 1072.31,
+          "high": 1093.19,
+          "low": 1072.31,
+          "close": 1093.08,
+          "volume": 4460030000,
+          "change_pct": 1.94
         }
       ],
       "metadata": {
@@ -10595,30 +11225,30 @@
         "party": "Democrat",
         "term": "2009-2017",
         "number": 44,
-        "comparison_period_days": 278
+        "comparison_period_days": 294
       }
     },
     "Donald Trump": {
       "president": "Donald Trump",
       "period": {
         "start_date": "2017-01-20",
-        "end_date": "2017-10-25",
-        "duration_days": 278,
-        "trading_days": 193
+        "end_date": "2017-11-10",
+        "duration_days": 294,
+        "trading_days": 205
       },
       "performance": {
         "start_price": 2271.31,
-        "end_price": 2569.13,
-        "total_return_pct": 13.11,
-        "annualized_return_pct": 17.57,
-        "volatility_pct": 5.43,
+        "end_price": 2584.62,
+        "total_return_pct": 13.79,
+        "annualized_return_pct": 17.41,
+        "volatility_pct": 5.33,
         "max_drawdown_pct": 2.8,
         "best_day_pct": 0.8,
         "worst_day_pct": -1.48,
         "avg_daily_return_pct": 0.033,
-        "trading_days": 193,
-        "days_elapsed": 278,
-        "years_elapsed": 0.76
+        "trading_days": 205,
+        "days_elapsed": 294,
+        "years_elapsed": 0.8
       },
       "daily_data": [
         {
@@ -12357,6 +12987,114 @@
           "close": 2569.13,
           "volume": 3435660000,
           "change_pct": 0.02
+        },
+        {
+          "date": "2017-10-25",
+          "open": 2566.52,
+          "high": 2567.4,
+          "low": 2544.0,
+          "close": 2557.15,
+          "volume": 3885470000,
+          "change_pct": -0.37
+        },
+        {
+          "date": "2017-10-26",
+          "open": 2560.08,
+          "high": 2567.07,
+          "low": 2559.8,
+          "close": 2560.4,
+          "volume": 3891750000,
+          "change_pct": 0.01
+        },
+        {
+          "date": "2017-10-27",
+          "open": 2570.26,
+          "high": 2582.98,
+          "low": 2565.94,
+          "close": 2581.07,
+          "volume": 3896100000,
+          "change_pct": 0.42
+        },
+        {
+          "date": "2017-10-30",
+          "open": 2577.75,
+          "high": 2580.03,
+          "low": 2568.25,
+          "close": 2572.83,
+          "volume": 3660230000,
+          "change_pct": -0.19
+        },
+        {
+          "date": "2017-10-31",
+          "open": 2575.99,
+          "high": 2578.29,
+          "low": 2572.15,
+          "close": 2575.26,
+          "volume": 3844420000,
+          "change_pct": -0.03
+        },
+        {
+          "date": "2017-11-01",
+          "open": 2583.21,
+          "high": 2588.4,
+          "low": 2574.92,
+          "close": 2579.36,
+          "volume": 3841200000,
+          "change_pct": -0.15
+        },
+        {
+          "date": "2017-11-02",
+          "open": 2579.46,
+          "high": 2581.11,
+          "low": 2566.17,
+          "close": 2579.85,
+          "volume": 4050140000,
+          "change_pct": 0.02
+        },
+        {
+          "date": "2017-11-03",
+          "open": 2581.93,
+          "high": 2588.42,
+          "low": 2576.77,
+          "close": 2587.84,
+          "volume": 3568710000,
+          "change_pct": 0.23
+        },
+        {
+          "date": "2017-11-06",
+          "open": 2587.47,
+          "high": 2593.38,
+          "low": 2585.66,
+          "close": 2591.13,
+          "volume": 3541970000,
+          "change_pct": 0.14
+        },
+        {
+          "date": "2017-11-07",
+          "open": 2592.11,
+          "high": 2597.02,
+          "low": 2584.35,
+          "close": 2590.64,
+          "volume": 3815190000,
+          "change_pct": -0.06
+        },
+        {
+          "date": "2017-11-08",
+          "open": 2588.71,
+          "high": 2595.47,
+          "low": 2585.02,
+          "close": 2594.38,
+          "volume": 3898450000,
+          "change_pct": 0.22
+        },
+        {
+          "date": "2017-11-09",
+          "open": 2584.0,
+          "high": 2586.5,
+          "low": 2566.33,
+          "close": 2584.62,
+          "volume": 3844100000,
+          "change_pct": 0.02
         }
       ],
       "metadata": {
@@ -12364,30 +13102,30 @@
         "party": "Republican",
         "term": "2017-2021",
         "number": 45,
-        "comparison_period_days": 278
+        "comparison_period_days": 294
       }
     },
     "Joe Biden": {
       "president": "Joe Biden",
       "period": {
         "start_date": "2021-01-20",
-        "end_date": "2021-10-25",
-        "duration_days": 278,
-        "trading_days": 193
+        "end_date": "2021-11-10",
+        "duration_days": 294,
+        "trading_days": 205
       },
       "performance": {
         "start_price": 3851.85,
-        "end_price": 4544.9,
-        "total_return_pct": 17.99,
-        "annualized_return_pct": 24.28,
-        "volatility_pct": 10.48,
+        "end_price": 4685.25,
+        "total_return_pct": 21.64,
+        "annualized_return_pct": 27.55,
+        "volatility_pct": 10.31,
         "max_drawdown_pct": 5.21,
         "best_day_pct": 1.54,
         "worst_day_pct": -2.24,
-        "avg_daily_return_pct": 0.057,
-        "trading_days": 193,
-        "days_elapsed": 278,
-        "years_elapsed": 0.76
+        "avg_daily_return_pct": 0.063,
+        "trading_days": 205,
+        "days_elapsed": 294,
+        "years_elapsed": 0.8
       },
       "daily_data": [
         {
@@ -14126,6 +14864,114 @@
           "close": 4544.9,
           "volume": 3758220000,
           "change_pct": -0.03
+        },
+        {
+          "date": "2021-10-25",
+          "open": 4553.69,
+          "high": 4572.62,
+          "low": 4537.36,
+          "close": 4566.48,
+          "volume": 3899400000,
+          "change_pct": 0.28
+        },
+        {
+          "date": "2021-10-26",
+          "open": 4578.69,
+          "high": 4598.53,
+          "low": 4569.17,
+          "close": 4574.79,
+          "volume": 3879740000,
+          "change_pct": -0.09
+        },
+        {
+          "date": "2021-10-27",
+          "open": 4580.22,
+          "high": 4584.57,
+          "low": 4551.66,
+          "close": 4551.68,
+          "volume": 4226050000,
+          "change_pct": -0.62
+        },
+        {
+          "date": "2021-10-28",
+          "open": 4562.84,
+          "high": 4597.55,
+          "low": 4562.84,
+          "close": 4596.42,
+          "volume": 4132950000,
+          "change_pct": 0.74
+        },
+        {
+          "date": "2021-10-29",
+          "open": 4572.87,
+          "high": 4608.08,
+          "low": 4567.59,
+          "close": 4605.38,
+          "volume": 4510200000,
+          "change_pct": 0.71
+        },
+        {
+          "date": "2021-11-01",
+          "open": 4610.62,
+          "high": 4620.34,
+          "low": 4595.06,
+          "close": 4613.67,
+          "volume": 3971540000,
+          "change_pct": 0.07
+        },
+        {
+          "date": "2021-11-02",
+          "open": 4613.34,
+          "high": 4635.15,
+          "low": 4613.34,
+          "close": 4630.65,
+          "volume": 3975250000,
+          "change_pct": 0.38
+        },
+        {
+          "date": "2021-11-03",
+          "open": 4630.65,
+          "high": 4663.46,
+          "low": 4621.19,
+          "close": 4660.57,
+          "volume": 4319660000,
+          "change_pct": 0.65
+        },
+        {
+          "date": "2021-11-04",
+          "open": 4662.93,
+          "high": 4683.0,
+          "low": 4662.59,
+          "close": 4680.06,
+          "volume": 4462300000,
+          "change_pct": 0.37
+        },
+        {
+          "date": "2021-11-05",
+          "open": 4699.26,
+          "high": 4718.5,
+          "low": 4681.32,
+          "close": 4697.53,
+          "volume": 4467180000,
+          "change_pct": -0.04
+        },
+        {
+          "date": "2021-11-08",
+          "open": 4701.48,
+          "high": 4714.92,
+          "low": 4694.39,
+          "close": 4701.7,
+          "volume": 4269710000,
+          "change_pct": 0.0
+        },
+        {
+          "date": "2021-11-09",
+          "open": 4707.25,
+          "high": 4708.53,
+          "low": 4670.87,
+          "close": 4685.25,
+          "volume": 4117080000,
+          "change_pct": -0.47
         }
       ],
       "metadata": {
@@ -14133,30 +14979,30 @@
         "party": "Democrat",
         "term": "2021-2025",
         "number": 46,
-        "comparison_period_days": 278
+        "comparison_period_days": 294
       }
     },
     "Donald Trump (2nd Term)": {
       "president": "Donald Trump (2nd Term)",
       "period": {
         "start_date": "2025-01-20",
-        "end_date": "2025-10-25",
-        "duration_days": 278,
-        "trading_days": 193
+        "end_date": "2025-11-10",
+        "duration_days": 294,
+        "trading_days": 203
       },
       "performance": {
         "start_price": 6049.24,
-        "end_price": 6791.69,
-        "total_return_pct": 12.27,
-        "annualized_return_pct": 16.43,
-        "volatility_pct": 17.64,
+        "end_price": 6728.8,
+        "total_return_pct": 11.23,
+        "annualized_return_pct": 14.14,
+        "volatility_pct": 17.3,
         "max_drawdown_pct": 18.9,
         "best_day_pct": 9.9,
         "worst_day_pct": -4.12,
-        "avg_daily_return_pct": 0.06,
-        "trading_days": 193,
-        "days_elapsed": 278,
-        "years_elapsed": 0.76
+        "avg_daily_return_pct": 0.048,
+        "trading_days": 203,
+        "days_elapsed": 294,
+        "years_elapsed": 0.8
       },
       "daily_data": [
         {
@@ -15895,6 +16741,96 @@
           "close": 6791.69,
           "volume": 5058220000,
           "change_pct": 0.29
+        },
+        {
+          "date": "2025-10-27",
+          "open": 6845.46,
+          "high": 6877.28,
+          "low": 6843.94,
+          "close": 6875.16,
+          "volume": 5290650000,
+          "change_pct": 0.43
+        },
+        {
+          "date": "2025-10-28",
+          "open": 6897.74,
+          "high": 6911.3,
+          "low": 6870.73,
+          "close": 6890.89,
+          "volume": 5695930000,
+          "change_pct": -0.1
+        },
+        {
+          "date": "2025-10-29",
+          "open": 6910.95,
+          "high": 6920.34,
+          "low": 6851.91,
+          "close": 6890.59,
+          "volume": 6280130000,
+          "change_pct": -0.29
+        },
+        {
+          "date": "2025-10-30",
+          "open": 6860.5,
+          "high": 6880.75,
+          "low": 6820.69,
+          "close": 6822.34,
+          "volume": 6052700000,
+          "change_pct": -0.56
+        },
+        {
+          "date": "2025-10-31",
+          "open": 6879.17,
+          "high": 6879.17,
+          "low": 6814.26,
+          "close": 6840.2,
+          "volume": 6398280000,
+          "change_pct": -0.57
+        },
+        {
+          "date": "2025-11-03",
+          "open": 6882.32,
+          "high": 6882.32,
+          "low": 6820.62,
+          "close": 6851.97,
+          "volume": 6065720000,
+          "change_pct": -0.44
+        },
+        {
+          "date": "2025-11-04",
+          "open": 6788.52,
+          "high": 6820.21,
+          "low": 6766.71,
+          "close": 6771.55,
+          "volume": 5739510000,
+          "change_pct": -0.25
+        },
+        {
+          "date": "2025-11-05",
+          "open": 6769.77,
+          "high": 6829.78,
+          "low": 6763.11,
+          "close": 6796.29,
+          "volume": 5939600000,
+          "change_pct": 0.39
+        },
+        {
+          "date": "2025-11-06",
+          "open": 6787.59,
+          "high": 6796.68,
+          "low": 6707.51,
+          "close": 6720.32,
+          "volume": 6051900000,
+          "change_pct": -0.99
+        },
+        {
+          "date": "2025-11-07",
+          "open": 6696.18,
+          "high": 6730.11,
+          "low": 6631.44,
+          "close": 6728.8,
+          "volume": 5926070000,
+          "change_pct": 0.49
         }
       ],
       "metadata": {
@@ -15902,7 +16838,7 @@
         "party": "Republican",
         "term": "2025-2029",
         "number": 47,
-        "comparison_period_days": 278
+        "comparison_period_days": 294
       }
     }
   }
