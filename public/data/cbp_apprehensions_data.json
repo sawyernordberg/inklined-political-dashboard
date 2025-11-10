@@ -2,7 +2,7 @@
   "metadata": {
     "source": "U.S. Customs and Border Protection",
     "url": "https://www.cbp.gov/newsroom/stats/nationwide-encounters",
-    "scraped_at": "2025-10-17T22:20:32.653670",
+    "scraped_at": "2025-11-09T22:06:23.356753",
     "description": "Monthly border apprehensions data by category and location"
   },
   "categories": {
@@ -21,17 +21,18 @@
         "Jul-24": 59655,
         "Aug-24": 60684,
         "Sep-24": 55993,
-        "Oct-24": 58120,
-        "Nov-24": 47537,
-        "Dec-24": 48141,
-        "Jan-25": 30126,
+        "Oct-24": 58115,
+        "Nov-24": 47534,
+        "Dec-24": 48137,
+        "Jan-25": 30127,
         "Feb-25": 9241,
         "Mar-25": 8193,
-        "Apr-25": 10006,
-        "May-25": 10357,
-        "Aug-25": 8018
+        "Apr-25": 10007,
+        "May-25": 10359,
+        "Aug-25": 8014,
+        "Sep-2025": 6168
       },
-      "total": 1787058
+      "total": 1793214
     },
     "at_large": {
       "original_name": "At Large",
@@ -48,17 +49,18 @@
         "Jul-24": 166,
         "Aug-24": 180,
         "Sep-24": 151,
-        "Oct-24": 179,
-        "Nov-24": 157,
-        "Dec-24": 134,
-        "Jan-25": 244,
-        "Feb-25": 393,
-        "Mar-25": 430,
-        "Apr-25": 545,
-        "May-25": 497,
-        "Aug-25": 578
+        "Oct-24": 184,
+        "Nov-24": 158,
+        "Dec-24": 139,
+        "Jan-25": 249,
+        "Feb-25": 396,
+        "Mar-25": 441,
+        "Apr-25": 564,
+        "May-25": 505,
+        "Aug-25": 587,
+        "Sep-2025": 458
       },
-      "total": 5237
+      "total": 5761
     },
     "at_entry": {
       "original_name": "At Entry",
@@ -75,17 +77,18 @@
         "Jul-24": 2871,
         "Aug-24": 2251,
         "Sep-24": 1641,
-        "Oct-24": 1104,
-        "Nov-24": 547,
-        "Dec-24": 376,
-        "Jan-25": 372,
-        "Feb-25": 86,
-        "Mar-25": 74,
-        "Apr-25": 138,
-        "May-25": 110,
-        "Aug-25": 124
+        "Oct-24": 1099,
+        "Nov-24": 546,
+        "Dec-24": 371,
+        "Jan-25": 368,
+        "Feb-25": 83,
+        "Mar-25": 63,
+        "Apr-25": 120,
+        "May-25": 102,
+        "Aug-25": 115,
+        "Sep-2025": 96
       },
-      "total": 24572
+      "total": 24604
     },
     "southwest_total": {
       "original_name": "Southwest Border Total Apprehensions",
@@ -102,17 +105,18 @@
         "Jul-24": 56400,
         "Aug-24": 58009,
         "Sep-24": 53858,
-        "Oct-24": 56520,
-        "Nov-24": 46612,
-        "Dec-24": 47325,
+        "Oct-24": 56515,
+        "Nov-24": 46609,
+        "Dec-24": 47320,
         "Jan-25": 29105,
-        "Feb-25": 8350,
-        "Mar-25": 7181,
+        "Feb-25": 8349,
+        "Mar-25": 7179,
         "Apr-25": 8376,
-        "May-25": 8723,
-        "Aug-25": 6068
+        "May-25": 8724,
+        "Aug-25": 6066,
+        "Sep-2025": 4592
       },
-      "total": 1748783
+      "total": 1753358
     },
     "northern_total": {
       "original_name": "Northern Border Total Apprehensions",
@@ -132,14 +136,15 @@
         "Oct-24": 1283,
         "Nov-24": 704,
         "Dec-24": 510,
-        "Jan-25": 616,
+        "Jan-25": 617,
         "Feb-25": 479,
         "Mar-25": 504,
-        "Apr-25": 683,
+        "Apr-25": 684,
         "May-25": 607,
-        "Aug-25": 702
+        "Aug-25": 702,
+        "Sep-2025": 554
       },
-      "total": 29809
+      "total": 30365
     }
   },
   "monthly_totals": {
@@ -228,67 +233,74 @@
       "northern_total": 1792
     },
     "Oct-24": {
-      "nationwide_total": 58120,
-      "at_large": 179,
-      "at_entry": 1104,
-      "southwest_total": 56520,
+      "nationwide_total": 58115,
+      "at_large": 184,
+      "at_entry": 1099,
+      "southwest_total": 56515,
       "northern_total": 1283
     },
     "Nov-24": {
-      "nationwide_total": 47537,
-      "at_large": 157,
-      "at_entry": 547,
-      "southwest_total": 46612,
+      "nationwide_total": 47534,
+      "at_large": 158,
+      "at_entry": 546,
+      "southwest_total": 46609,
       "northern_total": 704
     },
     "Dec-24": {
-      "nationwide_total": 48141,
-      "at_large": 134,
-      "at_entry": 376,
-      "southwest_total": 47325,
+      "nationwide_total": 48137,
+      "at_large": 139,
+      "at_entry": 371,
+      "southwest_total": 47320,
       "northern_total": 510
     },
     "Jan-25": {
-      "nationwide_total": 30126,
-      "at_large": 244,
-      "at_entry": 372,
+      "nationwide_total": 30127,
+      "at_large": 249,
+      "at_entry": 368,
       "southwest_total": 29105,
-      "northern_total": 616
+      "northern_total": 617
     },
     "Feb-25": {
       "nationwide_total": 9241,
-      "at_large": 393,
-      "at_entry": 86,
-      "southwest_total": 8350,
+      "at_large": 396,
+      "at_entry": 83,
+      "southwest_total": 8349,
       "northern_total": 479
     },
     "Mar-25": {
       "nationwide_total": 8193,
-      "at_large": 430,
-      "at_entry": 74,
-      "southwest_total": 7181,
+      "at_large": 441,
+      "at_entry": 63,
+      "southwest_total": 7179,
       "northern_total": 504
     },
     "Apr-25": {
-      "nationwide_total": 10006,
-      "at_large": 545,
-      "at_entry": 138,
+      "nationwide_total": 10007,
+      "at_large": 564,
+      "at_entry": 120,
       "southwest_total": 8376,
-      "northern_total": 683
+      "northern_total": 684
     },
     "May-25": {
-      "nationwide_total": 10357,
-      "at_large": 497,
-      "at_entry": 110,
-      "southwest_total": 8723,
+      "nationwide_total": 10359,
+      "at_large": 505,
+      "at_entry": 102,
+      "southwest_total": 8724,
       "northern_total": 607
     },
     "Aug-25": {
-      "nationwide_total": 8018,
-      "at_large": 578,
-      "at_entry": 124,
-      "southwest_total": 6068,
+      "nationwide_total": 8014,
+      "at_large": 587,
+      "at_entry": 115,
+      "southwest_total": 6066,
       "northern_total": 702
+    },
+    "Sep-2025": {
+      "nationwide_total": 6168,
+      "at_large": 458,
+      "at_entry": 96,
+      "southwest_total": 4592,
+      "northern_total": 554
     }
   }
 }

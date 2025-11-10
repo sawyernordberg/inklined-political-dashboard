@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-09-13T16:00:00.000000",
+  "last_updated": "2025-011-10T16:00:00.000000",
   "source_timestamp": "",
   "source_file": "integrated_economic_dashboard.json",
   "tariff_updates": [
@@ -384,12 +384,145 @@
       ],
       "last_verified": "2025-09-13",
       "confidence_level": "high"
+    },
+    {
+      "title": "US Imposes Tariffs on Furniture, Kitchen Cabinets, and Lumber",
+      "description": "President Trump signed a proclamation imposing a 10% tariff on softwood lumber and timber, and 25% tariffs on kitchen cabinets, bathroom vanities, and upholstered furniture, effective October 14, 2025. On January 1, 2026, the tariff on kitchen cabinets and vanities will increase to 50%, and upholstered furniture will increase to 30%. Special rates were provided to countries with trade agreements: UK wood products capped at 10%, and EU and Japan wood products capped at 15%. The tariffs were justified under Section 232 as necessary to protect national security and strengthen domestic supply chains.",
+      "status": "implemented/enacted/active/in_effect",
+      "announcement_date": "2025-09-30",
+      "tariff_rate": "10% on lumber, 25% on cabinets/furniture (increasing to 30-50% on January 1, 2026)",
+      "affected_products": "Softwood lumber, timber, kitchen cabinets, bathroom vanities, upholstered furniture",
+      "source_titles": [
+        "Trump places a 10% tariff on lumber and a 25% tariff on furniture and cabinets | CNN Business",
+        "US to begin furniture, wood import tariffs on Oct. 14 | Supply Chain Dive",
+        "Trump sets 10% tariff on lumber imports, 25% on cabinets and furniture"
+      ],
+      "last_verified": "2025-11-10",
+      "confidence_level": "high"
+    },
+    {
+      "title": "Trump-Xi Meeting Results in Trade Truce and China Rare Earth Export Control Pause",
+      "description": "President Trump and Chinese President Xi Jinping met in Busan, South Korea on October 30, 2025, in their first face-to-face meeting since Trump's second term began. The meeting resulted in a trade truce where China agreed to pause its sweeping export controls on rare earth elements for one year. The agreement was described as a one-year deal that would be 'routinely extended.' Trump rated the meeting a '12 out of 10' and announced he would visit China in April 2026. The meeting also addressed agricultural trade expansion and potential energy purchases from Alaska, though specific details were limited.",
+      "status": "implemented/enacted/active/in_effect",
+      "announcement_date": "2025-10-30",
+      "tariff_rate": "N/A (trade truce and pause on export controls)",
+      "affected_products": "Rare earth elements and minerals, agricultural products, potential energy exports",
+      "source_titles": [
+        "The biggest takeaways from the Trump-Xi meeting — what the truce covers and what is still unclear",
+        "'Partners and friends': Xi strikes conciliatory tone as he meets Trump in South Korea",
+        "Trump rates meeting with China's Xi 12 out of 10, lowers tariffs : NPR"
+      ],
+      "last_verified": "2025-11-10",
+      "confidence_level": "high"
+    },
+    {
+      "title": "US Reduces China Fentanyl and Reciprocal Tariffs Following Trump-Xi Meeting",
+      "description": "Following the October 30 meeting between President Trump and Chinese President Xi Jinping, Trump issued two Executive Orders on November 4, 2025, reducing tariffs on China. The first order reduced the fentanyl-related tariff from 20% to 10%, effective November 10, 2025, in response to China's pledge to end the flow of fentanyl and control shipment of precursor chemicals to North America. The second order suspended the heightened reciprocal tariffs (which had reached 125% before being reduced to 10%) until November 10, 2026, maintaining only the baseline 10% reciprocal tariff. China committed to eliminate current and proposed global export controls on rare earth elements and critical minerals, address retaliation against U.S. semiconductor manufacturers, and purchase U.S. agricultural goods.",
+      "status": "implemented/enacted/active/in_effect",
+      "announcement_date": "2025-11-04",
+      "tariff_rate": "10% fentanyl tariff (reduced from 20%), 10% baseline reciprocal tariff (heightened tariff suspended)",
+      "affected_products": "All Chinese imports subject to fentanyl and reciprocal tariffs",
+      "source_titles": [
+        "President Trump Issues Executive Orders Addressing China Tariff Rates | SmarTrade",
+        "Trump Decreases Tariffs on Chinese Goods, Increases Tariffs on Canadian Goods | Dorsey"
+      ],
+      "last_verified": "2025-11-10",
+      "confidence_level": "high"
+    },
+    {
+      "title": "US Imposes 100% Tariffs on Chinese Ship-to-Shore Cranes and Cargo Handling Equipment",
+      "description": "The U.S. Trade Representative imposed 100% tariffs on ship-to-shore (STS) cranes and certain cargo handling equipment of Chinese origin, effective November 9, 2025. The tariffs apply to STS cranes manufactured in China, manufactured by companies controlled by Chinese nationals, or containing Chinese components. The tariffs also cover intermodal chassis and chassis parts. The action followed a Section 301 investigation revealing China's dominance in maritime infrastructure (95% of shipping containers, 86% of intermodal chassis). Cranes contracted before April 17, 2025, and entering the U.S. before April 18, 2027, are exempt. Intermodal containers were removed from the final tariff list. USTR is also considering additional tariffs up to 150% on other port equipment including gantry cranes, terminal tractors, and straddle carriers.",
+      "status": "implemented/enacted/active/in_effect",
+      "announcement_date": "2025-10-15",
+      "tariff_rate": "100%",
+      "affected_products": "Ship-to-shore cranes, intermodal chassis, chassis parts; proposed expansion to gantry cranes, terminal tractors, straddle carriers",
+      "source_titles": [
+        "Notice of Modification and Proposed Modification of Section 301 Action: China's Targeting of the Maritime, Logistics, and Shipbuilding Sectors for Dominance - Federal Register",
+        "US sets 100% tariffs for China-linked ship-to-shore cranes | Supply Chain Dive",
+        "USTR Section 301 Fee and Tariff Measures and Their Impact to Charterparties : Clyde & Co"
+      ],
+      "last_verified": "2025-11-10",
+      "confidence_level": "high"
+    },
+    {
+      "title": "Trump Adds 10% Tariff on Canada Over Political Advertisement",
+      "description": "On October 25, 2025, President Trump announced an additional 10% tariff on Canada in retaliation for Ontario Premier Doug Ford airing advertisements during the 2025 World Series that opposed Trump's tariffs on Canada. The advertisements included footage of former President Ronald Reagan in 1987 opposing tariffs. Trump also announced a halt to trade negotiations with Canada following this incident. This tariff is in addition to existing tariffs on Canadian goods.",
+      "status": "announced",
+      "announcement_date": "2025-10-25",
+      "tariff_rate": "Additional 10%",
+      "affected_products": "All Canadian imports (additional to existing tariffs)",
+      "source_titles": [
+        "Tariffs in the second Trump administration - Wikipedia",
+        "Trump Decreases Tariffs on Chinese Goods, Increases Tariffs on Canadian Goods | Dorsey"
+      ],
+      "last_verified": "2025-11-10",
+      "confidence_level": "high"
+    },
+    {
+      "title": "Senate Votes to Nullify Trump Tariffs on Brazil, Canada, and Global Reciprocal Tariffs",
+      "description": "In a series of three votes from October 28-30, 2025, the U.S. Senate passed resolutions to terminate the national emergency declarations Trump used to impose tariffs. On October 28, the Senate voted 52-48 to end Brazil's 50% tariff, with five Republicans (McConnell, Paul, Collins, Murkowski, Tillis) joining Democrats. On October 29, the Senate voted to end Canada's 35% tariff. On October 30, the Senate voted 51-47 to terminate the global 'reciprocal' tariffs affecting over 180 countries, with four Republicans (McConnell, Paul, Collins, Murkowski) joining Democrats. The resolutions used provisions of the International Emergency Economic Powers Act to bypass GOP leadership. However, the votes are largely symbolic as the Republican-controlled House installed rules blocking tariff-related measures from floor consideration, and Trump would veto any such legislation.",
+      "status": "symbolic/non-binding",
+      "announcement_date": "2025-10-28 to 2025-10-30",
+      "tariff_rate": "N/A (Congressional action to terminate emergency declarations)",
+      "affected_products": "Brazil tariffs, Canada tariffs, and global reciprocal tariffs",
+      "source_titles": [
+        "Senate passes resolution to end Trump's global tariffs; 4 Republicans side with Dems",
+        "Senate votes to quash Trump's 'Liberation Day' global tariffs - The Washington Post",
+        "Senate approves Democratic resolution that would block Trump's global tariffs - CBS News"
+      ],
+      "last_verified": "2025-11-10",
+      "confidence_level": "high"
+    },
+    {
+      "title": "Supreme Court Hears Oral Arguments on Legality of IEEPA Tariffs",
+      "description": "On November 5, 2025, the U.S. Supreme Court heard oral arguments in the consolidated case of Learning Resources v. Trump and Trump v. V.O.S. Selections, examining whether the International Emergency Economic Powers Act (IEEPA) authorizes President Trump to impose sweeping tariffs. The case challenges both 'reciprocal' tariffs (10% baseline plus country-specific rates) and 'trafficking' tariffs on Canada, China, and Mexico (25% fentanyl-related). Justices across the ideological spectrum appeared skeptical of the administration's claim that IEEPA grants tariff authority, with multiple justices emphasizing that tariffs are taxes requiring Congressional authorization under Article I. The government argued tariffs are 'regulatory' not 'revenue-raising,' though Trump has repeatedly boasted about tariff revenue. The IEEPA tariffs have collected $88 billion to date and are projected to raise $1.8 trillion over 2025-2034. Lower courts unanimously ruled the tariffs illegal, but they remain in effect pending the Supreme Court's decision. A ruling is expected in the coming months.",
+      "status": "under_legal_challenge",
+      "announcement_date": "2025-11-05",
+      "tariff_rate": "Varies (10% baseline reciprocal, up to 50% country-specific reciprocal, 25% fentanyl trafficking tariffs)",
+      "affected_products": "Nearly all U.S. imports under IEEPA authority (excludes Section 232 and Section 301 tariffs)",
+      "source_titles": [
+        "Supreme Court showdown on tariffs shaping up as landmark case | Constitution Center",
+        "Supreme Court hears Trump tariffs case, key justices appear skeptical of president's power - ABC News",
+        "Supreme Court justices appear skeptical that Trump tariffs are legal",
+        "What You Should Know About the Trump Tariffs Being Challenged at the Supreme Court"
+      ],
+      "last_verified": "2025-11-10",
+      "confidence_level": "high"
+    },
+    {
+      "title": "USTR Initiates Section 301 Investigation into China's Phase One Agreement Compliance",
+      "description": "On October 27, 2025, the U.S. Trade Representative released a Federal Register notice initiating a Section 301 investigation into China's apparent failure to comply with the 2020 Economic and Trade Agreement Between the Government of the United States of America and the Government of the People's Republic of China (Phase One Agreement). The investigation examines whether China met its commitments under the agreement. The docket for written comments opened October 31, with comments due by December 1, 2025. The Section 301 Committee will convene a public hearing on December 16, 2025. This investigation could lead to additional tariffs or trade actions against China.",
+      "status": "announced/investigation",
+      "announcement_date": "2025-10-27",
+      "tariff_rate": "TBD (investigation phase)",
+      "affected_products": "Potentially all products covered under Phase One Agreement compliance issues",
+      "source_titles": [
+        "Trump 2.0 tariff tracker | Trade Compliance Resource Hub"
+      ],
+      "last_verified": "2025-11-10",
+      "confidence_level": "high"
+    },
+    {
+      "title": "Federal Appeals Court Rules Trump IEEPA Tariffs Illegal, Supreme Court to Decide Final Outcome",
+      "description": "On August 29, 2025, the U.S. Court of Appeals for the Federal Circuit ruled 7-4 that President Trump's tariffs imposed under the International Emergency Economic Powers Act (IEEPA) are illegal, stating that 'the core Congressional power to impose taxes such as tariffs is vested exclusively in the legislative branch.' The ruling affects both 'reciprocal' tariffs (10% baseline to country-specific rates) and 'trafficking' tariffs on Canada, China, and Mexico (25% fentanyl-related). The appeals court stayed its ruling until October 14, 2025, to allow time for appeal. On September 10, 2025, the Supreme Court agreed to hear the case on an expedited basis, with oral arguments held November 5, 2025. The tariffs remain in effect pending the Supreme Court's final decision. Three lower courts (U.S. Court of International Trade, Federal Circuit Court of Appeals, and a Federal District Court in Washington D.C.) have all ruled against Trump's tariff authority under IEEPA. The case represents one of the most significant challenges to presidential emergency powers in recent history.",
+      "status": "under_legal_challenge",
+      "announcement_date": "2025-08-29",
+      "tariff_rate": "Varies (10% baseline, up to 50% reciprocal rates, 25% trafficking tariffs)",
+      "affected_products": "Nearly all U.S. imports from most trading partners under IEEPA authority",
+      "source_titles": [
+        "Most Trump tariffs ruled illegal by appeals court - CNBC",
+        "Appeals court strikes down many Trump tariffs, saying he overstepped his authority - CNN Business",
+        "Supreme Court agrees to decide the fate of Trump's tariffs - SCOTUSblog",
+        "Tariffs in the second Trump administration - Wikipedia"
+      ],
+      "last_verified": "2025-11-10",
+      "confidence_level": "high"
     }
   ],
   "country_tariffs": [],
   "analysis_summary": {
-    "total_updates": 26,
-    "new_updates": 6,
+    "total_updates": 36,
+    "new_updates": 9,
     "total_countries_analyzed": 0,
     "minimum_update_date": "2025-04-02",
     "analysis_method": "Comprehensive web search and analysis",
