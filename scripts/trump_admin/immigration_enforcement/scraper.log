@@ -536,3 +536,32 @@
 2025-10-12 12:32:32,496 - INFO - Complete dataset also saved locally to: data/ice_detention_data.json
 2025-10-12 12:32:32,497 - INFO - Scraping process completed successfully!
 2025-10-12 12:32:32,497 - INFO - All JSON files saved in: data
+2025-11-09 22:06:23,594 - INFO - Starting ICE detention data scraping process...
+2025-11-09 22:06:23,595 - INFO - Searching for Excel file URL on: https://www.ice.gov/detain/detention-management
+2025-11-09 22:06:23,718 - INFO - Found potential Excel link: Detention FY 2025 YTD, Alternatives to Detention FY 2025 YTD and Facilities FY 2025 YTD, Footnotes (227 KB) -> https://www.ice.gov/doclib/detention/FY25_detentionStats09252025.xlsx
+2025-11-09 22:06:23,718 - INFO - Selected Excel file: Detention FY 2025 YTD, Alternatives to Detention FY 2025 YTD and Facilities FY 2025 YTD, Footnotes (227 KB) -> https://www.ice.gov/doclib/detention/FY25_detentionStats09252025.xlsx
+2025-11-09 22:06:23,719 - INFO - Downloading Excel file from: https://www.ice.gov/doclib/detention/FY25_detentionStats09252025.xlsx
+2025-11-09 22:06:23,843 - INFO - Excel file downloaded successfully: data/ice_detention_raw.xlsx
+2025-11-09 22:06:23,844 - INFO - Reading Excel sheets...
+2025-11-09 22:06:24,849 - INFO - Found 10 sheets: ['Header', 'ATD FY25 YTD', 'Detention FY25', ' ICLOS and Detainees', 'Semiannual', 'Monthly Bond Statistics', 'Facilities FY25', 'Monthly Segregation', 'Vulnerable & Special Population', 'Footnotes']
+2025-11-09 22:06:24,849 - INFO - Saving data in multiple formats...
+2025-11-09 22:06:24,849 - INFO - No header row detected for sheet: Header, using content-based naming
+2025-11-09 22:06:24,851 - INFO - Detected and removing header row at index 3 for sheet: ATD FY25 YTD
+2025-11-09 22:06:24,851 - INFO - Detected and removing header row at index 13 for sheet: ATD FY25 YTD
+2025-11-09 22:06:24,852 - INFO - Using predefined headers for sheet: ATD FY25 YTD
+2025-11-09 22:06:24,853 - INFO - Detected and removing header row at index 3 for sheet: Detention FY25
+2025-11-09 22:06:24,853 - INFO - Using predefined headers for sheet: Detention FY25
+2025-11-09 22:06:24,856 - INFO - Detected and removing header row at index 1 for sheet:  ICLOS and Detainees
+2025-11-09 22:06:24,856 - INFO - Detected and removing header row at index 9 for sheet:  ICLOS and Detainees
+2025-11-09 22:06:24,857 - INFO - Using predefined headers for sheet:  ICLOS and Detainees
+2025-11-09 22:06:24,861 - INFO - Using predefined headers for sheet: Semiannual
+2025-11-09 22:06:24,863 - INFO - Using predefined headers for sheet: Monthly Bond Statistics
+2025-11-09 22:06:24,865 - INFO - Detected and removing header row at index 5 for sheet: Facilities FY25
+2025-11-09 22:06:24,865 - INFO - Using predefined headers for sheet: Facilities FY25
+2025-11-09 22:06:24,868 - INFO - Using predefined headers for sheet: Monthly Segregation
+2025-11-09 22:06:24,870 - INFO - Using predefined headers for sheet: Vulnerable & Special Population
+2025-11-09 22:06:24,871 - INFO - No header row detected for sheet: Footnotes, using content-based naming
+2025-11-09 22:06:24,883 - INFO - Complete dataset saved to: /Users/sawyernordberg/Downloads/inklined 1.2/nextjs-political-dashboard/scripts/trump_admin/immigration_enforcement/../../../public/data/ice_detention_data.json
+2025-11-09 22:06:24,895 - INFO - Complete dataset also saved locally to: data/ice_detention_data.json
+2025-11-09 22:06:24,895 - INFO - Scraping process completed successfully!
+2025-11-09 22:06:24,895 - INFO - All JSON files saved in: data

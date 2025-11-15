@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2025-11-09T22:06:22.001846",
+    "generated_at": "2025-11-15T15:33:40.260397",
     "congress_session": 119,
     "data_sources": [
       "LegiScan API (current & historical bills, partisan/bipartisan analysis)",
@@ -25,19 +25,19 @@
       "independent": 2,
       "total": 100
     },
-    "last_updated": "2025-11-09T22:05:43.014657"
+    "last_updated": "2025-11-15T15:32:59.734569"
   },
   "legislative_activity": {
-    "bills_introduced": 10799,
-    "bills_passed": 36,
+    "bills_introduced": 10876,
+    "bills_passed": 37,
     "bipartisan_bills": 11,
-    "partisan_bills": 25,
+    "partisan_bills": 26,
     "unknown_partisanship_bills": 0,
-    "days_in_session": 130,
+    "days_in_session": 132,
     "committee_hearings": "Not available",
     "spending_authorized": "Not available",
-    "calendar_days_active": 310,
-    "last_updated": "2025-11-09T22:05:44.615344",
+    "calendar_days_active": 316,
+    "last_updated": "2025-11-15T15:33:01.283918",
     "data_source": "LegiScan API",
     "passed_bill_details": [
       {
@@ -147,6 +147,15 @@
         "parties": "D, R",
         "sponsor_count": 90,
         "classification": "Bipartisan (D, R)"
+      },
+      {
+        "bill_id": 2044368,
+        "bill_number": "HB5371",
+        "title": "Continuing Appropriations Act, 2026 Legislative Branch Appropriations Act, 2026 ",
+        "partisanship": "partisan",
+        "parties": "R",
+        "sponsor_count": 1,
+        "classification": "Partisan (R)"
       },
       {
         "bill_id": 1922469,
@@ -388,37 +397,37 @@
     "119": {
       "congress_number": 119,
       "years": "2025-2026",
-      "target_calendar_days": 310,
+      "target_calendar_days": 316,
       "start_date": "2025-01-03T00:00:00",
-      "bills_passed_in_timeframe": 36,
+      "bills_passed_in_timeframe": 37,
       "is_current": true,
       "data_source": "Real LegiScan data with partisan analysis",
       "bipartisan_bills": 11,
-      "partisan_bills": 25,
+      "partisan_bills": 26,
       "unknown_partisanship_bills": 0
     },
     "118": {
       "congress_number": 118,
       "years": "2023-2024",
-      "target_calendar_days": 310,
+      "target_calendar_days": 316,
       "start_date": "2023-01-03T00:00:00",
-      "bills_passed_in_timeframe": 19,
+      "bills_passed_in_timeframe": 21,
       "is_current": false,
       "data_source": "LegiScan"
     },
     "117": {
       "congress_number": 117,
       "years": "2021-2022",
-      "target_calendar_days": 310,
+      "target_calendar_days": 316,
       "start_date": "2021-01-03T00:00:00",
-      "bills_passed_in_timeframe": 52,
+      "bills_passed_in_timeframe": 58,
       "is_current": false,
       "data_source": "LegiScan"
     },
     "116": {
       "congress_number": 116,
       "years": "2019-2020",
-      "target_calendar_days": 310,
+      "target_calendar_days": 316,
       "start_date": "2019-01-03T00:00:00",
       "bills_passed_in_timeframe": 68,
       "is_current": false,
@@ -427,7 +436,7 @@
     "115": {
       "congress_number": 115,
       "years": "2017-2018",
-      "target_calendar_days": 310,
+      "target_calendar_days": 316,
       "start_date": "2017-01-03T00:00:00",
       "bills_passed_in_timeframe": 82,
       "is_current": false,
@@ -436,7 +445,7 @@
     "114": {
       "congress_number": 114,
       "years": "2015-2016",
-      "target_calendar_days": 310,
+      "target_calendar_days": 316,
       "start_date": "2015-01-06T00:00:00",
       "bills_passed_in_timeframe": 86,
       "is_current": false,
@@ -445,25 +454,25 @@
     "113": {
       "congress_number": 113,
       "years": "2013-2014",
-      "target_calendar_days": 310,
+      "target_calendar_days": 316,
       "start_date": "2013-01-03T00:00:00",
-      "bills_passed_in_timeframe": 47,
+      "bills_passed_in_timeframe": 49,
       "is_current": false,
       "data_source": "LegiScan"
     },
     "112": {
       "congress_number": 112,
       "years": "2011-2012",
-      "target_calendar_days": 310,
+      "target_calendar_days": 316,
       "start_date": "2011-01-05T00:00:00",
-      "bills_passed_in_timeframe": 53,
+      "bills_passed_in_timeframe": 54,
       "is_current": false,
       "data_source": "LegiScan"
     },
     "111": {
       "congress_number": 111,
       "years": "2009-2010",
-      "target_calendar_days": 310,
+      "target_calendar_days": 316,
       "start_date": "2009-01-06T00:00:00",
       "bills_passed_in_timeframe": 93,
       "is_current": false,
@@ -478,9 +487,9 @@
       ],
       "worst_performer": [
         118,
-        19
+        21
       ],
-      "comparison_timeframe_days": 310,
+      "comparison_timeframe_days": 316,
       "note": "All data uses real LegiScan API queries"
     }
   },
@@ -492,7 +501,7 @@
     "total_members": 535,
     "data_quality": "High - Real API data + real historical analysis",
     "historical_rank": "8 of 9",
-    "calendar_days_active": 310,
+    "calendar_days_active": 316,
     "bills_passed_vs_historical": "Analysis included"
   }
 }
